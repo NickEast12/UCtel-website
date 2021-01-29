@@ -9,6 +9,8 @@ module.exports = {
     image: `/icon.png`,
   },
   plugins: [
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-preload-fonts`,

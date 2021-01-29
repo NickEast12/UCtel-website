@@ -1,9 +1,11 @@
 import React from 'react';
+import Layout from '../components/Layout';
+import LandingPage from '../components/PageComponents/Landing';
 
 const index = () => (
-  <div>
-    <h1>this is my starter gatsby</h1>
-  </div>
+  <Layout>
+    <LandingPage />
+  </Layout>
 );
 
 export default index;
