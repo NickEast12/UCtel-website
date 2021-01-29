@@ -16,9 +16,9 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Nick East `,
-        short_name: `Nick East`,
-        description: `I'm a front-end web developer based in London, UK. With a love for designing and writing code.`,
+        name: `UCtel`,
+        short_name: `UCtel`,
+        description: `UCtel`,
         start_url: `/`,
         lang: `en`,
         background_color: `#162129`,
@@ -47,7 +47,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: 'UA-138434630-1',
+        trackingId: '118',
         head: true,
       },
     },
@@ -55,7 +55,7 @@ module.exports = {
       resolve: `gatsby-plugin-gdpr-cookies`,
       options: {
         googleAnalytics: {
-          trackingId: 'UA-138434630-1',
+          trackingId: '118',
           anonymize: true,
         },
         environments: ['production', 'development'],

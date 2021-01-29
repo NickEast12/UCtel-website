@@ -1,7 +1,7 @@
 {
-  "name": "nick-starter-gatsby",
+  "name": "uctel-website",
   "private": false,
-  "description": "nick-starter-gatsby",
+  "description": "uctel-website",
   "version": "0.1.0",
   "license": "MIT",
   "scripts": {
@@ -28,6 +28,7 @@
     "dotenv": "^8.2.0",
     "gatsby": "^2.26.1",
     "gatsby-image": "^2.4.17",
+    "gatsby-plugin-breadcrumb": "^11.0.0",
     "gatsby-plugin-gdpr-cookies": "^1.0.10",
     "gatsby-plugin-google-analytics": "^2.5.0",
     "gatsby-plugin-manifest": "^2.6.1",
