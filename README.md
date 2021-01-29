@@ -19,3 +19,18 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 ## License
 
 [MIT]
+
+{
+resolve: `gatsby-plugin-manifest`,
+options: {
+name: `UCtel`,
+short_name: `UCtel`,
+description: `UCtel`,
+start_url: `/`,
+lang: `en`,
+background_color: `#162129`,
+theme_color: `#1bbc9b`,
+display: `minimal-ui`,
+icon: `./src/static/icon.ico`,
+},
+},

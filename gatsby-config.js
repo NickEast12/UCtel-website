@@ -15,20 +15,7 @@ module.exports = {
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-preload-fonts`,
     `gatsby-plugin-sitemap`,
-    {
-      resolve: `gatsby-plugin-manifest`,
-      options: {
-        name: `UCtel`,
-        short_name: `UCtel`,
-        description: `UCtel`,
-        start_url: `/`,
-        lang: `en`,
-        background_color: `#162129`,
-        theme_color: `#1bbc9b`,
-        display: `minimal-ui`,
-        icon: `./src/static/icon.ico`,
-      },
-    },
+
     {
       resolve: `gatsby-plugin-react-svg`,
       options: {
