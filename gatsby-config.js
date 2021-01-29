@@ -1,5 +1,6 @@
 require('dotenv').config({ path: '.env' });
 
+const path = require(`path`);
 module.exports = {
   siteMetadata: {
     title: `Enter`,
@@ -15,6 +16,13 @@ module.exports = {
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-preload-fonts`,
     `gatsby-plugin-sitemap`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: path.join(__dirname, `src`, `assets`, 'images'),
+      },
+    },
 
     {
       resolve: `gatsby-plugin-react-svg`,
