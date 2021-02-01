@@ -19,11 +19,12 @@ const LandingPageStyles = styled.div`
       margin: 0 auto;
 
       h1 {
-        color: var(--slate);
+        color: var(--white);
         font-size: 2.7rem;
+        margin-bottom: 0.5rem;
       }
       p {
-        color: var(--slate);
+        color: var(--white);
         padding-top: 0.5rem;
         font-size: 1.1rem;
       }
@@ -34,7 +35,7 @@ const LandingPageStyles = styled.div`
         display: grid;
         border-radius: 3px;
         position: relative;
-        background-color: var(--darkBlue);
+        background-color: var(--lightBlue);
         span {
           padding: 0.85rem 1rem;
           text-align: left;
@@ -45,7 +46,7 @@ const LandingPageStyles = styled.div`
           right: 0;
           width: 25%;
           height: 100%;
-          background-color: var(--lightBlue);
+          background-color: var(--orange);
           padding: 0.85rem;
           position: absolute;
 
@@ -91,12 +92,27 @@ const LandingPageStyles = styled.div`
       }
     }
   }
+  .darkTheme {
+    .landing__wrapper__content {
+      h1,
+      p {
+        color: var(--darkBlue);
+      }
+    }
+  }
 `;
-const LandingPage = () => {
+const LandingPage = ({
+  background,
+  colour,
+  lines,
+  darkTheme,
+  distance,
+  value,
+}) => {
   const i = 'stay';
   return (
     <LandingPageStyles>
-      <div className="landing__wrapper">
+      <div className={`landing__wrapper ${darkTheme ? 'darkTheme' : ''}`}>
         <div className="landing__wrapper__content">
           <h1>What this website does and why they should care?</h1>
           <p>
@@ -111,7 +127,13 @@ const LandingPage = () => {
           </button>
         </div>
       </div>
-      <ParticlesBackground />
+      <ParticlesBackground
+        background={background}
+        colour={colour}
+        lines={lines}
+        distance={distance}
+        value={value}
+      />
     </LandingPageStyles>
   );
 };

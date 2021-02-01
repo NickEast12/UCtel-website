@@ -101,6 +101,7 @@ const DesktopNavStyles = styled.div`
           li {
             list-style: none;
             margin-right: 20px;
+            color: #ffffff;
           }
         }
         button {

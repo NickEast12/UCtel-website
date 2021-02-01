@@ -6,6 +6,7 @@ const GlobalStyles = createGlobalStyle`
         --lightBlue : #278A9C;
         --slate: #2D3C41;
         --darkBlue: #1A2536;
+        --white: #ffffff;
     }
     *, *:after, *:before {
         box-sizing: border-box;
@@ -32,7 +33,7 @@ const GlobalStyles = createGlobalStyle`
         display: grid;
         border-radius: 3px;
         position: relative;
-        background-color: var(--darkBlue);
+        background-color: var(--lightBlue);
         span {
           padding: 0.65rem 1rem;
           text-align: left;
@@ -43,7 +44,7 @@ const GlobalStyles = createGlobalStyle`
           right: 0;
           width: 25%;
           height: 100%;
-          background-color: var(--lightBlue);
+          background-color: #386682;
           padding: 0.65rem;
           position: absolute;
 

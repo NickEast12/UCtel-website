@@ -34,3 +34,5 @@ display: `minimal-ui`,
 icon: `./src/static/icon.ico`,
 },
 },
+
+    box-shadow: 0 1.1111rem 1.1111rem 0.2778rem rgb(0 0 0 / 5%);
