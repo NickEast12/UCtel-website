@@ -5,7 +5,7 @@ import AnimateHeaderBackground from '../functional/NetAnimatedBackground';
 
 const LandingPageStyles = styled.div`
   width: 100%;
-  height: 100vh;
+  height: 750px;
   position: relative;
   .landing__wrapper {
     z-index: 2;
