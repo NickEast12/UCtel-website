@@ -17,7 +17,11 @@ const LandingPageStyles = styled.div`
     &__content {
       width: 100%;
       margin: 0 auto;
-
+      h3 {
+        color: var(--orange);
+        font-size: 2.5rem;
+        margin-bottom: 0.5rem;
+      }
       h1 {
         color: var(--white);
         font-size: 2.7rem;
@@ -25,7 +29,7 @@ const LandingPageStyles = styled.div`
       }
       p {
         color: var(--white);
-        padding-top: 0.5rem;
+        padding: 0.5rem 0;
         font-size: 1.1rem;
       }
       button {
@@ -82,8 +86,8 @@ const LandingPageStyles = styled.div`
     @media only screen and (min-width: 1024px) {
       &__content {
         h1 {
-          font-size: 4.15rem;
-          width: 90%;
+          font-size: 4rem;
+          width: 100%;
         }
         p {
           width: 60%;
@@ -108,17 +112,18 @@ const LandingPage = ({
   darkTheme,
   distance,
   value,
+  subtitle,
+  title,
+  description,
 }) => {
   const i = 'stay';
   return (
     <LandingPageStyles>
       <div className={`landing__wrapper ${darkTheme ? 'darkTheme' : ''}`}>
         <div className="landing__wrapper__content">
-          <h1>What this website does and why they should care?</h1>
-          <p>
-            Introduction into UCtel, briefly summarise what we do, how we do it
-            and how this will benefit your business.
-          </p>
+          <h3>{subtitle || ''}</h3>
+          <h1>{title}</h1>
+          <p>{description}</p>
           <button type="button">
             <span>Find out more</span>
             <div>

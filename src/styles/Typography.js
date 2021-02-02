@@ -26,6 +26,7 @@ const Typography = createGlobalStyle`
     h1,h2,h3,h4,h5,h6 {
       font-family: VisueltProMedium;
       margin: 0;
+      letter-spacing: -1px;
     }
     p, button, a, span, li {
       font-family: VisueltProLight;
