@@ -11,14 +11,14 @@ const Mockup = styled.main`
 const index = () => (
   <Mockup>
     <Layout>
-      {/* <LandingPage
+      <LandingPage
         background="#ffffff"
         colour="#ffffff"
         lines="#278A9C"
         darkTheme
         title="Mobile boosting | Private 5G | Unified Communications"
         description="Market leading technology keeping you connected"
-      /> */}
+      />
       <LandingPage
         background="#1A2536"
         colour="#ffffff"
@@ -29,11 +29,7 @@ const index = () => (
         title="Mobile boosting | Private 5G | Unified Communications"
         description="We have it covered"
       />
-      <AltLandingPage
-        title="Mobile boosting | Private 5G | Unified Communications"
-        description="Market leading technology keeping you connected."
-      />
-      {/* <LandingPage
+      <LandingPage
         background="#000000"
         colour="#F39118"
         lines="#F39118"
@@ -51,7 +47,11 @@ const index = () => (
         subtitle="Get Connected"
         title="Mobile boosting | Private 5G | Unified Communications"
         description="Market leading technology keeping you connected"
-      /> */}
+      />
+      <AltLandingPage
+        title="Mobile boosting | Private 5G | Unified Communications"
+        description="Market leading technology keeping you connected."
+      />
     </Layout>
   </Mockup>
 );
