@@ -1,11 +1,11 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
 import ArrowIcon from '../../svgs/arrow.svg';
 import AnimateHeaderBackground from '../functional/NetAnimatedBackground';
 
 const LandingPageStyles = styled.div`
   width: 100%;
-  height: 750px;
+  height: 100vh;
   position: relative;
   .landing__wrapper {
     z-index: 2;
@@ -116,7 +116,15 @@ const LandingPageStyles = styled.div`
   }
 `;
 const AltLandingPage = ({ darkTheme, title, description }) => {
-  const i = 'stay';
+  const [isDesktop, setDesktop, setPoints] = useState(window.innerWidth > 1280);
+  const updateScreenSize = () => {
+    setDesktop(window.innerWidth > 1280);
+  };
+  useEffect(() => {
+    console.log('screen change');
+    window.addEventListener('resize', updateScreenSize);
+    return () => window.removeEventListener('resize', updateScreenSize);
+  });
   return (
     <LandingPageStyles>
       <div className={`landing__wrapper ${darkTheme ? 'darkTheme' : ''}`}>
@@ -133,7 +141,11 @@ const AltLandingPage = ({ darkTheme, title, description }) => {
           </div>
         </div>
       </div>
-      <AnimateHeaderBackground />
+      {isDesktop ? (
+        <AnimateHeaderBackground points="15" distance="20" spacing="20" />
+      ) : (
+        <AnimateHeaderBackground />
+      )}
     </LandingPageStyles>
   );
 };

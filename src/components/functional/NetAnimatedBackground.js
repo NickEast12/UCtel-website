@@ -18,39 +18,49 @@ const AnimateHeaderBackgroundStyles = styled.div`
     width: 100%;
   }
 `;
-class AnimateHeaderBackground extends React.Component {
-  constructor() {
-    super();
-    this.vantaRef = React.createRef();
-  }
+const AnimateHeaderBackground = ({
+  vantaRef,
+  vantaEffect,
+  points,
+  distance,
+  spacing,
+}) => {
+  vantaRef = React.createRef();
 
-  componentDidMount() {
-    this.vantaEffect = NET({
-      el: this.vantaRef.current,
+  useEffect(() => {
+    vantaEffect = NET({
+      el: vantaRef.current,
       THREE,
       mouseControls: true,
       touchControls: true,
       gyroControls: false,
-      scale: 1.0,
-      points: 16.0,
-      maxDistance: 35.0,
-      spacing: 28.0,
-      scaleMobile: 1.0,
+      scale: 0.0,
+      points: `${points || 10}`,
+      maxDistance: `${distance || 35.0}`,
+      spacing: `${spacing || 45.0}`,
+      scaleMobile: 0.0,
       color: 0x278a9c,
       backgroundColor: 0x1a2536,
       showDots: true,
-    });
-  }
-
-  componentWillUnmount() {
-    if (this.vantaEffect) {
-      this.vantaEffect.destroy();
+    }).then;
+    if (vantaEffect) {
+      vantaEffect.destroy();
     }
-  }
+  });
 
-  render() {
-    return <AnimateHeaderBackgroundStyles ref={this.vantaRef} />;
-  }
-}
+  return <AnimateHeaderBackgroundStyles ref={vantaRef} />;
+};
 
 export default AnimateHeaderBackground;
+
+// mouseControls: false,
+// touchControls: false,
+// gyroControls: false,
+// scale: 0.0,
+// points: 15.0,
+// maxDistance: 20.0,
+// spacing: 15.0,
+// scaleMobile: 0.0,
+// color: 0x278a9c,
+// backgroundColor: 0x1a2536,
+// showDots: true,

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
 import ParticlesBackground from '../functional/ParticlesBackground';
 import ArrowIcon from '../../svgs/arrow.svg';
@@ -115,32 +115,29 @@ const LandingPage = ({
   subtitle,
   title,
   description,
-}) => {
-  const i = 'stay';
-  return (
-    <LandingPageStyles>
-      <div className={`landing__wrapper ${darkTheme ? 'darkTheme' : ''}`}>
-        <div className="landing__wrapper__content">
-          <h3>{subtitle || ''}</h3>
-          <h1>{title}</h1>
-          <p>{description}</p>
-          <button type="button">
-            <span>Find out more</span>
-            <div>
-              <ArrowIcon />
-            </div>
-          </button>
-        </div>
+}) => (
+  <LandingPageStyles>
+    <div className={`landing__wrapper ${darkTheme ? 'darkTheme' : ''}`}>
+      <div className="landing__wrapper__content">
+        <h3>{subtitle || ''}</h3>
+        <h1>{title}</h1>
+        <p>{description}</p>
+        <button type="button">
+          <span>Find out more</span>
+          <div>
+            <ArrowIcon />
+          </div>
+        </button>
       </div>
-      <ParticlesBackground
-        background={background}
-        colour={colour}
-        lines={lines}
-        distance={distance}
-        value={value}
-      />
-    </LandingPageStyles>
-  );
-};
+    </div>
+    <ParticlesBackground
+      background={background}
+      colour={colour}
+      lines={lines}
+      distance={distance}
+      value={value}
+    />
+  </LandingPageStyles>
+);
 
 export default LandingPage;
