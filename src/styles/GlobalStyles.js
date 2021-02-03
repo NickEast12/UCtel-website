@@ -19,6 +19,8 @@ const GlobalStyles = createGlobalStyle`
         width: 100%;
         height: 100%;
         font-size: 1rem;
+        -webkit-font-smoothing: subpixel-antialiased !important; 
+        text-rendering:optimizeLegibility !important;
     }
     a[aria-current="page"] {
         color: var(--favColour);
