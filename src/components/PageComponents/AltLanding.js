@@ -25,7 +25,7 @@ const LandingPageStyles = styled.div`
       }
       h1 {
         color: var(--white);
-        font-size: 2.7rem;
+        font-size: 2.2rem;
         margin-bottom: 0.5rem;
       }
       p {

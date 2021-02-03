@@ -25,7 +25,7 @@ const AnimateHeaderBackground = ({
   distance,
   spacing,
 }) => {
-  vantaRef = React.createRef();
+  vantaRef = React.createRef(); // eslint-disable-line no-param-reassign
 
   useEffect(() => {
     vantaEffect = NET({
@@ -35,9 +35,9 @@ const AnimateHeaderBackground = ({
       touchControls: true,
       gyroControls: false,
       scale: 0.0,
-      points: `${points || 10}`,
-      maxDistance: `${distance || 35.0}`,
-      spacing: `${spacing || 45.0}`,
+      points: `${points || 15}`,
+      maxDistance: `${distance || 20.0}`,
+      spacing: `${spacing || 20.0}`,
       scaleMobile: 0.0,
       color: 0x278a9c,
       backgroundColor: 0x1a2536,
