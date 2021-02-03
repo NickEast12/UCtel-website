@@ -42,7 +42,7 @@ const AnimateHeaderBackground = ({
       spacing: `${spacing || 25.0}`,
       scaleMobile: 1.0,
       color: 0x278a9c,
-      backgroundColor: 0x1a2536,
+      backgroundColor: 0x000000,
       showDots: true,
     }).then;
     if (vantaEffect) {

@@ -31,7 +31,7 @@ const MobileNavStyles = styled.div`
     justify-content: space-between;
     &__img {
       img {
-        width: 150px;
+        width: 130px;
       }
     }
   }
@@ -40,13 +40,14 @@ const MobileNavStyles = styled.div`
   }
 `;
 const Hamburger = styled.div`
-  width: 30px;
-  margin-top: 5px;
+  width: 20px;
+  margin-top: 7.5px;
+  margin-right: 10px;
   div {
     width: 100%;
     height: 2px;
-    background-color: var(--slate);
-    margin-bottom: 5px;
+    background-color: var(--white);
+    margin-bottom: 3px;
   }
 `;
 const MobileNav = () => {
@@ -105,7 +106,35 @@ const DesktopNavStyles = styled.div`
           }
         }
         button {
-          margin-top: 0rem;
+          margin-top: 0;
+          width: 170px;
+          border: none;
+          display: grid;
+          border-radius: 3px;
+          position: relative;
+          background-color: var(--lightBlue);
+          span {
+            padding: 0.65rem 1rem;
+            text-align: left;
+            color: #ffffff;
+          }
+          div {
+            border-radius: 0 3px 3px 0;
+            right: 0;
+            width: 25%;
+            height: 100%;
+            background-color: #386682;
+            padding: 0.65rem;
+            position: absolute;
+
+            svg {
+              fill: #ffffff;
+
+              width: 12px;
+              height: 12px;
+              transform: rotate(180deg);
+            }
+          }
         }
       }
     }

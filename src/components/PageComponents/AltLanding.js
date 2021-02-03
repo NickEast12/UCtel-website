@@ -13,12 +13,13 @@ const LandingPageStyles = styled.div`
     position: relative;
     width: 90%;
     margin: 0 auto;
-    padding-top: 7.5rem;
+    padding-top: 7rem;
 
     &__content {
       width: 100%;
       margin: 0 auto;
       text-align: left;
+      color: var(--white);
       h3 {
         color: var(--orange);
         font-size: 2.5rem;
@@ -26,41 +27,43 @@ const LandingPageStyles = styled.div`
       }
       h1 {
         color: var(--white);
-        font-size: 2.2rem;
+        font-size: 2.3rem;
         margin-bottom: 0.5rem;
+        span {
+        }
       }
       p {
         color: var(--white);
         padding: 0.5rem 0;
         font-size: 1.1rem;
       }
-      button {
-        margin-top: 1rem;
-        width: 170px;
-        border: none;
-        display: grid;
-        border-radius: 3px;
-        position: relative;
-        background-color: var(--lightBlue);
-        span {
-          padding: 0.85rem 1rem;
-          text-align: left;
-          color: #ffffff;
+      .btn {
+        margin-top: 1.5rem;
+        button {
+          width: 100%;
+          margin-bottom: 1rem;
+          display: block;
+          background-color: var(--lightBlue);
+          padding: 0.75rem 0;
+          border-radius: 5px;
+          border: none;
+          span {
+            color: #fafafa;
+            font-size: 1.1rem;
+          }
         }
         div {
-          border-radius: 0 3px 3px 0;
-          right: 0;
-          width: 25%;
-          height: 100%;
-          background-color: var(--orange);
-          padding: 0.85rem;
-          position: absolute;
-
+          width: 135px;
+          display: flex;
+          margin-top: 1.5rem;
+          font-size: 1.1rem;
+          align-items: center;
+          justify-content: space-between;
+          color: var(--white);
           svg {
-            fill: #ffffff;
-
-            width: 12px;
-            height: 12px;
+            fill: var(--lightBlue);
+            width: 17px;
+            margin-left: 5px;
             transform: rotate(180deg);
           }
         }
@@ -73,16 +76,25 @@ const LandingPageStyles = styled.div`
       padding-top: 10rem;
       &__content {
         width: 90%;
-        margin: 0 auto 0 0;
+        margin: 0 auto;
         h1 {
-          font-size: 2.7rem;
+          font-size: 3rem;
+        }
+        p {
+          margin: 1rem 0;
+        }
+        .btn {
+          width: 300px;
+          margin: 2rem 0;
+          div {
+          }
         }
       }
     }
     @media only screen and (min-width: 768px) {
       padding-top: 12rem;
       &__content {
-        width: 80%;
+        width: 100%;
       }
     }
     @media only screen and (min-width: 1024px) {
@@ -96,22 +108,6 @@ const LandingPageStyles = styled.div`
           width: 100%;
           font-size: 1.25rem;
         }
-        .btn {
-          width: 100%;
-          margin: 0 auto;
-          text-align: center;
-          button {
-            margin: 1rem auto;
-          }
-        }
-      }
-    }
-  }
-  .darkTheme {
-    .landing__wrapper__content {
-      h1,
-      p {
-        color: var(--darkBlue);
       }
     }
   }
@@ -130,20 +126,22 @@ const AltLandingPage = ({ darkTheme, title, description }) => {
     <LandingPageStyles>
       <div className={`landing__wrapper ${darkTheme ? 'darkTheme' : ''}`}>
         <div className="landing__wrapper__content">
-          <h1>{title}</h1>
+          <h1>
+            Mobile boosting. <br /> Private 5G. <br /> Unified Communication.
+          </h1>
           <p>{description}</p>
           <div className="btn">
             <button type="button">
-              <span>Find out more</span>
-              <div>
-                <ArrowIcon />
-              </div>
+              <span>Get started</span>
             </button>
+            <div>
+              Find out more <ArrowIcon />
+            </div>
           </div>
         </div>
       </div>
       {isDesktop ? (
-        <AnimateHeaderBackground points="15" distance="20" spacing="20" />
+        <AnimateHeaderBackground points="20" distance="20" spacing="20" />
       ) : (
         <AnimateHeaderBackground />
       )}
