@@ -18,7 +18,7 @@ const LandingPageStyles = styled.div`
     &__content {
       width: 100%;
       margin: 0 auto;
-      text-align: center;
+      text-align: left;
       h3 {
         color: var(--orange);
         font-size: 2.5rem;
@@ -75,7 +75,7 @@ const LandingPageStyles = styled.div`
         width: 90%;
         margin: 0 auto 0 0;
         h1 {
-          font-size: 3rem;
+          font-size: 2.7rem;
         }
       }
     }

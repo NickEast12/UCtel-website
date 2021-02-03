@@ -11,7 +11,7 @@ const Mockup = styled.main`
 const index = () => (
   <Mockup>
     <Layout>
-      <LandingPage
+      {/* <LandingPage
         background="#1A2536"
         colour="#1A2536"
         lines="#278A9C"
@@ -20,7 +20,7 @@ const index = () => (
         subtitle="Get Connected"
         title="Mobile boosting | Private 5G | Unified Communications"
         description="Market leading technology keeping you connected"
-      />
+      /> */}
       <AltLandingPage
         title="Mobile boosting | Private 5G | Unified Communications"
         description="Market leading technology keeping you connected."
