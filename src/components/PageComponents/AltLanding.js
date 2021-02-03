@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
+import { window, document, exists } from 'browser-monads';
 import ArrowIcon from '../../svgs/arrow.svg';
 import AnimateHeaderBackground from '../functional/NetAnimatedBackground';
 
