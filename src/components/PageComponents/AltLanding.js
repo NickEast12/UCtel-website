@@ -13,56 +13,77 @@ const LandingPageStyles = styled.div`
     position: relative;
     width: 90%;
     margin: 0 auto;
-    padding-top: 7rem;
+    padding-top: 8rem;
 
     &__content {
       width: 100%;
       margin: 0 auto;
-      text-align: left;
+      text-align: center;
       color: var(--white);
-      h3 {
-        color: var(--orange);
-        font-size: 2.5rem;
-        margin-bottom: 0.5rem;
-      }
       h1 {
         color: var(--white);
-        font-size: 2.3rem;
+        font-size: 2rem;
         margin-bottom: 0.5rem;
-        span {
+        .title {
+          position: relative;
+          display: block;
+          margin-bottom: 5px;
+        }
+        .accent {
+          color: var(--lightBlue);
+          font-size: 60px;
+          position: absolute;
+          bottom: 0;
         }
       }
       p {
         color: var(--white);
         padding: 0.5rem 0;
-        font-size: 1.1rem;
+        font-size: 1rem;
+        width: 90%;
+        margin: 0 auto;
       }
       .btn {
         margin-top: 1.5rem;
-        button {
+        .main-button {
           width: 100%;
-          margin-bottom: 1rem;
-          display: block;
+          margin: 0.5rem auto;
           background-color: var(--lightBlue);
-          padding: 0.75rem 0;
-          border-radius: 5px;
+          padding: 0.85rem 0.85rem 0.95rem 0.85rem;
+          border-radius: 50px;
           border: none;
           span {
             color: #fafafa;
             font-size: 1.1rem;
           }
         }
+        .alt-button {
+          width: 100%;
+          margin: 0.5rem auto;
+          padding: 0.85rem 0.85rem 0.95rem 0.85rem;
+          border-radius: 50px;
+          background-color: transparent;
+          border: solid 2px var(--lightBlue);
+          span {
+            color: var(--lightBlue);
+          }
+        }
+
         div {
+          margin: 1rem auto;
           width: 135px;
-          display: flex;
-          margin-top: 1.5rem;
-          font-size: 1.1rem;
-          align-items: center;
-          justify-content: space-between;
-          color: var(--white);
+          position: relative;
+          p {
+            width: 100%;
+            height: auto;
+          }
           svg {
             fill: var(--lightBlue);
-            width: 17px;
+            width: 15px;
+            position: absolute;
+            right: -10px;
+            top: 12px;
+            align-self: center;
             margin-left: 5px;
             transform: rotate(180deg);
           }
@@ -71,30 +92,41 @@ const LandingPageStyles = styled.div`
     }
     @media only screen and (min-width: 375px) {
       padding-top: 9rem;
+      &__content {
+        h1 {
+          font-size: 2.2rem;
+        }
+      }
     }
     @media only screen and (min-width: 414px) {
       padding-top: 10rem;
       &__content {
-        width: 90%;
+        width: 100%;
         margin: 0 auto;
         h1 {
-          font-size: 3rem;
+          font-size: 2.5rem;
         }
         p {
-          margin: 1rem 0;
+          margin: 1rem auto;
+          font-size: 1.1rem;
         }
         .btn {
-          width: 300px;
-          margin: 2rem 0;
+          width: 350px;
+          margin: 2rem auto;
           div {
           }
         }
       }
     }
     @media only screen and (min-width: 768px) {
-      padding-top: 12rem;
+      padding-top: 8rem;
       &__content {
         width: 100%;
+        .btn {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          grid-gap: 1rem;
+        }
       }
     }
     @media only screen and (min-width: 1024px) {
@@ -113,7 +145,7 @@ const LandingPageStyles = styled.div`
   }
 `;
 const AltLandingPage = ({ darkTheme, title, description }) => {
-  const [isDesktop, setDesktop, setPoints] = useState(window.innerWidth > 1280);
+  const [isDesktop, setDesktop, setPoints] = useState(window.innerWidth > 1200);
   const updateScreenSize = () => {
     setDesktop(window.innerWidth > 1280);
   };
@@ -127,16 +159,24 @@ const AltLandingPage = ({ darkTheme, title, description }) => {
       <div className={`landing__wrapper ${darkTheme ? 'darkTheme' : ''}`}>
         <div className="landing__wrapper__content">
           <h1>
-            Mobile boosting. <br /> Private 5G. <br /> Unified Communication.
+            <span className="title">
+              Mobile boosting<span className="accent">.</span>
+            </span>
+            <span className="title">
+              Private 5G<span className="accent">.</span>
+            </span>
+            <span className="title">
+              Unified Communication<span className="accent">.</span>
+            </span>
           </h1>
           <p>{description}</p>
           <div className="btn">
-            <button type="button">
+            <button type="button" className="main-button">
               <span>Get started</span>
             </button>
-            <div>
-              Find out more <ArrowIcon />
-            </div>
+            <button type="button" className="alt-button">
+              <span>Talk to an expert</span>
+            </button>
           </div>
         </div>
       </div>
