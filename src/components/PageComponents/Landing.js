@@ -19,12 +19,12 @@ const LandingPageStyles = styled.div`
       margin: 0 auto;
       h3 {
         color: var(--orange);
-        font-size: 2.5rem;
+        font-size: 2.25rem;
         margin-bottom: 0.5rem;
       }
       h1 {
         color: var(--white);
-        font-size: 2.7rem;
+        font-size: 2.3rem;
         margin-bottom: 0.5rem;
       }
       p {
