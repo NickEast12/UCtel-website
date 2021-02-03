@@ -38,7 +38,7 @@ const AnimateHeaderBackground = ({
       minHeight: 200,
       minWidth: 200,
       points: `${points || 10}`,
-      maxDistance: `${distance || 16.0}`,
+      maxDistance: `${distance || 19.0}`,
       spacing: `${spacing || 25.0}`,
       scaleMobile: 1.0,
       color: 0x278a9c,
