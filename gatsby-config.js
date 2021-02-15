@@ -1,6 +1,7 @@
 require('dotenv').config({ path: '.env' });
 
 const path = require(`path`);
+
 module.exports = {
   siteMetadata: {
     title: `Enter`,
@@ -30,6 +31,15 @@ module.exports = {
         rule: {
           include: /svgs/,
         },
+      },
+    },
+    {
+      resolve: `gatsby-source-sanity`,
+      options: {
+        projectId: process.env.SANITY_ID,
+        dataset: `production`,
+        watchMode: true,
+        token: process.env.SANITY_KEY,
       },
     },
     {

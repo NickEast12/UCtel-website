@@ -1,9 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
-import VisueltProRegular from '../assets/fonts/VisueltPro-Regular.ttf';
-import VisueltProLight from '../assets/fonts/VisueltPro-Light.ttf';
-import VisueltProMedium from '../assets/fonts/VisueltPro-Medium.ttf';
-import VisueltProBold from '../assets/fonts/VisueltPro-Bold.ttf';
-//* Gellix
+//* Gellix Font Import
 import GelllixRegular2 from '../assets/fonts/Gellix-Regular.woff2';
 import GelllixRegular from '../assets/fonts/Gellix-Regular.woff';
 import GelllixMedium2 from '../assets/fonts/Gellix-Medium.woff2';
@@ -12,6 +8,8 @@ import GelllixLight2 from '../assets/fonts/Gellix-Light.woff2';
 import GelllixLight from '../assets/fonts/Gellix-Light.woff';
 import GelllixBold2 from '../assets/fonts/Gellix-Bold.woff2';
 import GelllixBold from '../assets/fonts/Gellix-Bold.woff';
+import GelllixSemiBold2 from '../assets/fonts/Gellix-SemiBold.woff2';
+import GelllixSemiBold from '../assets/fonts/Gellix-SemiBold.woff';
 
 const Typography = createGlobalStyle`
       @font-face {
@@ -35,37 +33,36 @@ const Typography = createGlobalStyle`
           url(${GelllixBold}) format('woff')
       }
       @font-face {
-        font-family: VisueltProRegular;
-        src: url(${VisueltProRegular});
-       }
-      @font-face {
-        font-family: VisueltProLight;
-        src: url(${VisueltProLight});
-       }
-      @font-face {
-        font-family: VisueltProMedium;
-        src: url(${VisueltProMedium});
-       }
-      @font-face {
-        font-family: VisueltProBold;
-        src: url(${VisueltProBold});
-       }
+        font-family: Gellix-SemiBold;
+        src: url(${GelllixSemiBold2}) format('woff2'), 
+          url(${GelllixSemiBold}) format('woff')
+      }
+     
 
-
-    h1,h2,h3,h4,h5,h6, button {
+    html {
+        font-size: 15px;
+    }
+    @media only screen and (min-width: 1024px) {
+      html {
+        font-size: 20px;
+      }
+    }
+    body {
+      line-height: 1.2;
+    }
+    h1,h2,h3,h4,h5,h6{
       font-family: Gellix-Medium, -apple-system,BlinkMacSystemFont,"Helvetica Neue",Helvetica,Arial,sans-serif;
-;
       margin: 0;
       letter-spacing: -.25px;
       font-feature-settings: "kern" 1;
       font-kerning: normal;
+      font-size: var(--headingSmall);
     }
-    button, span, div {
-
-      font-family: Gellix-Medium;
+    span,button {
+      font-family: Gellix-Medium, -apple-system,BlinkMacSystemFont,"Helvetica Neue",Helvetica,Arial,sans-serif;;
     }
     p , a, li {
-      font-family: Gellix-Light;
+      font-family: Gellix-Light, -apple-system,BlinkMacSystemFont,"Helvetica Neue",Helvetica,Arial,sans-serif;;
       font-feature-settings: "kern" 1;
       font-kerning: normal;
     }
