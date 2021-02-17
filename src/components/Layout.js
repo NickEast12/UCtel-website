@@ -10,12 +10,12 @@ const MainBodyStyles = styled.div`
   width: 100%;
 `;
 
-const Layout = ({ children }) => (
+const Layout = ({ children, alt }) => (
   <>
     <GlobalStyles />
     <Typography />
     <MainBodyStyles>
-      <Nav />
+      <Nav alt={alt} />
       {children}
       <Footer />
     </MainBodyStyles>

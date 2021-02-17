@@ -8,6 +8,8 @@ const GlobalStyles = createGlobalStyle`
         --darkBlue: #1A2536;
         --background: #0A2533;
         --white: #ffffff;
+        --black: #000000;
+        --ghostWhite: #F4F7FA;
         --headingExtraLarge: 5.653rem;
         --headingLarge:  3.998rem;
         --headingMedium: 2.827rem;
@@ -21,7 +23,10 @@ const GlobalStyles = createGlobalStyle`
         padding: 0;
         
     }
-   
+   a, a:visited {
+        color: inherit;
+        text-decoration: none;
+   }
     body {
         width: 100%;
         height: 100%;
@@ -57,12 +62,12 @@ const GlobalStyles = createGlobalStyle`
     .btn {
         width: 100%;
         margin: 0.5rem auto;
-        padding: 0.85rem 0.85rem 0.95rem 0.85rem;
+        padding: 0.75rem ;
         border-radius: 50px;
         border: none;
         span {
             text-align: center ;
-            font-size: var(--text);
+            font-size: 1rem;
             
         }
     }
@@ -79,8 +84,50 @@ const GlobalStyles = createGlobalStyle`
             color: var(--lightBlue);
           }
     }
+    .btn--slate {
+        background-color: var(--slate);
+        border: solid 2px var(--slate);
+        span {
+            color: var(--white);
+          }
+    }
+    .fom {
+        margin-top: 1rem;
+        svg {
+            width: 10px;
+            margin-right: 5px;
+        }
+        span {
+            font-size: .9rem;
+            border-bottom: solid 1px #000;
+        }
+    }
+    .subtitle {
+        color: var(--lightBlue);
+        text-transform: uppercase;
+        font-size: 1rem;
+    }
+    .img-decoration {
+        position: relative;
+        z-index: 2;
+        &::after {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        width: 100%;
+        height: 100%;
+        background-color: var(--lightBlue);
+        content: '';
+        z-index: -1;
+      }
+    }
+    .alt {
+        #menuDiv {
+            background-color: var(--slate);
+        }
+  }
     a[aria-current="page"] {
-        color: var(--orange);
+        color: var(--blue);
     }
     .gatsby-image-wrapper img[src*=base64\\,] {
     image-rendering: -moz-crisp-edges;

@@ -15,7 +15,7 @@ const MainNavWrapper = styled.nav`
   z-index: 100;
   transition: all 0.3s ease;
 `;
-const Nav = () => {
+const Nav = ({ alt }) => {
   const [navbar, setNavbar] = useState(false);
   const changeNav = () => {
     if (window.scrollY >= 50) {
@@ -28,7 +28,7 @@ const Nav = () => {
   window.addEventListener('scroll', changeNav);
   return (
     <MainNavWrapper className={navbar ? 'navbar active' : 'navbar'}>
-      <MobileNav className="mobileNav" />
+      <MobileNav className="mobileNav" alt={alt} />
       <DesktopNav />
     </MainNavWrapper>
   );
@@ -44,6 +44,7 @@ const MobileNavStyles = styled.nav`
     padding: 1.5rem 0;
     display: flex;
     justify-content: space-between;
+    transition: all 0.3s ease;
     &__img {
       img {
         width: 130px;
@@ -126,7 +127,7 @@ const MobileMenuStyles = styled.div`
           max-height: ${({ active }) => (active ? '500px' : '0')};
           /* visibility: ${({ active }) => (active ? 'shown' : 'hidden')}; */
           /* height: ${({ active }) => (active ? '100%' : '0')}; */
-          transition: all 0.3s ease;
+          transition: all 0.85s ease;
           li {
             padding: 0.85rem 0;
 
@@ -170,7 +171,7 @@ const MobileMenuStyles = styled.div`
     }
   }
 `;
-const MobileNav = () => {
+const MobileNav = ({ alt }) => {
   const [open, setOpen] = useState(false);
   const [active, setActive] = useState(false);
   useEffect(() => {
@@ -185,9 +186,11 @@ const MobileNav = () => {
   return (
     <>
       <MobileNavStyles open={open}>
-        <div className="m-nav">
+        <div className={alt ? 'm-nav alt' : 'm-nav'}>
           <div className="m-nav__img">
-            <img src={UCtelLogo} alt="UCtel Logo" />
+            <Link to="/">
+              <img src={UCtelLogo} alt="UCtel Logo" />
+            </Link>
           </div>
           <Hamburger
             onClick={() => setOpen(!open)}
@@ -196,9 +199,9 @@ const MobileNav = () => {
             tabIndex={0}
             open={open}
           >
-            <div />
-            <div />
-            <div />
+            <div id="menuDiv" />
+            <div id="menuDiv" />
+            <div id="menuDiv" />
           </Hamburger>
         </div>
       </MobileNavStyles>

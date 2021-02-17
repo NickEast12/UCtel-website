@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
 import { window, document, exists } from 'browser-monads';
-import ArrowIcon from '../../svgs/arrow.svg';
 import AnimateHeaderBackground from '../functional/NetAnimatedBackground';
 
 const LandingPageStyles = styled.div`
@@ -36,7 +35,11 @@ const LandingPageStyles = styled.div`
         margin: 0 auto;
       }
       .btn__wrapper {
-        margin-top: 1.5rem;
+        width: 80%;
+        margin: 1.5rem auto 0 auto;
+        button span {
+          font-size: 1rem;
+        }
       }
     }
     @media only screen and (min-width: 375px) {

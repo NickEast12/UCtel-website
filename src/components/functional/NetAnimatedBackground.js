@@ -24,6 +24,7 @@ const AnimateHeaderBackground = ({
   points,
   distance,
   spacing,
+  background,
 }) => {
   vantaRef = React.createRef(); // eslint-disable-line no-param-reassign
 

@@ -40,7 +40,8 @@ const Typography = createGlobalStyle`
      
 
     html {
-        font-size: 15px;
+      font-size: 16px;
+
     }
     @media only screen and (min-width: 1024px) {
       html {
@@ -56,13 +57,21 @@ const Typography = createGlobalStyle`
       letter-spacing: -.25px;
       font-feature-settings: "kern" 1;
       font-kerning: normal;
-      font-size: var(--headingSmall);
+      
+    }
+    h3 {
+      font-size: 1.85rem;
+      margin: 0.5rem 0;
+    }
+    p {
+      font-size: 0.95rem;
+      color: var(--slate);
     }
     span,button {
       font-family: Gellix-Medium, -apple-system,BlinkMacSystemFont,"Helvetica Neue",Helvetica,Arial,sans-serif;;
     }
     p , a, li {
-      font-family: Gellix-Light, -apple-system,BlinkMacSystemFont,"Helvetica Neue",Helvetica,Arial,sans-serif;;
+      font-family: Gellix-Regular, -apple-system,BlinkMacSystemFont,"Helvetica Neue",Helvetica,Arial,sans-serif;;
       font-feature-settings: "kern" 1;
       font-kerning: normal;
     }
