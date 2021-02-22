@@ -5,7 +5,7 @@ import SingleBlog from './SingleBlog';
 const PageBlogsStyles = styled.div`
   width: 100%;
   .pb {
-    width: 90%;
+    width: 85%;
     margin: 0 auto;
     padding: 1rem 0 2rem 0;
     h3 {

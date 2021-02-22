@@ -66,11 +66,12 @@ const Typography = createGlobalStyle`
     p {
       font-size: 0.95rem;
       color: var(--slate);
+      line-height: 1.5em;
     }
     span,button {
       font-family: Gellix-Medium, -apple-system,BlinkMacSystemFont,"Helvetica Neue",Helvetica,Arial,sans-serif;;
     }
-    p , a, li {
+    p , a, li, input {
       font-family: Gellix-Regular, -apple-system,BlinkMacSystemFont,"Helvetica Neue",Helvetica,Arial,sans-serif;;
       font-feature-settings: "kern" 1;
       font-kerning: normal;

@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
 import { window, document, exists } from 'browser-monads';
-import WhiteHeaderBackground from '../functional/WhiteAnimatedBackground';
+import AnimateHeaderBackground from '../functional/NetAnimatedBackground';
 
 const LandingPageStyles = styled.header`
   width: 100%;
-  height: 60vh;
+  height: 24rem;
   position: relative;
   .landing__wrapper {
     z-index: 2;
@@ -18,11 +18,11 @@ const LandingPageStyles = styled.header`
       width: 100%;
       margin: 0 auto;
       text-align: center;
-      color: var(--slate);
+      color: var(--white);
       h1 {
-        color: var(--slate);
+        color: var(--white);
         margin-bottom: 0.5rem;
-        font-size: 2.5rem;
+        font-size: 0.5rem;
         .title {
           position: relative;
           display: block;
@@ -30,14 +30,14 @@ const LandingPageStyles = styled.header`
         }
       }
       p {
-        color: var(--slate);
+        color: var(--white);
         padding: 0.5rem 0;
         width: 90%;
         margin: 0 auto;
       }
       .btn__wrapper {
-        width: 80%;
-        margin: 1.5rem auto 0 auto;
+        width: 70%;
+        margin: 1rem auto 0 auto;
         button span {
           font-size: 1rem;
         }
@@ -87,7 +87,7 @@ const LandingPageStyles = styled.header`
     }
   }
 `;
-const WhiteLandingPage = ({ darkTheme, title, description }) => {
+const BlackHeader = ({ title, description }) => {
   const [isDesktop, setDesktop, setPoints] = useState(window.innerWidth > 1200);
   const updateScreenSize = () => {
     setDesktop(window.innerWidth > 1280);
@@ -99,19 +99,24 @@ const WhiteLandingPage = ({ darkTheme, title, description }) => {
   });
   return (
     <LandingPageStyles>
-      <div className={`landing__wrapper ${darkTheme ? 'darkTheme' : ''}`}>
+      <div className="landing__wrapper">
         <div className="landing__wrapper__content">
           <h1>{title}</h1>
           <p>{description}</p>
+          <div className="btn__wrapper">
+            <button type="button" className="btn btn--main">
+              <span>Get started</span>
+            </button>
+          </div>
         </div>
       </div>
       {isDesktop ? (
-        <WhiteHeaderBackground points="20" distance="20" spacing="20" />
+        <AnimateHeaderBackground points="20" distance="20" spacing="20" />
       ) : (
-        <WhiteHeaderBackground />
+        <AnimateHeaderBackground />
       )}
     </LandingPageStyles>
   );
 };
 
-export default WhiteLandingPage;
+export default BlackHeader;

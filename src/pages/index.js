@@ -33,7 +33,7 @@ export default index;
 
 export const query = graphql`
   query BlogQuery {
-    AllBlogs: allSanityPost(limit: 2) {
+    AllBlogs: allSanityPost(limit: 3) {
       nodes {
         title
         slug {

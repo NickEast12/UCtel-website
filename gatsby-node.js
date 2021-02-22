@@ -42,6 +42,9 @@ export async function turnBlogsIntoPages({ graphql, actions }) {
           slug {
             current
           }
+          categories {
+            title
+          }
         }
       }
     }
@@ -55,6 +58,35 @@ export async function turnBlogsIntoPages({ graphql, actions }) {
       context: {
         title: blog.title,
         slug: blog.slug.current,
+        category: blog.categories[0].title,
+      },
+    });
+  });
+}
+
+export async function turnCaseStuidiesIntoPage({ graphql, actions }) {
+  const template = path.resolve('./src/templates/CaseStudy.js');
+  const { data } = await graphql(`
+    query CaseStudyQuery {
+      casestudies: allSanityCasestudies {
+        nodes {
+          title
+          slug {
+            current
+          }
+        }
+      }
+    }
+  `);
+  const Casestudies = data.casestudies.nodes;
+  Casestudies.forEach((casestudy) => {
+    console.log(`creating a page for ${casestudy.title}`);
+    actions.createPage({
+      path: `/case-studies/${casestudy.slug.current}`,
+      component: template,
+      context: {
+        title: casestudy.title,
+        slug: casestudy.slug.current,
       },
     });
   });
@@ -64,4 +96,5 @@ export async function createPages(params) {
   //* Create page functions will go here
   await Promise.all([turnBlogCategoriesIntoPage(params)]);
   await Promise.all([turnBlogsIntoPages(params)]);
+  await Promise.all([turnCaseStuidiesIntoPage(params)]);
 }

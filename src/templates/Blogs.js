@@ -5,8 +5,20 @@ import styled from 'styled-components';
 import PortableText from '@sanity/block-content-to-react';
 import urlBuilder from '@sanity/image-url';
 import getYouTubeId from 'get-youtube-id';
+import { window } from 'browser-monads';
 import YouTube from 'react-youtube';
+import {
+  TwitterShareButton,
+  EmailShareButton,
+  LinkedinShareButton,
+  FacebookShareButton,
+} from 'react-share';
 import Layout from '../components/Layout';
+import RelatedBlogs from '../components/PageComponents/RelatedBlogs';
+import EmailIcon from '../svgs/email.svg';
+import TwitterIcon from '../svgs/twitter.svg';
+import FacebookIcon from '../svgs/facebook.svg';
+import LinkedInIcon from '../svgs/linkedin.svg';
 
 const BlogPageStyles = styled.main`
   width: 100%;
@@ -64,6 +76,39 @@ const BlogPageStyles = styled.main`
         }
         span {
           font-size: 1rem;
+        }
+      }
+    }
+    &__share {
+      padding: 0.5rem 0;
+      display: flex;
+
+      button {
+        .share--box {
+          width: 40px;
+          margin-right: 15px;
+          height: 40px;
+          border-radius: 5px;
+          position: relative;
+          svg {
+            top: 10px;
+            left: 10px;
+            width: 20px;
+            position: absolute;
+            fill: var(--white);
+          }
+        }
+        .email {
+          background-color: var(--orange);
+        }
+        .twitter {
+          background-color: #1da1f2;
+        }
+        .linkedin {
+          background-color: #0a66c2;
+        }
+        .facebook {
+          background-color: #1778f2;
         }
       }
     }
@@ -125,7 +170,7 @@ const urlFor = (source) =>
 const Blogs = ({ pageContext, data }) => {
   const content = data.Blog;
   const { categories, authors } = content;
-  console.log(content);
+  const relatedBlogsData = data.Category;
   const serializers = {
     types: {
       mainImage: (props) => (
@@ -173,10 +218,47 @@ const Blogs = ({ pageContext, data }) => {
               </>
             ))}
           </div>
+          <div className="bp--content__share">
+            <EmailShareButton
+              url={window.location.href}
+              subject={content.title}
+              body="Check out this amazing blog by the UCtel team"
+            >
+              <div className="share--box email">
+                <EmailIcon />
+              </div>
+            </EmailShareButton>
+            <TwitterShareButton
+              url={window.location.href}
+              title={content.title}
+            >
+              <div className="share--box twitter">
+                <TwitterIcon />
+              </div>
+            </TwitterShareButton>
+            <LinkedinShareButton
+              url={window.location.href}
+              summary={content.excerpt}
+              source="UCtel Blog"
+            >
+              <div className="share--box linkedin">
+                <LinkedInIcon />
+              </div>
+            </LinkedinShareButton>
+            <FacebookShareButton
+              url={window.location.href}
+              quote={content.title}
+            >
+              <div className="share--box facebook">
+                <FacebookIcon />
+              </div>
+            </FacebookShareButton>
+          </div>
           <div className="bp--content__body">
             <PortableText blocks={content._rawBody} serializers={serializers} />
           </div>
         </div>
+        <RelatedBlogs relatedBlogsData={relatedBlogsData} />
       </BlogPageStyles>
     </Layout>
   );
@@ -185,7 +267,7 @@ const Blogs = ({ pageContext, data }) => {
 export default Blogs;
 
 export const query = graphql`
-  query SingleBlogQuery($slug: String!) {
+  query SingleBlogQuery($slug: String!, $category: String!) {
     Blog: sanityPost(slug: { current: { eq: $slug } }) {
       title
       slug {
@@ -217,6 +299,47 @@ export const query = graphql`
         asset {
           fluid(maxWidth: 600) {
             ...GatsbySanityImageFluid
+          }
+        }
+      }
+    }
+    Category: allSanityPost(
+      filter: {
+        categories: { elemMatch: { title: { eq: $category } } }
+        slug: { current: { ne: $slug } }
+      }
+      limit: 3
+    ) {
+      nodes {
+        title
+        slug {
+          current
+        }
+        publishedAt(formatString: "MMM DD YYYY")
+        id
+        excerpt
+        categories {
+          title
+        }
+        authors {
+          author {
+            name
+            id
+            image {
+              alt
+              asset {
+                fluid(maxWidth: 50) {
+                  ...GatsbySanityImageFluid
+                }
+              }
+            }
+          }
+        }
+        mainImage {
+          asset {
+            fluid(maxWidth: 410) {
+              ...GatsbySanityImageFluid
+            }
           }
         }
       }

@@ -67,7 +67,7 @@ const SingleBlogStyles = styled.article`
 const SingleBlog = ({ blog }) => {
   const cat = blog.categories;
   const { authors } = blog;
-  console.log(authors);
+  console.log(cat);
   return (
     <SingleBlogStyles>
       <Link to={`/blogs/${blog.slug.current}`}>
@@ -83,22 +83,20 @@ const SingleBlog = ({ blog }) => {
           </div>
           <h4>{blog.title}</h4>
           <p>{blog.excerpt}</p>
-          <div className="author">
-            {authors.map((aut) => (
-              <>
-                <div className="author--img">
-                  <Img
-                    fluid={aut.author.image.asset.fluid}
-                    alt={aut.author.image.asset.alt}
-                  />
-                </div>
-                <div className="author--info">
-                  <p>{aut.author.name}</p>
-                  <span>{blog.publishedAt}</span>
-                </div>
-              </>
-            ))}
-          </div>
+          {authors.map((aut) => (
+            <div className="author" key={blog.title}>
+              <div className="author--img">
+                <Img
+                  fluid={aut.author.image.asset.fluid}
+                  alt={aut.author.image.asset.alt}
+                />
+              </div>
+              <div className="author--info">
+                <p>{aut.author.name}</p>
+                <span>{blog.publishedAt}</span>
+              </div>
+            </div>
+          ))}
         </div>
       </Link>
     </SingleBlogStyles>

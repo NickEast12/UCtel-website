@@ -38,12 +38,11 @@ const GlobalStyles = createGlobalStyle`
         font-size: 0;
     }
     .navbar {
-        background-color:;
         transition: all 0.3s ease;
     }
     .active {
         
-        .Nav__MobileNavStyles-hUpkON  {
+        nav {
             background-color: white!important;
             transition: all 0.3s ease;
             box-shadow: 0 2px 2px -2px rgba(0,0,0,.2);

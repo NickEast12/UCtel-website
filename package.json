@@ -57,6 +57,8 @@
     "react-helmet": "^6.1.0",
     "react-instagram-embed": "^2.0.0",
     "react-particles-js": "^3.4.1",
+    "react-router-dom": "^5.2.0",
+    "react-share": "^4.3.1",
     "react-tsparticles": "^1.18.11",
     "react-youtube": "^7.13.1",
     "styled-components": "^5.2.0",
