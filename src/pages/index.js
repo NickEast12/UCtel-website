@@ -9,10 +9,10 @@ import PageBlogs from '../components/PageComponents/PageBlogs';
 import SolutionsIntro from '../components/PageComponents/SolutionsIntro';
 import SuccessStoriesIntro from '../components/PageComponents/SuccessStoriesIntro';
 
-const index = ({ data }) => {
+const index = ({ data, pageContext }) => {
   const Blogs = data.AllBlogs.nodes;
   return (
-    <Layout>
+    <Layout pageContext={pageContext}>
       <LandingPage
         title="Mobile boosting | Private 5G | Unified Communications"
         description="Market leading technology keeping you connected."

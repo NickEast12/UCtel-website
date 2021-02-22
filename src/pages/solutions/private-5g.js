@@ -6,10 +6,10 @@ import SolutionsIntro from '../../components/PageComponents/SolutionsComponents/
 import SolutionsMid from '../../components/PageComponents/SolutionsComponents/solutionsMid';
 import SuccessStoriesIntro from '../../components/PageComponents/SuccessStoriesIntro';
 
-const PrivateFiveG = () => {
+const PrivateFiveG = ({ pageContext }) => {
   const i = true;
   return (
-    <Layout>
+    <Layout pageContext={pageContext}>
       <BlackHeader title="Private 5G" description="Fill this in" />
       <main>
         <SolutionsIntro />

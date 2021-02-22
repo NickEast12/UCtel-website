@@ -8,8 +8,8 @@ import CommunicationCTA from '../../components/PageComponents/SolutionsComponent
 import Cisco from '../../components/PageComponents/SolutionsComponents/CiscoSection';
 import CommunicationMid from '../../components/PageComponents/SolutionsComponents/CommunicationMid';
 
-const UnifiedCommunication = () => (
-  <Layout>
+const UnifiedCommunication = ({ pageContext }) => (
+  <Layout pageContext={pageContext}>
     <BlackHeader
       title="Unified communications and contact centre"
       description="Fill this in"

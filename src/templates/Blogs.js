@@ -186,7 +186,7 @@ const Blogs = ({ pageContext, data }) => {
     },
   };
   return (
-    <Layout>
+    <Layout pageContext={pageContext}>
       <BlogPageStyles>
         <div className="bp--header">
           <Img

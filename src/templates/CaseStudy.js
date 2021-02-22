@@ -7,12 +7,12 @@ import Layout from '../components/Layout';
 import WhiteHeaderBackground from '../components/functional/WhiteAnimatedBackground';
 import PageBlogs from '../components/PageComponents/PageBlogs';
 
-const CaseStudy = ({ data }) => {
+const CaseStudy = ({ data, pageContext }) => {
   const Case = data.sanityCasestudies;
   const Blogs = data.AllBlogs.nodes;
   console.log(Blogs);
   return (
-    <Layout alt>
+    <Layout alt pageContext={pageContext}>
       <CaseStudyHeader data={Case} />
       <main>
         <CaseStudyBody data={Case} />

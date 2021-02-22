@@ -4,12 +4,14 @@ import Image from './functional/Image';
 import TwitterIcon from '../svgs/twitter.svg';
 import InstagramIcon from '../svgs/instagram.svg';
 import LinkedInIcon from '../svgs/linkedin.svg';
+import Bread from './functional/Breadcrums';
 
 const FooterStyles = styled.footer`
   width: 100%;
 `;
-const Footer = () => (
+const Footer = ({ pageContext }) => (
   <FooterStyles>
+    <Breadcrums pageContext={pageContext} />
     <FooterCTA />
     <MainFooter />
   </FooterStyles>
@@ -17,16 +19,29 @@ const Footer = () => (
 
 export default Footer;
 
+const Breadcrums = ({ pageContext }) => (
+  <div>
+    <Bread breaddata={pageContext.breadcrumb} />
+  </div>
+);
+
 const FooterCTAStyles = styled.div`
   width: 100%;
-  background-color: var(--ghostWhite);
+  background-color: var(--darkBlue);
   .footerCTA {
-    padding: 2rem 0;
+    padding: 3rem 0 2rem 0;
+    color: var(--white);
     width: 90%;
     margin: 0 auto;
     text-align: center;
+    width: 80%;
+    margin: 0 auto;
     h4 {
-      font-size: 1.25rem;
+      font-size: 1.75rem;
+    }
+    p {
+      margin: 1rem 0;
+      color: var(--white);
     }
     button {
       margin: 1rem 0;
@@ -42,6 +57,7 @@ const FooterCTA = () => (
   <FooterCTAStyles>
     <div className="footerCTA">
       <h4>A catchy call to action will go here!</h4>
+      <p>What do you want the user to do?</p>
       <button type="button" className="btn btn--main">
         <span>Get Started</span>
       </button>

@@ -5,10 +5,10 @@ import Img from 'gatsby-image';
 import Layout from '../components/Layout';
 import WhiteHeader from '../components/PageComponents/WhiteHeader';
 
-const CaseStudies = ({ data }) => {
+const CaseStudies = ({ data, pageContext }) => {
   const Casestudiesdata = data.allCaseStudies.nodes;
   return (
-    <Layout alt>
+    <Layout alt pageContext={pageContext}>
       <WhiteHeader
         title="Case studies"
         description="Learn how UCtel drives growth and results for any business through these in-depth case studies and customer stories."

@@ -7,10 +7,10 @@ import WhiteLandingPage from '../components/PageComponents/WhiteHeader';
 import MissionIcon from '../svgs/mission.svg';
 import ArrowIcon from '../svgs/right-arrow.svg';
 
-const Contact = () => {
-  console.log('contact');
+const Contact = ({ pageContext }) => {
+  const i = true;
   return (
-    <Layout alt>
+    <Layout alt pageContext={pageContext}>
       <WhiteLandingPage
         title="Contact"
         description="We'd love to hear from you, feel free to drop us a line."

@@ -7,8 +7,8 @@ import FindOut from '../../components/PageComponents/SolutionsComponents/FindOut
 import HowItWorks from '../../components/PageComponents/SolutionsComponents/HowItWorks';
 import SuccessStoriesIntro from '../../components/PageComponents/SuccessStoriesIntro';
 
-const InBuilding = () => (
-  <Layout>
+const InBuilding = ({ pageContext }) => (
+  <Layout pageContext={pageContext}>
     <BlackHeader
       title="In-building mobile connectivity"
       description="Fill this in"
