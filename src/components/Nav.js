@@ -114,7 +114,7 @@ const MobileMenuStyles = styled.div`
           display: flex;
           justify-content: space-between;
           margin: 0;
-          background-color: red;
+          height: ${({ active }) => (active ? '100%' : '25px')};
           svg {
             fill: var(--slate);
             width: 17px;
@@ -125,10 +125,10 @@ const MobileMenuStyles = styled.div`
         }
         .dropdown {
           overflow-y: scroll;
-          height: 0;
+          height: 100%;
           max-height: ${({ active }) => (active ? '500px' : '0')};
           /* visibility: ${({ active }) => (active ? 'shown' : 'hidden')}; */
-          /* height: ${({ active }) => (active ? '100%' : '0')}; */
+
           transition: all 0.5s ease;
           li {
             padding: 0.85rem 0;
