@@ -115,7 +115,7 @@ const MobileMenuStyles = styled.div`
           justify-content: space-between;
           margin: 0;
           height: ${({ active }) => (active ? '25px' : '25px')};
-          svg {
+          -webkit-tap-highlight-color: svg {
             fill: var(--slate);
             width: 17px;
             transition: all 0.3s ease;
@@ -212,7 +212,7 @@ const MobileNav = ({ alt }) => {
           <ul>
             <li>
               <div
-                className="submenu"
+                className="submenu noSelect"
                 onClick={() => setActive(!active)}
                 onKeyDown={() => setActive(!active)}
                 role="button"
