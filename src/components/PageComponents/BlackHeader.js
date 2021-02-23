@@ -43,14 +43,18 @@ const LandingPageStyles = styled.header`
         }
       }
     }
-    @media only screen and (min-width: 375px) {
+  }
+  @media only screen and (min-width: 375px) {
+    height: 28rem;
+    .landing__wrapper {
+      padding-top: 9rem;
     }
-    @media only screen and (min-width: 414px) {
-    }
-    @media only screen and (min-width: 768px) {
-    }
-    @media only screen and (min-width: 1024px) {
-    }
+  }
+  @media only screen and (min-width: 414px) {
+  }
+  @media only screen and (min-width: 768px) {
+  }
+  @media only screen and (min-width: 1024px) {
   }
 `;
 const BlackHeader = ({ title, description }) => {
