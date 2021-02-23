@@ -27,7 +27,6 @@ const SolutionsIntroStyles = styled.div`
       li {
         padding: 0.15rem 0;
         position: relative;
-        display: flex;
         align-items: center;
         font-family: Gellix-Medium;
         span {
@@ -39,10 +38,14 @@ const SolutionsIntroStyles = styled.div`
         }
       }
     }
+    @media only screen and (min-width: 375px) {
+      width: 85%;
+    }
   }
   .si--right {
     width: 80%;
     margin: 0 auto;
+    padding-bottom: 2rem;
     &__img {
     }
   }

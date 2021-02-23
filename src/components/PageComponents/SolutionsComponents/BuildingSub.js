@@ -7,7 +7,7 @@ const BuildingSubStyles = styled.div`
   .bulsub {
     width: 90%;
     margin: 0 auto;
-    padding: 3rem 0;
+    padding: 3rem 0 5rem 0;
     &--left {
       h3 {
         font-size: 1.85rem;
@@ -33,6 +33,9 @@ const BuildingSubStyles = styled.div`
     &--right {
       width: 90%;
       margin: 2rem auto 0 auto;
+    }
+    @media only screen and (min-width: 375px) {
+      width: 85%;
     }
   }
 `;

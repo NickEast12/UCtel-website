@@ -8,7 +8,7 @@ const HowItWorksStyles = styled.div`
   .hiw {
     width: 90%;
     margin: 0 auto;
-    padding: 2rem 0;
+    padding: 3rem 0;
     h3 {
       font-size: 1.85rem;
       margin: 0.5rem 0 1rem 0;
@@ -36,6 +36,9 @@ const HowItWorksStyles = styled.div`
         p {
         }
       }
+    }
+    @media only screen and (min-width: 375px) {
+      width: 85%;
     }
   }
 `;

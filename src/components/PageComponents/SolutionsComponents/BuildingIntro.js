@@ -18,10 +18,10 @@ const SolutionsIntroStyles = styled.div`
     }
     ul {
       list-style: none;
-      display: flex;
+      /* display: flex;
       flex-wrap: wrap;
       grid-template-columns: 1fr 1fr;
-      grid-gap: 0.5rem;
+      grid-gap: 0.5rem; */
       margin: 1rem 0;
       li {
         padding: 0.15rem 0;
@@ -38,10 +38,14 @@ const SolutionsIntroStyles = styled.div`
         }
       }
     }
+    @media only screen and (min-width: 375px) {
+      width: 85%;
+    }
   }
   .si--right {
     width: 80%;
     margin: 0 auto;
+    padding-bottom: 4rem;
     &__img {
     }
   }

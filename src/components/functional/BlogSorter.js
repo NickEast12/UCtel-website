@@ -24,12 +24,16 @@ const BlogSorterStyles = styled.div`
         background-color: var(--white);
         margin: 0.25rem 0.5rem 0.25rem 0;
         color: var(--slate);
-        padding: 0.35rem 0.5rem;
+        padding: 0.5rem 0.5rem;
         flex-grow: 1;
         text-align: center;
         border-radius: 4.5px;
       }
     }
+  }
+  @media only screen and (min-width: 375px) {
+    width: 90%;
+    margin: 0 auto;
   }
 `;
 const BlogSorter = () => {

@@ -160,6 +160,21 @@ const BlogPageStyles = styled.main`
       }
     }
   }
+  @media only screen and (min-width: 414px) {
+    .bp--header {
+      .gatsby-image-wrapper {
+        height: 20rem;
+      }
+    }
+    .bp--content {
+      width: 85%;
+    }
+  }
+  @media only screen and (min-width: 701px) {
+    .bp--content {
+      width: 70%;
+    }
+  }
 `;
 
 const urlFor = (source) =>

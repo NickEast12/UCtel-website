@@ -5,7 +5,7 @@ import MissionIcon from '../../../svgs/mission.svg';
 const NokiaDACStyles = styled.div`
   width: 100%;
   background-color: var(--ghostWhite);
-  padding: 3rem 0;
+  padding: 4rem 0;
   .nokia {
     color: var(--slate);
     width: 90%;
@@ -33,6 +33,9 @@ const NokiaDACStyles = styled.div`
           font-family: Gellix-SemiBold;
         }
       }
+    }
+    @media only screen and (min-width: 375px) {
+      width: 85%;
     }
   }
   .fea {

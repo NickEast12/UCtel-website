@@ -7,7 +7,7 @@ const SolutionsMidStyles = styled.div`
   .sm {
     width: 90%;
     margin: 0 auto;
-    padding: 3rem 0;
+    padding: 3rem 0 4rem 0;
     &--right {
       h3 {
         font-size: 1.85rem;
@@ -24,6 +24,9 @@ const SolutionsMidStyles = styled.div`
         width: 90%;
         margin: 2rem auto;
       }
+    }
+    @media only screen and (min-width: 375px) {
+      width: 85%;
     }
   }
 `;

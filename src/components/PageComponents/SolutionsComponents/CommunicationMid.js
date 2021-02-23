@@ -24,6 +24,9 @@ const CiscoStyles = styled.div`
         margin: 2rem auto 0 auto;
       }
     }
+    @media only screen and (min-width: 375px) {
+      width: 85%;
+    }
   }
 `;
 const CommunicationMid = () => (

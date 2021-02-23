@@ -4,9 +4,9 @@ import MissionIcon from '../../../svgs/mission.svg';
 
 const FindOutStyles = styled.div`
   width: 100%;
+  background-color: var(--lightBlue);
   .findCTA {
-    background-color: var(--lightBlue);
-    padding: 3rem 1.85rem;
+    padding: 4rem 1.85rem;
     color: var(--white);
     text-align: center;
     svg {
@@ -15,11 +15,17 @@ const FindOutStyles = styled.div`
     }
     h4 {
       margin: 1rem 0;
+      color: var(--white);
       font-size: 1.5rem;
     }
     p {
       margin-bottom: 1rem;
       color: var(--black);
+    }
+
+    @media only screen and (min-width: 375px) {
+      width: 85%;
+      margin: 0 auto;
     }
   }
 `;

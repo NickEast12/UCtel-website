@@ -4,13 +4,14 @@ import styled from 'styled-components';
 const FindOutStyles = styled.div`
   width: 100%;
   margin: 4rem 0 0 0;
+  background-color: var(--lightBlue);
   .findCTA {
-    background-color: var(--lightBlue);
     padding: 2rem 1.85rem;
-    color: var(--white);
     text-align: center;
+    margin: 0 auto;
 
     h5 {
+      color: var(--white);
       margin: 1rem 0;
       font-size: 1.15rem;
       line-height: 1.85rem;
@@ -18,6 +19,9 @@ const FindOutStyles = styled.div`
     p {
       margin-bottom: 1rem;
       color: var(--black);
+    }
+    @media only screen and (min-width: 375px) {
+      width: 85%;
     }
   }
 `;

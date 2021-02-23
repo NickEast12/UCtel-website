@@ -12,9 +12,19 @@ const RelatedBlogsStyles = styled.div`
     margin: 0 auto;
     padding: 1rem 0;
     > h4 {
-      font-size: 1.5rem;
+      font-size: 1.75rem;
       text-align: center;
       padding-bottom: 2rem;
+    }
+    @media only screen and (min-width: 414px) {
+      width: 85%;
+    }
+    @media only screen and (min-width: 701px) {
+      width: 80%;
+      &__grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+      }
     }
   }
 `;

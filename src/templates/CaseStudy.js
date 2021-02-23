@@ -35,22 +35,26 @@ const CaseStudyHeaderStyles = styled.header`
     margin: 0 auto;
     padding-top: 3rem;
     &__right {
-      width: 250px;
+      width: 90%;
       margin: 0 auto;
       margin-bottom: 3rem;
     }
     &__left {
       width: 90%;
+
       margin: 0 auto;
       padding: 2rem 0;
+      text-align: center;
       &__img {
         width: 185px;
         padding: 1rem 0;
+        margin: 0 auto;
       }
       h1 {
         font-size: 1.75rem;
         font-family: Gellix-SemiBold;
         color: var(--slate);
+        margin: 1rem 0;
       }
     }
   }
@@ -90,7 +94,7 @@ const CaseStudyBodyStyles = styled.main`
   width: 100%;
   .csbody {
     width: 90%;
-    margin: 0 auto;
+    margin: 5rem auto 0 auto;
     &__card {
       border: solid 2px #d8d8d8;
       padding: 1.5rem;
@@ -156,6 +160,9 @@ const CaseStudyBodyStyles = styled.main`
         }
       }
     }
+  }
+  @media only screen and (min-width: 414px) {
+    padding-top: 0rem;
   }
 `;
 const CaseStudyBody = ({ data }) => {
@@ -244,13 +251,14 @@ export const query = graphql`
       challenge
       solution
     }
-    AllBlogs: allSanityPost(limit: 3) {
+    AllBlogs: allSanityPost(limit: 2) {
       nodes {
         title
         slug {
           current
         }
         publishedAt(formatString: "MMM DD YYYY")
+        readingTimeInMinutes
         id
         excerpt
         categories {

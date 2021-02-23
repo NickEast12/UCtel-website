@@ -88,6 +88,12 @@ const SingleCaseStudyStyles = styled.div`
         }
       }
     }
+    @media only screen and (min-width: 375px) {
+      &--card {
+        width: 90%;
+        margin: 2rem auto;
+      }
+    }
   }
 `;
 const SingleCaseStudy = ({ data, left }) => {

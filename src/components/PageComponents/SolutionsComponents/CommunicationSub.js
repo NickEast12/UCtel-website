@@ -34,6 +34,9 @@ const BuildingSubStyles = styled.div`
       width: 90%;
       margin: 2rem auto 0 auto;
     }
+    @media only screen and (min-width: 375px) {
+      width: 85%;
+    }
   }
 `;
 const BuildingSub = () => (

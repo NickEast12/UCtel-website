@@ -15,6 +15,9 @@ const BlogGridStyles = styled.div`
     width: 85%;
     margin: 0 auto;
     padding: 2rem 0;
+    @media only screen and (min-width: 375px) {
+      width: 80%;
+    }
   }
 `;
 
@@ -86,6 +89,7 @@ const EmailSignUpStyles = styled.aside`
   .social {
     width: 90%;
     margin: 0 auto;
+    text-align: center;
     padding: 2rem 0;
     p {
       font-size: 1.2rem;

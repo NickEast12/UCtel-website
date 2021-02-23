@@ -18,8 +18,11 @@ const CiscoStyles = styled.div`
       }
       &--right {
         width: 90%;
-        margin: 2rem auto 0 auto;
+        margin: 2rem auto 2rem auto;
       }
+    }
+    @media only screen and (min-width: 375px) {
+      width: 85%;
     }
   }
 `;
