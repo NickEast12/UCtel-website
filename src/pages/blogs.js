@@ -12,11 +12,11 @@ import LinkedInIcon from '../svgs/linkedin.svg';
 const BlogGridStyles = styled.div`
   width: 100%;
   .bg {
-    width: 85%;
+    width: 90%;
     margin: 0 auto;
     padding: 2rem 0;
     @media only screen and (min-width: 375px) {
-      width: 80%;
+      width: 85%;
     }
   }
 `;
