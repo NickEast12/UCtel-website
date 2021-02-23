@@ -114,7 +114,7 @@ const MobileMenuStyles = styled.div`
           display: flex;
           justify-content: space-between;
           margin: 0;
-          height: ${({ active }) => (active ? '100%' : '25px')};
+          height: ${({ active }) => (active ? '25px' : '25px')};
           svg {
             fill: var(--slate);
             width: 17px;
