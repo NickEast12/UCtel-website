@@ -55,7 +55,7 @@ const Typography = createGlobalStyle`
       font-family: Gellix-Medium, -apple-system,BlinkMacSystemFont,"Helvetica Neue",Helvetica,Arial,sans-serif;
       margin: 0;
       /* letter-spacing: -.25px; */
-      letter-spacing: -.5em;
+      letter-spacing: -0.02em;
       font-feature-settings: "kern" 1;
       font-kerning: normal;
       
