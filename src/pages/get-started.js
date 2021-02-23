@@ -99,6 +99,15 @@ const GetStartedStyles = styled.div`
 
 const GetStarted = () => {
   const [isDesktop, setDesktop] = useState(window.innerWidth > 1200);
+  const [open, setOpen] = useState(false);
+  useEffect(() => {
+    if (open) {
+      document.body.style.overflow = 'hidden';
+    }
+    if (!open) {
+      document.body.style.overflow = 'auto';
+    }
+  }, [open]);
   const updateScreenSize = () => {
     setDesktop(window.innerWidth > 1280);
   };

@@ -51,7 +51,7 @@ const GlobalStyles = createGlobalStyle`
                 padding: 1rem 0;
                 transition: all 0.3s ease;
             }
-            .Nav__Hamburger-jwuWDN  {
+            #hamburger  {
                 transition: all 0.3s ease;
                 div {
                     background-color: var(--slate);

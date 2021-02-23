@@ -113,6 +113,7 @@ const MobileMenuStyles = styled.div`
         .submenu {
           display: flex;
           justify-content: space-between;
+          margin: 0;
           svg {
             fill: var(--slate);
             width: 17px;
@@ -130,7 +131,7 @@ const MobileMenuStyles = styled.div`
           transition: all 0.5s ease;
           li {
             padding: 0.85rem 0;
-
+            height: 0;
             .dropdown--box {
               display: grid;
               grid-template-columns: 1fr 80%;
@@ -198,6 +199,7 @@ const MobileNav = ({ alt }) => {
             role="button"
             tabIndex={0}
             open={open}
+            id="hamburger"
           >
             <div id="menuDiv" />
             <div id="menuDiv" />
