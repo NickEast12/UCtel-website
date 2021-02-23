@@ -15,7 +15,7 @@ const ClientStyles = styled.div`
     h4 {
       color: var(--white);
       text-align: center;
-      font-size: 1.2rem;
+      font-size: 1.4rem;
     }
     @media only screen and (min-width: 375px) {
       width: 85%;
@@ -25,7 +25,7 @@ const ClientStyles = styled.div`
 const Clients = () => {
   const [size, setSize] = useState(false);
   const displayComponent = () => {
-    if (window.screen.width >= 768) {
+    if (window.screen.width >= 700) {
       setSize(true);
     } else {
       setSize(false);
@@ -59,6 +59,10 @@ const ClientLogoStyles = styled.div`
       height: auto;
     }
   }
+  .logoDesktop {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
 `;
 const MobileClients = () => (
   <ClientLogoStyles>
@@ -69,9 +73,14 @@ const MobileClients = () => (
   </ClientLogoStyles>
 );
 const DesktopClients = () => (
-  <div>
-    <h1>Desktop</h1>
-  </div>
+  <ClientLogoStyles>
+    <div className="flex--grid logoDesktop">
+      <CiscoLogo />
+      <CiscoLogo />
+      <CiscoLogo />
+      <CiscoLogo />
+    </div>
+  </ClientLogoStyles>
 );
 
 export default Clients;

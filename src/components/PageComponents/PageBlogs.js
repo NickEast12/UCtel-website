@@ -25,6 +25,17 @@ const PageBlogsStyles = styled.div`
     @media only screen and (min-width: 375px) {
       width: 85%;
     }
+    @media only screen and (min-width: 700px) {
+      .pb {
+        &__grid {
+          grid-template-columns: repeat(2, 1fr);
+          grid-gap: 2rem;
+        }
+        &--btn {
+          max-width: var(--btnMaxWidth);
+        }
+      }
+    }
   }
 `;
 

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
 import { window, document, exists } from 'browser-monads';
+import { Link } from 'gatsby';
 import AnimateHeaderBackground from '../functional/NetAnimatedBackground';
 
 const LandingPageStyles = styled.div`
@@ -69,12 +70,16 @@ const LandingPage = ({ darkTheme, title, description }) => {
           </h1>
           <p>{description}</p>
           <div className="btn__wrapper">
-            <button type="button" className="btn btn--main">
-              <span>Get started</span>
-            </button>
-            <button type="button" className="btn btn--alt">
-              <span>Talk to an expert</span>
-            </button>
+            <Link to="/get-started">
+              <button type="button" className="btn btn--main">
+                <span>Get started</span>
+              </button>
+            </Link>
+            <Link to="/contact">
+              <button type="button" className="btn btn--alt">
+                <span>Talk to an expert</span>
+              </button>
+            </Link>
           </div>
         </div>
       </div>

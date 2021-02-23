@@ -47,7 +47,7 @@ export const query = graphql`
         }
       }
     }
-    AllBlogs: allSanityPost(limit: 3) {
+    AllBlogs: allSanityPost(limit: 2) {
       nodes {
         title
         slug {

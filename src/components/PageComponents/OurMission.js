@@ -11,7 +11,7 @@ const OurMissionStyles = styled.div`
     color: var(--slate);
     &__left {
       h2 {
-        font-size: 1.85rem;
+        font-size: 2rem;
         font-family: Gellix-SemiBold;
       }
     }
@@ -38,6 +38,22 @@ const OurMissionStyles = styled.div`
     }
     @media only screen and (min-width: 375px) {
       width: 85%;
+    }
+    @media only screen and (min-width: 700px) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 2rem;
+      padding: 5rem 0;
+      &__left {
+        h2 {
+          font-size: 2.25rem;
+        }
+      }
+      &__right {
+        margin-top: 0;
+        padding-top: 0;
+        grid-gap: 1rem;
+      }
     }
   }
 `;

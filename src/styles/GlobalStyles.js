@@ -16,6 +16,7 @@ const GlobalStyles = createGlobalStyle`
         --headingSmall: 1.999rem;
         --headingTiny: 1.414rem;
         --text: 0.75rem;
+        --btnMaxWidth: 180px;
     }
     *, *:after, *:before {
         box-sizing: border-box;

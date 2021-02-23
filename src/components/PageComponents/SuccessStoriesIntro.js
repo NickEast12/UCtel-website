@@ -28,6 +28,23 @@ const SuccessStoriesIntroStyles = styled.div`
     @media only screen and (min-width: 375px) {
       width: 85%;
     }
+    @media only screen and (min-width: 700px) {
+      display: grid;
+      padding: 5rem 0;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 2rem;
+      grid-template-areas: 'a b';
+      &__content {
+        grid-area: a;
+      }
+      &__img {
+        margin-top: 0;
+        grid-area: b;
+        .gatsby-image-wrapper {
+          height: 100%;
+        }
+      }
+    }
   }
 `;
 

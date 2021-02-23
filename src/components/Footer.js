@@ -40,13 +40,15 @@ const FooterCTAStyles = styled.div`
     text-align: center;
     width: 80%;
     margin: 0 auto;
-    h4 {
-      font-size: 1.75rem;
-      color: var(--white);
-    }
-    p {
-      margin: 1rem 0;
-      color: var(--white);
+    &--content {
+      h4 {
+        font-size: 1.75rem;
+        color: var(--white);
+      }
+      p {
+        margin: 1rem 0;
+        color: var(--white);
+      }
     }
     button {
       margin: 1rem 0;
@@ -59,16 +61,31 @@ const FooterCTAStyles = styled.div`
     @media only screen and (min-width: 375px) {
       width: 85%;
     }
+    @media only screen and (min-width: 701px) {
+      width: 85%;
+      display: grid;
+      grid-template-columns: 50% 1fr;
+      &--content {
+        text-align: left;
+      }
+      &--btn {
+        margin-top: 1rem;
+      }
+    }
   }
 `;
 const FooterCTA = () => (
   <FooterCTAStyles>
     <div className="footerCTA">
-      <h4>A catchy call to action will go here!</h4>
-      <p>What do you want the user to do?</p>
-      <button type="button" className="btn btn--main">
-        <span>Get Started</span>
-      </button>
+      <div className="footerCTA--content">
+        <h4>A catchy call to action will go here!</h4>
+        <p>What do you want the user to do?</p>
+      </div>
+      <div className="footerCTA--btn">
+        <button type="button" className="btn btn--main">
+          <span>Get Started</span>
+        </button>
+      </div>
     </div>
   </FooterCTAStyles>
 );
@@ -76,8 +93,6 @@ const FooterCTA = () => (
 const MainFooterStyles = styled.div`
   width: 100%;
   background-color: var(--darkBlue);
-
-  /* background-color: rgba(26, 37, 53, 1); */
   .footer__main {
     padding: 2rem 0;
     width: 90%;
@@ -101,6 +116,7 @@ const MainFooterStyles = styled.div`
         p {
           padding-top: 0.5rem;
           color: rgba(255, 255, 255, 0.5);
+          font-size: 0.85rem;
         }
       }
     }
@@ -122,6 +138,7 @@ const MainFooterStyles = styled.div`
             color: rgba(255, 255, 255, 0.5);
             margin-top: 6px;
             font-family: Gellix-Regular;
+            font-size: 0.85rem;
           }
         }
       }
@@ -145,6 +162,26 @@ const MainFooterStyles = styled.div`
         }
       }
     }
+    @media only screen and (min-width: 701px) {
+      .footer--grid {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 2rem;
+      }
+      &__address {
+        margin-top: 0;
+        section {
+          padding: 0;
+        }
+      }
+      &__links {
+        display: flex;
+        margin: 0;
+        section {
+          padding-left: 25px;
+        }
+      }
+    }
   }
 `;
 
@@ -154,37 +191,39 @@ const MainFooter = () => (
       <div className="footer__main__img">
         <Image filename="UCtel-logo.png" alt="UCtel Logo" />
       </div>
-      <div className="footer__main__address">
-        <section>
-          <h6>Our Office</h6>
-          <p>
-            Nutcracker Agency <br />
-            Salatin House <br />
-            19 Cedar Road <br />
-            Sutton <br />
-            SM2 5DA
-          </p>
-        </section>
-      </div>
-      <div className="footer__main__links">
-        <section>
-          <h6>Solutions</h6>
-          <ul>
-            <li>Private 5G</li>
-            <li>Unified Communications</li>
-            <li>In-Building Mobile Connectivity </li>
-          </ul>
-        </section>
-        <section>
-          <h6>Company</h6>
-          <ul>
-            <li>About us</li>
-            <li>Blog</li>
-            <li>Case studies</li>
-            <li>Contact</li>
-            <li>Get started</li>
-          </ul>
-        </section>
+      <div className="footer--grid">
+        <div className="footer__main__address">
+          <section>
+            <h6>Our Office</h6>
+            <p>
+              Nutcracker Agency <br />
+              Salatin House <br />
+              19 Cedar Road <br />
+              Sutton <br />
+              SM2 5DA
+            </p>
+          </section>
+        </div>
+        <div className="footer__main__links">
+          <section>
+            <h6>Solutions</h6>
+            <ul>
+              <li>Private 5G</li>
+              <li>Unified Communications</li>
+              <li>In-Building Mobile Connectivity </li>
+            </ul>
+          </section>
+          <section>
+            <h6>Company</h6>
+            <ul>
+              <li>About us</li>
+              <li>Blog</li>
+              <li>Case studies</li>
+              <li>Contact</li>
+              <li>Get started</li>
+            </ul>
+          </section>
+        </div>
       </div>
       <div className="footer__main__lower">
         <section className="icons">

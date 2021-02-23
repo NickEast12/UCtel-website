@@ -38,6 +38,9 @@ const WhereWeWorkStyles = styled.div`
         }
       }
     }
+    @media only screen and (min-width: 375px) {
+      width: 85%;
+    }
   }
 `;
 const WhereWeWork = () => (

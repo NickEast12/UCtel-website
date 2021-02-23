@@ -29,6 +29,21 @@ const AboutUsIntroStyles = styled.div`
     @media only screen and (min-width: 375px) {
       width: 85%;
     }
+    @media only screen and (min-width: 700px) {
+      width: 85%;
+      display: grid;
+      grid-template-columns: 45% 1fr;
+      grid-gap: 2rem;
+      padding: 2rem 0 7rem 0;
+      &--image {
+        .gatsby-image-wrapper {
+          height: 100%;
+        }
+      }
+      &--content {
+        padding-top: 0;
+      }
+    }
   }
 `;
 const AboutUsIntro = () => (

@@ -33,13 +33,27 @@ const SolutionsIntroStyles = styled.div`
           fill: var(--slate);
         }
         h4 {
-          font-size: 1.4rem;
+          font-size: 1.3rem;
           margin: 0.5rem 0;
         }
       }
     }
     @media only screen and (min-width: 375px) {
       width: 85%;
+    }
+    @media only screen and (min-width: 700px) {
+      padding: 4rem 0 3rem 0;
+      &__content {
+        text-align: center;
+      }
+      &__grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 1rem;
+        &__box {
+          width: 100%;
+        }
+      }
     }
   }
 `;
