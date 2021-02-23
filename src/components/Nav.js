@@ -59,6 +59,13 @@ const Hamburger = styled.div`
   width: 20px;
   margin-top: 7.5px;
   margin-right: 5px;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
   div {
     width: 100%;
     height: 2px;
@@ -111,11 +118,18 @@ const MobileMenuStyles = styled.div`
         }
 
         .submenu {
+          -webkit-touch-callout: none;
+          -webkit-user-select: none;
+          -khtml-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none;
+          -webkit-tap-highlight-color: transparent;
           display: flex;
           justify-content: space-between;
           margin: 0;
           height: ${({ active }) => (active ? '25px' : '25px')};
-          -webkit-tap-highlight-color: svg {
+          svg {
             fill: var(--slate);
             width: 17px;
             transition: all 0.3s ease;
@@ -124,6 +138,13 @@ const MobileMenuStyles = styled.div`
           }
         }
         .dropdown {
+          -webkit-touch-callout: none;
+          -webkit-user-select: none;
+          -khtml-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none;
+          -webkit-tap-highlight-color: transparent;
           overflow-y: scroll;
           height: 100%;
           max-height: ${({ active }) => (active ? '500px' : '0')};
@@ -212,7 +233,7 @@ const MobileNav = ({ alt }) => {
           <ul>
             <li>
               <div
-                className="submenu "
+                className="submenu"
                 onClick={() => setActive(!active)}
                 onKeyDown={() => setActive(!active)}
                 role="button"

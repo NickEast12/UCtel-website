@@ -52,9 +52,9 @@ const Typography = createGlobalStyle`
       line-height: 1.2;
     }
     h1,h2,h3,h4,h5,h6{
-      font-family:  -apple-system,BlinkMacSystemFont,"Helvetica Neue",Helvetica,Arial,sans-serif;
+      font-family: Gellix-Medium, -apple-system,BlinkMacSystemFont,"Helvetica Neue",Helvetica,Arial,sans-serif;
       margin: 0;
-      /* letter-spacing: -0.085em; */
+      letter-spacing: -0.05em;
       font-feature-settings: "kern" 1;
       font-kerning: normal;
       text-rendering: optimizeLegibility; 
