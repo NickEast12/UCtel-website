@@ -12,16 +12,17 @@ const LandingPageStyles = styled.div`
     position: relative;
     width: 90%;
     margin: 0 auto;
-    padding-top: 8rem;
+    padding-top: 6rem;
 
     &__content {
       width: 100%;
       margin: 0 auto;
-      text-align: center;
       color: var(--white);
+      text-align: center;
       h1 {
         color: var(--white);
         margin-bottom: 0.5rem;
+        font-size: 2rem;
         .title {
           position: relative;
           display: block;
@@ -59,9 +60,9 @@ const LandingPage = ({ darkTheme, title, description }) => {
       <div className={`landing__wrapper ${darkTheme ? 'darkTheme' : ''}`}>
         <div className="landing__wrapper__content">
           <h1>
-            <span className="title">Mobile boosting</span>
-            <span className="title">Private 5G</span>
-            <span className="title">Unified Communication</span>
+            <span className="title">Optimum mobile coverage.</span>
+            <span className="title">IoT cellular technology.</span>
+            <span className="title">Unified communications.</span>
           </h1>
           <p>{description}</p>
           <div className="btn__wrapper">

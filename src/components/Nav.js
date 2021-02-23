@@ -59,6 +59,9 @@ const Hamburger = styled.div`
   width: 20px;
   margin-top: 7.5px;
   margin-right: 5px;
+  &:focus {
+    outline: none;
+  }
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -khtml-user-select: none;
@@ -102,6 +105,9 @@ const MobileMenuStyles = styled.div`
     position: relative;
     width: 85%;
     margin: 0 auto;
+    &:focus {
+      outline: none;
+    }
     ul {
       list-style: none;
       color: var(--slate);
@@ -125,6 +131,9 @@ const MobileMenuStyles = styled.div`
           -ms-user-select: none;
           user-select: none;
           -webkit-tap-highlight-color: transparent;
+          &:focus {
+            outline: none;
+          }
           display: flex;
           justify-content: space-between;
           margin: 0;
