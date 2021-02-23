@@ -25,7 +25,7 @@ const BlogPageStyles = styled.main`
   .bp--header {
     width: 100%;
     .gatsby-image-wrapper {
-      height: 12.5rem;
+      height: 15rem;
     }
   }
   .bp--content {
@@ -53,9 +53,10 @@ const BlogPageStyles = styled.main`
       }
     }
     h1 {
-      font-size: 1.65rem;
+      font-size: 2rem;
       margin: 1rem 0;
       color: var(--slate);
+      font-family: Gellix-SemiBold;
     }
     &__author {
       display: flex;

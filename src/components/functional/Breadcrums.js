@@ -5,6 +5,8 @@ import styled from 'styled-components';
 const Bready = styled.div`
   width: 100%;
   .breadcrumb {
+    width: 90%;
+    margin: 0 auto;
     ul {
       list-style: none;
       display: flex;

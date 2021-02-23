@@ -40,6 +40,7 @@ export const query = graphql`
           current
         }
         publishedAt(formatString: "MMM DD YYYY")
+        readingTimeInMinutes
         id
         excerpt
         categories {

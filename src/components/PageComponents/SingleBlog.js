@@ -67,7 +67,7 @@ const SingleBlogStyles = styled.article`
 const SingleBlog = ({ blog }) => {
   const cat = blog.categories;
   const { authors } = blog;
-  console.log(cat);
+  console.log(blog);
   return (
     <SingleBlogStyles>
       <Link to={`/blogs/${blog.slug.current}`}>
@@ -79,7 +79,7 @@ const SingleBlog = ({ blog }) => {
             {cat.map((category) => (
               <h5 key={category.title}>{category.title}</h5>
             ))}
-            <p className="read-time">5 Min Read</p>
+            <p className="read-time">{blog.readingTimeInMinutes} Min Read</p>
           </div>
           <h4>{blog.title}</h4>
           <p>{blog.excerpt}</p>

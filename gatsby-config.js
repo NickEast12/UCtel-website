@@ -43,10 +43,16 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-transform-portable-text`,
+      options: {
+        extendTypes: [{ typeName: `SanityPost`, contentFieldName: 'body' }],
+      },
+    },
+    {
       resolve: `gatsby-plugin-nprogress`,
       options: {
         // Setting a color is optional.
-        color: `#1bbc9b`,
+        color: `#F39118`,
         // Disable the loading spinner.
         showSpinner: true,
       },
