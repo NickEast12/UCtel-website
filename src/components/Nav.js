@@ -124,14 +124,12 @@ const MobileMenuStyles = styled.div`
         }
         .dropdown {
           overflow-y: scroll;
-          height: 100%;
           max-height: ${({ active }) => (active ? '500px' : '0')};
           /* visibility: ${({ active }) => (active ? 'shown' : 'hidden')}; */
           /* height: ${({ active }) => (active ? '100%' : '0')}; */
           transition: all 0.5s ease;
           li {
             padding: 0.85rem 0;
-            height: 0;
             .dropdown--box {
               display: grid;
               grid-template-columns: 1fr 80%;
