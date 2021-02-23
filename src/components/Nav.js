@@ -212,7 +212,7 @@ const MobileNav = ({ alt }) => {
           <ul>
             <li>
               <div
-                className="submenu noSelect"
+                className="submenu "
                 onClick={() => setActive(!active)}
                 onKeyDown={() => setActive(!active)}
                 role="button"
