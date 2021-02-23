@@ -18,11 +18,15 @@ const Footer = ({ pageContext }) => (
 );
 
 export default Footer;
-
+const BreadcrumsStyles = styled.div`
+  width: 100%;
+  background-color: var(--ghostWhite);
+  padding: 1rem;
+`;
 const Breadcrums = ({ pageContext }) => (
-  <div>
+  <BreadcrumsStyles>
     <Bread breaddata={pageContext.breadcrumb} />
-  </div>
+  </BreadcrumsStyles>
 );
 
 const FooterCTAStyles = styled.div`

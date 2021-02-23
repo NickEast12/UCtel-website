@@ -12,6 +12,7 @@ const GetStartedStyles = styled.div`
   width: 100%;
   height: 100%;
   position: relative;
+  overflow: scroll;
   .back {
     position: absolute;
     z-index: 10;
@@ -101,7 +102,6 @@ const GetStarted = () => {
   const updateScreenSize = () => {
     setDesktop(window.innerWidth > 1280);
   };
-  document.body.style.overflow = 'auto';
   useEffect(() => {
     console.log('screen change');
     window.addEventListener('resize', updateScreenSize);

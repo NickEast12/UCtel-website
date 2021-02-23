@@ -127,7 +127,7 @@ const MobileMenuStyles = styled.div`
           max-height: ${({ active }) => (active ? '500px' : '0')};
           /* visibility: ${({ active }) => (active ? 'shown' : 'hidden')}; */
           /* height: ${({ active }) => (active ? '100%' : '0')}; */
-          transition: all 0.85s ease;
+          transition: all 0.5s ease;
           li {
             padding: 0.85rem 0;
 

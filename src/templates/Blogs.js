@@ -163,7 +163,7 @@ const BlogPageStyles = styled.main`
 
 const urlFor = (source) =>
   urlBuilder({
-    projectId: 'cvd7buc8',
+    projectId: process.env.GATSBY_SANITY_ID,
     dataset: 'production',
   }).image(source);
 

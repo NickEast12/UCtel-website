@@ -2,7 +2,25 @@ import React from 'react';
 import { Link } from 'gatsby';
 import styled from 'styled-components';
 
-const Bready = styled.div``;
+const Bready = styled.div`
+  width: 100%;
+  .breadcrumb {
+    ul {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      li {
+      }
+      li a {
+        display: flex;
+        margin-right: 5px;
+      }
+      .sep {
+        margin: 0 0.5rem;
+      }
+    }
+  }
+`;
 
 const Bread = ({ breaddata }) => {
   const elementsNew = [];
@@ -21,7 +39,7 @@ const Bread = ({ breaddata }) => {
             {elementsNew.map((value, index) => (
               <li key={index} className="breadcrumb__wrapper__inner">
                 <Link key={index} to={`${value.pathname}`}>
-                  {value.crumlabel} <span> / </span>{' '}
+                  {value.crumlabel} <span className="sep">/</span>{' '}
                 </Link>
               </li>
             ))}
