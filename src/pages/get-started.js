@@ -98,7 +98,7 @@ const GetStartedStyles = styled.div`
 `;
 
 const GetStarted = () => {
-  const [isDesktop, setDesktop, setPoints] = useState(window.innerWidth > 1200);
+  const [isDesktop, setDesktop] = useState(window.innerWidth > 1200);
   const updateScreenSize = () => {
     setDesktop(window.innerWidth > 1280);
   };
