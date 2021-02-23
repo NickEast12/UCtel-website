@@ -43,6 +43,9 @@ const LandingPageStyles = styled.div`
         }
       }
     }
+    @media only screen and (min-width: 375px) {
+      padding-top: 8.5rem;
+    }
   }
 `;
 const LandingPage = ({ darkTheme, title, description }) => {

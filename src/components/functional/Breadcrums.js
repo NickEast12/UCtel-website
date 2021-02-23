@@ -21,6 +21,9 @@ const Bready = styled.div`
         margin: 0 0.5rem;
       }
     }
+    @media only screen and (min-width: 375px) {
+      width: 85%;
+    }
   }
 `;
 

@@ -7,11 +7,12 @@ const PageBlogsStyles = styled.div`
   .pb {
     width: 85%;
     margin: 0 auto;
-    padding: 1rem 0 2rem 0;
+    padding: 2rem 0 3rem 0;
     h3 {
       font-size: 1.5rem;
       text-align: center;
       margin-bottom: 2rem;
+      color: var(--slate);
     }
     &__grid {
       display: grid;
@@ -20,6 +21,9 @@ const PageBlogsStyles = styled.div`
     &--btn {
       width: 70%;
       margin: 0 auto;
+    }
+    @media only screen and (min-width: 375px) {
+      width: 85%;
     }
   }
 `;

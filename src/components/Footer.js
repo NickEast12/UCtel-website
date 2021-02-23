@@ -42,6 +42,7 @@ const FooterCTAStyles = styled.div`
     margin: 0 auto;
     h4 {
       font-size: 1.75rem;
+      color: var(--white);
     }
     p {
       margin: 1rem 0;
@@ -54,6 +55,9 @@ const FooterCTAStyles = styled.div`
       span {
         font-size: 1rem;
       }
+    }
+    @media only screen and (min-width: 375px) {
+      width: 85%;
     }
   }
 `;
@@ -92,6 +96,7 @@ const MainFooterStyles = styled.div`
         padding: 1rem 0;
         h6 {
           font-size: 1rem;
+          color: var(--white);
         }
         p {
           padding-top: 0.5rem;

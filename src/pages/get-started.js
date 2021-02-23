@@ -54,6 +54,7 @@ const GetStartedStyles = styled.div`
       h1 {
         padding: 0.85rem 0;
         font-size: 1.85rem;
+        color: var(--white);
       }
       &__clients {
         margin: 0.85rem 0;
@@ -70,6 +71,9 @@ const GetStartedStyles = styled.div`
       .name {
         margin: 1rem 0 0.25rem 0;
         color: var(--orange);
+      }
+      .business {
+        color: var(--white);
       }
       .name,
       .business {

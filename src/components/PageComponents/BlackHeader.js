@@ -22,7 +22,7 @@ const LandingPageStyles = styled.header`
       h1 {
         color: var(--white);
         margin-bottom: 0.5rem;
-        font-size: 0.5rem;
+        font-size: 2rem;
         .title {
           position: relative;
           display: block;
@@ -44,46 +44,12 @@ const LandingPageStyles = styled.header`
       }
     }
     @media only screen and (min-width: 375px) {
-      padding-top: 9rem;
-      &__content {
-        h1 {
-        }
-      }
     }
     @media only screen and (min-width: 414px) {
-      padding-top: 10rem;
-      &__content {
-        width: 100%;
-        margin: 0 auto;
-        h1 {
-        }
-        p {
-          margin: 1rem auto;
-        }
-        .btn {
-          width: 350px;
-          margin: 2rem auto;
-          div {
-          }
-        }
-      }
     }
     @media only screen and (min-width: 768px) {
-      padding-top: 8rem;
-      &__content {
-        width: 100%;
-      }
     }
     @media only screen and (min-width: 1024px) {
-      &__content {
-        margin: 2rem auto 0 auto;
-        h1 {
-          width: 100%;
-        }
-        p {
-          width: 100%;
-        }
-      }
     }
   }
 `;

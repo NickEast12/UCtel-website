@@ -12,10 +12,13 @@ const ClientStyles = styled.div`
     width: 90%;
     margin: 0 auto;
     padding: 2rem 0;
-    color: var(--white);
     h4 {
+      color: var(--white);
       text-align: center;
       font-size: 1.2rem;
+    }
+    @media only screen and (min-width: 375px) {
+      width: 85%;
     }
   }
 `;

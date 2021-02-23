@@ -43,7 +43,7 @@ const ContactBoxesStyles = styled.div`
         fill: var(--lightBlue);
       }
       h2 {
-        font-size: 1.25rem;
+        font-size: 1.5rem;
         margin: 0.5rem 0;
       }
     }
@@ -91,6 +91,7 @@ const ContactBoxes = () => (
 
 const MapWrapperStyles = styled.div`
   width: 100%;
+  padding-top: 2rem;
   .contact {
     text-align: center;
     &__map {

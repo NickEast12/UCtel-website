@@ -30,12 +30,16 @@ const SolutionsIntroStyles = styled.div`
         text-align: center;
         > svg {
           width: 50px;
+          fill: var(--slate);
         }
         h4 {
-          font-size: 1.25rem;
+          font-size: 1.4rem;
           margin: 0.5rem 0;
         }
       }
+    }
+    @media only screen and (min-width: 375px) {
+      width: 85%;
     }
   }
 `;

@@ -7,7 +7,7 @@ import ArrowIcon from '../../svgs/right-arrow.svg';
 const AboutUsIntroStyles = styled.div`
   width: 100%;
   .aboutus {
-    padding: 3rem 0;
+    padding: 3rem 0 4rem 0;
     width: 90%;
     margin: 0 auto;
     &--image {
@@ -25,6 +25,9 @@ const AboutUsIntroStyles = styled.div`
         margin-bottom: 0.5rem;
         font-size: 0.95rem;
       }
+    }
+    @media only screen and (min-width: 375px) {
+      width: 85%;
     }
   }
 `;

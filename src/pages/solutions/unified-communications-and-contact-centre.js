@@ -10,10 +10,7 @@ import CommunicationMid from '../../components/PageComponents/SolutionsComponent
 
 const UnifiedCommunication = ({ pageContext }) => (
   <Layout pageContext={pageContext}>
-    <BlackHeader
-      title="Unified communications and contact centre"
-      description="Fill this in"
-    />
+    <BlackHeader title="Unified communications" description="Fill this in" />
     <main>
       <CommunicationIntro />
       <CommunicationCTA />

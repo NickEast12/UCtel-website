@@ -43,9 +43,9 @@ const Typography = createGlobalStyle`
       font-size: 16px;
 
     }
-    @media only screen and (min-width: 1024px) {
+    @media only screen and (min-width: 375px) {
       html {
-        font-size: 20px;
+        font-size: 16.5px;
       }
     }
     body {
@@ -59,8 +59,9 @@ const Typography = createGlobalStyle`
       font-kerning: normal;
       text-rendering: optimizeLegibility; 
       font-smoothing: antialiased;
+      color: var(--slate);
       
-    @media only screen and (min-width: 766px) {
+    @media only screen and (min-width: 450px) {
       letter-spacing: -.25px;
 
     }

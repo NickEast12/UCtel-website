@@ -253,33 +253,33 @@ const MobileNav = ({ alt }) => {
               </div>
               <ul className="dropdown">
                 <li>
-                  <Link to="/">
+                  <Link to="/solutions/in-building-mobile-connectivity">
                     <div className="dropdown--box">
                       <FiveGIcon />
                       <div className="dropdown--box__text">
-                        <span>Solution</span>
+                        <span>In-building mobile</span>
                         <p>Understand, secure, and optimize video.</p>
                       </div>
                     </div>
                   </Link>
                 </li>
                 <li>
-                  <Link to="/">
+                  <Link to="/solutions/private-5g">
                     <div className="dropdown--box">
                       <FiveGIcon />
                       <div className="dropdown--box__text">
-                        <span>Solution</span>
+                        <span>Private 5G</span>
                         <p>Understand, secure, and optimize video.</p>
                       </div>
                     </div>
                   </Link>
                 </li>
                 <li>
-                  <Link to="/">
+                  <Link to="/solutions/unified-communications-and-contact-centre">
                     <div className="dropdown--box">
                       <FiveGIcon />
                       <div className="dropdown--box__text">
-                        <span>Solution</span>
+                        <span>Unified communications</span>
                         <p>Understand, secure, and optimize video.</p>
                       </div>
                     </div>
@@ -291,10 +291,10 @@ const MobileNav = ({ alt }) => {
               <Link to="/about-us">About us</Link>
             </li>
             <li>
-              <Link to="/about-us">Casestudies</Link>
+              <Link to="/case-studies">Case studies</Link>
             </li>
             <li>
-              <Link to="/about-us">Blog</Link>
+              <Link to="/blogs">Blogs</Link>
             </li>
             <li>
               <Link to="/contact">Contact</Link>

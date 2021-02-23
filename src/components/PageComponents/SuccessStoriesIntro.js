@@ -25,6 +25,9 @@ const SuccessStoriesIntroStyles = styled.div`
       width: 95%;
       margin-top: 2rem;
     }
+    @media only screen and (min-width: 375px) {
+      width: 85%;
+    }
   }
 `;
 
