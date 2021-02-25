@@ -55,8 +55,12 @@ const FooterCTAStyles = styled.div`
       display: grid;
       grid-template-columns: 1fr 1fr;
       grid-gap: 0.5rem;
+      margin-top: 2rem;
       @media only screen and (min-width: 414px) {
         grid-gap: 1rem;
+      }
+      @media only screen and (min-width: 701px) {
+        margin: 0;
       }
       button {
         width: 100%;
