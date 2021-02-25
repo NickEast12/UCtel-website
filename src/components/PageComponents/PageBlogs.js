@@ -26,12 +26,14 @@ const PageBlogsStyles = styled.div`
       width: 85%;
     }
     @media only screen and (min-width: 700px) {
+      width: 90%;
       .pb {
         &__grid {
           grid-template-columns: repeat(2, 1fr);
           grid-gap: 2rem;
         }
         &--btn {
+          margin-top: 2rem;
           max-width: var(--btnMaxWidth);
         }
       }

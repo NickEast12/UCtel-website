@@ -23,6 +23,16 @@ const FindOutStyles = styled.div`
     @media only screen and (min-width: 375px) {
       width: 85%;
     }
+    @media only screen and (min-width: 768px) {
+      padding: 3.5rem 0;
+      h5 {
+        font-size: 1.5rem;
+        line-height: 1.5;
+      }
+      button {
+        max-width: 220px !important;
+      }
+    }
   }
 `;
 

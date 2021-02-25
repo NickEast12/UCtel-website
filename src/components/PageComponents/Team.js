@@ -74,6 +74,15 @@ const TeamStyles = styled.div`
       width: 85%;
     }
   }
+  @media only screen and (min-width: 768px) {
+    .team {
+      padding: 3rem 0;
+      &__wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+  }
 `;
 const Team = ({ data }) => (
   <TeamStyles>

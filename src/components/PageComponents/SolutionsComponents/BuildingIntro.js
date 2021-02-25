@@ -49,57 +49,84 @@ const SolutionsIntroStyles = styled.div`
     &__img {
     }
   }
+  @media only screen and (min-width: 768px) {
+    .si__wrapper {
+      margin: 0 auto;
+      width: 100%;
+      display: grid;
+      grid-template-columns: 55% 1fr;
+      grid-gap: 1rem;
+      padding: 4rem 0;
+    }
+    .si--left {
+      padding: 0;
+    }
+    .si--right {
+      width: 85%;
+      height: 100%;
+      margin-top: 1rem;
+      padding: 0;
+      margin: 0;
+      .gatsby-image-wrapper {
+        width: 100%;
+        height: 25rem;
+      }
+    }
+  }
 `;
 const BuildingIntro = () => (
   <SolutionsIntroStyles>
-    <div className="si--left">
-      <h6 className="subtitle">In-building Mobile Connectivity</h6>
-      <h2>Caption to introduce subject</h2>
-      <p>
-        Many buildings to do not allow for the effective propagation of mobile
-        signals indoors, which impacts negatively on productivity, opportunities
-        and operations – in fact, poor indoor mobile signal is detrimental to
-        any business. Historically, the solution was complex, expensive or
-        illegal to address, but with a change in Ofcom’s licencing since 2018,
-        if you have limited signal at your site, UCtel can now deliver a
-        scalable and legal solution in days or weeks, resulting in:
-      </p>
-      <ul>
-        <li>
-          <span>
-            <TickIcon />
-          </span>
-          Excellent communications
-        </li>
-        <li>
-          <span>
-            <TickIcon />
-          </span>
-          Uninterrupted mobile calling
-        </li>
-        <li>
-          <span>
-            <TickIcon />
-          </span>
-          Better experiences
-        </li>
-        <li>
-          <span>
-            <TickIcon />
-          </span>
-          Zero ‘dead zones’
-        </li>
-        <li>
-          <span>
-            <TickIcon />
-          </span>
-          Reliable 4G
-        </li>
-      </ul>
-    </div>
-    <div className="si--right">
-      <div className="si--right--img img-decoration">
-        <Image filename="template.jpeg" alt="fill this in" />
+    <div className="si__wrapper">
+      <div className="si--left">
+        <h6 className="subtitle">In-building Mobile Connectivity</h6>
+        <h2>Caption to introduce subject</h2>
+        <p>
+          Many buildings to do not allow for the effective propagation of mobile
+          signals indoors, which impacts negatively on productivity,
+          opportunities and operations – in fact, poor indoor mobile signal is
+          detrimental to any business. Historically, the solution was complex,
+          expensive or illegal to address, but with a change in Ofcom’s
+          licencing since 2018, if you have limited signal at your site, UCtel
+          can now deliver a scalable and legal solution in days or weeks,
+          resulting in:
+        </p>
+        <ul>
+          <li>
+            <span>
+              <TickIcon />
+            </span>
+            Excellent communications
+          </li>
+          <li>
+            <span>
+              <TickIcon />
+            </span>
+            Uninterrupted mobile calling
+          </li>
+          <li>
+            <span>
+              <TickIcon />
+            </span>
+            Better experiences
+          </li>
+          <li>
+            <span>
+              <TickIcon />
+            </span>
+            Zero ‘dead zones’
+          </li>
+          <li>
+            <span>
+              <TickIcon />
+            </span>
+            Reliable 4G
+          </li>
+        </ul>
+      </div>
+      <div className="si--right">
+        <div className="si--right--img img-decoration">
+          <Image filename="template.jpeg" alt="fill this in" />
+        </div>
       </div>
     </div>
   </SolutionsIntroStyles>

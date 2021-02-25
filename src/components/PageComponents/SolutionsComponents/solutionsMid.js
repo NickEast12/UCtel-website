@@ -29,6 +29,33 @@ const SolutionsMidStyles = styled.div`
       width: 85%;
     }
   }
+  @media only screen and (min-width: 768px) {
+    .sm {
+      width: 90%;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-areas: 'a b';
+      grid-gap: 3rem;
+      padding-bottom: 8rem;
+      &--left {
+        padding: 0;
+        margin: 0;
+        grid-area: a;
+        &__img {
+          width: 100%;
+          height: 100%;
+          margin: 0;
+          .gatsby-image-wrapper {
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
+      &--right {
+        grid-area: b;
+      }
+    }
+  }
 `;
 const SolutionsMid = () => (
   <SolutionsMidStyles>

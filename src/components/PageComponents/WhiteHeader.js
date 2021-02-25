@@ -50,38 +50,26 @@ const LandingPageStyles = styled.header`
         }
       }
     }
-    @media only screen and (min-width: 414px) {
-      padding-top: 10rem;
-      &__content {
-        width: 100%;
-        margin: 0 auto;
-        h1 {
-        }
-        p {
-          margin: 1rem auto;
-        }
-        .btn {
-          width: 350px;
-          margin: 2rem auto;
-          div {
-          }
-        }
+  }
+  @media only screen and (min-width: 414px) {
+    padding-top: 0rem;
+    height: 22.5rem;
+    &__content {
+      width: 100%;
+      margin: 0 auto;
+      h1 {
+      }
+      p {
+        margin: 1rem auto;
       }
     }
-    @media only screen and (min-width: 768px) {
-      padding-top: 8rem;
+  }
+  @media only screen and (min-width: 768px) {
+    .landing__wrapper {
+      padding-top: 9.5rem;
       &__content {
-        width: 100%;
-      }
-    }
-    @media only screen and (min-width: 1024px) {
-      &__content {
-        margin: 2rem auto 0 auto;
-        h1 {
-          width: 100%;
-        }
         p {
-          width: 100%;
+          width: 60%;
         }
       }
     }

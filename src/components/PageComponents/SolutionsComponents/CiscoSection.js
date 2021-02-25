@@ -25,6 +25,24 @@ const CiscoStyles = styled.div`
       width: 85%;
     }
   }
+  @media only screen and (min-width: 768px) {
+    .technology {
+      &__wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 2rem;
+        &--right {
+          width: 100%;
+          height: 100%;
+          margin: 0;
+          .gatsby-image-wrapper {
+            height: 100%;
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
 `;
 const Cisco = () => (
   <CiscoStyles>
@@ -32,7 +50,7 @@ const Cisco = () => (
       <div className="technology__wrapper">
         <div className="technology__wrapper--left">
           <h6 className="subtitle">Technology</h6>
-          <h3>Sub-title</h3>
+          <h3>Cisco</h3>
           <p>
             Delivering solutions using Cisco UCCX, Cisco Webex Contact Centre,
             Amazon Connect and RingCentral provides a rich selection of leading

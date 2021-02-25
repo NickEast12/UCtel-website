@@ -99,6 +99,24 @@ const GetStartedStyles = styled.div`
       }
     }
   }
+  @media only screen and (min-width: 768px) {
+    height: 100vh;
+    .back {
+      right: 4rem;
+    }
+    .started__wrapper {
+      width: 80%;
+      display: grid;
+      grid-template-columns: 40% 1fr;
+      grid-gap: 2rem;
+      &__content {
+        padding-top: 5rem;
+      }
+      &__form {
+        padding: 2rem 1rem;
+      }
+    }
+  }
 `;
 
 const GetStarted = () => {

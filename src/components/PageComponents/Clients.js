@@ -23,14 +23,15 @@ const ClientStyles = styled.div`
   }
 `;
 const Clients = () => {
-  const [size, setSize] = useState(false);
+  const [size, setSize] = useState(!false);
   const displayComponent = () => {
-    if (window.screen.width >= 700) {
+    if (window.screen.width >= 768) {
       setSize(true);
     } else {
       setSize(false);
     }
   };
+  window.addEventListener('load', displayComponent);
   window.addEventListener('resize', displayComponent);
 
   return (

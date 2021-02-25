@@ -70,7 +70,7 @@ const FooterCTAStyles = styled.div`
       width: 85%;
     }
     @media only screen and (min-width: 701px) {
-      width: 85%;
+      width: 90%;
       display: grid;
       grid-template-columns: 1fr 1fr;
       grid-gap: 2rem;
@@ -176,7 +176,11 @@ const MainFooterStyles = styled.div`
         }
       }
     }
+    @media only screen and (min-width: 375px) {
+      width: 85%;
+    }
     @media only screen and (min-width: 701px) {
+      width: 90%;
       .footer--grid {
         display: flex;
         justify-content: space-between;

@@ -65,6 +65,42 @@ const NokiaDACStyles = styled.div`
       }
     }
   }
+  @media only screen and (min-width: 768px) {
+    .nokia {
+      display: grid;
+      width: 90%;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 2rem;
+      padding: 0 0 4rem 0;
+      &--right {
+        padding: 0;
+        margin: 0;
+      }
+    }
+    .fea {
+      width: 90%;
+      &__content {
+        ul {
+          display: flex;
+          flex-wrap: wrap;
+          li {
+            flex: 1 0 auto;
+          }
+          @supports (gap: 0.5rem) {
+            gap: 0.5rem;
+            li {
+              margin: 0;
+            }
+          }
+          @supports not (gap: 0.5rem) {
+            li {
+              margin: 5px 5px 5px 0;
+            }
+          }
+        }
+      }
+    }
+  }
 `;
 const NokiaDAC = () => (
   <NokiaDACStyles>

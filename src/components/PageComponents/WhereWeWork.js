@@ -42,6 +42,15 @@ const WhereWeWorkStyles = styled.div`
       width: 85%;
     }
   }
+  @media only screen and (min-width: 768px) {
+    .work {
+      padding: 3rem 0 5rem 0;
+      &__areas {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+      }
+    }
+  }
 `;
 const WhereWeWork = () => (
   <WhereWeWorkStyles>

@@ -29,7 +29,7 @@ const Nav = ({ alt }) => {
   return (
     <MainNavWrapper className={navbar ? 'navbar active' : 'navbar'}>
       <MobileNav className="mobileNav" alt={alt} />
-      <DesktopNav className={navbar ? 'navbar active' : 'navbar'} />
+      <DesktopNav className={navbar ? 'navbar active' : 'navbar'} alt={alt} />
     </MainNavWrapper>
   );
 };
@@ -432,11 +432,11 @@ const DesktopNavStyles = styled.div`
     }
   }
 `;
-const DesktopNav = () => {
+const DesktopNav = ({ alt }) => {
   const i = 'stay';
   return (
     <DesktopNavStyles id="desktopNav">
-      <div className="d-nav">
+      <div className={alt ? 'd-nav alt-desktopNav' : 'd-nav'}>
         <div className="d-nav__img">
           <Link to="/">
             <img src={UCtelLogo} alt="UCtel Logo" />
@@ -461,7 +461,7 @@ const DesktopNav = () => {
                       </Link>
                     </li>
                     <li>
-                      <Link to="/solutions/in-building-mobile-connectivity">
+                      <Link to="/solutions/private-5g">
                         <div className="desktop--submenu__wrapper--box">
                           <FiveGIcon />
                           <p>Private 5G</p>
@@ -469,7 +469,7 @@ const DesktopNav = () => {
                       </Link>
                     </li>
                     <li>
-                      <Link to="/solutions/in-building-mobile-connectivity">
+                      <Link to="/solutions/unified-communications-and-contact-centre">
                         <div className="desktop--submenu__wrapper--box no-border">
                           <FiveGIcon />
                           <p>Unified Communication</p>
@@ -486,6 +486,9 @@ const DesktopNav = () => {
             <li>
               <Link to="/blogs">Blogs</Link>
             </li>
+            {/* <li>
+              <Link to="/contact">Contact</Link>
+            </li> */}
           </ul>
         </div>
         <div className="d-nav__btn">

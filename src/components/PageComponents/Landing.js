@@ -48,6 +48,30 @@ const LandingPageStyles = styled.div`
       padding-top: 8.5rem;
     }
   }
+  @media only screen and (min-width: 768px) {
+    height: 75vh;
+    .landing__wrapper {
+      padding-top: 12.5rem;
+      &__content {
+        width: 100%;
+        h1 {
+          letter-spacing: -0.01px;
+          font-size: 2.5rem;
+        }
+        p {
+          font-size: 1.1rem;
+          padding: 1rem 0;
+        }
+        .btn__wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 1rem;
+        width: 400px;
+        
+        
+      }
+    }
+  }
 `;
 const LandingPage = ({ darkTheme, title, description }) => {
   const [isDesktop, setDesktop, setPoints] = useState(window.innerWidth > 1200);

@@ -49,61 +49,87 @@ const SolutionsIntroStyles = styled.div`
     &__img {
     }
   }
+  @media only screen and (min-width: 768px) {
+    .si__wrapper {
+      margin: 0 auto;
+      width: 100%;
+      display: grid;
+      grid-template-columns: 55% 1fr;
+      grid-gap: 1rem;
+      padding: 4rem 0;
+    }
+    .si--left {
+      padding: 0;
+    }
+    .si--right {
+      width: 85%;
+      height: 100%;
+      margin-top: 1rem;
+      padding: 0;
+      margin: 0;
+      .gatsby-image-wrapper {
+        width: 100%;
+        height: 30rem;
+      }
+    }
+  }
 `;
 const BuildingIntro = () => (
   <SolutionsIntroStyles>
-    <div className="si--left">
-      <h6 className="subtitle">Unified communications</h6>
-      <h2>Collaborate securely from anywhere</h2>
-      <p>
-        Enabling an integration of collaboration tools into one platform – such
-        as IP telephone for voice calling, desktop sharing, instant messaging
-        and video conferencing – unified communications are designed to create a
-        seamless user experience that helps businesses and customers work
-        together more effectively.
-      </p>
-      <p>
-        Partnering with leading vendors such as Cisco and RingCentral, we’re
-        able to select the best platform for your business – whether that’s
-        on-premise, as a service (UCaaS) or hybrid – and help you collaborate
-        from anywhere, streamlining existing processes and:
-      </p>
-      <ul>
-        <li>
-          <span>
-            <TickIcon />
-          </span>
-          Increasing business efficiencies
-        </li>
-        <li>
-          <span>
-            <TickIcon />
-          </span>
-          Positively impacting work productivity
-        </li>
-        <li>
-          <span>
-            <TickIcon />
-          </span>
-          Elevating customer experience
-        </li>
-        <li>
-          <span>
-            <TickIcon />
-          </span>
-          Reducing gaps in communication
-        </li>
-        <li>
-          <span>
-            <TickIcon />
-          </span>
-          Optimising processes
-        </li>
-      </ul>
-    </div>
-    <div className="si--right">
-      <div className="si--right--img img-decoration">
-        <Image filename="template.jpeg" alt="fill this in" />
+    <div className="si__wrapper">
+      <div className="si--left">
+        <h6 className="subtitle">Unified communications</h6>
+        <h2>Collaborate securely from anywhere</h2>
+        <p>
+          Enabling an integration of collaboration tools into one platform –
+          such as IP telephone for voice calling, desktop sharing, instant
+          messaging and video conferencing – unified communications are designed
+          to create a seamless user experience that helps businesses and
+          customers work together more effectively.
+        </p>
+        <p>
+          Partnering with leading vendors such as Cisco and RingCentral, we’re
+          able to select the best platform for your business – whether that’s
+          on-premise, as a service (UCaaS) or hybrid – and help you collaborate
+          from anywhere, streamlining existing processes and:
+        </p>
+        <ul>
+          <li>
+            <span>
+              <TickIcon />
+            </span>
+            Increasing business efficiencies
+          </li>
+          <li>
+            <span>
+              <TickIcon />
+            </span>
+            Positively impacting work productivity
+          </li>
+          <li>
+            <span>
+              <TickIcon />
+            </span>
+            Elevating customer experience
+          </li>
+          <li>
+            <span>
+              <TickIcon />
+            </span>
+            Reducing gaps in communication
+          </li>
+          <li>
+            <span>
+              <TickIcon />
+            </span>
+            Optimising processes
+          </li>
+        </ul>
+      </div>
+      <div className="si--right">
+        <div className="si--right--img img-decoration">
+          <Image filename="template.jpeg" alt="fill this in" />
+        </div>
       </div>
     </div>
   </SolutionsIntroStyles>

@@ -63,6 +63,9 @@ const SingleBlogStyles = styled.article`
       }
     }
   }
+  @media only screen and (min-width: 768px) {
+    margin-bottom: 0.5rem;
+  }
 `;
 const SingleBlog = ({ blog }) => {
   const cat = blog.categories;

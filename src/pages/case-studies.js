@@ -14,11 +14,11 @@ const CaseStudies = ({ data, pageContext }) => {
         description="Learn how UCtel drives growth and results for any business through these in-depth case studies and customer stories."
       />
       <main>
-        <div>
+        <CaseStudiesStyles>
           {Casestudiesdata.map((casestudy) => (
             <SingleCaseStudy key={casestudy._id} data={casestudy} />
           ))}
-        </div>
+        </CaseStudiesStyles>
       </main>
     </Layout>
   );
@@ -99,8 +99,8 @@ const SingleCaseStudyStyles = styled.div`
 const SingleCaseStudy = ({ data, left }) => {
   console.log(data);
   return (
-    <SingleCaseStudyStyles>
-      <div className={left ? ' cs cs-left' : ' cs cs-right'}>
+    <SingleCaseStudyStyles id="caseFlex">
+      <div className={left ? 'cs cs-left' : 'cs cs-right'}>
         <div className="cs--content">
           <div className="cs--content--img">
             <Img fluid={data.logo.asset.fluid} alt={data.logo.alt} />
@@ -132,7 +132,59 @@ const SingleCaseStudy = ({ data, left }) => {
     </SingleCaseStudyStyles>
   );
 };
-
+const CaseStudiesStyles = styled.section`
+  width: 100%;
+  @media only screen and (min-width: 768px) {
+    padding-bottom: 3rem;
+    #caseFlex {
+      display: flex;
+      &:nth-child(even) {
+        .cs {
+          flex-direction: row-reverse;
+          &--content {
+            margin-left: 3rem;
+            &--img {
+              margin: 0 0 0 0;
+              padding-top: 0;
+            }
+            h3 {
+              text-align: left;
+            }
+            &--btn {
+              margin: 0;
+            }
+          }
+        }
+      }
+      &:nth-child(odd) {
+        .cs {
+          &--content {
+            &--img {
+              margin: 0 0 0 0;
+              padding-top: 0;
+            }
+            h3 {
+              text-align: left;
+            }
+            &--btn {
+              margin: 0;
+            }
+          }
+        }
+      }
+    }
+    .cs {
+      display: flex;
+      align-items: center;
+      &--card {
+        max-width: 500px;
+      }
+    }
+    .cs {
+      width: 80%;
+    }
+  }
+`;
 export const query = graphql`
   query CaseStudyPageQuery {
     allCaseStudies: allSanityCasestudies {

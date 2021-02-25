@@ -41,6 +41,14 @@ const HowItWorksStyles = styled.div`
       width: 85%;
     }
   }
+  @media only screen and (min-width: 375px) {
+    .hiw {
+      &--wrapper {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+  }
 `;
 const HowItWorks = () => (
   <HowItWorksStyles>

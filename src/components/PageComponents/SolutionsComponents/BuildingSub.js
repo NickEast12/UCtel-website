@@ -38,6 +38,28 @@ const BuildingSubStyles = styled.div`
       width: 85%;
     }
   }
+  @media only screen and (min-width: 768px) {
+    width: 90%;
+    margin: 0 auto;
+    .bulsub {
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas: 'a b';
+      grid-gap: 1rem;
+      &--right {
+        grid-area: a;
+        margin: 0;
+        .gatsby-image-wrapper {
+          width: 100%;
+          height: 100%;
+        }
+      }
+      &--left {
+        grid-area: b;
+      }
+    }
+  }
 `;
 const BuildingSub = () => (
   <BuildingSubStyles>

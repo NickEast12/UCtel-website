@@ -56,6 +56,16 @@ const AboutPageIntroStyles = styled.div`
       width: 85%;
     }
   }
+  @media only screen and (min-width: 768px) {
+    .ap {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 2rem;
+      &--left {
+        padding-top: 3rem;
+      }
+    }
+  }
 `;
 const AboutPageIntro = () => (
   <AboutPageIntroStyles>

@@ -18,6 +18,33 @@ const BlogGridStyles = styled.div`
     @media only screen and (min-width: 375px) {
       width: 85%;
     }
+    @media only screen and (min-width: 768px) {
+      display: grid;
+      grid-template-columns: 30% 1fr;
+      width: 90%;
+
+      grid-template-areas: 'a b';
+      grid-gap: 1rem;
+      &--blogs {
+        grid-area: b;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 1rem;
+      }
+      .sticky-signup {
+        position: sticky;
+        top: 5rem;
+        grid-area: a;
+
+        .email {
+          width: 100%;
+        }
+      }
+
+      .social {
+        text-align: left;
+      }
+    }
   }
 `;
 
@@ -37,11 +64,13 @@ const Blogs = ({ pageContext, data }) => {
         <BlogSorter />
         <BlogGridStyles>
           <div className="bg">
-            {blogs.map((blog) => (
-              <SingleBlog blog={blog} />
-            ))}
+            <div className="bg--blogs">
+              {blogs.map((blog) => (
+                <SingleBlog blog={blog} />
+              ))}
+            </div>
+            <EmailSignUp />
           </div>
-          <EmailSignUp />
         </BlogGridStyles>
       </main>
     </Layout>
@@ -109,23 +138,25 @@ const EmailSignUp = () => {
   console.log('tewst');
   return (
     <EmailSignUpStyles>
-      <div className="email">
-        <h6>Get our latest blogs straight to your inbox</h6>
-        <p>Sign up to our mailing list</p>
-        <form action="">
-          <input type="text" placeholder="Full name" />
-          <input type="email" placeholder="Email Address" />
-          <button className="btn btn--slate" type="submit">
-            <span>Submit</span>
-          </button>
-        </form>
-      </div>
-      <div className="social">
-        <p>Follow us so you never miss a post...</p>
-        <div className="social__wrapper">
-          <LinkedInIcon />
-          <InstagramIcon />
-          <TwitterIcon />
+      <div className="sticky-signup">
+        <div className="email">
+          <h6>Get our latest blogs straight to your inbox</h6>
+          <p>Sign up to our mailing list</p>
+          <form action="">
+            <input type="text" placeholder="Full name" />
+            <input type="email" placeholder="Email Address" />
+            <button className="btn btn--slate" type="submit">
+              <span>Submit</span>
+            </button>
+          </form>
+        </div>
+        <div className="social">
+          <p>Follow us so you never miss a post...</p>
+          <div className="social__wrapper">
+            <LinkedInIcon />
+            <InstagramIcon />
+            <TwitterIcon />
+          </div>
         </div>
       </div>
     </EmailSignUpStyles>

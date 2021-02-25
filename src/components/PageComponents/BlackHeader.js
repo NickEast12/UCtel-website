@@ -22,7 +22,7 @@ const LandingPageStyles = styled.header`
       h1 {
         color: var(--white);
         margin-bottom: 0.5rem;
-        font-size: 2rem;
+
         .title {
           position: relative;
           display: block;
@@ -53,6 +53,19 @@ const LandingPageStyles = styled.header`
   @media only screen and (min-width: 414px) {
   }
   @media only screen and (min-width: 768px) {
+    .landing__wrapper {
+      padding-top: 10rem;
+      &__content {
+        h1 {
+          font-size: 2.5rem;
+        }
+        .btn__wrapper {
+          button {
+            max-width: var(--btnMaxWidth);
+          }
+        }
+      }
+    }
   }
   @media only screen and (min-width: 1024px) {
   }

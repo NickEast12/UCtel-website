@@ -49,71 +49,100 @@ const SolutionsIntroStyles = styled.div`
     &__img {
     }
   }
+  @media only screen and (min-width: 768px) {
+    .si__wrapper {
+      margin: 0 auto;
+      width: 90%;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 1rem;
+      padding: 4rem 0;
+      .si--left {
+        width: 100%;
+        padding: 0;
+      }
+      .si--right {
+        height: 100%;
+        width: 100%;
+        &--img {
+          height: 100%;
+          width: 100%;
+        }
+        .gatsby-image-wrapper {
+          height: 100%;
+          width: 100%;
+        }
+      }
+    }
+  }
 `;
 const SolutionsIntro = () => (
   <SolutionsIntroStyles>
-    <div className="si--left">
-      <h6 className="subtitle">Private 5G</h6>
-      <h2>The future of wireless is here</h2>
-      <p>
-        Powering Industry 4.0, next-generation 5G technology is architectured to
-        create a dedicated, private network with unified connectivity, offering
-        full control of critical business applications and communications, via:
-      </p>
-      <ul>
-        <li>
-          <span>
-            <TickIcon />
-          </span>
-          High performing indoors and outdoors connectivity across large sites
-        </li>
-        <li>
-          <span>
-            <TickIcon />
-          </span>
-          Consistent high data rates{' '}
-        </li>
-        <li>
-          <span>
-            <TickIcon />
-          </span>
-          High multi-user capacity
-        </li>
-        <li>
-          <span>
-            <TickIcon />
-          </span>
-          High-capacity and ultra-reliable low latency
-        </li>
-        <li>
-          <span>
-            <TickIcon />
-          </span>
-          Intrinsic security{' '}
-        </li>
-        <li>
-          <span>
-            <TickIcon />
-          </span>
-          Outstanding mobility{' '}
-        </li>
-        <li>
-          <span>
-            <TickIcon />
-          </span>
-          Mission-critical reliability{' '}
-        </li>
-        <li>
-          <span>
-            <TickIcon />
-          </span>
-          Robust and cost-effective connectivity{' '}
-        </li>
-      </ul>
-    </div>
-    <div className="si--right">
-      <div className="si--right--img img-decoration">
-        <Image filename="template.jpeg" alt="fill this in" />
+    <div className="si__wrapper">
+      <div className="si--left">
+        <h6 className="subtitle">Private 5G</h6>
+        <h2>The future of wireless is here</h2>
+        <p>
+          Powering Industry 4.0, next-generation 5G technology is architectured
+          to create a dedicated, private network with unified connectivity,
+          offering full control of critical business applications and
+          communications, via:
+        </p>
+        <ul>
+          <li>
+            <span>
+              <TickIcon />
+            </span>
+            High performing indoors and outdoors connectivity across large sites
+          </li>
+          <li>
+            <span>
+              <TickIcon />
+            </span>
+            Consistent high data rates{' '}
+          </li>
+          <li>
+            <span>
+              <TickIcon />
+            </span>
+            High multi-user capacity
+          </li>
+          <li>
+            <span>
+              <TickIcon />
+            </span>
+            High-capacity and ultra-reliable low latency
+          </li>
+          <li>
+            <span>
+              <TickIcon />
+            </span>
+            Intrinsic security{' '}
+          </li>
+          <li>
+            <span>
+              <TickIcon />
+            </span>
+            Outstanding mobility{' '}
+          </li>
+          <li>
+            <span>
+              <TickIcon />
+            </span>
+            Mission-critical reliability{' '}
+          </li>
+          <li>
+            <span>
+              <TickIcon />
+            </span>
+            Robust and cost-effective connectivity{' '}
+          </li>
+        </ul>
+      </div>
+      <div className="si--right">
+        <div className="si--right--img img-decoration">
+          <Image filename="template.jpeg" alt="fill this in" />
+        </div>
       </div>
     </div>
   </SolutionsIntroStyles>

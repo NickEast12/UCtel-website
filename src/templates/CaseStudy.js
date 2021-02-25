@@ -58,6 +58,29 @@ const CaseStudyHeaderStyles = styled.header`
       }
     }
   }
+  @media only screen and (min-width: 768px) {
+    .landing__wrapper {
+      display: flex;
+      padding-top: 10rem;
+      width: 80%;
+      &__right {
+        .gatsby-image-wrapper {
+          height: 100%;
+        }
+      }
+      &__left {
+        padding: 0;
+        margin: 0;
+        &__img {
+          padding: 0.5rem 0 0 0;
+          margin: 0;
+        }
+        h1 {
+          text-align: left;
+        }
+      }
+    }
+  }
 `;
 const CaseStudyHeader = ({ data }) => {
   const [isDesktop, setDesktop, setPoints] = useState(window.innerWidth > 1200);
@@ -98,6 +121,8 @@ const CaseStudyBodyStyles = styled.main`
     &__card {
       border: solid 2px #d8d8d8;
       padding: 1.5rem;
+      background-color: var(--white);
+      position: relative;
       color: var(--slate);
       &__logo {
         width: 180px;
@@ -164,6 +189,20 @@ const CaseStudyBodyStyles = styled.main`
   @media only screen and (min-width: 414px) {
     padding-top: 0rem;
   }
+  @media only screen and (min-width: 414px) {
+    .csbody {
+      display: grid;
+      grid-template-columns: 40% 1fr;
+      &__card {
+        height: 37rem;
+        position: sticky;
+        top: 6rem;
+      }
+      &__main {
+        padding-top: 0;
+      }
+    }
+  }
 `;
 const CaseStudyBody = ({ data }) => {
   const i = true;
@@ -183,11 +222,11 @@ const CaseStudyBody = ({ data }) => {
           <h5>Industry</h5>
           <p>{data.industry}</p>
           <hr />
-          <a href={data.link} target="_blank" rel="noopener noreferrer">
+          <aside href={data.link} target="_blank" rel="noopener noreferrer">
             <button className="btn btn--main" type="button">
               <span>Visit website</span>
             </button>
-          </a>
+          </aside>
         </aside>
         <div className="csbody__main">
           <div className="csbody__main__box">

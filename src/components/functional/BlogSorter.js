@@ -38,6 +38,30 @@ const BlogSorterStyles = styled.div`
     width: 100%;
     margin: 0 auto;
   }
+  @media only screen and (min-width: 768px) {
+    .bs {
+      width: 90%;
+      display: flex;
+      padding: 1rem;
+      align-items: center;
+      h6 {
+        margin-bottom: 0;
+        margin-right: 25px;
+      }
+      ul {
+        justify-content: space-between;
+        flex-grow: 2;
+        li {
+          background-color: var(--lightBlue);
+          color: var(--white);
+          padding: 0;
+          margin: 0;
+
+          border-radius: 4.5px;
+        }
+      }
+    }
+  }
 `;
 const BlogSorter = () => {
   const data = useStaticQuery(graphql`

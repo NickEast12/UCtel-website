@@ -89,10 +89,19 @@ const GlobalStyles = createGlobalStyle`
         padding: 0.75rem ;
         border-radius: 50px;
         border: none;
+        max-width: var(--btnMaxWidth);
         span {
             text-align: center ;
             font-size: 1rem;
             
+        }
+    }
+    .alt-desktopNav {
+        .d-nav__links {
+            ul li {
+                color: var(--black)!important;
+
+            }
         }
     }
     .btn--main {

@@ -28,6 +28,27 @@ const CiscoStyles = styled.div`
       width: 85%;
     }
   }
+  @media only screen and (min-width: 768px) {
+    .technology {
+      padding: 5rem 0;
+      &__wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 2rem;
+        grid-template-areas: 'a b';
+        &--right {
+          width: 100%;
+          height: 100%;
+          margin: 0;
+          grid-area: a;
+          .gatsby-image-wrapper {
+            height: 100%;
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
 `;
 const CommunicationMid = () => (
   <CiscoStyles>
