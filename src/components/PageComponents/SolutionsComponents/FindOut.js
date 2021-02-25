@@ -9,6 +9,7 @@ const FindOutStyles = styled.div`
     padding: 4rem 1.85rem;
     color: var(--white);
     text-align: center;
+    max-width: 1100px;
     svg {
       fill: var(--white);
       width: 55px;

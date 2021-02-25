@@ -27,6 +27,7 @@ const CiscoStyles = styled.div`
   }
   @media only screen and (min-width: 768px) {
     .technology {
+      max-width: 1100px;
       &__wrapper {
         display: grid;
         grid-template-columns: 1fr 1fr;

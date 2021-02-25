@@ -10,6 +10,7 @@ const NokiaDACStyles = styled.div`
     color: var(--slate);
     width: 90%;
     margin: 0 auto;
+    max-width: 1100px;
     &--left {
       h3 {
         margin: 0.5rem 0 1rem 0;
@@ -41,6 +42,7 @@ const NokiaDACStyles = styled.div`
   .fea {
     width: 90%;
     margin: 0 auto;
+    max-width: 1100px;
     &__content {
       background-color: var(--lightBlue);
       border-radius: 4.5px;

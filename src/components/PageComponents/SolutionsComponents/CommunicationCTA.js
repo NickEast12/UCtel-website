@@ -9,7 +9,7 @@ const FindOutStyles = styled.div`
     padding: 2rem 1.85rem;
     text-align: center;
     margin: 0 auto;
-
+    max-width: 1100px;
     h5 {
       color: var(--white);
       margin: 1rem 0;

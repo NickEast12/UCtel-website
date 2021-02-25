@@ -136,13 +136,14 @@ const CaseStudiesStyles = styled.section`
   width: 100%;
   @media only screen and (min-width: 768px) {
     padding-bottom: 3rem;
-    max-width: 1100px;
+    max-width: 900px;
     margin: 0 auto;
     #caseFlex {
       display: flex;
       &:nth-child(even) {
         .cs {
           flex-direction: row-reverse;
+          justify-content: space-between;
           &--content {
             margin-left: 3rem;
             &--img {

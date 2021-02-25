@@ -48,6 +48,7 @@ const BuildingSubStyles = styled.div`
       grid-template-columns: 1fr 1fr;
       grid-template-areas: 'a b';
       grid-gap: 1rem;
+      max-width: 1100px;
       &--right {
         grid-area: a;
         margin: 0;

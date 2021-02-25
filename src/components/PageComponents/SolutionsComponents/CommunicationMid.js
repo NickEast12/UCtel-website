@@ -8,6 +8,7 @@ const CiscoStyles = styled.div`
     width: 90%;
     margin: 0 auto;
     padding: 3rem 0;
+    max-width: 1100px;
     &__wrapper {
       &--left {
         h3 {

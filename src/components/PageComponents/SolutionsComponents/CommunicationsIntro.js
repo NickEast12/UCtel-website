@@ -57,6 +57,7 @@ const SolutionsIntroStyles = styled.div`
       grid-template-columns: 55% 1fr;
       grid-gap: 1rem;
       padding: 4rem 0;
+      max-width: 1100px;
     }
     .si--left {
       padding: 0;

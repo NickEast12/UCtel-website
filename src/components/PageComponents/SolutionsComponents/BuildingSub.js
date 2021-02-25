@@ -8,6 +8,7 @@ const BuildingSubStyles = styled.div`
     width: 90%;
     margin: 0 auto;
     padding: 3rem 0 5rem 0;
+    max-width: 1100px;
     &--left {
       h3 {
         font-size: 1.85rem;
