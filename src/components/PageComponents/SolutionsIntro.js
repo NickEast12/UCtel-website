@@ -11,6 +11,7 @@ const SolutionsIntroStyles = styled.div`
     padding: 3rem 0;
     width: 90%;
     margin: 0 auto;
+    max-width: 1100px;
     &__content {
       text-align: left;
       color: var(--slate);
@@ -45,6 +46,11 @@ const SolutionsIntroStyles = styled.div`
       padding: 4rem 0 3rem 0;
       &__content {
         text-align: center;
+        p {
+          width: 60%;
+          margin: 0 auto;
+          padding-bottom: 2rem;
+        }
       }
       &__grid {
         display: grid;
@@ -75,8 +81,9 @@ const SolutionsIntro = () => (
             <MissionIcon />
             <h4>In-Building Mobile</h4>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Praesentium, obcaecati.
+              Award-winning, Ofcom-approved indoor mobile signal booster,
+              Cel-Fi, offers an exceptional coverage footprint, improving voice
+              quality and data speeds with one easy installation
             </p>
             <div className="fom">
               <ArrowIcon />
@@ -89,8 +96,9 @@ const SolutionsIntro = () => (
             <MissionIcon />
             <h4>Private 5G</h4>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Praesentium, obcaecati.
+              Intrinsically secure, cost-effective, effortlessly mobile and
+              reliable, private 5G networks deliver a high-performing, robust
+              and scalable solution to support IoT applications
             </p>
             <div className="fom">
               <ArrowIcon />
@@ -103,8 +111,9 @@ const SolutionsIntro = () => (
             <MissionIcon />
             <h4>Unified Communications</h4>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Praesentium, obcaecati.
+              Integrated services bring instant messaging, audio, web and video
+              conferencing, calling and more to your business, eliminating the
+              distance between employees and customers
             </p>
             <div className="fom">
               <ArrowIcon />

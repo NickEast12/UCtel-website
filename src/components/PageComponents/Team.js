@@ -10,10 +10,12 @@ const TeamStyles = styled.div`
     width: 90%;
     margin: 0 auto;
     padding: 2rem 0;
+    max-width: 800px;
     h4 {
       color: var(--white);
       font-size: 1.65rem;
       text-align: center;
+      padding-bottom: 1rem;
     }
     &__wrapper {
       margin: 2rem 0;

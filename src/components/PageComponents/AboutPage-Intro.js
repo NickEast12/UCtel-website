@@ -9,6 +9,7 @@ const AboutPageIntroStyles = styled.div`
     width: 90%;
     margin: 0 auto;
     color: var(--slate);
+    max-width: 1000px;
     &--left {
       h6 {
         margin-bottom: 0.5rem;
@@ -63,6 +64,21 @@ const AboutPageIntroStyles = styled.div`
       grid-gap: 2rem;
       &--left {
         padding-top: 3rem;
+      }
+    }
+  }
+  @media only screen and (min-width: 1280px) {
+    .ap {
+      display: grid;
+      grid-template-columns: 40% 1fr;
+      grid-gap: 4rem;
+      &--left {
+        padding-top: 5rem;
+      }
+      &--right {
+        width: 90%;
+        grid-gap: 1rem;
+        grid-template-rows: 100px 120px 140px;
       }
     }
   }

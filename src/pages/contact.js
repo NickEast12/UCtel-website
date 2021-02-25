@@ -48,6 +48,14 @@ const ContactBoxesStyles = styled.div`
       }
     }
   }
+  @media only screen and (min-width: 768px) {
+    .contact {
+      display: grid;
+      max-width: 1100px;
+      padding-top: 3rem;
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
 `;
 const ContactBoxes = () => (
   <ContactBoxesStyles>
@@ -91,7 +99,9 @@ const ContactBoxes = () => (
 
 const MapWrapperStyles = styled.div`
   width: 100%;
-  padding-top: 2rem;
+  padding: 2rem 0 4rem 0;
+  max-width: 1100px;
+  margin: 0 auto;
   .contact {
     text-align: center;
     &__map {
@@ -100,6 +110,19 @@ const MapWrapperStyles = styled.div`
       width: 90%;
       margin: 0 auto;
       padding: 2rem 0;
+    }
+  }
+  @media only screen and (min-width: 768px) {
+    .contact {
+      margin-top: 3rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      &__content {
+        text-align: left;
+        width: 60%;
+        padding-top: 2rem;
+        max-width: 400px;
+      }
     }
   }
 `;

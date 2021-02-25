@@ -30,6 +30,7 @@ const CaseStudyHeaderStyles = styled.header`
   height: 100%;
   .landing__wrapper {
     position: relative;
+    max-width: 1100px;
     z-index: 5;
     width: 90%;
     margin: 0 auto;
@@ -118,6 +119,7 @@ const CaseStudyBodyStyles = styled.main`
   .csbody {
     width: 90%;
     margin: 5rem auto 0 auto;
+    max-width: 1100px;
     &__card {
       border: solid 2px #d8d8d8;
       padding: 1.5rem;
@@ -290,7 +292,7 @@ export const query = graphql`
       challenge
       solution
     }
-    AllBlogs: allSanityPost(limit: 2) {
+    AllBlogs: allSanityPost(limit: 3) {
       nodes {
         title
         slug {

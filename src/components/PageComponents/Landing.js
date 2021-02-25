@@ -49,7 +49,7 @@ const LandingPageStyles = styled.div`
     }
   }
   @media only screen and (min-width: 768px) {
-    height: 75vh;
+    height: 95vh;
     .landing__wrapper {
       padding-top: 12.5rem;
       &__content {
@@ -63,14 +63,16 @@ const LandingPageStyles = styled.div`
           padding: 1rem 0;
         }
         .btn__wrapper {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-gap: 1rem;
-        width: 400px;
-        
-        
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          grid-gap: 1rem;
+          width: 400px;
+        }
       }
     }
+  }
+  @media only screen and (min-width: 1280px) {
+    height: 49rem;
   }
 `;
 const LandingPage = ({ darkTheme, title, description }) => {

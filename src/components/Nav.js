@@ -320,11 +320,12 @@ const DesktopNavStyles = styled.div`
     display: block;
     transition: all 0.3s ease;
     .d-nav {
+      max-width: var(--maxWidth);
       width: 95%;
       margin: 0 auto;
       padding: 2rem 0;
       display: flex;
-      justify-content: space-evenly;
+      justify-content: space-between;
       transition: all 0.3s ease;
 
       &__img {
@@ -347,7 +348,9 @@ const DesktopNavStyles = styled.div`
             font-size: 1rem;
             transition: all 0.3s ease;
           }
-
+          .none {
+            display: none;
+          }
           .desktop--submenu {
             position: absolute;
             top: 1rem;
@@ -357,6 +360,10 @@ const DesktopNavStyles = styled.div`
             padding: 1rem 0 0 0 !important;
             display: none;
             /* overflow: hidden; */
+            @media only screen and (min-width: 1280px) {
+              left: -60px;
+              width: 80%;
+            }
             &__wrapper {
               /* opacity: 0; */
               border-radius: 4.5px;
@@ -380,6 +387,9 @@ const DesktopNavStyles = styled.div`
                   z-index: -2;
                   background-color: var(--white);
                   transform: rotate(45deg);
+                  @media only screen and (min-width: 1280px) {
+                    left: 42%;
+                  }
                 }
               }
 
@@ -429,6 +439,11 @@ const DesktopNavStyles = styled.div`
         overflow: visible !important;
         max-width: 50rem !important;
       } */
+    }
+  }
+  @media only screen and (min-width: 1024px) {
+    .none {
+      display: block !important;
     }
   }
 `;
@@ -486,9 +501,9 @@ const DesktopNav = ({ alt }) => {
             <li>
               <Link to="/blogs">Blogs</Link>
             </li>
-            {/* <li>
+            <li className="none">
               <Link to="/contact">Contact</Link>
-            </li> */}
+            </li>
           </ul>
         </div>
         <div className="d-nav__btn">

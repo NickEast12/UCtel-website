@@ -8,6 +8,7 @@ const PageBlogsStyles = styled.div`
     width: 85%;
     margin: 0 auto;
     padding: 2rem 0 3rem 0;
+    max-width: 1100px;
     h3 {
       font-size: 1.5rem;
       text-align: center;
@@ -29,7 +30,7 @@ const PageBlogsStyles = styled.div`
       width: 90%;
       .pb {
         &__grid {
-          grid-template-columns: repeat(2, 1fr);
+          grid-template-columns: repeat(3, 1fr);
           grid-gap: 2rem;
         }
         &--btn {

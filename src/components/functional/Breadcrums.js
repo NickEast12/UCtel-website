@@ -7,7 +7,7 @@ const Bready = styled.div`
   .breadcrumb {
     width: 90%;
     margin: 0 auto;
-    max-width: var(--maxWidth);
+    max-width: 1100px;
     ul {
       list-style: none;
       display: flex;

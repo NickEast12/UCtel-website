@@ -11,7 +11,8 @@ const ClientStyles = styled.div`
   .clients {
     width: 90%;
     margin: 0 auto;
-    padding: 2rem 0;
+    padding: 3rem 0;
+    max-width: var(--maxWidth);
     h4 {
       color: var(--white);
       text-align: center;
@@ -19,6 +20,12 @@ const ClientStyles = styled.div`
     }
     @media only screen and (min-width: 375px) {
       width: 85%;
+    }
+    @media only screen and (min-width: 1280px) {
+      width: 70%;
+      h4 {
+        padding-bottom: 1rem;
+      }
     }
   }
 `;

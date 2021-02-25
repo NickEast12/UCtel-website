@@ -9,6 +9,7 @@ const OurMissionStyles = styled.div`
     margin: 0 auto;
     padding: 3rem 0;
     color: var(--slate);
+    max-width: var(--maxWidth);
     &__left {
       h2 {
         font-size: 2rem;
@@ -53,6 +54,14 @@ const OurMissionStyles = styled.div`
         margin-top: 0;
         padding-top: 0;
         grid-gap: 1rem;
+      }
+    }
+    @media only screen and (min-width: 1024px) {
+      max-width: 1000px;
+      &__left {
+        h2 {
+          font-size: 2.5rem;
+        }
       }
     }
   }

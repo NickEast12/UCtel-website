@@ -10,6 +10,7 @@ const BlogSorterStyles = styled.div`
     margin: 0 auto;
     border-radius: 4.5px;
     padding: 1.5rem 1rem;
+    max-width: 1100px;
     h6 {
       color: var(--white);
       font-size: 1.2rem;

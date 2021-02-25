@@ -44,6 +44,12 @@ const AboutUsIntroStyles = styled.div`
         padding-top: 0;
       }
     }
+    @media only screen and (min-width: 1024px) {
+      max-width: 1000px;
+      &--content {
+        padding-top: 1.5rem;
+      }
+    }
   }
 `;
 const AboutUsIntro = () => (
@@ -54,12 +60,13 @@ const AboutUsIntro = () => (
       </div>
       <div className="aboutus--content">
         <h6 className="subtitle">About us</h6>
-        <h3>Your communication experts</h3>
+        <h3>Bringing business into the digital age</h3>
         <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-          Reprehenderit aspernatur fugit velit necessitatibus numquam est
-          sapiente facilis. Earum eaque unde quas molestias laboriosam
-          necessitatibus doloremque.
+          Business is constantly evolving, and in today’s digital-first world,
+          you need to be more agile than ever. With market-leading,
+          forward-thinking and cutting-edge technologies, we can transform your
+          communication infrastructure, drive your IoT initiatives and keep you
+          connected anywhere, any time and on any device.
         </p>
         <Link to="/">
           <div className="fom">

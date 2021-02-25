@@ -15,6 +15,7 @@ const BlogGridStyles = styled.div`
     width: 90%;
     margin: 0 auto;
     padding: 2rem 0;
+    max-width: 1100px;
     @media only screen and (min-width: 375px) {
       width: 85%;
     }

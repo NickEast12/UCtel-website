@@ -9,6 +9,7 @@ const WhereWeWorkStyles = styled.div`
     margin: 0 auto;
     padding: 0 0 3rem 0;
     color: var(--slate);
+    max-width: 1000px;
     &__content {
       h3 {
         font-size: 1.65rem;

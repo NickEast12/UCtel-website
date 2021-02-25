@@ -9,6 +9,7 @@ const SuccessStoriesIntroStyles = styled.div`
     width: 90%;
     margin: 0 auto;
     padding: 3rem 0;
+    max-width: 1100px;
     &__content {
       color: var(--slate);
       .client--name {
@@ -45,6 +46,11 @@ const SuccessStoriesIntroStyles = styled.div`
         }
       }
     }
+    @media only screen and (min-width: 1024px) {
+      &__content {
+        padding-top: 3rem;
+      }
+    }
   }
 `;
 
@@ -54,8 +60,9 @@ const SuccessStoriesIntro = () => (
       <div className="success__content">
         <h6 className="subtitle">Success Story</h6>
         <h3>
-          "Quote from one of our clients detailing how we have helped their
-          business."
+          "Smooth conversion to a seamless communication was of vital
+          significance to us. UCtel understood our business and their delivery
+          was flawless"
         </h3>
         <h5 className="client--name">Jon Snow</h5>
         <h5 className="client--business">Night's Watch</h5>

@@ -40,7 +40,7 @@ const FooterCTAStyles = styled.div`
     margin: 0 auto;
     text-align: center;
     margin: 0 auto;
-    max-width: var(--maxWidth);
+    max-width: 1100px;
     &--content {
       h4 {
         font-size: 1.75rem;
@@ -82,6 +82,14 @@ const FooterCTAStyles = styled.div`
         display: flex;
       }
     }
+    @media only screen and (min-width: 1024px) {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      &--btn {
+        width: 400px;
+      }
+    }
   }
 `;
 const FooterCTA = () => (
@@ -110,7 +118,7 @@ const MainFooterStyles = styled.div`
     padding: 2rem 0;
     width: 90%;
     margin: 0 auto;
-    max-width: var(--maxWidth);
+    max-width: 1100px;
     &__img {
       width: 40%;
       margin: 1rem auto 0 0;
@@ -199,6 +207,9 @@ const MainFooterStyles = styled.div`
           padding-left: 25px;
         }
       }
+    }
+    @media only screen and (min-width: 1280px) {
+      /* margin: 0; */
     }
   }
 `;

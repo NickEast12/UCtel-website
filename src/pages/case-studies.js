@@ -136,6 +136,8 @@ const CaseStudiesStyles = styled.section`
   width: 100%;
   @media only screen and (min-width: 768px) {
     padding-bottom: 3rem;
+    max-width: 1100px;
+    margin: 0 auto;
     #caseFlex {
       display: flex;
       &:nth-child(even) {
@@ -159,6 +161,7 @@ const CaseStudiesStyles = styled.section`
       &:nth-child(odd) {
         .cs {
           &--content {
+            margin-right: 1rem;
             &--img {
               margin: 0 0 0 0;
               padding-top: 0;
