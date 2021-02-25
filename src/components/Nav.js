@@ -29,7 +29,7 @@ const Nav = ({ alt }) => {
   return (
     <MainNavWrapper className={navbar ? 'navbar active' : 'navbar'}>
       <MobileNav className="mobileNav" alt={alt} />
-      <DesktopNav />
+      <DesktopNav className={navbar ? 'navbar active' : 'navbar'} />
     </MainNavWrapper>
   );
 };
@@ -51,7 +51,7 @@ const MobileNavStyles = styled.nav`
       }
     }
   }
-  @media only screen and (min-width: 1024px) {
+  @media only screen and (min-width: 768px) {
     display: none;
   }
 `;
@@ -258,7 +258,6 @@ const MobileNav = ({ alt }) => {
                       <FiveGIcon />
                       <div className="dropdown--box__text">
                         <span>In-building mobile</span>
-                        <p>Understand, secure, and optimize video.</p>
                       </div>
                     </div>
                   </Link>
@@ -269,7 +268,6 @@ const MobileNav = ({ alt }) => {
                       <FiveGIcon />
                       <div className="dropdown--box__text">
                         <span>Private 5G</span>
-                        <p>Understand, secure, and optimize video.</p>
                       </div>
                     </div>
                   </Link>
@@ -280,7 +278,6 @@ const MobileNav = ({ alt }) => {
                       <FiveGIcon />
                       <div className="dropdown--box__text">
                         <span>Unified communications</span>
-                        <p>Understand, secure, and optimize video.</p>
                       </div>
                     </div>
                   </Link>
@@ -316,91 +313,187 @@ const DesktopNavStyles = styled.div`
   @media only screen and (min-width: 0px) {
     display: none;
   }
-  @media only screen and (min-width: 1024px) {
+  @media only screen and (min-width: 768px) {
     width: 100%;
     margin: 0 auto;
     position: fixed;
     display: block;
+    transition: all 0.3s ease;
     .d-nav {
-      width: 90%;
+      width: 95%;
       margin: 0 auto;
       padding: 2rem 0;
       display: flex;
-      justify-content: space-between;
+      justify-content: space-evenly;
+      transition: all 0.3s ease;
 
       &__img {
         img {
           width: 160px;
         }
+        margin-right: 20px;
       }
       &__links {
         display: flex;
+        justify-content: space-between;
         align-items: center;
-        ul {
+        > ul {
+          position: relative;
           display: flex;
-          li {
+          > li {
             list-style: none;
             margin-right: 20px;
             color: #ffffff;
+            font-size: 1rem;
+            transition: all 0.3s ease;
           }
-        }
-        button {
-          margin-top: 0;
-          width: 170px;
-          border: none;
-          display: grid;
-          border-radius: 3px;
-          position: relative;
-          background-color: var(--lightBlue);
-          span {
-            padding: 0.65rem 1rem;
-            text-align: left;
-            color: #ffffff;
-          }
-          div {
-            border-radius: 0 3px 3px 0;
-            right: 0;
-            width: 25%;
-            height: 100%;
-            background-color: #386682;
-            padding: 0.65rem;
+
+          .desktop--submenu {
             position: absolute;
+            top: 1rem;
+            left: -65px;
+            width: 100%;
+            margin: 0;
+            padding: 1rem 0 0 0 !important;
+            display: none;
+            /* overflow: hidden; */
+            &__wrapper {
+              /* opacity: 0; */
+              border-radius: 4.5px;
+              background-color: var(--white);
+              width: 60%;
+              margin: 0 auto;
+              box-shadow: 0 2.4rem 4.4rem 0 rgb(5 22 70 / 15%);
+              .no-border {
+                border: none;
+              }
+              ul {
+                list-style: none;
+                position: relative;
+                &::after {
+                  width: 50px;
+                  height: 50px;
+                  position: absolute;
+                  top: 0;
+                  left: 40%;
+                  content: '';
+                  z-index: -2;
+                  background-color: var(--white);
+                  transform: rotate(45deg);
+                }
+              }
 
-            svg {
-              fill: #ffffff;
-
-              width: 12px;
-              height: 12px;
-              transform: rotate(180deg);
+              &--box {
+                width: 100%;
+                display: grid;
+                border-bottom: 1px solid #eee;
+                padding: 1rem 0.5rem;
+                align-items: center;
+                grid-template-columns: 30% 1fr;
+                svg {
+                  width: 35px;
+                  margin-right: 20px;
+                }
+                p {
+                  font-size: 1rem;
+                  font-family: Gellix-Medium;
+                  text-align: left;
+                }
+              }
             }
           }
         }
       }
+      .desk-submenu-hover {
+        cursor: pointer !important;
+      }
+      &__btn {
+        width: 130px;
+
+        button {
+          width: 100%;
+          padding: 0.65rem 0;
+          margin: 0;
+        }
+      }
+      .desk-submenu-hover:hover .desktop--submenu {
+        /* overflow: visible;
+        opacity: 1 !important;
+        overflow: visible !important;
+        max-width: 50rem !important; */
+        display: block;
+      }
+      /* .desktop--submenu:hover .desktop--submenu__wrapper {
+        overflow: visible;
+        opacity: 1 !important;
+        overflow: visible !important;
+        max-width: 50rem !important;
+      } */
     }
   }
 `;
 const DesktopNav = () => {
   const i = 'stay';
   return (
-    <DesktopNavStyles>
+    <DesktopNavStyles id="desktopNav">
       <div className="d-nav">
         <div className="d-nav__img">
-          <img src={UCtelLogo} alt="UCtel Logo" />
+          <Link to="/">
+            <img src={UCtelLogo} alt="UCtel Logo" />
+          </Link>
         </div>
         <div className="d-nav__links">
           <ul>
-            <li>About</li>
-            <li>Solutions</li>
-            <li>Team</li>
-            <li>Case Studies</li>
-            <li>Blogs</li>
+            <li>
+              <Link to="/about-us">About us</Link>
+            </li>
+            <li className="desk-submenu-hover">
+              Solutions
+              <div className="desktop--submenu">
+                <div className="desktop--submenu__wrapper">
+                  <ul>
+                    <li>
+                      <Link to="/solutions/in-building-mobile-connectivity">
+                        <div className="desktop--submenu__wrapper--box">
+                          <FiveGIcon />
+                          <p>In-building Mobile</p>
+                        </div>
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to="/solutions/in-building-mobile-connectivity">
+                        <div className="desktop--submenu__wrapper--box">
+                          <FiveGIcon />
+                          <p>Private 5G</p>
+                        </div>
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to="/solutions/in-building-mobile-connectivity">
+                        <div className="desktop--submenu__wrapper--box no-border">
+                          <FiveGIcon />
+                          <p>Unified Communication</p>
+                        </div>
+                      </Link>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li>
+              <Link to="/case-studies">Case Studies</Link>
+            </li>
+            <li>
+              <Link to="/blogs">Blogs</Link>
+            </li>
           </ul>
-          <button type="button">
-            <span>Find out more</span>
-            <div>
-              <ArrowIcon />
-            </div>
-          </button>
+        </div>
+        <div className="d-nav__btn">
+          <Link to="/get-started">
+            <button type="button" className="btn btn--main">
+              <span>Get started</span>
+            </button>
+          </Link>
         </div>
       </div>
     </DesktopNavStyles>

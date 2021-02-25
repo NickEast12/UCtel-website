@@ -17,6 +17,7 @@ const GlobalStyles = createGlobalStyle`
         --headingTiny: 1.414rem;
         --text: 0.75rem;
         --btnMaxWidth: 180px;
+        --maxWidth: 1300px;
     }
     *, *:after, *:before {
         box-sizing: border-box;
@@ -52,7 +53,19 @@ const GlobalStyles = createGlobalStyle`
         transition: all 0.3s ease;
     }
     .active {
-        
+        transition: all 0.3s ease;
+        #desktopNav {
+            background-color: var(--white);
+            box-shadow: 0 2px 2px -2px rgba(0,0,0,.2);
+            .d-nav {
+                padding: 1rem 0;
+                &__links ul li {
+                    color: var(--black);
+                }
+            }
+        }
+    }
+    .active {
         nav {
             background-color: white!important;
             transition: all 0.3s ease;
@@ -67,6 +80,7 @@ const GlobalStyles = createGlobalStyle`
                     background-color: var(--slate);
                 }
             }
+            
         }
     }
     .btn {
@@ -143,6 +157,9 @@ const GlobalStyles = createGlobalStyle`
     image-rendering: -moz-crisp-edges;
     image-rendering: pixelated;
     }
+     
+     
+
    
 `;
 

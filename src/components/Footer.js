@@ -32,14 +32,15 @@ const Breadcrums = ({ pageContext }) => (
 const FooterCTAStyles = styled.div`
   width: 100%;
   background-color: var(--darkBlue);
+  box-shadow: 0 2px 2px -2px rgb(0 0 0 / 20%);
   .footerCTA {
     padding: 3rem 0 2rem 0;
     color: var(--white);
     width: 90%;
     margin: 0 auto;
     text-align: center;
-    width: 80%;
     margin: 0 auto;
+    max-width: var(--maxWidth);
     &--content {
       h4 {
         font-size: 1.75rem;
@@ -50,12 +51,19 @@ const FooterCTAStyles = styled.div`
         color: var(--white);
       }
     }
-    button {
-      margin: 1rem 0;
-      width: 70%;
-      padding: 0.75rem 0;
-      span {
-        font-size: 1rem;
+    &--btn {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 0.5rem;
+      @media only screen and (min-width: 414px) {
+        grid-gap: 1rem;
+      }
+      button {
+        width: 100%;
+        padding: 0.75rem 0;
+        span {
+          font-size: 1rem;
+        }
       }
     }
     @media only screen and (min-width: 375px) {
@@ -64,12 +72,14 @@ const FooterCTAStyles = styled.div`
     @media only screen and (min-width: 701px) {
       width: 85%;
       display: grid;
-      grid-template-columns: 50% 1fr;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 2rem;
+      padding-bottom: 3rem;
       &--content {
         text-align: left;
       }
       &--btn {
-        margin-top: 1rem;
+        display: flex;
       }
     }
   }
@@ -79,11 +89,14 @@ const FooterCTA = () => (
     <div className="footerCTA">
       <div className="footerCTA--content">
         <h4>A catchy call to action will go here!</h4>
-        <p>What do you want the user to do?</p>
+        {/* <p>What do you want the user to do?</p> */}
       </div>
       <div className="footerCTA--btn">
         <button type="button" className="btn btn--main">
           <span>Get Started</span>
+        </button>
+        <button type="button" className="btn btn--alt">
+          <span>Talk to an expert</span>
         </button>
       </div>
     </div>
@@ -97,6 +110,7 @@ const MainFooterStyles = styled.div`
     padding: 2rem 0;
     width: 90%;
     margin: 0 auto;
+    max-width: var(--maxWidth);
     &__img {
       width: 40%;
       margin: 1rem auto 0 0;

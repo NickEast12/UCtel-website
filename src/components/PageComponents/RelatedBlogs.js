@@ -11,6 +11,7 @@ const RelatedBlogsStyles = styled.div`
     width: 90%;
     margin: 0 auto;
     padding: 1rem 0;
+    max-width: var(--maxWidth);
     > h4 {
       font-size: 1.75rem;
       text-align: center;
@@ -20,7 +21,6 @@ const RelatedBlogsStyles = styled.div`
       width: 85%;
     }
     @media only screen and (min-width: 701px) {
-      width: 80%;
       &__grid {
         display: grid;
         grid-template-columns: repeat(2, 1fr);

@@ -7,6 +7,7 @@ const Bready = styled.div`
   .breadcrumb {
     width: 90%;
     margin: 0 auto;
+    max-width: var(--maxWidth);
     ul {
       list-style: none;
       display: flex;
@@ -22,7 +23,7 @@ const Bready = styled.div`
       }
     }
     @media only screen and (min-width: 375px) {
-      width: 85%;
+      /* width: 85%; */
     }
   }
 `;

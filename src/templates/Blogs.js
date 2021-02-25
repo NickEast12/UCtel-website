@@ -30,6 +30,7 @@ const BlogPageStyles = styled.main`
   }
   .bp--content {
     width: 90%;
+    max-width: var(--maxWidth);
     height: 100%;
     margin: 0 auto 2rem auto;
     background-color: var(--white);
@@ -64,8 +65,8 @@ const BlogPageStyles = styled.main`
       .img {
         .gatsby-image-wrapper {
           border-radius: 50%;
-          width: 45px;
-          height: 45px;
+          width: 50px;
+          height: 100%;
         }
       }
       .info {
@@ -175,6 +176,11 @@ const BlogPageStyles = styled.main`
       width: 70%;
     }
   }
+  @media only screen and (min-width: 1280px) {
+    .bp--content {
+      width: 60%;
+    }
+  }
 `;
 
 const urlFor = (source) =>
@@ -215,7 +221,7 @@ const Blogs = ({ pageContext, data }) => {
             {categories.map((cat) => (
               <h6>{cat.title}</h6>
             ))}
-            <span>5 Min Read</span>
+            <span>{content.readingTimeInMinutes} Min Read</span>
           </div>
           <h1>{content.title}</h1>
           <div className="bp--content__author">
@@ -290,6 +296,7 @@ export const query = graphql`
         current
       }
       publishedAt(formatString: "MMM DD YYYY")
+      readingTimeInMinutes
       id
       excerpt
       categories {
@@ -332,6 +339,7 @@ export const query = graphql`
           current
         }
         publishedAt(formatString: "MMM DD YYYY")
+        readingTimeInMinutes
         id
         excerpt
         categories {
