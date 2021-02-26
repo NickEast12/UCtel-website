@@ -19,6 +19,7 @@ import EmailIcon from '../svgs/email.svg';
 import TwitterIcon from '../svgs/twitter.svg';
 import FacebookIcon from '../svgs/facebook.svg';
 import LinkedInIcon from '../svgs/linkedin.svg';
+import SEO from '../components/functional/SEO';
 
 const BlogPageStyles = styled.main`
   width: 100%;
@@ -313,6 +314,11 @@ const Blogs = ({ pageContext, data }) => {
   };
   return (
     <Layout alt pageContext={pageContext}>
+      <SEO
+        title={`${content.title} | UCtel`}
+        description={content.excerpt}
+        img={content.mainImage.asset.url}
+      />
       <BlogPageStyles>
         <div className="bp--header">
           <Img
@@ -514,6 +520,7 @@ export const query = graphql`
             fluid(maxWidth: 410) {
               ...GatsbySanityImageFluid
             }
+            url
           }
         }
         mainImage {

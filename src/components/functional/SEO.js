@@ -2,10 +2,12 @@ import React from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
 import { Helmet } from 'react-helmet';
 import { useLocation } from '@reach/router';
+import { imageUrlFor } from '../../utils/image-url';
+import { buildImageObj } from '../../utils/helpers';
 
 export default function SEO({ children, location, description, title, img }) {
   const { pathname } = useLocation();
-  const { site } = useStaticQuery(graphql`
+  const { site, data } = useStaticQuery(graphql`
     query {
       site {
         siteMetadata {
@@ -16,8 +18,25 @@ export default function SEO({ children, location, description, title, img }) {
           image
         }
       }
+      data: allSanitySiteSettings {
+        nodes {
+          title
+          openGraph {
+            title
+            description
+            image {
+              asset {
+                url
+              }
+            }
+          }
+        }
+      }
     }
   `);
+  const settings = data.nodes[0];
+  console.log(settings);
+  // const image = imageUrlFor(buildImageObj(settings.openGraph.image)).width(200);
 
   return (
     <Helmet>
@@ -37,7 +56,10 @@ export default function SEO({ children, location, description, title, img }) {
       <meta property="og:type" content="website" />
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
-      <meta property="og:image" content={img} />
+      <meta
+        property="og:image"
+        content={`${img || settings.openGraph.image.asset.url}`}
+      />
 
       <meta name="twitter:card" content="summary_large_image" />
       <meta property="twitter:domain" content="sortedpropertyservices.co.uk" />
@@ -48,7 +70,10 @@ export default function SEO({ children, location, description, title, img }) {
       <meta name="twitter:creator" content={site.siteMetadata.twitter} />
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={description} />
-      <meta name="twitter:image" content={img} />
+      <meta
+        name="twitter:image"
+        content={`${img || settings.openGraph.image.asset.url}`}
+      />
     </Helmet>
   );
 }
