@@ -4,9 +4,10 @@ import { window, document, exists } from 'browser-monads';
 import styled from 'styled-components';
 //* Icons
 import UCtelLogo from '../assets/images/UCtel-logo.png';
-import ArrowIcon from '../svgs/arrow.svg';
 import DownArrow from '../svgs/down-arrow.svg';
 import FiveGIcon from '../svgs/fiveg.svg';
+import InBuildingIcon from '../svgs/smartphone.svg';
+import CommunicationsIcon from '../svgs/unified.svg';
 
 const MainNavWrapper = styled.nav`
   width: 100%;
@@ -166,6 +167,7 @@ const MobileMenuStyles = styled.div`
               display: grid;
               grid-template-columns: 1fr 80%;
               overflow-y: none;
+              align-items: center;
               padding: 0.5rem 0 0 0;
               svg {
                 width: 38px;
@@ -255,7 +257,7 @@ const MobileNav = ({ alt }) => {
                 <li>
                   <Link to="/solutions/in-building-mobile-connectivity">
                     <div className="dropdown--box">
-                      <FiveGIcon />
+                      <InBuildingIcon />
                       <div className="dropdown--box__text">
                         <span>In-building mobile</span>
                       </div>
@@ -275,7 +277,7 @@ const MobileNav = ({ alt }) => {
                 <li>
                   <Link to="/solutions/unified-communications-and-contact-centre">
                     <div className="dropdown--box">
-                      <FiveGIcon />
+                      <CommunicationsIcon />
                       <div className="dropdown--box__text">
                         <span>Unified communications</span>
                       </div>
@@ -368,7 +370,7 @@ const DesktopNavStyles = styled.div`
               /* opacity: 0; */
               border-radius: 4.5px;
               background-color: var(--white);
-              width: 60%;
+              width: 65%;
               margin: 0 auto;
               box-shadow: 0 2.4rem 4.4rem 0 rgb(5 22 70 / 15%);
               .no-border {
@@ -395,9 +397,9 @@ const DesktopNavStyles = styled.div`
 
               &--box {
                 width: 100%;
-                display: grid;
+                display: flex;
                 border-bottom: 1px solid #eee;
-                padding: 1rem 0.5rem;
+                padding: 1rem 0.85rem;
                 align-items: center;
                 grid-template-columns: 30% 1fr;
                 svg {
@@ -478,7 +480,7 @@ const DesktopNav = ({ alt }) => {
                     <li>
                       <Link to="/solutions/in-building-mobile-connectivity">
                         <div className="desktop--submenu__wrapper--box">
-                          <FiveGIcon />
+                          <InBuildingIcon />
                           <p>In-building Mobile</p>
                         </div>
                       </Link>
@@ -494,7 +496,7 @@ const DesktopNav = ({ alt }) => {
                     <li>
                       <Link to="/solutions/unified-communications-and-contact-centre">
                         <div className="desktop--submenu__wrapper--box no-border">
-                          <FiveGIcon />
+                          <CommunicationsIcon />
                           <p>Unified Communication</p>
                         </div>
                       </Link>

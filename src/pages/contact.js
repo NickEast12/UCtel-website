@@ -8,7 +8,7 @@ import MissionIcon from '../svgs/mission.svg';
 import TwitterIcon from '../svgs/twitter.svg';
 import LinkedInIcon from '../svgs/linkedin.svg';
 import MailIcon from '../svgs/mail.svg';
-import SocialIcon from '../svgs/social.svg';
+import SocialIcon from '../svgs/social-network.svg';
 import TelephoneIcon from '../svgs/telephone.svg';
 
 const Contact = ({ pageContext }) => {

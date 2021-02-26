@@ -1,6 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
 import MissionIcon from '../../../svgs/mission.svg';
+import Step1Icon from '../../../svgs/antenna.svg';
+import Step2Icon from '../../../svgs/wifi.svg';
+import Step3Icon from '../../../svgs/office-building.svg';
 
 const HowItWorksStyles = styled.div`
   width: 100%;
@@ -58,7 +61,7 @@ const HowItWorks = () => (
       <div className="hiw--wrapper">
         <div className="hiw--wrapper--box">
           <span className="no">1</span>
-          <MissionIcon />
+          <Step1Icon />
           <p>
             A donor antenna is installed in a location where the best signal can
             be obtained.
@@ -66,7 +69,7 @@ const HowItWorks = () => (
         </div>
         <div className="hiw--wrapper--box">
           <span className="no">2</span>
-          <MissionIcon />
+          <Step2Icon />
           <p>
             This is connected to an internal amplifier (network unit) to boost
             the signal
@@ -74,7 +77,7 @@ const HowItWorks = () => (
         </div>
         <div className="hiw--wrapper--box">
           <span className="no">3</span>
-          <MissionIcon />
+          <Step3Icon />
           <p>
             The signal is then distributed throughout the building using
             internal antenna (coverage units), boosting it across the areas

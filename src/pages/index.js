@@ -1,5 +1,6 @@
 import { graphql } from 'gatsby';
 import React from 'react';
+import SEO from '../components/functional/SEO';
 import Layout from '../components/Layout';
 import AboutUsIntro from '../components/PageComponents/AboutUs-Intro';
 import Clients from '../components/PageComponents/Clients';
@@ -13,6 +14,7 @@ const index = ({ data, pageContext }) => {
   const Blogs = data.AllBlogs.nodes;
   return (
     <Layout pageContext={pageContext}>
+      <SEO />
       <LandingPage
         title="Mobile boosting | Private 5G | Unified Communications"
         description="Next-generation technology keeping you connected."

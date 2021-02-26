@@ -14,6 +14,7 @@ const OurMissionStyles = styled.div`
       h2 {
         font-size: 2rem;
         font-family: Gellix-SemiBold;
+        text-align: center;
       }
     }
     &__right {
@@ -42,7 +43,7 @@ const OurMissionStyles = styled.div`
     }
     @media only screen and (min-width: 700px) {
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(1, 1fr);
       grid-gap: 2rem;
       padding: 5rem 0;
       &__left {
@@ -80,7 +81,7 @@ const OurMission = () => (
           experts.
         </h2>
       </div>
-      <div className="mission__right">
+      {/* <div className="mission__right">
         <div className="mission__right__box">
           <MissionIcon />
           <h5>Mission 1</h5>
@@ -113,7 +114,7 @@ const OurMission = () => (
             sapiente quo totam dolor? Aliquid.
           </p>
         </div>
-      </div>
+      </div> */}
     </div>
   </OurMissionStyles>
 );

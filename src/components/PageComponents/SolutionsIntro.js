@@ -2,7 +2,9 @@ import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'gatsby';
 import ArrowIcon from '../../svgs/right-arrow.svg';
-import MissionIcon from '../../svgs/mission.svg';
+import FiveGIcon from '../../svgs/fiveg.svg';
+import InBuildingIcon from '../../svgs/smartphone.svg';
+import CommunicationsIcon from '../../svgs/unified.svg';
 
 const SolutionsIntroStyles = styled.div`
   width: 100%;
@@ -83,7 +85,7 @@ const SolutionsIntro = () => (
       <div className="solutions__grid">
         <Link to="/solutions/in-building-mobile-connectivity">
           <div className="solutions__grid__box">
-            <MissionIcon />
+            <InBuildingIcon />
             <h4>In-building mobile</h4>
             <p>
               Award-winning, Ofcom-approved indoor mobile signal booster,
@@ -98,7 +100,7 @@ const SolutionsIntro = () => (
         </Link>
         <Link to="/solutions/private-5g">
           <div className="solutions__grid__box">
-            <MissionIcon />
+            <FiveGIcon />
             <h4>Private 5G</h4>
             <p>
               Intrinsically secure, cost-effective, effortlessly mobile and
@@ -113,7 +115,7 @@ const SolutionsIntro = () => (
         </Link>
         <Link to="/solutions/unified-communications-and-contact-centre">
           <div className="solutions__grid__box">
-            <MissionIcon />
+            <CommunicationsIcon />
             <h4>Unified communications</h4>
             <p>
               Integrated services bring instant messaging, audio, web and video

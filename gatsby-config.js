@@ -4,10 +4,10 @@ const path = require(`path`);
 
 module.exports = {
   siteMetadata: {
-    title: `Enter`,
-    siteUrl: `https://wwww.nick-east.com`,
-    description: `Enter`,
-    twitter: `@comebacktothis`,
+    title: `UCtel`,
+    siteUrl: `https://uctel.co.uk/`,
+    description: `UCtel`,
+    twitter: `@UCtel_Ltd`,
     image: `/icon.png`,
   },
   plugins: [

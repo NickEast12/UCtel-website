@@ -295,14 +295,14 @@ const MainFooter = () => (
       <div className="footer__main__lower">
         <section className="icons">
           <a
-            href="https://www.linkedin.com/company/uctel/"
+            href="https://twitter.com/UCtel_Ltd"
             target="_blank"
             rel="noopener noreferrer"
           >
             <TwitterIcon />
           </a>
           <a
-            href="https://twitter.com/UCtel_Ltd "
+            href="https://www.linkedin.com/company/uctel/"
             target="_blank"
             rel="noopener noreferrer"
           >

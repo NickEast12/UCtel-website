@@ -1,6 +1,7 @@
+import { Link } from 'gatsby';
 import React from 'react';
 import styled from 'styled-components';
-import MissionIcon from '../../../svgs/mission.svg';
+import MissionIcon from '../../../svgs/no-signal.svg';
 
 const FindOutStyles = styled.div`
   width: 100%;
@@ -48,9 +49,11 @@ const FindOut = () => (
         We have alternative technologies that will bring coverage to your
         building and transform your connectivity.
       </p>
-      <button className="btn btn--slate" type="button">
-        <span>Find out how</span>
-      </button>
+      <Link to="/get-started">
+        <button className="btn btn--slate" type="button">
+          <span>Find out how</span>
+        </button>
+      </Link>
     </div>
   </FindOutStyles>
 );
