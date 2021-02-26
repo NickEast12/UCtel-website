@@ -58,7 +58,7 @@ export default function SEO({ children, location, description, title, img }) {
       <meta property="og:description" content={description} />
       <meta
         property="og:image"
-        content={`${img || settings.openGraph.image.asset.url}`}
+        content={img || settings.openGraph.image.asset.url}
       />
 
       <meta name="twitter:card" content="summary_large_image" />

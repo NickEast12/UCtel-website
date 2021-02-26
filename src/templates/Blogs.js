@@ -312,6 +312,7 @@ const Blogs = ({ pageContext, data }) => {
       },
     },
   };
+  console.log(content.mainImage.asset.url);
   return (
     <Layout alt pageContext={pageContext}>
       <SEO
@@ -479,6 +480,7 @@ export const query = graphql`
           fluid(maxWidth: 600) {
             ...GatsbySanityImageFluid
           }
+          url
         }
       }
     }
