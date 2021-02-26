@@ -72,7 +72,7 @@ export default function SEO({ children, location, description, title, img }) {
       <meta name="twitter:description" content={description} />
       <meta
         name="twitter:image"
-        content={`${img || settings.openGraph.image.asset.url}`}
+        content={img || settings.openGraph.image.asset.url}
       />
     </Helmet>
   );
