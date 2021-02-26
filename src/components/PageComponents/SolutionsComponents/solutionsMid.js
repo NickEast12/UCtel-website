@@ -57,6 +57,13 @@ const SolutionsMidStyles = styled.div`
       }
     }
   }
+  @media only screen and (min-width: 768px) {
+    .sm {
+      &--right {
+        padding-top: 1.5rem;
+      }
+    }
+  }
 `;
 const SolutionsMid = () => (
   <SolutionsMidStyles>

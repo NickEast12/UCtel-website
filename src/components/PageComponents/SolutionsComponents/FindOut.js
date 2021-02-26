@@ -21,12 +21,21 @@ const FindOutStyles = styled.div`
     }
     p {
       margin-bottom: 1rem;
-      color: var(--black);
+      color: var(--white);
     }
 
     @media only screen and (min-width: 375px) {
       width: 85%;
       margin: 0 auto;
+    }
+    @media only screen and (min-width: 768px) {
+      width: 70%;
+      margin: 0 auto;
+      p {
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+      }
     }
   }
 `;

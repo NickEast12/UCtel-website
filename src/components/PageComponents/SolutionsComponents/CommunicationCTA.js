@@ -32,6 +32,13 @@ const FindOutStyles = styled.div`
         max-width: 220px !important;
       }
     }
+    @media only screen and (min-width: 1280px) {
+      h5 {
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
   }
 `;
 

@@ -50,6 +50,15 @@ const CiscoStyles = styled.div`
       }
     }
   }
+  @media only screen and (min-width: 1280px) {
+    .technology {
+      &__wrapper {
+        &--left {
+          padding-top: 1.5rem;
+        }
+      }
+    }
+  }
 `;
 const CommunicationMid = () => (
   <CiscoStyles>
