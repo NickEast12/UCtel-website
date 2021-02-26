@@ -5,10 +5,11 @@ import Map from '../components/functional/Map';
 import Layout from '../components/Layout';
 import WhiteLandingPage from '../components/PageComponents/WhiteHeader';
 import MissionIcon from '../svgs/mission.svg';
-import ArrowIcon from '../svgs/right-arrow.svg';
 import TwitterIcon from '../svgs/twitter.svg';
-import InstagramIcon from '../svgs/instagram.svg';
 import LinkedInIcon from '../svgs/linkedin.svg';
+import MailIcon from '../svgs/mail.svg';
+import SocialIcon from '../svgs/social.svg';
+import TelephoneIcon from '../svgs/telephone.svg';
 
 const Contact = ({ pageContext }) => {
   const i = true;
@@ -90,13 +91,13 @@ const ContactBoxes = () => (
     <div className="contact">
       <a href="mailto:sales@uctel.co.uk">
         <div className="contact--box">
-          <MissionIcon className="icon" />
+          <MailIcon className="icon" />
           <h2>Email us</h2>
           <p>On sales@uctel.co.uk</p>
         </div>
       </a>
       <div className="contact--box">
-        <MissionIcon className="icon" />
+        <SocialIcon className="icon" />
         <h2>Follow us</h2>
         <div className="contact--box--icons">
           <a
@@ -117,7 +118,7 @@ const ContactBoxes = () => (
       </div>
       <a href="tel:0333 344 4417" rel="noopener noreferrer">
         <div className="contact--box">
-          <MissionIcon className="icon" />
+          <TelephoneIcon className="icon" />
           <h2>Call us</h2>
           <p>On 0333 344 4417</p>
         </div>
