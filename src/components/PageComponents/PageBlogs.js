@@ -1,3 +1,4 @@
+import { Link } from 'gatsby';
 import React from 'react';
 import styled from 'styled-components';
 import SingleBlog from './SingleBlog';
@@ -52,9 +53,11 @@ const PageBlogs = ({ Blogs }) => (
         ))}
       </div>
       <div className="pb--btn">
-        <button className="btn btn--slate" type="button">
-          <span>Read more</span>
-        </button>
+        <Link to="/blogs">
+          <button className="btn btn--slate" type="button">
+            <span>Read more</span>
+          </button>
+        </Link>
       </div>
     </div>
   </PageBlogsStyles>

@@ -90,6 +90,7 @@ const GlobalStyles = createGlobalStyle`
         border-radius: 50px;
         border: none;
         max-width: var(--btnMaxWidth);
+        cursor: pointer;
         span {
             text-align: center ;
             font-size: 1rem;

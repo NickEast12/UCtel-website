@@ -61,6 +61,11 @@ const SolutionsIntroStyles = styled.div`
         }
       }
     }
+    @media only screen and (min-width: 1280px) {
+      &__grid {
+        grid-gap: 2rem;
+      }
+    }
   }
 `;
 const SolutionsIntro = () => (
@@ -76,7 +81,7 @@ const SolutionsIntro = () => (
         </p>
       </div>
       <div className="solutions__grid">
-        <Link to="/">
+        <Link to="/solutions/in-building-mobile-connectivity">
           <div className="solutions__grid__box">
             <MissionIcon />
             <h4>In-Building Mobile</h4>
@@ -91,7 +96,7 @@ const SolutionsIntro = () => (
             </div>
           </div>
         </Link>
-        <Link to="/">
+        <Link to="/solutions/private-5g">
           <div className="solutions__grid__box">
             <MissionIcon />
             <h4>Private 5G</h4>
@@ -106,7 +111,7 @@ const SolutionsIntro = () => (
             </div>
           </div>
         </Link>
-        <Link to="/">
+        <Link to="/solutions/unified-communications-and-contact-centre">
           <div className="solutions__grid__box">
             <MissionIcon />
             <h4>Unified Communications</h4>

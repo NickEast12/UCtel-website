@@ -94,7 +94,7 @@ const BlackHeader = ({ title, description }) => {
         </div>
       </div>
       {isDesktop ? (
-        <AnimateHeaderBackground points="20" distance="20" spacing="20" />
+        <AnimateHeaderBackground points="10" distance="20" spacing="15" />
       ) : (
         <AnimateHeaderBackground />
       )}

@@ -154,9 +154,20 @@ const EmailSignUp = () => {
         <div className="social">
           <p>Follow us so you never miss a post...</p>
           <div className="social__wrapper">
-            <LinkedInIcon />
-            <InstagramIcon />
-            <TwitterIcon />
+            <a
+              href="https://www.linkedin.com/company/uctel/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <LinkedInIcon />
+            </a>
+            <a
+              href="https://twitter.com/UCtel_Ltd "
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <TwitterIcon />
+            </a>
           </div>
         </div>
       </div>

@@ -64,6 +64,11 @@ const OurMissionStyles = styled.div`
         }
       }
     }
+    @media only screen and (min-width: 1280px) {
+      &__left {
+        padding-top: 2rem;
+      }
+    }
   }
 `;
 const OurMission = () => (

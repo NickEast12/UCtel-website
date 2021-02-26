@@ -320,7 +320,7 @@ const DesktopNavStyles = styled.div`
     display: block;
     transition: all 0.3s ease;
     .d-nav {
-      max-width: var(--maxWidth);
+      max-width: 1100px;
       width: 95%;
       margin: 0 auto;
       padding: 2rem 0;
@@ -441,7 +441,14 @@ const DesktopNavStyles = styled.div`
       } */
     }
   }
-  @media only screen and (min-width: 1024px) {
+  @media only screen and (min-width: 1280px) {
+    .d-nav {
+      &__btn {
+        button {
+          width: 400px;
+        }
+      }
+    }
     .none {
       display: block !important;
     }
@@ -496,7 +503,7 @@ const DesktopNav = ({ alt }) => {
               </div>
             </li>
             <li>
-              <Link to="/case-studies">Case Studies</Link>
+              <Link to="/case-studies">Case studies</Link>
             </li>
             <li>
               <Link to="/blogs">Blogs</Link>

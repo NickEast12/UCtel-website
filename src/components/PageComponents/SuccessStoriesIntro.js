@@ -1,3 +1,4 @@
+import { Link } from 'gatsby';
 import React from 'react';
 import styled from 'styled-components';
 import ArrowIcon from '../../svgs/right-arrow.svg';
@@ -66,10 +67,12 @@ const SuccessStoriesIntro = () => (
         </h3>
         <h5 className="client--name">Jon Snow</h5>
         <h5 className="client--business">Night's Watch</h5>
-        <div className="fom">
-          <ArrowIcon />
-          <span>Read more</span>
-        </div>
+        <Link to="/case-studies">
+          <div className="fom">
+            <ArrowIcon />
+            <span>Read more</span>
+          </div>
+        </Link>
       </div>
       <div className="success__img img-decoration">
         <Image filename="template.jpeg" alt="fill this in later" />

@@ -1,8 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Link } from 'gatsby';
 import Image from './functional/Image';
 import TwitterIcon from '../svgs/twitter.svg';
-import InstagramIcon from '../svgs/instagram.svg';
 import LinkedInIcon from '../svgs/linkedin.svg';
 import Bread from './functional/Breadcrums';
 
@@ -82,6 +82,11 @@ const FooterCTAStyles = styled.div`
       &--content {
         text-align: left;
       }
+      a {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+      }
       &--btn {
         display: flex;
       }
@@ -104,12 +109,16 @@ const FooterCTA = () => (
         {/* <p>What do you want the user to do?</p> */}
       </div>
       <div className="footerCTA--btn">
-        <button type="button" className="btn btn--main">
-          <span>Get Started</span>
-        </button>
-        <button type="button" className="btn btn--alt">
-          <span>Talk to an expert</span>
-        </button>
+        <Link to="/get-started">
+          <button type="button" className="btn btn--main">
+            <span>Get Started</span>
+          </button>
+        </Link>
+        <Link to="/contact">
+          <button type="button" className="btn btn--alt">
+            <span>Talk to an expert</span>
+          </button>
+        </Link>
       </div>
     </div>
   </FooterCTAStyles>
@@ -229,11 +238,16 @@ const MainFooter = () => (
           <section>
             <h6>Our Office</h6>
             <p>
-              Nutcracker Agency <br />
-              Salatin House <br />
-              19 Cedar Road <br />
-              Sutton <br />
-              SM2 5DA
+              <a
+                href="http://maps.google.com/?q=UCtel Ltd, Leatherhead"
+                target="__blank"
+              >
+                75 Cannon Grove,
+                <br /> Fetcham,
+                <br /> Leatherhead,
+                <br /> Surrey,
+                <br /> KT22 9LP
+              </a>
             </p>
           </section>
         </div>
@@ -241,28 +255,59 @@ const MainFooter = () => (
           <section>
             <h6>Solutions</h6>
             <ul>
-              <li>Private 5G</li>
-              <li>Unified Communications</li>
-              <li>In-Building Mobile Connectivity </li>
+              <li>
+                <Link to="/solutions/in-building-mobile-connectivity">
+                  In-Building Mobile Connectivity
+                </Link>
+              </li>
+              <li>
+                <Link to="/solutions/private-5g">Private 5G</Link>
+              </li>
+              <li>
+                <Link to="/solutions/unified-communications-and-contact-centre">
+                  Unified Communications
+                </Link>
+              </li>
             </ul>
           </section>
           <section>
             <h6>Company</h6>
             <ul>
-              <li>About us</li>
-              <li>Blog</li>
-              <li>Case studies</li>
-              <li>Contact</li>
-              <li>Get started</li>
+              <li>
+                <Link to="/about-us">About us</Link>
+              </li>
+              <li>
+                <Link to="/blogs">Blog</Link>
+              </li>
+              <li>
+                <Link to="/case-stuides">Case studies</Link>
+              </li>
+              <li>
+                <Link to="/contact">Contact</Link>
+              </li>
+              <li>
+                <Link to="/get-started">Get started</Link>
+              </li>
             </ul>
           </section>
         </div>
       </div>
       <div className="footer__main__lower">
         <section className="icons">
-          <TwitterIcon />
-          <LinkedInIcon />
-          <InstagramIcon />
+          <a
+            href="https://www.linkedin.com/company/uctel/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <TwitterIcon />
+          </a>
+          <a
+            href="https://twitter.com/UCtel_Ltd "
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <LinkedInIcon />
+          </a>
         </section>
         <section className="legal">
           <p>&copy; {new Date().getFullYear()} UCtel </p>

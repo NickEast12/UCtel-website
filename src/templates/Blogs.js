@@ -23,7 +23,6 @@ import LinkedInIcon from '../svgs/linkedin.svg';
 const BlogPageStyles = styled.main`
   width: 100%;
   .bp--header {
-    width: 100%;
     .gatsby-image-wrapper {
       height: 15rem;
     }

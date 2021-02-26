@@ -19,6 +19,7 @@ const Contact = ({ pageContext }) => {
         title="Contact"
         description="Get in touch to find out more"
       />
+
       <main>
         <ContactBoxes />
         <MapWrapper />
