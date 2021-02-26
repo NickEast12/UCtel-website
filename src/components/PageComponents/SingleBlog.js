@@ -10,9 +10,9 @@ const SingleBlogStyles = styled.article`
   box-shadow: 0 1.7778rem 1.6667rem rgb(10 10 10 / 10%);
   border-radius: 4.5px;
   .sb--img {
-    object-fit: fill !important;
+    /* object-fit: fill !important; */
     .gatsby-image-wrapper {
-      height: 12.5rem;
+      height: 14.5rem;
       border-top-left-radius: 4.5px;
       border-top-right-radius: 4.5px;
       /* font-family: 'object-fit:cover';
@@ -81,7 +81,7 @@ const SingleBlog = ({ blog }) => {
     <SingleBlogStyles>
       <Link to={`/blogs/${blog.slug.current}`}>
         <div className="sb--img">
-          <Img fluid={blog.mainImage.asset.fluid} alt={blog.mainImage.alt} />
+          <Img fluid={blog.cardImage.asset.fluid} alt={blog.mainImage.alt} />
         </div>
         <div className="sb--content">
           <div className="sb--data">

@@ -18,7 +18,7 @@ const MainNavWrapper = styled.nav`
 const Nav = ({ alt }) => {
   const [navbar, setNavbar] = useState(false);
   const changeNav = () => {
-    if (window.scrollY >= 50) {
+    if (window.scrollY >= 20) {
       setNavbar(true);
     } else {
       setNavbar(false);

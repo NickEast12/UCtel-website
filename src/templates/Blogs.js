@@ -23,24 +23,35 @@ import LinkedInIcon from '../svgs/linkedin.svg';
 const BlogPageStyles = styled.main`
   width: 100%;
   .bp--header {
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 5rem;
+    border-radius: 4.5px;
+    max-width: 1100px;
     .gatsby-image-wrapper {
+      border-radius: 4.5px;
+      width: 100%;
       height: 15rem;
+      img {
+        object-fit: fill !important;
+      }
     }
   }
   .bp--content {
     width: 90%;
     max-width: var(--maxWidth);
     height: 100%;
-    margin: 0 auto 2rem auto;
+    margin: 0rem auto 2rem auto;
     background-color: var(--white);
     border-radius: 4.5px;
-    margin-top: -5rem;
+    /* margin-top: -5rem; */
     position: relative;
     z-index: 10;
     padding: 1.5rem 1.5rem;
     box-shadow: 0 1.7778rem 1.6667rem rgb(10 10 10 / 10%);
     &__data {
       display: flex;
+      justify-content: space-between;
       h6 {
         font-size: 1rem;
         color: var(--lightBlue);
@@ -65,7 +76,7 @@ const BlogPageStyles = styled.main`
         .gatsby-image-wrapper {
           border-radius: 50%;
           width: 50px;
-          height: 100%;
+          height: 50px;
         }
       }
       .info {
@@ -162,8 +173,9 @@ const BlogPageStyles = styled.main`
   }
   @media only screen and (min-width: 414px) {
     .bp--header {
+      width: 85%;
       .gatsby-image-wrapper {
-        height: 20rem;
+        height: 18rem;
       }
     }
     .bp--content {
@@ -171,13 +183,103 @@ const BlogPageStyles = styled.main`
     }
   }
   @media only screen and (min-width: 701px) {
-    .bp--content {
-      width: 70%;
+    .bp--header {
+      width: 85%;
+      padding-top: 8rem;
+    }
+    .bp__wrapper {
+      display: grid;
+      padding-top: 2rem;
+      width: 85%;
+      max-width: 1100px;
+      margin: 0 auto;
+      grid-template-columns: 30% 1fr;
+      grid-gap: 1rem;
+      grid-template-areas: 'a b';
+      .sticky-signup {
+        position: sticky;
+        top: 5.85rem;
+        .email {
+          width: 100%;
+        }
+      }
+      .bp--content {
+        grid-area: b;
+        width: 100%;
+        padding-top: 0;
+        box-shadow: none;
+        h1 {
+          font-size: 2.5rem;
+        }
+      }
     }
   }
   @media only screen and (min-width: 1280px) {
+    .bp--header {
+      width: 100%;
+      margin-bottom: 2rem;
+      .gatsby-image-wrapper {
+        height: 20rem;
+      }
+    }
     .bp--content {
       width: 60%;
+    }
+  }
+`;
+
+const EmailSignUpStyles = styled.aside`
+  width: 100%;
+  .email {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    background-color: var(--lightBlue);
+    border-radius: 4.5px;
+    padding: 1.5rem 1rem;
+    h6 {
+      color: var(--white);
+      font-size: 1.2rem;
+    }
+    p {
+      margin: 1rem 0;
+      color: var(--white);
+      font-size: 1.1rem;
+    }
+    form {
+      width: 80%;
+      margin: 0 auto;
+      input {
+        width: 100%;
+        background-color: var(--white);
+        padding: 0.5rem;
+        border-radius: 4.5px;
+        border: none;
+        margin-bottom: 0.85rem;
+      }
+      input::placeholder {
+        color: var(--lightBlue);
+        text-align: center;
+        font-size: 1rem;
+      }
+    }
+  }
+  .social {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 2rem 0;
+    p {
+      font-size: 1.2rem;
+      font-family: Gellix-Medium;
+    }
+    &__wrapper {
+      margin-top: 1rem;
+      svg {
+        fill: var(--lightBlue);
+        width: 22.5px;
+        margin-right: 10px;
+      }
     }
   }
 `;
@@ -207,7 +309,7 @@ const Blogs = ({ pageContext, data }) => {
     },
   };
   return (
-    <Layout pageContext={pageContext}>
+    <Layout alt pageContext={pageContext}>
       <BlogPageStyles>
         <div className="bp--header">
           <Img
@@ -215,69 +317,75 @@ const Blogs = ({ pageContext, data }) => {
             alt={content.mainImage.alt}
           />
         </div>
-        <div className="bp--content">
-          <div className="bp--content__data">
-            {categories.map((cat) => (
-              <h6>{cat.title}</h6>
-            ))}
-            <span>{content.readingTimeInMinutes} Min Read</span>
-          </div>
-          <h1>{content.title}</h1>
-          <div className="bp--content__author">
-            {authors.map((aut) => (
-              <>
-                <div className="img">
-                  <Img
-                    fluid={aut.author.image.asset.fluid}
-                    alt={aut.author.image.asset.alt}
-                  />
+        <div className="bp__wrapper">
+          <div className="bp--content">
+            <div className="bp--content__data">
+              {categories.map((cat) => (
+                <h6>{cat.title}</h6>
+              ))}
+              <span>{content.readingTimeInMinutes} Min Read</span>
+            </div>
+            <h1>{content.title}</h1>
+            <div className="bp--content__author">
+              {authors.map((aut) => (
+                <>
+                  <div className="img">
+                    <Img
+                      fluid={aut.author.image.asset.fluid}
+                      alt={aut.author.image.asset.alt}
+                    />
+                  </div>
+                  <div className="info">
+                    <p>{aut.author.name}</p>
+                    <span>{content.publishedAt}</span>
+                  </div>
+                </>
+              ))}
+            </div>
+            <div className="bp--content__share">
+              <EmailShareButton
+                url={window.location.href}
+                subject={content.title}
+                body="Check out this amazing blog by the UCtel team"
+              >
+                <div className="share--box email">
+                  <EmailIcon />
                 </div>
-                <div className="info">
-                  <p>{aut.author.name}</p>
-                  <span>{content.publishedAt}</span>
+              </EmailShareButton>
+              <TwitterShareButton
+                url={window.location.href}
+                title={content.title}
+              >
+                <div className="share--box twitter">
+                  <TwitterIcon />
                 </div>
-              </>
-            ))}
+              </TwitterShareButton>
+              <LinkedinShareButton
+                url={window.location.href}
+                summary={content.excerpt}
+                source="UCtel Blog"
+              >
+                <div className="share--box linkedin">
+                  <LinkedInIcon />
+                </div>
+              </LinkedinShareButton>
+              <FacebookShareButton
+                url={window.location.href}
+                quote={content.title}
+              >
+                <div className="share--box facebook">
+                  <FacebookIcon />
+                </div>
+              </FacebookShareButton>
+            </div>
+            <div className="bp--content__body">
+              <PortableText
+                blocks={content._rawBody}
+                serializers={serializers}
+              />
+            </div>
           </div>
-          <div className="bp--content__share">
-            <EmailShareButton
-              url={window.location.href}
-              subject={content.title}
-              body="Check out this amazing blog by the UCtel team"
-            >
-              <div className="share--box email">
-                <EmailIcon />
-              </div>
-            </EmailShareButton>
-            <TwitterShareButton
-              url={window.location.href}
-              title={content.title}
-            >
-              <div className="share--box twitter">
-                <TwitterIcon />
-              </div>
-            </TwitterShareButton>
-            <LinkedinShareButton
-              url={window.location.href}
-              summary={content.excerpt}
-              source="UCtel Blog"
-            >
-              <div className="share--box linkedin">
-                <LinkedInIcon />
-              </div>
-            </LinkedinShareButton>
-            <FacebookShareButton
-              url={window.location.href}
-              quote={content.title}
-            >
-              <div className="share--box facebook">
-                <FacebookIcon />
-              </div>
-            </FacebookShareButton>
-          </div>
-          <div className="bp--content__body">
-            <PortableText blocks={content._rawBody} serializers={serializers} />
-          </div>
+          <EmailSignUp />
         </div>
         <RelatedBlogs relatedBlogsData={relatedBlogsData} />
       </BlogPageStyles>
@@ -286,6 +394,46 @@ const Blogs = ({ pageContext, data }) => {
 };
 
 export default Blogs;
+
+const EmailSignUp = () => {
+  console.log('tewst');
+  return (
+    <EmailSignUpStyles>
+      <div className="sticky-signup">
+        <div className="email">
+          <h6>Get our latest blogs straight to your inbox</h6>
+          <p>Sign up to our mailing list</p>
+          <form action="">
+            <input type="text" placeholder="Full name" />
+            <input type="email" placeholder="Email Address" />
+            <button className="btn btn--slate" type="submit">
+              <span>Submit</span>
+            </button>
+          </form>
+        </div>
+        <div className="social">
+          <p>Follow us so you never miss a post...</p>
+          <div className="social__wrapper">
+            <a
+              href="https://www.linkedin.com/company/uctel/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <LinkedInIcon />
+            </a>
+            <a
+              href="https://twitter.com/UCtel_Ltd "
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <TwitterIcon />
+            </a>
+          </div>
+        </div>
+      </div>
+    </EmailSignUpStyles>
+  );
+};
 
 export const query = graphql`
   query SingleBlogQuery($slug: String!, $category: String!) {
@@ -355,6 +503,13 @@ export const query = graphql`
                   ...GatsbySanityImageFluid
                 }
               }
+            }
+          }
+        }
+        cardImage {
+          asset {
+            fluid(maxWidth: 410) {
+              ...GatsbySanityImageFluid
             }
           }
         }
