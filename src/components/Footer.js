@@ -311,7 +311,9 @@ const MainFooter = () => (
         </section>
         <section className="legal">
           <p>&copy; {new Date().getFullYear()} UCtel </p>
-          <p>Privacy Policy</p>
+          <Link to="/privacy-policy">
+            <p>Privacy Policy</p>
+          </Link>
         </section>
       </div>
     </div>
