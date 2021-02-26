@@ -54,7 +54,7 @@ const HowItWorksStyles = styled.div`
 const HowItWorks = () => (
   <HowItWorksStyles>
     <div className="hiw">
-      <h3>How it works?</h3>
+      <h3>How it works</h3>
       <div className="hiw--wrapper">
         <div className="hiw--wrapper--box">
           <span className="no">1</span>

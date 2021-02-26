@@ -94,7 +94,7 @@ const WhiteLandingPage = ({ darkTheme, title, description }) => {
         </div>
       </div>
       {isDesktop ? (
-        <WhiteHeaderBackground points="10" distance="20" spacing="15" />
+        <WhiteHeaderBackground points="15" distance="20" spacing="16" />
       ) : (
         <WhiteHeaderBackground />
       )}

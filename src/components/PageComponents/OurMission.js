@@ -76,7 +76,8 @@ const OurMission = () => (
     <div className="mission">
       <div className="mission__left">
         <h2>
-          Award-winning services. Powered by technology, delivered by experts.
+          Forward-thinking services. Powered by technology, delivered by
+          experts.
         </h2>
       </div>
       <div className="mission__right">

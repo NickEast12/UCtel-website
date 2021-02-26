@@ -110,7 +110,7 @@ const GetStartedStyles = styled.div`
       grid-template-columns: 40% 1fr;
       grid-gap: 2rem;
       &__content {
-        padding-top: 5rem;
+        padding-top: 3rem;
       }
       &__form {
         padding: 2rem 1rem;
@@ -146,7 +146,10 @@ const GetStarted = () => {
         <div className="started__wrapper">
           <div className="started__wrapper__content">
             <Image filename="UCtel-logo.png" alt="UCtel Logo" />
-            <h1>A snappy call to action for the get started page.</h1>
+            <h1>
+              Contact the team to discover how UCtel can improve your digital
+              connectivity and communications.
+            </h1>
             <div className="started__wrapper__content__clients">
               <CiscoLogo />
               <CiscoLogo />

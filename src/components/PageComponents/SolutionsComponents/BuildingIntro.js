@@ -80,7 +80,7 @@ const BuildingIntro = () => (
     <div className="si__wrapper">
       <div className="si--left">
         <h6 className="subtitle">In-building Mobile Connectivity</h6>
-        <h2>Caption to introduce subject</h2>
+        <h2>Optimise cellular coverage</h2>
         <p>
           Many buildings to do not allow for the effective propagation of mobile
           signals indoors, which impacts negatively on productivity,

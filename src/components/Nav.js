@@ -321,7 +321,7 @@ const DesktopNavStyles = styled.div`
     transition: all 0.3s ease;
     .d-nav {
       max-width: 1100px;
-      width: 95%;
+      width: 90%;
       margin: 0 auto;
       padding: 2rem 0;
       display: flex;
@@ -444,8 +444,9 @@ const DesktopNavStyles = styled.div`
   @media only screen and (min-width: 1280px) {
     .d-nav {
       &__btn {
+        width: 180px;
         button {
-          width: 400px;
+          width: 100%;
         }
       }
     }

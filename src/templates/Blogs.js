@@ -202,6 +202,9 @@ const BlogPageStyles = styled.main`
         .email {
           width: 100%;
         }
+        .social {
+          text-align: left;
+        }
       }
       .bp--content {
         grid-area: b;

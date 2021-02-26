@@ -56,10 +56,7 @@ const Blogs = ({ pageContext, data }) => {
     <Layout alt pageContext={pageContext}>
       <WhiteLandingPage
         title={`${pageContext.title || 'UCtel Blogs'}`}
-        description={`${
-          pageContext.description ||
-          'The latest updates, tips and stories from our team'
-        }`}
+        description="Browse our industry insights to help you make the best decision for your business"
       />
       <main>
         <BlogSorter />

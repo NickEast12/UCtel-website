@@ -68,9 +68,10 @@ const BuildingSub = () => (
       <div className="bulsub--left">
         <h6 className="subtitle">Mobile Signal Booster</h6>
         <h3>
-          Cost effective and Ofcom-approved, revolutionary mobile-signal booster
+          Solve the problem of dropped calls, poor voice quality and low data
         </h3>
         <p>
+          Cost effective and Ofcom-approved, revolutionary mobile-signal booster
           Cel-Fi works by bringing the outdoor signal into a building’s
           interior. Hospitals, warehouses, offices and retail units – to name
           but a few – no longer need to suffer in silence because there is a

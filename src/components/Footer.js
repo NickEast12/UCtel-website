@@ -105,13 +105,13 @@ const FooterCTA = () => (
   <FooterCTAStyles>
     <div className="footerCTA">
       <div className="footerCTA--content">
-        <h4>A catchy call to action will go here!</h4>
+        <h4>Contact UCtel and unlock better connectivity today</h4>
         {/* <p>What do you want the user to do?</p> */}
       </div>
       <div className="footerCTA--btn">
         <Link to="/get-started">
           <button type="button" className="btn btn--main">
-            <span>Get Started</span>
+            <span>Get started</span>
           </button>
         </Link>
         <Link to="/contact">

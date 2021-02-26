@@ -73,18 +73,18 @@ const SolutionsIntro = () => (
     <div className="solutions">
       <div className="solutions__content">
         <h6 className="subtitle">Solutions</h6>
-        <h3>How we can help your business grow?</h3>
+        <h3>What can UCtel do for you?</h3>
         <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio
-          quaerat obcaecati architecto distinctio dignissimos! Sint provident
-          molestiae porro voluptatibus rerum. Fuga optio quam a fugiat!
+          Simply by identifying your need, comparing the products and
+          transitioning to the best solution, we allow you and your business to
+          adopt digital technology, stay connected and join the future.
         </p>
       </div>
       <div className="solutions__grid">
         <Link to="/solutions/in-building-mobile-connectivity">
           <div className="solutions__grid__box">
             <MissionIcon />
-            <h4>In-Building Mobile</h4>
+            <h4>In-building mobile</h4>
             <p>
               Award-winning, Ofcom-approved indoor mobile signal booster,
               Cel-Fi, offers an exceptional coverage footprint, improving voice
@@ -114,7 +114,7 @@ const SolutionsIntro = () => (
         <Link to="/solutions/unified-communications-and-contact-centre">
           <div className="solutions__grid__box">
             <MissionIcon />
-            <h4>Unified Communications</h4>
+            <h4>Unified communications</h4>
             <p>
               Integrated services bring instant messaging, audio, web and video
               conferencing, calling and more to your business, eliminating the

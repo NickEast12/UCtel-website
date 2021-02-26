@@ -319,6 +319,13 @@ export const query = graphql`
             }
           }
         }
+        cardImage {
+          asset {
+            fluid(maxWidth: 410) {
+              ...GatsbySanityImageFluid
+            }
+          }
+        }
         mainImage {
           asset {
             fluid(maxWidth: 410) {

@@ -15,7 +15,7 @@ const index = ({ data, pageContext }) => {
     <Layout pageContext={pageContext}>
       <LandingPage
         title="Mobile boosting | Private 5G | Unified Communications"
-        description="Market leading technology keeping you connected."
+        description="Next-generation technology keeping you connected."
       />
       <main>
         <Clients />
