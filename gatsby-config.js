@@ -105,7 +105,7 @@ module.exports = {
             'Gellix-Bold',
             'Gellix-SemiBold',
           ],
-          urls: ['/fonts.fonts.css'],
+          urls: ['/fonts/fonts.css'],
         },
       },
     },
