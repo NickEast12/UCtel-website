@@ -11,11 +11,11 @@ module.exports = {
     image: `/icon.png`,
   },
   plugins: [
+    `gatsby-plugin-preload-fonts`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-styled-components`,
-    `gatsby-plugin-preload-fonts`,
     `gatsby-plugin-sitemap`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -93,6 +93,20 @@ module.exports = {
           `/offline-plugin-app-shell-fallback/`,
         ],
         trailingSlashes: false,
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-web-font-loader',
+      options: {
+        custom: {
+          families: [
+            'Gellix-Regular',
+            'Gellix-Medium',
+            'Gellix-Bold',
+            'Gellix-SemiBold',
+          ],
+          urls: ['/fonts.fonts.css'],
+        },
       },
     },
   ],

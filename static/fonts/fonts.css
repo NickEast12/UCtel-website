@@ -1,0 +1,20 @@
+@font-face {
+  font-family: Gellix-Regular;
+  src: url("Gellix-Regular.woff2") format("woff2"),
+    url("Gellix-Regular.woff") format("woff");
+}
+@font-face {
+  font-family: Gellix-Medium;
+  src: url("Gellix-Medium.woff2") format("woff2"),
+    url("Gellix-Medium.woff") format("woff");
+}
+@font-face {
+  font-family: Gellix-Bold;
+  src: url("Gellix-Bold.woff2") format("woff2"),
+    url("Gellix-Bold.woff") format("woff");
+}
+@font-face {
+  font-family: Gellix-SemiBold;
+  src: url("Gellix-SemiBold.woff2") format("woff2"),
+    url("Gellix-SemiBold.woff") format("woff");
+}

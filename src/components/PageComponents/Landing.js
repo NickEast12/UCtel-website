@@ -49,7 +49,7 @@ const LandingPageStyles = styled.div`
     }
   }
   @media only screen and (min-width: 768px) {
-    height: 95vh;
+    height: 100vh;
     .landing__wrapper {
       padding-top: 12.5rem;
       &__content {
