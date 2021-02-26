@@ -48,6 +48,16 @@ const Typography = createGlobalStyle`
         font-size: 16.5px;
       }
     }
+    @media only screen and (min-width: 375px) {
+      html {
+        font-size: 16.5px;
+      }
+    }
+    @media only screen and (min-width: 1280px) {
+      html {
+        font-size: 18px;
+      }
+    }
     body {
       line-height: 1.2;
     }

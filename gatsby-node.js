@@ -1,4 +1,3 @@
-import fetch from 'isomorphic-fetch';
 import path from 'path';
 
 export async function turnBlogCategoriesIntoPage({ graphql, actions }) {

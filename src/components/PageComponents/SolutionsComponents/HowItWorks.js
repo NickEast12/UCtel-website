@@ -42,7 +42,7 @@ const HowItWorksStyles = styled.div`
       width: 85%;
     }
   }
-  @media only screen and (min-width: 375px) {
+  @media only screen and (min-width: 768px) {
     .hiw {
       &--wrapper {
         display: grid;

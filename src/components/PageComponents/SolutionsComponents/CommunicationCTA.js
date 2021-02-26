@@ -18,7 +18,6 @@ const FindOutStyles = styled.div`
     }
     p {
       margin-bottom: 1rem;
-      color: var(--black);
     }
     @media only screen and (min-width: 375px) {
       width: 85%;
