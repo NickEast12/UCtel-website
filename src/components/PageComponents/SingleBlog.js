@@ -10,10 +10,16 @@ const SingleBlogStyles = styled.article`
   box-shadow: 0 1.7778rem 1.6667rem rgb(10 10 10 / 10%);
   border-radius: 4.5px;
   .sb--img {
+    object-fit: fill !important;
     .gatsby-image-wrapper {
       height: 12.5rem;
       border-top-left-radius: 4.5px;
       border-top-right-radius: 4.5px;
+      /* font-family: 'object-fit:cover';
+      -o-object-fit: cover; */
+      img {
+        object-fit: fill !important;
+      }
     }
   }
   .sb--content {
