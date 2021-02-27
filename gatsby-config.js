@@ -60,7 +60,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: '118',
+        trackingId: 'UA-138434630-1',
         head: true,
       },
     },
@@ -68,8 +68,18 @@ module.exports = {
       resolve: `gatsby-plugin-gdpr-cookies`,
       options: {
         googleAnalytics: {
-          trackingId: '118',
+          trackingId: 'UA-138434630-1',
+          cookieName: 'gatsby-gdpr-google-analytics',
           anonymize: true,
+        },
+        googleTagManager: {
+          trackingId: '',
+          cookieName: 'gatsby-gdpr-google-tagmanager',
+          dataLayerName: 'dataLayer',
+        },
+        facebookPixel: {
+          pixelId: '',
+          cookieName: 'gatsby-gdpr-facebook-pixel',
         },
         environments: ['production', 'development'],
       },
