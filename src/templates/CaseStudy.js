@@ -53,7 +53,6 @@ const CaseStudyHeaderStyles = styled.header`
       }
       h1 {
         font-size: 1.75rem;
-        font-family: Gellix-SemiBold;
         color: var(--slate);
         margin: 1rem 0;
       }

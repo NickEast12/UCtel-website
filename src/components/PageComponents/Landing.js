@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
 import { window, document, exists } from 'browser-monads';
 import { Link } from 'gatsby';
+import Fade from 'react-reveal/Fade';
 import AnimateHeaderBackground from '../functional/NetAnimatedBackground';
 
 const LandingPageStyles = styled.div`
@@ -89,24 +90,30 @@ const LandingPage = ({ darkTheme, title, description }) => {
     <LandingPageStyles>
       <div className={`landing__wrapper ${darkTheme ? 'darkTheme' : ''}`}>
         <div className="landing__wrapper__content">
-          <h1>
-            <span className="title">Optimum mobile coverage.</span>
-            <span className="title">IoT cellular technology.</span>
-            <span className="title">Unified communications.</span>
-          </h1>
-          <p>{description}</p>
-          <div className="btn__wrapper">
-            <Link to="/get-started">
-              <button type="button" className="btn btn--main">
-                <span>Get started</span>
-              </button>
-            </Link>
-            <Link to="/contact">
-              <button type="button" className="btn btn--alt">
-                <span>Talk to an expert</span>
-              </button>
-            </Link>
-          </div>
+          <Fade duration={1000} delay={500}>
+            <h1>
+              <span className="title">Optimum mobile coverage.</span>
+              <span className="title">IoT cellular technology.</span>
+              <span className="title">Unified communications.</span>
+            </h1>
+          </Fade>
+          <Fade duration={1000} delay={850}>
+            <p>{description}</p>
+          </Fade>
+          <Fade bottom delay={1000}>
+            <div className="btn__wrapper">
+              <Link to="/get-started">
+                <button type="button" className="btn btn--main">
+                  <span>Get started</span>
+                </button>
+              </Link>
+              <Link to="/contact">
+                <button type="button" className="btn btn--alt">
+                  <span>Talk to an expert</span>
+                </button>
+              </Link>
+            </div>
+          </Fade>
         </div>
       </div>
       {isDesktop ? (
