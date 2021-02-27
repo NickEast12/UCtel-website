@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'gatsby';
+import Fade from 'react-reveal/Fade';
 import ArrowIcon from '../../svgs/right-arrow.svg';
 import FiveGIcon from '../../svgs/fiveg.svg';
 import InBuildingIcon from '../../svgs/smartphone.svg';
@@ -83,51 +84,57 @@ const SolutionsIntro = () => (
         </p>
       </div>
       <div className="solutions__grid">
-        <Link to="/solutions/in-building-mobile-connectivity">
-          <div className="solutions__grid__box">
-            <InBuildingIcon />
-            <h4>In-building mobile</h4>
-            <p>
-              Award-winning, Ofcom-approved indoor mobile signal booster,
-              Cel-Fi, offers an exceptional coverage footprint, improving voice
-              quality and data speeds with one easy installation
-            </p>
-            <div className="fom">
-              <ArrowIcon />
-              <span>Learn more</span>
+        <Fade delay={200}>
+          <Link to="/solutions/in-building-mobile-connectivity">
+            <div className="solutions__grid__box">
+              <InBuildingIcon />
+              <h4>In-building mobile</h4>
+              <p>
+                Award-winning, Ofcom-approved indoor mobile signal booster,
+                Cel-Fi, offers an exceptional coverage footprint, improving
+                voice quality and data speeds with one easy installation
+              </p>
+              <div className="fom">
+                <ArrowIcon />
+                <span>Learn more</span>
+              </div>
             </div>
-          </div>
-        </Link>
-        <Link to="/solutions/private-5g">
-          <div className="solutions__grid__box">
-            <FiveGIcon />
-            <h4>Private 5G</h4>
-            <p>
-              Intrinsically secure, cost-effective, effortlessly mobile and
-              reliable, private 5G networks deliver a high-performing, robust
-              and scalable solution to support IoT applications
-            </p>
-            <div className="fom">
-              <ArrowIcon />
-              <span>Learn more</span>
+          </Link>
+        </Fade>
+        <Fade delay={350}>
+          <Link to="/solutions/private-5g">
+            <div className="solutions__grid__box">
+              <FiveGIcon />
+              <h4>Private 5G</h4>
+              <p>
+                Intrinsically secure, cost-effective, effortlessly mobile and
+                reliable, private 5G networks deliver a high-performing, robust
+                and scalable solution to support IoT applications
+              </p>
+              <div className="fom">
+                <ArrowIcon />
+                <span>Learn more</span>
+              </div>
             </div>
-          </div>
-        </Link>
-        <Link to="/solutions/unified-communications-and-contact-centre">
-          <div className="solutions__grid__box">
-            <CommunicationsIcon />
-            <h4>Unified communications</h4>
-            <p>
-              Integrated services bring instant messaging, audio, web and video
-              conferencing, calling and more to your business, eliminating the
-              distance between employees and customers
-            </p>
-            <div className="fom">
-              <ArrowIcon />
-              <span>Learn more</span>
+          </Link>
+        </Fade>
+        <Fade delay={500}>
+          <Link to="/solutions/unified-communications-and-contact-centre">
+            <div className="solutions__grid__box">
+              <CommunicationsIcon />
+              <h4>Unified communications</h4>
+              <p>
+                Integrated services bring instant messaging, audio, web and
+                video conferencing, calling and more to your business,
+                eliminating the distance between employees and customers
+              </p>
+              <div className="fom">
+                <ArrowIcon />
+                <span>Learn more</span>
+              </div>
             </div>
-          </div>
-        </Link>
+          </Link>
+        </Fade>
       </div>
     </div>
   </SolutionsIntroStyles>

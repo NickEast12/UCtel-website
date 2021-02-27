@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import MissionIcon from '../../svgs/mission.svg';
+import Fade from 'react-reveal/Fade';
 
 const OurMissionStyles = styled.section`
   width: 100%;
@@ -84,15 +84,19 @@ const OurMission = () => (
   <OurMissionStyles>
     <div className="mission">
       <div className="mission__left">
-        <h2>
-          Forward-thinking services. Powered by technology, delivered by
-          experts.
-        </h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, omnis
-          assumenda? Temporibus consequuntur odio dolorum cum, accusantium non
-          autem ullam totam, aperiam, voluptates tempore modi.
-        </p>
+        <Fade delay={300}>
+          <h2>
+            Forward-thinking services. Powered by technology, delivered by
+            experts.
+          </h2>
+        </Fade>
+        <Fade delay={850}>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias,
+            omnis assumenda? Temporibus consequuntur odio dolorum cum,
+            accusantium non autem ullam totam, aperiam, voluptates tempore modi.
+          </p>
+        </Fade>
       </div>
       {/* <div className="mission__right">
         <div className="mission__right__box">

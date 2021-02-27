@@ -1,5 +1,6 @@
 import { Link } from 'gatsby';
 import React from 'react';
+import Fade from 'react-reveal/Fade';
 import styled from 'styled-components';
 import ArrowIcon from '../../svgs/right-arrow.svg';
 import Image from '../functional/Image';
@@ -59,22 +60,24 @@ const SuccessStoriesIntro = () => (
   <SuccessStoriesIntroStyles>
     <div className="success">
       <div className="success__content">
-        <h6 className="subtitle">Success Story</h6>
-        <h3>
-          "Smooth conversion to a seamless communication was of vital
-          significance to us. UCtel understood our business and their delivery
-          was flawless"
-        </h3>
-        {/* <h5 className="client--name">Jon Snow</h5> */}
-        <h5 className="client--business">
-          Central London Community Healthcare NHS Trust
-        </h5>
-        <Link to="/case-studies">
-          <div className="fom">
-            <ArrowIcon />
-            <span>Read more</span>
-          </div>
-        </Link>
+        <Fade delay={300}>
+          <h6 className="subtitle">Success Story</h6>
+          <h3>
+            "Smooth conversion to a seamless communication was of vital
+            significance to us. UCtel understood our business and their delivery
+            was flawless"
+          </h3>
+          {/* <h5 className="client--name">Jon Snow</h5> */}
+          <h5 className="client--business">
+            Central London Community Healthcare NHS Trust
+          </h5>
+          <Link to="/case-studies">
+            <div className="fom">
+              <ArrowIcon />
+              <span>Read more</span>
+            </div>
+          </Link>
+        </Fade>
       </div>
       <div className="success__img img-decoration">
         <Image filename="template.jpeg" alt="fill this in later" />

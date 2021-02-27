@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'gatsby';
+import Fade from 'react-reveal/Fade';
 import Image from '../functional/Image';
 import ArrowIcon from '../../svgs/right-arrow.svg';
 
@@ -59,21 +60,23 @@ const AboutUsIntro = () => (
         <Image filename="template.jpeg" alt="This will change" />
       </div>
       <div className="aboutus--content">
-        <h6 className="subtitle">About us</h6>
-        <h3>Bringing business into the digital age</h3>
-        <p>
-          Business is constantly evolving, and in today’s digital-first world,
-          you need to be more agile than ever. With market-leading,
-          forward-thinking and cutting-edge technologies, we can transform your
-          communication infrastructure, drive your IoT initiatives and keep you
-          connected anywhere, any time and on any device.
-        </p>
-        <Link to="/about-us">
-          <div className="fom">
-            <ArrowIcon />
-            <span>Find out more</span>
-          </div>
-        </Link>
+        <Fade delay={450}>
+          <h6 className="subtitle">About us</h6>
+          <h3>Bringing business into the digital age</h3>
+          <p>
+            Business is constantly evolving, and in today’s digital-first world,
+            you need to be more agile than ever. With market-leading,
+            forward-thinking and cutting-edge technologies, we can transform
+            your communication infrastructure, drive your IoT initiatives and
+            keep you connected anywhere, any time and on any device.
+          </p>
+          <Link to="/about-us">
+            <div className="fom">
+              <ArrowIcon />
+              <span>Find out more</span>
+            </div>
+          </Link>
+        </Fade>
       </div>
     </div>
   </AboutUsIntroStyles>

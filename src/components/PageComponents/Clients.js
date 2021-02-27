@@ -1,9 +1,8 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import { window, document, exists } from 'browser-monads';
-import Image from '../functional/Image';
+import Fade from 'react-reveal/Fade';
 import CiscoLogo from '../../svgs/cisco-2.svg';
-import CiscoMerakiLogo from '../../svgs/cisco-meraki.svg';
 
 const ClientStyles = styled.section`
   width: 100%;
@@ -45,7 +44,7 @@ const Clients = () => {
     <ClientStyles>
       <div className="clients">
         <h4>We're already working with some of the largest providers</h4>
-        {size ? <DesktopClients /> : <MobileClients />}
+        <Fade delay={200}>{size ? <DesktopClients /> : <MobileClients />}</Fade>
       </div>
     </ClientStyles>
   );
