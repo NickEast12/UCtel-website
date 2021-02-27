@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import ArrowIcon from '../../svgs/right-arrow.svg';
 import Image from '../functional/Image';
 
-const SuccessStoriesIntroStyles = styled.div`
+const SuccessStoriesIntroStyles = styled.section`
   width: 100%;
   .success {
     width: 90%;

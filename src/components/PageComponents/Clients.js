@@ -5,7 +5,7 @@ import Image from '../functional/Image';
 import CiscoLogo from '../../svgs/cisco-2.svg';
 import CiscoMerakiLogo from '../../svgs/cisco-meraki.svg';
 
-const ClientStyles = styled.div`
+const ClientStyles = styled.section`
   width: 100%;
   background-color: var(--lightBlue);
   .clients {

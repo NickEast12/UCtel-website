@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import TickIcon from '../../../svgs/tick.svg';
 
-const NokiaDACStyles = styled.div`
+const NokiaDACStyles = styled.section`
   width: 100%;
   background-color: var(--ghostWhite);
   padding: 4rem 0;

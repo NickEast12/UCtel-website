@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import Img from 'gatsby-image';
 import LinkedInIcon from '../../svgs/linkedin.svg';
 
-const TeamStyles = styled.div`
+const TeamStyles = styled.section`
   width: 100%;
   background-color: var(--lightBlue);
   .team {

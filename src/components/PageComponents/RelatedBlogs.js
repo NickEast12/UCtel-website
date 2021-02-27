@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import SingleBlog from './SingleBlog';
 
-const RelatedBlogsStyles = styled.div`
+const RelatedBlogsStyles = styled.section`
   width: 100%;
   .empty {
     display: none;

@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import Image from '../../functional/Image';
 
-const CiscoStyles = styled.div`
+const CiscoStyles = styled.section`
   width: 100%;
   .technology {
     width: 90%;
@@ -61,19 +61,19 @@ const CiscoStyles = styled.div`
             ul {
               grid-template-columns: repeat(2, 1fr);
               li {
-                  padding-left: 10px;
-                  display: flex;
-                  
+                padding-left: 10px;
+                display: flex;
+              }
             }
           }
         }
       }
-    }
-    @media only screen and (min-width: 1280px) {
-      .technology {
-        &__wrapper {
-          &--left {
-            padding-top: 1.5rem;
+      @media only screen and (min-width: 1280px) {
+        .technology {
+          &__wrapper {
+            &--left {
+              padding-top: 1.5rem;
+            }
           }
         }
       }

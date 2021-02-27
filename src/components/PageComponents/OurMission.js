@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import MissionIcon from '../../svgs/mission.svg';
 
-const OurMissionStyles = styled.div`
+const OurMissionStyles = styled.section`
   width: 100%;
   .mission {
     width: 90%;
@@ -15,6 +15,14 @@ const OurMissionStyles = styled.div`
         font-size: 2rem;
         font-family: Gellix-SemiBold;
         text-align: center;
+      }
+      p {
+        margin: 2rem auto 0 auto;
+        text-align: center;
+        width: 100%;
+        @media only screen and (min-width: 1024px) {
+          width: 70%;
+        }
       }
     }
     &__right {
@@ -80,6 +88,11 @@ const OurMission = () => (
           Forward-thinking services. Powered by technology, delivered by
           experts.
         </h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, omnis
+          assumenda? Temporibus consequuntur odio dolorum cum, accusantium non
+          autem ullam totam, aperiam, voluptates tempore modi.
+        </p>
       </div>
       {/* <div className="mission__right">
         <div className="mission__right__box">

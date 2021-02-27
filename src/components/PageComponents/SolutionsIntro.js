@@ -6,7 +6,7 @@ import FiveGIcon from '../../svgs/fiveg.svg';
 import InBuildingIcon from '../../svgs/smartphone.svg';
 import CommunicationsIcon from '../../svgs/unified.svg';
 
-const SolutionsIntroStyles = styled.div`
+const SolutionsIntroStyles = styled.section`
   width: 100%;
   background-color: var(--ghostWhite);
   .solutions {

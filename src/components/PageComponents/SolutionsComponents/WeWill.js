@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const WeWillStyles = styled.div`
+const WeWillStyles = styled.section`
   width: 100%;
   .ww__wrapper {
     max-width: 1100px;

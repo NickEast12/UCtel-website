@@ -6,6 +6,7 @@ import BlackHeader from '../components/PageComponents/BlackHeader';
 import Team from '../components/PageComponents/Team';
 import WhereWeWork from '../components/PageComponents/WhereWeWork';
 import PageBlogs from '../components/PageComponents/PageBlogs';
+import AboutusLower from '../components/AboutusLower';
 
 const AboutUs = ({ data, pageContext }) => {
   const leaders = data.leaders.nodes;
@@ -19,6 +20,7 @@ const AboutUs = ({ data, pageContext }) => {
       <main>
         <AboutPageIntro />
         <WhereWeWork />
+        <AboutusLower />
         <Team data={leaders} />
         <PageBlogs Blogs={blogs} />
       </main>

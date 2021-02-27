@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const FindOutStyles = styled.div`
+const FindOutStyles = styled.section`
   width: 100%;
   margin: 4rem 0 0 0;
   background-color: var(--lightBlue);

@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import Image from '../../functional/Image';
 
-const CiscoStyles = styled.div`
+const CiscoStyles = styled.section`
   width: 100%;
   .technology {
     width: 90%;

@@ -1,8 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
-import MissionIcon from '../../svgs/mission.svg';
+import HealthcareIcon from '../../svgs/healthcare.svg';
+import ConstructionIcon from '../../svgs/altconstruction.svg';
+import FarmingIcon from '../../svgs/farming.svg';
+import WarehousesIcon from '../../svgs/warehouses.svg';
 
-const WhereWeWorkStyles = styled.div`
+const WhereWeWorkStyles = styled.section`
   width: 100%;
   .work {
     width: 90%;
@@ -42,6 +45,17 @@ const WhereWeWorkStyles = styled.div`
     @media only screen and (min-width: 375px) {
       width: 85%;
     }
+    @media only screen and (min-width: 1024px) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 2rem;
+      .work {
+        &__areas {
+          margin-top: 0;
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+    }
   }
   @media only screen and (min-width: 768px) {
     .work {
@@ -58,31 +72,28 @@ const WhereWeWork = () => (
     <div className="work">
       <div className="work__content">
         <h6 className="subtitle">Where we work</h6>
-        <h3>
+        <h3>Title to introduce section</h3>
+        <p>
           We pride ourselves on offering cutting-edge technology that enables
-          faster communication, better collaborations and improved operations.
-        </h3>
+          faster communication, better collaborations and improved operations.{' '}
+        </p>
       </div>
       <div className="work__areas">
         <div className="work__areas__box">
-          <MissionIcon />
+          <HealthcareIcon />
           <h5>Healthcare</h5>
-          <p>Some text on how we work within this sector</p>
         </div>
         <div className="work__areas__box">
-          <MissionIcon />
+          <FarmingIcon />
           <h5>Agriculture</h5>
-          <p>Some text on how we work within this sector</p>
         </div>
         <div className="work__areas__box">
-          <MissionIcon />
+          <ConstructionIcon />
           <h5>Construction</h5>
-          <p>Some text on how we work within this sector</p>
         </div>
         <div className="work__areas__box">
-          <MissionIcon />
+          <WarehousesIcon />
           <h5>Warehousing</h5>
-          <p>Some text on how we work within this sector</p>
         </div>
       </div>
     </div>

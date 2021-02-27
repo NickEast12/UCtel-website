@@ -47,7 +47,7 @@ const AboutUsIntroStyles = styled.div`
     @media only screen and (min-width: 1024px) {
       max-width: 1000px;
       &--content {
-        padding-top: 1.5rem;
+        padding-top: 0.5rem;
       }
     }
   }

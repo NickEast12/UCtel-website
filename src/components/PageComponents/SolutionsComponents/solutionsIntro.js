@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import TickIcon from '../../../svgs/tick.svg';
 import Image from '../../functional/Image';
 
-const SolutionsIntroStyles = styled.div`
+const SolutionsIntroStyles = styled.section`
   width: 100%;
   .si--left {
     width: 90%;

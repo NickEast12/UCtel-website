@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import Image from '../../functional/Image';
 
-const BuildingSubStyles = styled.div`
+const BuildingSubStyles = styled.section`
   width: 100%;
   .bulsub {
     width: 90%;

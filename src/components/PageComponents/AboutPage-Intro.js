@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import Image from '../functional/Image';
 
-const AboutPageIntroStyles = styled.div`
+const AboutPageIntroStyles = styled.section`
   width: 100%;
   .ap {
     padding: 3rem 0;

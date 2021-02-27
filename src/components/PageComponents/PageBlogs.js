@@ -3,7 +3,7 @@ import React from 'react';
 import styled from 'styled-components';
 import SingleBlog from './SingleBlog';
 
-const PageBlogsStyles = styled.div`
+const PageBlogsStyles = styled.section`
   width: 100%;
   .pb {
     width: 85%;

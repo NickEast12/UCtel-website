@@ -3,7 +3,7 @@ import React from 'react';
 import styled from 'styled-components';
 import MissionIcon from '../../../svgs/no-signal.svg';
 
-const FindOutStyles = styled.div`
+const FindOutStyles = styled.section`
   width: 100%;
   background-color: var(--lightBlue);
   .findCTA {

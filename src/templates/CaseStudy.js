@@ -82,6 +82,21 @@ const CaseStudyHeaderStyles = styled.header`
       }
     }
   }
+  @media only screen and (min-width: 1024px) {
+    .landing__wrapper {
+      width: 70%;
+      &__right {
+        height: 80%;
+        max-width: 400px;
+        .gatsby-image-wrapper {
+          height: 80%;
+        }
+      }
+      &__left {
+        margin: 0 2rem 0 0;
+      }
+    }
+  }
 `;
 const CaseStudyHeader = ({ data }) => {
   const [isDesktop, setDesktop, setPoints] = useState(window.innerWidth > 1200);
@@ -191,17 +206,37 @@ const CaseStudyBodyStyles = styled.main`
   @media only screen and (min-width: 414px) {
     padding-top: 0rem;
   }
-  @media only screen and (min-width: 414px) {
+  @media only screen and (min-width: 768px) {
     .csbody {
+      width: 80%;
       display: grid;
       grid-template-columns: 40% 1fr;
       &__card {
-        height: 37rem;
+        height: 40rem;
         position: sticky;
         top: 6rem;
       }
       &__main {
         padding-top: 0;
+      }
+    }
+  }
+  @media only screen and (min-width: 1024px) {
+    .csbody {
+      width: 70%;
+    }
+  }
+  @media only screen and (min-width: 1280px) {
+    .csbody {
+      width: 70%;
+      grid-template-columns: 35% 1fr;
+      &__card {
+        height: 38rem;
+      }
+      &__main {
+        &__box {
+          margin-bottom: 4rem;
+        }
       }
     }
   }
@@ -240,8 +275,6 @@ const CaseStudyBody = ({ data }) => {
               <span>"</span>
             </div>
             <h3>{data.quote}</h3>
-            <h5>{data.clientname}</h5>
-            <h6>{data.clientposition}</h6>
           </div>
           <div className="csbody__main__box">
             <h3>The Solution</h3>

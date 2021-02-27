@@ -5,7 +5,7 @@ import Step1Icon from '../../../svgs/antenna.svg';
 import Step2Icon from '../../../svgs/wifi.svg';
 import Step3Icon from '../../../svgs/office-building.svg';
 
-const HowItWorksStyles = styled.div`
+const HowItWorksStyles = styled.section`
   width: 100%;
   background-color: var(--ghostWhite);
   .hiw {
