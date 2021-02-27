@@ -55,7 +55,7 @@ const Blogs = ({ pageContext, data }) => {
   return (
     <Layout alt pageContext={pageContext}>
       <WhiteLandingPage
-        title={`${pageContext.title || 'UCtel Blogs'}`}
+        title={`${pageContext.title || 'UCtel blogs'}`}
         description="Browse our industry insights to help you make the best decision for your business"
       />
       <main>

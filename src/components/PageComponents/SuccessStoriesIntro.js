@@ -19,7 +19,7 @@ const SuccessStoriesIntroStyles = styled.div`
       }
       .client--business {
         color: var(--lightBlue);
-        margin-top: 0.25rem;
+        margin-top: 1rem;
         font-size: 1.1rem;
       }
     }
@@ -65,8 +65,10 @@ const SuccessStoriesIntro = () => (
           significance to us. UCtel understood our business and their delivery
           was flawless"
         </h3>
-        <h5 className="client--name">Jon Snow</h5>
-        <h5 className="client--business">Night's Watch</h5>
+        {/* <h5 className="client--name">Jon Snow</h5> */}
+        <h5 className="client--business">
+          Central London Community Healthcare NHS Trust
+        </h5>
         <Link to="/case-studies">
           <div className="fom">
             <ArrowIcon />

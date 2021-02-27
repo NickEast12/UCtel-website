@@ -15,6 +15,11 @@ const BuildingSubStyles = styled.div`
         color: var(--slate);
       }
       p {
+        margin-bottom: 1rem;
+      }
+      h6 {
+        font-size: 1.1rem;
+        color: var(--lightBlue);
       }
       ul {
         list-style: none;
@@ -74,6 +79,7 @@ const BuildingSub = () => (
           connected to the right resource using the channels of their choice to
           get fast, accurate and first-time resolutions.
         </p>
+        <h6>This leads to:</h6>
         <ul>
           <li>
             <span className="bullet">•</span>Higher customer satisfaction rates

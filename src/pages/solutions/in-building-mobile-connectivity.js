@@ -5,17 +5,19 @@ import BuildingIntro from '../../components/PageComponents/SolutionsComponents/B
 import BuildingSub from '../../components/PageComponents/SolutionsComponents/BuildingSub';
 import FindOut from '../../components/PageComponents/SolutionsComponents/FindOut';
 import HowItWorks from '../../components/PageComponents/SolutionsComponents/HowItWorks';
+import WeWill from '../../components/PageComponents/SolutionsComponents/WeWill';
 import SuccessStoriesIntro from '../../components/PageComponents/SuccessStoriesIntro';
 
 const InBuilding = ({ pageContext }) => (
   <Layout pageContext={pageContext}>
     <BlackHeader
       title="In-building mobile connectivity"
-      description="Fill this in"
+      description="Delivering better communications and faster data speeds to your business"
     />
     <main>
       <BuildingIntro />
       <BuildingSub />
+      <WeWill />
       <HowItWorks />
       <FindOut />
       <SuccessStoriesIntro />

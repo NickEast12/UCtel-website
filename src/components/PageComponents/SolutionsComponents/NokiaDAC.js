@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import MissionIcon from '../../../svgs/mission.svg';
+import TickIcon from '../../../svgs/tick.svg';
 
 const NokiaDACStyles = styled.div`
   width: 100%;
@@ -32,6 +32,8 @@ const NokiaDACStyles = styled.div`
           font-size: 0.95rem;
           margin-top: 0.5rem;
           font-family: Gellix-SemiBold;
+          border-left: solid 3px var(--lightBlue);
+          padding-left: 5px;
         }
       }
     }
@@ -41,28 +43,38 @@ const NokiaDACStyles = styled.div`
   }
   .fea {
     width: 90%;
-    margin: 0 auto;
+    margin: 2rem auto;
     max-width: 1100px;
     &__content {
-      background-color: var(--lightBlue);
       border-radius: 4.5px;
-      padding: 1.25rem 1rem;
       h5 {
-        color: var(--white);
         font-size: 1.35rem;
         line-height: 1.85rem;
       }
       ul {
         list-style: none;
-        margin: 1rem 0;
+        margin: 2rem 0;
         li {
-          background-color: var(--white);
-          border-radius: 4.5px;
-          padding: 0.85rem;
-          color: var(--slate);
-          margin-block: 0.85rem;
-          text-align: center;
+          text-align: left;
+          margin-bottom: 1rem;
           font-family: Gellix-Medium;
+          display: grid;
+          align-items: center;
+          grid-template-columns: 30px 1fr;
+          border-bottom: solid 1px rgb(0 0 0 / 20%);
+          padding-bottom: 10px;
+
+          svg {
+            float: left;
+            width: 20px;
+            margin-right: 10px;
+            fill: var(--lightBlue);
+          }
+        }
+        @media only screen and (min-width: 1024px) {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          grid-gap: 2rem;
         }
       }
     }
@@ -72,7 +84,7 @@ const NokiaDACStyles = styled.div`
       display: grid;
       width: 90%;
       grid-template-columns: repeat(2, 1fr);
-      grid-gap: 2rem;
+      grid-gap: 3rem;
       padding: 0 0 4rem 0;
       &--right {
         padding: 0;
@@ -82,7 +94,14 @@ const NokiaDACStyles = styled.div`
     .fea {
       width: 90%;
       &__content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 3rem;
         ul {
+          padding: 0;
+          margin: 0.5rem 0 0 0;
+        }
+        /* ul {
           display: flex;
           flex-wrap: wrap;
           li {
@@ -99,7 +118,7 @@ const NokiaDACStyles = styled.div`
               margin: 5px 5px 5px 0;
             }
           }
-        }
+        } */
       }
     }
   }
@@ -108,7 +127,7 @@ const NokiaDAC = () => (
   <NokiaDACStyles>
     <div className="nokia">
       <div className="nokia--left">
-        <h6 className="subtitle">Section header</h6>
+        <h6 className="subtitle">Industry-leading technology</h6>
         <h3>Nokia DAC</h3>
         <p>
           Partnering with Nokia, UCtel brings high-performance, end-to-end
@@ -123,29 +142,23 @@ const NokiaDAC = () => (
       </div>
       <div className="nokia--right">
         <div className="nokia--right__box">
-          <MissionIcon />
           <p>
             An industrial-grade private wireless network that’s easy to deploy
           </p>
         </div>
         <div className="nokia--right__box">
-          <MissionIcon />
           <p>High reliability that’s proven to work with new 5G technology</p>
         </div>
         <div className="nokia--right__box">
-          <MissionIcon />
           <p>Full control over the management of multi-local networks</p>
         </div>
         <div className="nokia--right__box">
-          <MissionIcon />
           <p>Strong security &amp; low latency</p>
         </div>
         <div className="nokia--right__box">
-          <MissionIcon />
           <p>Wide and deep coverage</p>
         </div>
         <div className="nokia--right__box">
-          <MissionIcon />
           <p>Dependable QoS management </p>
         </div>
       </div>
@@ -159,12 +172,30 @@ const NokiaDAC = () => (
           </h5>
         </div>
         <ul>
-          <li>Real time location tracking</li>
-          <li>Connected video analytics</li>
-          <li>An end-to-end connect UAV solution</li>
-          <li>Integrated campus communications</li>
-          <li>Native one-to-one communication via VoIP</li>
-          <li>Secure push-to-talk and push-to-video</li>
+          <li>
+            <TickIcon />
+            Real time location tracking
+          </li>
+          <li>
+            <TickIcon />
+            Connected video analytics
+          </li>
+          <li>
+            <TickIcon />
+            An end-to-end connect UAV solution
+          </li>
+          <li>
+            <TickIcon />
+            Integrated campus communications
+          </li>
+          <li>
+            <TickIcon />
+            Native one-to-one communication via VoIP
+          </li>
+          <li>
+            <TickIcon />
+            Secure push-to-talk and push-to-video
+          </li>
         </ul>
       </div>
     </div>

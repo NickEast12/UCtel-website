@@ -19,6 +19,9 @@ const FindOutStyles = styled.div`
     p {
       margin-bottom: 1rem;
     }
+    button {
+      max-width: 300px;
+    }
     @media only screen and (min-width: 375px) {
       width: 85%;
     }

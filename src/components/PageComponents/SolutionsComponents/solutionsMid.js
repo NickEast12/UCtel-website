@@ -69,8 +69,8 @@ const SolutionsMid = () => (
   <SolutionsMidStyles>
     <div className="sm">
       <div className="sm--right">
-        <h6 className="subtitle">Sub-section title</h6>
-        <h3>Intro to sub-section</h3>
+        <h6 className="subtitle">How it works</h6>
+        <h3>Bringing new capabilities </h3>
         <p>
           Using cellular technology, private 5G networks offer businesses the
           coverage, security and capabilities they need for more advanced

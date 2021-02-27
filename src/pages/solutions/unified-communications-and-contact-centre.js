@@ -7,15 +7,20 @@ import SuccessStoriesIntro from '../../components/PageComponents/SuccessStoriesI
 import CommunicationCTA from '../../components/PageComponents/SolutionsComponents/CommunicationCTA';
 import Cisco from '../../components/PageComponents/SolutionsComponents/CiscoSection';
 import CommunicationMid from '../../components/PageComponents/SolutionsComponents/CommunicationMid';
+import CommunicationProjects from '../../components/PageComponents/SolutionsComponents/CommunicationsProjects';
 
 const UnifiedCommunication = ({ pageContext }) => (
   <Layout pageContext={pageContext}>
-    <BlackHeader title="Unified communications" description="Fill this in" />
+    <BlackHeader
+      title="Unified communications and contact centre"
+      description="Creating digital experiences"
+    />
     <main>
       <CommunicationIntro />
       <CommunicationCTA />
       <CommunicationSub />
-      <Cisco />
+      <CommunicationProjects />
+      {/* <Cisco /> */}
       <CommunicationMid />
       <SuccessStoriesIntro />
     </main>

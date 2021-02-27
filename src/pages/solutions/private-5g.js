@@ -10,7 +10,10 @@ const PrivateFiveG = ({ pageContext }) => {
   const i = true;
   return (
     <Layout pageContext={pageContext}>
-      <BlackHeader title="Private 5G" description="Fill this in" />
+      <BlackHeader
+        title="Private 5G"
+        description="Driving Industry 4.0 with digital technology"
+      />
       <main>
         <SolutionsIntro />
         <SolutionsMid />

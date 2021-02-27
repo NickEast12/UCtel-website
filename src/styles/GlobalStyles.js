@@ -161,7 +161,7 @@ const GlobalStyles = createGlobalStyle`
         }
   }
     a[aria-current="page"] {
-        color: var(--blue);
+        color: var(--orange);
     }
     .gatsby-image-wrapper img[src*=base64\\,] {
     image-rendering: -moz-crisp-edges;

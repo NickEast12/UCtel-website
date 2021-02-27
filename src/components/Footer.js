@@ -280,7 +280,7 @@ const MainFooter = () => (
                 <Link to="/blogs">Blog</Link>
               </li>
               <li>
-                <Link to="/case-stuides">Case studies</Link>
+                <Link to="/case-studies">Case studies</Link>
               </li>
               <li>
                 <Link to="/contact">Contact</Link>
