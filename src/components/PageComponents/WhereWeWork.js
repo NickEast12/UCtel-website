@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import Fade from 'react-reveal/Fade';
 import HealthcareIcon from '../../svgs/healthcare.svg';
 import ConstructionIcon from '../../svgs/altconstruction.svg';
 import FarmingIcon from '../../svgs/farming.svg';
@@ -79,22 +80,30 @@ const WhereWeWork = () => (
         </p>
       </div>
       <div className="work__areas">
-        <div className="work__areas__box">
-          <HealthcareIcon />
-          <h5>Healthcare</h5>
-        </div>
-        <div className="work__areas__box">
-          <FarmingIcon />
-          <h5>Agriculture</h5>
-        </div>
-        <div className="work__areas__box">
-          <ConstructionIcon />
-          <h5>Construction</h5>
-        </div>
-        <div className="work__areas__box">
-          <WarehousesIcon />
-          <h5>Warehousing</h5>
-        </div>
+        <Fade delay={250}>
+          <div className="work__areas__box">
+            <HealthcareIcon />
+            <h5>Healthcare</h5>
+          </div>
+        </Fade>
+        <Fade delay={350}>
+          <div className="work__areas__box">
+            <FarmingIcon />
+            <h5>Agriculture</h5>
+          </div>
+        </Fade>
+        <Fade delay={450}>
+          <div className="work__areas__box">
+            <ConstructionIcon />
+            <h5>Construction</h5>
+          </div>
+        </Fade>
+        <Fade delay={550}>
+          <div className="work__areas__box">
+            <WarehousesIcon />
+            <h5>Warehousing</h5>
+          </div>
+        </Fade>
       </div>
     </div>
   </WhereWeWorkStyles>

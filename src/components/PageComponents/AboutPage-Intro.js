@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import Fade from 'react-reveal/Fade';
 import Image from '../functional/Image';
 
 const AboutPageIntroStyles = styled.section`
@@ -86,16 +87,18 @@ const AboutPageIntroStyles = styled.section`
 const AboutPageIntro = () => (
   <AboutPageIntroStyles>
     <div className="ap">
-      <div className="ap--left">
-        <h6 className="subtitle">Our Story</h6>
-        <h2>Caption that introduces our story!</h2>
-        <p>
-          UCtel has been providing unrivalled unified communications solutions
-          to thousands of businesses across the UK since 2010. Delivering
-          on-premise, cloud and hybrid solutions, we are passionate about
-          keeping businesses connected and ahead of the competition.
-        </p>
-      </div>
+      <Fade delay={500}>
+        <div className="ap--left">
+          <h6 className="subtitle">Our Story</h6>
+          <h2>Caption that introduces our story!</h2>
+          <p>
+            UCtel has been providing unrivalled unified communications solutions
+            to thousands of businesses across the UK since 2010. Delivering
+            on-premise, cloud and hybrid solutions, we are passionate about
+            keeping businesses connected and ahead of the competition.
+          </p>
+        </div>
+      </Fade>
       <div className="ap--right">
         <div className="ap--right--img grid-a">
           <Image filename="template.jpeg" alt="Change this later" />

@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import Fade from 'react-reveal/Fade';
 import TickIcon from '../../../svgs/tick.svg';
 import Image from '../../functional/Image';
 
@@ -79,50 +80,52 @@ const BuildingIntro = () => (
   <SolutionsIntroStyles>
     <div className="si__wrapper">
       <div className="si--left">
-        <h6 className="subtitle">In-building Mobile Connectivity</h6>
-        <h2>Optimise cellular coverage</h2>
-        <p>
-          Many buildings to do not allow for the effective propagation of mobile
-          signals indoors, which impacts negatively on productivity,
-          opportunities and operations – in fact, poor indoor mobile signal is
-          detrimental to any business. Historically, the solution was complex,
-          expensive or illegal to address, but with a change in Ofcom’s
-          licencing since 2018, if you have limited signal at your site, UCtel
-          can now deliver a scalable and legal solution in days or weeks,
-          resulting in:
-        </p>
-        <ul>
-          <li>
-            <span>
-              <TickIcon />
-            </span>
-            Excellent communications
-          </li>
-          <li>
-            <span>
-              <TickIcon />
-            </span>
-            Uninterrupted mobile calling
-          </li>
-          <li>
-            <span>
-              <TickIcon />
-            </span>
-            Better experiences
-          </li>
-          <li>
-            <span>
-              <TickIcon />
-            </span>
-            Zero ‘dead zones’
-          </li>
-          <li>
-            <span>
-              <TickIcon />
-            </span>
-            Reliable 4G
-          </li>
-        </ul>
+        <Fade delay={350}>
+          <h6 className="subtitle">In-building Mobile Connectivity</h6>
+          <h2>Optimise cellular coverage</h2>
+          <p>
+            Many buildings to do not allow for the effective propagation of
+            mobile signals indoors, which impacts negatively on productivity,
+            opportunities and operations – in fact, poor indoor mobile signal is
+            detrimental to any business. Historically, the solution was complex,
+            expensive or illegal to address, but with a change in Ofcom’s
+            licencing since 2018, if you have limited signal at your site, UCtel
+            can now deliver a scalable and legal solution in days or weeks,
+            resulting in:
+          </p>
+          <ul>
+            <li>
+              <span>
+                <TickIcon />
+              </span>
+              Excellent communications
+            </li>
+            <li>
+              <span>
+                <TickIcon />
+              </span>
+              Uninterrupted mobile calling
+            </li>
+            <li>
+              <span>
+                <TickIcon />
+              </span>
+              Better experiences
+            </li>
+            <li>
+              <span>
+                <TickIcon />
+              </span>
+              Zero ‘dead zones’
+            </li>
+            <li>
+              <span>
+                <TickIcon />
+              </span>
+              Reliable 4G
+            </li>
+          </ul>
+        </Fade>
       </div>
       <div className="si--right">
         <div className="si--right--img img-decoration">

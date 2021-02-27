@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import Fade from 'react-reveal/Fade';
 import TickIcon from '../../../svgs/tick.svg';
 import Image from '../../functional/Image';
 
@@ -79,53 +80,55 @@ const BuildingIntro = () => (
   <SolutionsIntroStyles>
     <div className="si__wrapper">
       <div className="si--left">
-        <h6 className="subtitle">Unified communications</h6>
-        <h2>Collaborate securely from anywhere</h2>
-        <p>
-          Enabling an integration of collaboration tools into one platform –
-          such as IP telephone for voice calling, desktop sharing, instant
-          messaging and video conferencing – unified communications are designed
-          to create a seamless user experience that helps businesses and
-          customers work together more effectively.
-        </p>
-        <p>
-          Partnering with leading vendors such as Cisco and RingCentral, we’re
-          able to select the best platform for your business – whether that’s
-          on-premise, as a service (UCaaS) or hybrid – and help you collaborate
-          from anywhere, streamlining existing processes and:
-        </p>
-        <ul>
-          <li>
-            <span>
-              <TickIcon />
-            </span>
-            Increasing business efficiencies
-          </li>
-          <li>
-            <span>
-              <TickIcon />
-            </span>
-            Positively impacting work productivity
-          </li>
-          <li>
-            <span>
-              <TickIcon />
-            </span>
-            Elevating customer experience
-          </li>
-          <li>
-            <span>
-              <TickIcon />
-            </span>
-            Reducing gaps in communication
-          </li>
-          <li>
-            <span>
-              <TickIcon />
-            </span>
-            Optimising processes
-          </li>
-        </ul>
+        <Fade delay={350}>
+          <h6 className="subtitle">Unified communications</h6>
+          <h2>Collaborate securely from anywhere</h2>
+          <p>
+            Enabling an integration of collaboration tools into one platform –
+            such as IP telephone for voice calling, desktop sharing, instant
+            messaging and video conferencing – unified communications are
+            designed to create a seamless user experience that helps businesses
+            and customers work together more effectively.
+          </p>
+          <p>
+            Partnering with leading vendors such as Cisco and RingCentral, we’re
+            able to select the best platform for your business – whether that’s
+            on-premise, as a service (UCaaS) or hybrid – and help you
+            collaborate from anywhere, streamlining existing processes and:
+          </p>
+          <ul>
+            <li>
+              <span>
+                <TickIcon />
+              </span>
+              Increasing business efficiencies
+            </li>
+            <li>
+              <span>
+                <TickIcon />
+              </span>
+              Positively impacting work productivity
+            </li>
+            <li>
+              <span>
+                <TickIcon />
+              </span>
+              Elevating customer experience
+            </li>
+            <li>
+              <span>
+                <TickIcon />
+              </span>
+              Reducing gaps in communication
+            </li>
+            <li>
+              <span>
+                <TickIcon />
+              </span>
+              Optimising processes
+            </li>
+          </ul>
+        </Fade>
       </div>
       <div className="si--right">
         <div className="si--right--img img-decoration">

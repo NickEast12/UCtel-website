@@ -1,5 +1,6 @@
 import { Link } from 'gatsby';
 import React from 'react';
+import Fade from 'react-reveal/Fade';
 import styled from 'styled-components';
 import Map from '../components/functional/Map';
 import Layout from '../components/Layout';
@@ -91,38 +92,44 @@ const ContactBoxes = () => (
   <ContactBoxesStyles>
     <div className="contact">
       <a href="mailto:sales@uctel.co.uk">
-        <div className="contact--box">
-          <MailIcon className="icon" />
-          <h2>Email us</h2>
-          <p>On sales@uctel.co.uk</p>
-        </div>
+        <Fade delay={350}>
+          <div className="contact--box">
+            <MailIcon className="icon" />
+            <h2>Email us</h2>
+            <p>On sales@uctel.co.uk</p>
+          </div>
+        </Fade>
       </a>
       <div className="contact--box">
-        <SocialIcon className="icon" />
-        <h2>Follow us</h2>
-        <div className="contact--box--icons">
-          <a
-            href="https://www.linkedin.com/company/uctel/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <TwitterIcon />
-          </a>
-          <a
-            href="https://twitter.com/UCtel_Ltd"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <LinkedInIcon />
-          </a>
-        </div>
+        <Fade delay={450}>
+          <SocialIcon className="icon" />
+          <h2>Follow us</h2>
+          <div className="contact--box--icons">
+            <a
+              href="https://www.linkedin.com/company/uctel/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <TwitterIcon />
+            </a>
+            <a
+              href="https://twitter.com/UCtel_Ltd"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <LinkedInIcon />
+            </a>
+          </div>
+        </Fade>
       </div>
       <a href="tel:0333 344 4417" rel="noopener noreferrer">
-        <div className="contact--box">
-          <TelephoneIcon className="icon" />
-          <h2>Call us</h2>
-          <p>On 0333 344 4417</p>
-        </div>
+        <Fade delay={550}>
+          <div className="contact--box">
+            <TelephoneIcon className="icon" />
+            <h2>Call us</h2>
+            <p>On 0333 344 4417</p>
+          </div>
+        </Fade>
       </a>
     </div>
   </ContactBoxesStyles>

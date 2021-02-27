@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import Fade from 'react-reveal/Fade';
 
 const AboutusLowerStyles = styled.section`
   width: 100%;
@@ -38,24 +39,29 @@ const AboutusLower = () => (
   <AboutusLowerStyles>
     <div className="lower">
       <div className="lower--left">
-        <h4>
-          With indoor signal boosting solutions; next-generation private 5G
-          networks; and unified communications software, we are at the forefront
-          of transforming business’ digital infrastructures and bringing global
-          companies into the digital age.
-        </h4>
+        <Fade delay={350}>
+          <h4>
+            With indoor signal boosting solutions; next-generation private 5G
+            networks; and unified communications software, we are at the
+            forefront of transforming business’ digital infrastructures and
+            bringing global companies into the digital age.
+          </h4>
+        </Fade>
       </div>
       <div className="lower--right">
-        <p>
-          Providing innovative solutions for every client, the experienced team
-          at UCtel are there from the word go – from supplying initial designs
-          to the implementation and ongoing support to each and every customer.
-        </p>
-        <p>
-          If your business needs improved communications, high-performing and
-          robust connectivity, or full interactive customer experiences, UCtel
-          has the solutions.
-        </p>
+        <Fade delay={700}>
+          <p>
+            Providing innovative solutions for every client, the experienced
+            team at UCtel are there from the word go – from supplying initial
+            designs to the implementation and ongoing support to each and every
+            customer.
+          </p>
+          <p>
+            If your business needs improved communications, high-performing and
+            robust connectivity, or full interactive customer experiences, UCtel
+            has the solutions.
+          </p>
+        </Fade>
       </div>
     </div>
   </AboutusLowerStyles>

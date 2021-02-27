@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import Image from '../../functional/Image';
+import Fade from 'react-reveal/Fade';
 
 const CiscoStyles = styled.section`
   width: 100%;
@@ -89,29 +89,31 @@ const CommunicationProjects = () => (
           <h3>UCtel solutions</h3>
         </div>
         <div className="technology__wrapper--right">
-          <ul>
-            <li>
-              Design and Build of new, on-premise Cisco solutions (CUCM, UCCX)
-            </li>
-            <li>Upgrades of on-premise Cisco solutions</li>
-            <li>
-              Migrations from Cisco Unified Communications Manager to
-              RingCentral
-            </li>
-            <li>
-              Migrations of Cisco Unified Communications Manager to Cisco Webex
-              Calling
-            </li>
-            <li>Hybrid solutions of on-premise CUCM and Webex Calling</li>
-            <li>
-              Integrations of third-party applications with CUCM and UCCX to
-              deliver additional business benefit
-            </li>
-            <li>Migration to Amazon Connect with Omningage desktop</li>
-            <li>
-              Integration of Cisco UCM and Webex Calling with Microsoft Teams
-            </li>
-          </ul>
+          <Fade delay={350}>
+            <ul>
+              <li>
+                Design and Build of new, on-premise Cisco solutions (CUCM, UCCX)
+              </li>
+              <li>Upgrades of on-premise Cisco solutions</li>
+              <li>
+                Migrations from Cisco Unified Communications Manager to
+                RingCentral
+              </li>
+              <li>
+                Migrations of Cisco Unified Communications Manager to Cisco
+                Webex Calling
+              </li>
+              <li>Hybrid solutions of on-premise CUCM and Webex Calling</li>
+              <li>
+                Integrations of third-party applications with CUCM and UCCX to
+                deliver additional business benefit
+              </li>
+              <li>Migration to Amazon Connect with Omningage desktop</li>
+              <li>
+                Integration of Cisco UCM and Webex Calling with Microsoft Teams
+              </li>
+            </ul>
+          </Fade>
         </div>
       </div>
     </div>

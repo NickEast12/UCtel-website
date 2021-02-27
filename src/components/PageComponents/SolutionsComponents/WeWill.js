@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import Fade from 'react-reveal/Fade';
 
 const WeWillStyles = styled.section`
   width: 100%;
@@ -48,28 +49,30 @@ const WeWill = () => (
         <h3>At UCtel we will:</h3>
       </div>
       <div className="ww__wrapper--right">
-        <ul>
-          <li>
-            Advise on the best system for your environment using floor plans or
-            an onsite survey
-          </li>
-          <li>
-            Provide detailed surveys to establish the exact solution required
-            and placement of devices in the building
-          </li>
-          <li>
-            Install and test to ensure the system is providing the required
-            coverage
-          </li>
-          <li>
-            Provide ongoing management and support via the cloud and UCtel’s
-            helpdesk
-          </li>
-          <li>
-            Carry out regular service reviews to ensure the system continues to
-            deliver against the business requirements
-          </li>
-        </ul>
+        <Fade delay={350}>
+          <ul>
+            <li>
+              Advise on the best system for your environment using floor plans
+              or an onsite survey
+            </li>
+            <li>
+              Provide detailed surveys to establish the exact solution required
+              and placement of devices in the building
+            </li>
+            <li>
+              Install and test to ensure the system is providing the required
+              coverage
+            </li>
+            <li>
+              Provide ongoing management and support via the cloud and UCtel’s
+              helpdesk
+            </li>
+            <li>
+              Carry out regular service reviews to ensure the system continues
+              to deliver against the business requirements
+            </li>
+          </ul>
+        </Fade>
       </div>
     </div>
   </WeWillStyles>

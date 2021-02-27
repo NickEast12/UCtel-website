@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import Fade from 'react-reveal/Fade';
 import TickIcon from '../../../svgs/tick.svg';
 
 const NokiaDACStyles = styled.section`
@@ -141,62 +142,68 @@ const NokiaDAC = () => (
         </p>
       </div>
       <div className="nokia--right">
-        <div className="nokia--right__box">
-          <p>
-            An industrial-grade private wireless network that’s easy to deploy
-          </p>
-        </div>
-        <div className="nokia--right__box">
-          <p>High reliability that’s proven to work with new 5G technology</p>
-        </div>
-        <div className="nokia--right__box">
-          <p>Full control over the management of multi-local networks</p>
-        </div>
-        <div className="nokia--right__box">
-          <p>Strong security &amp; low latency</p>
-        </div>
-        <div className="nokia--right__box">
-          <p>Wide and deep coverage</p>
-        </div>
-        <div className="nokia--right__box">
-          <p>Dependable QoS management </p>
-        </div>
+        <Fade delay={350}>
+          <div className="nokia--right__box">
+            <p>
+              An industrial-grade private wireless network that’s easy to deploy
+            </p>
+          </div>
+          <div className="nokia--right__box">
+            <p>High reliability that’s proven to work with new 5G technology</p>
+          </div>
+          <div className="nokia--right__box">
+            <p>Full control over the management of multi-local networks</p>
+          </div>
+          <div className="nokia--right__box">
+            <p>Strong security &amp; low latency</p>
+          </div>
+          <div className="nokia--right__box">
+            <p>Wide and deep coverage</p>
+          </div>
+          <div className="nokia--right__box">
+            <p>Dependable QoS management </p>
+          </div>
+        </Fade>
       </div>
     </div>
     <div className="fea">
       <div className="fea__content">
         <div className="fea__content__title">
-          <h5>
-            Also providing built-in applications and end points, Nokia DAC
-            doesn’t just provide private 5G connectivity – it also offers:
-          </h5>
+          <Fade delay={550}>
+            <h5>
+              Also providing built-in applications and end points, Nokia DAC
+              doesn’t just provide private 5G connectivity – it also offers:
+            </h5>
+          </Fade>
         </div>
-        <ul>
-          <li>
-            <TickIcon />
-            Real time location tracking
-          </li>
-          <li>
-            <TickIcon />
-            Connected video analytics
-          </li>
-          <li>
-            <TickIcon />
-            An end-to-end connect UAV solution
-          </li>
-          <li>
-            <TickIcon />
-            Integrated campus communications
-          </li>
-          <li>
-            <TickIcon />
-            Native one-to-one communication via VoIP
-          </li>
-          <li>
-            <TickIcon />
-            Secure push-to-talk and push-to-video
-          </li>
-        </ul>
+        <Fade delay={650}>
+          <ul>
+            <li>
+              <TickIcon />
+              Real time location tracking
+            </li>
+            <li>
+              <TickIcon />
+              Connected video analytics
+            </li>
+            <li>
+              <TickIcon />
+              An end-to-end connect UAV solution
+            </li>
+            <li>
+              <TickIcon />
+              Integrated campus communications
+            </li>
+            <li>
+              <TickIcon />
+              Native one-to-one communication via VoIP
+            </li>
+            <li>
+              <TickIcon />
+              Secure push-to-talk and push-to-video
+            </li>
+          </ul>
+        </Fade>
       </div>
     </div>
   </NokiaDACStyles>

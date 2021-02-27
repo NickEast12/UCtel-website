@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import Fade from 'react-reveal/Fade';
 import Image from '../../functional/Image';
 
 const SolutionsMidStyles = styled.section`
@@ -69,20 +70,22 @@ const SolutionsMid = () => (
   <SolutionsMidStyles>
     <div className="sm">
       <div className="sm--right">
-        <h6 className="subtitle">How it works</h6>
-        <h3>Bringing new capabilities </h3>
-        <p>
-          Using cellular technology, private 5G networks offer businesses the
-          coverage, security and capabilities they need for more advanced
-          wireless data and IoT applications, revolutionising the future of
-          connectivity for a wide range of enterprises and industrial
-          environments, thereby accelerating your digital transformation.
-        </p>
-        <p>
-          As the driving force behind Industry 4.0, private 5G enables companies
-          to automate and improve operations, transforming the current
-          limitations of existing networks.
-        </p>
+        <Fade delay={350}>
+          <h6 className="subtitle">How it works</h6>
+          <h3>Bringing new capabilities </h3>
+          <p>
+            Using cellular technology, private 5G networks offer businesses the
+            coverage, security and capabilities they need for more advanced
+            wireless data and IoT applications, revolutionising the future of
+            connectivity for a wide range of enterprises and industrial
+            environments, thereby accelerating your digital transformation.
+          </p>
+          <p>
+            As the driving force behind Industry 4.0, private 5G enables
+            companies to automate and improve operations, transforming the
+            current limitations of existing networks.
+          </p>
+        </Fade>
       </div>
       <div className="sm--left">
         <div className="sm--left__img img-decoration">

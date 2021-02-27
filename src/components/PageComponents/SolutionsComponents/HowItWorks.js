@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import MissionIcon from '../../../svgs/mission.svg';
+import Fade from 'react-reveal/Fade';
 import Step1Icon from '../../../svgs/antenna.svg';
 import Step2Icon from '../../../svgs/wifi.svg';
 import Step3Icon from '../../../svgs/office-building.svg';
@@ -59,31 +59,37 @@ const HowItWorks = () => (
     <div className="hiw">
       <h3>How it works</h3>
       <div className="hiw--wrapper">
-        <div className="hiw--wrapper--box">
-          <span className="no">1</span>
-          <Step1Icon />
-          <p>
-            A donor antenna is installed in a location where the best signal can
-            be obtained.
-          </p>
-        </div>
-        <div className="hiw--wrapper--box">
-          <span className="no">2</span>
-          <Step2Icon />
-          <p>
-            This is connected to an internal amplifier (network unit) to boost
-            the signal
-          </p>
-        </div>
-        <div className="hiw--wrapper--box">
-          <span className="no">3</span>
-          <Step3Icon />
-          <p>
-            The signal is then distributed throughout the building using
-            internal antenna (coverage units), boosting it across the areas
-            where it is needed
-          </p>
-        </div>
+        <Fade delay={350} duration={1000}>
+          <div className="hiw--wrapper--box">
+            <span className="no">1</span>
+            <Step1Icon />
+            <p>
+              A donor antenna is installed in a location where the best signal
+              can be obtained.
+            </p>
+          </div>
+        </Fade>
+        <Fade delay={450} duration={1200}>
+          <div className="hiw--wrapper--box">
+            <span className="no">2</span>
+            <Step2Icon />
+            <p>
+              This is connected to an internal amplifier (network unit) to boost
+              the signal
+            </p>
+          </div>
+        </Fade>
+        <Fade delay={550} duration={1400}>
+          <div className="hiw--wrapper--box">
+            <span className="no">3</span>
+            <Step3Icon />
+            <p>
+              The signal is then distributed throughout the building using
+              internal antenna (coverage units), boosting it across the areas
+              where it is needed
+            </p>
+          </div>
+        </Fade>
       </div>
     </div>
   </HowItWorksStyles>

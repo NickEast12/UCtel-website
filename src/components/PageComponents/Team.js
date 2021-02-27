@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Img from 'gatsby-image';
+import Fade from 'react-reveal/Fade';
 import LinkedInIcon from '../../svgs/linkedin.svg';
 
 const TeamStyles = styled.section`
@@ -92,19 +93,21 @@ const Team = ({ data }) => (
       <h4>Your industry leaders</h4>
       <div className="team__wrapper">
         {data.map((person) => (
-          <div className="team__wrapper__profile">
-            <div className="team__wrapper__profile--img">
-              <Img fluid={person.image.asset.fluid} alt={person.image.alt} />
+          <Fade delay={450}>
+            <div className="team__wrapper__profile">
+              <div className="team__wrapper__profile--img">
+                <Img fluid={person.image.asset.fluid} alt={person.image.alt} />
+              </div>
+              <h6>{person.name}</h6>
+              <h6 className="title">{person.position}</h6>
+              <p>{person.bio}</p>
+              <div className={person.linkedin === null ? 'empty' : 'icon'}>
+                <a href={person.linkedin} target="__blank">
+                  <LinkedInIcon />
+                </a>
+              </div>
             </div>
-            <h6>{person.name}</h6>
-            <h6 className="title">{person.position}</h6>
-            <p>{person.bio}</p>
-            <div className={person.linkedin === null ? 'empty' : 'icon'}>
-              <a href={person.linkedin} target="__blank">
-                <LinkedInIcon />
-              </a>
-            </div>
-          </div>
+          </Fade>
         ))}
       </div>
     </div>

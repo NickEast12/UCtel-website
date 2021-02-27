@@ -86,7 +86,9 @@ const BlackHeader = ({ title, description }) => {
       <div className="landing__wrapper">
         <div className="landing__wrapper__content">
           <h1>{title}</h1>
+
           <p>{description}</p>
+
           <div className="btn__wrapper">
             <Link to="/get-started">
               <button type="button" className="btn btn--main">

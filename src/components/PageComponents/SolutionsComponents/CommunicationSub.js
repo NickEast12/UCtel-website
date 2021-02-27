@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import Fade from 'react-reveal/Fade';
 import Image from '../../functional/Image';
 
 const BuildingSubStyles = styled.section`
@@ -72,38 +73,41 @@ const BuildingSub = () => (
   <BuildingSubStyles>
     <div className="bulsub">
       <div className="bulsub--left">
-        <h6 className="subtitle">Contact centres</h6>
-        <h3>Customer experience</h3>
-        <p>
-          Contact centres are key to customer experience – customers want to be
-          connected to the right resource using the channels of their choice to
-          get fast, accurate and first-time resolutions.
-        </p>
-        <h6>This leads to:</h6>
-        <ul>
-          <li>
-            <span className="bullet">•</span>Higher customer satisfaction rates
-          </li>
-          <li>
-            <span className="bullet">•</span>More customer acquisitions
-          </li>
-          <li>
-            <span className="bullet">•</span>Enhanced brand reputation
-          </li>
-          <li>
-            <span className="bullet">•</span>Increased customer conversions
-          </li>
-          <li>
-            <span className="bullet">•</span>Better customer engagement
-          </li>
-          <li>
-            <span className="bullet">•</span>Improved crisis management
-          </li>
-          <li>
-            <span className="bullet">•</span>Heightened customer loyalty and
-            retention
-          </li>
-        </ul>
+        <Fade delay={350}>
+          <h6 className="subtitle">Contact centres</h6>
+          <h3>Customer experience</h3>
+          <p>
+            Contact centres are key to customer experience – customers want to
+            be connected to the right resource using the channels of their
+            choice to get fast, accurate and first-time resolutions.
+          </p>
+          <h6>This leads to:</h6>
+          <ul>
+            <li>
+              <span className="bullet">•</span>Higher customer satisfaction
+              rates
+            </li>
+            <li>
+              <span className="bullet">•</span>More customer acquisitions
+            </li>
+            <li>
+              <span className="bullet">•</span>Enhanced brand reputation
+            </li>
+            <li>
+              <span className="bullet">•</span>Increased customer conversions
+            </li>
+            <li>
+              <span className="bullet">•</span>Better customer engagement
+            </li>
+            <li>
+              <span className="bullet">•</span>Improved crisis management
+            </li>
+            <li>
+              <span className="bullet">•</span>Heightened customer loyalty and
+              retention
+            </li>
+          </ul>
+        </Fade>
       </div>
       <div className="bulsub--right img-decoration">
         <Image filename="template.jpeg" alt="fill this in" />

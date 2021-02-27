@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import Fade from 'react-reveal/Fade';
 import TickIcon from '../../../svgs/tick.svg';
 import Image from '../../functional/Image';
 
@@ -81,64 +82,67 @@ const SolutionsIntro = () => (
   <SolutionsIntroStyles>
     <div className="si__wrapper">
       <div className="si--left">
-        <h6 className="subtitle">Private 5G</h6>
-        <h2>The future of wireless is here</h2>
-        <p>
-          Powering Industry 4.0, next-generation 5G technology is architectured
-          to create a dedicated, private network with unified connectivity,
-          offering full control of critical business applications and
-          communications, via:
-        </p>
-        <ul>
-          <li>
-            <span>
-              <TickIcon />
-            </span>
-            High performing indoors and outdoors connectivity across large sites
-          </li>
-          <li>
-            <span>
-              <TickIcon />
-            </span>
-            Consistent high data rates{' '}
-          </li>
-          <li>
-            <span>
-              <TickIcon />
-            </span>
-            High multi-user capacity
-          </li>
-          <li>
-            <span>
-              <TickIcon />
-            </span>
-            High-capacity and ultra-reliable low latency
-          </li>
-          <li>
-            <span>
-              <TickIcon />
-            </span>
-            Intrinsic security{' '}
-          </li>
-          <li>
-            <span>
-              <TickIcon />
-            </span>
-            Outstanding mobility{' '}
-          </li>
-          <li>
-            <span>
-              <TickIcon />
-            </span>
-            Mission-critical reliability{' '}
-          </li>
-          <li>
-            <span>
-              <TickIcon />
-            </span>
-            Robust and cost-effective connectivity{' '}
-          </li>
-        </ul>
+        <Fade delay={350}>
+          <h6 className="subtitle">Private 5G</h6>
+          <h2>The future of wireless is here</h2>
+          <p>
+            Powering Industry 4.0, next-generation 5G technology is
+            architectured to create a dedicated, private network with unified
+            connectivity, offering full control of critical business
+            applications and communications, via:
+          </p>
+          <ul>
+            <li>
+              <span>
+                <TickIcon />
+              </span>
+              High performing indoors and outdoors connectivity across large
+              sites
+            </li>
+            <li>
+              <span>
+                <TickIcon />
+              </span>
+              Consistent high data rates{' '}
+            </li>
+            <li>
+              <span>
+                <TickIcon />
+              </span>
+              High multi-user capacity
+            </li>
+            <li>
+              <span>
+                <TickIcon />
+              </span>
+              High-capacity and ultra-reliable low latency
+            </li>
+            <li>
+              <span>
+                <TickIcon />
+              </span>
+              Intrinsic security{' '}
+            </li>
+            <li>
+              <span>
+                <TickIcon />
+              </span>
+              Outstanding mobility{' '}
+            </li>
+            <li>
+              <span>
+                <TickIcon />
+              </span>
+              Mission-critical reliability{' '}
+            </li>
+            <li>
+              <span>
+                <TickIcon />
+              </span>
+              Robust and cost-effective connectivity{' '}
+            </li>
+          </ul>
+        </Fade>
       </div>
       <div className="si--right">
         <div className="si--right--img img-decoration">
