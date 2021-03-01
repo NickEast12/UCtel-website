@@ -237,7 +237,7 @@ const GetStarted = () => {
               <form
                 name="get-started-form"
                 method="post"
-                data-netlify="true"
+                netlify
                 netlify-honeypot="bot-field"
                 aciton="/message-sent"
               >
