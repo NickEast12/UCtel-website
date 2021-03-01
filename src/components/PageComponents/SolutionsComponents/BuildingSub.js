@@ -103,7 +103,7 @@ const BuildingSub = () => (
       </div>
       <div className="bulsub--right img-decoration">
         <Image
-          filename="mobile-signal-bootesr.png"
+          filename="mobile-signal-booster.png"
           alt="Mobile Signal Booster"
         />
       </div>
