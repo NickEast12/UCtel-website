@@ -11,12 +11,13 @@ const FormTesting = () => (
     >
       <p>Name</p>
       <input type="text" name="name" id="name" />
+
+      <p>email</p>
+      <input type="email" name="" id="" />
+      <p>Message</p>
+      <textarea name="message" id="message" />
+      <button type="submit">Submit</button>
     </form>
-    <p>email</p>
-    <input type="email" name="" id="" />
-    <p>Message</p>
-    <textarea name="message" id="message" />
-    <button type="submit">Submit</button>
   </main>
 );
 
