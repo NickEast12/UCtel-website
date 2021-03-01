@@ -19,7 +19,7 @@ const GetStartedStyles = styled.div`
     width: 40px;
     height: 40px;
     top: 0;
-    right: 15px;
+    right: 0px;
     padding-top: 0.25rem;
     padding-left: 0.5rem;
     background-color: var(--white);
@@ -44,9 +44,13 @@ const GetStartedStyles = styled.div`
     position: relative;
     z-index: 5;
     color: var(--white);
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
     padding: 3rem 0;
+    max-width: 1100px;
+    @media only screen and (min-width: 375px) {
+      width: 85%;
+    }
     &__content {
       .gatsby-image-wrapper {
         width: 150px;
@@ -84,7 +88,7 @@ const GetStartedStyles = styled.div`
       margin: 2rem 0;
       background-color: var(--white);
       border-radius: 4.5px;
-      padding: 1rem 0;
+      padding: 0.5rem 0;
       &__inner {
         width: 90%;
         margin: 0 auto;
@@ -94,7 +98,60 @@ const GetStartedStyles = styled.div`
           font-family: Gellix-SemiBold;
         }
         form {
-          margin-top: 2rem;
+          margin-top: 1rem;
+          label {
+            color: var(--slate);
+            margin: 10px 0 5px 0;
+            display: block;
+            font-size: 0.95rem;
+            span {
+              color: red;
+              padding-left: 3px;
+              font-size: 0.95rem;
+            }
+          }
+          @media only screen and (min-width: 768px) {
+            .form--section {
+              display: grid;
+              grid-template-columns: repeat(2, 1fr);
+              grid-gap: 1rem;
+            }
+          }
+          input {
+            width: 100%;
+            border-radius: 5px;
+            padding: 0.5rem;
+            background-color: none;
+
+            border: solid 1px rgba(0, 0, 0, 0.25);
+          }
+          input[type='file'] {
+            border: none;
+          }
+          textarea {
+            width: 100%;
+            border-radius: 5px;
+            padding: 0.5rem;
+            height: 10rem;
+            resize: vertical;
+            background-color: none;
+            border: solid 1px rgba(0, 0, 0, 0.25);
+            @media only screen and (min-width: 768px) {
+              height: 5rem;
+              resize: none;
+              margin-bottom: 1rem;
+            }
+          }
+          .btn--wrapper {
+            margin: 1rem 0;
+            width: 100%;
+            @media only screen and (min-width: 768px) {
+              margin: 0.15rem 0;
+            }
+            button {
+              width: 100%;
+            }
+          }
         }
       }
     }
@@ -102,18 +159,26 @@ const GetStartedStyles = styled.div`
   @media only screen and (min-width: 768px) {
     height: 100vh;
     .back {
-      right: 4rem;
     }
     .started__wrapper {
       width: 80%;
       display: grid;
       grid-template-columns: 40% 1fr;
       grid-gap: 2rem;
+      padding-bottom: 0;
       &__content {
         padding-top: 3rem;
       }
       &__form {
-        padding: 2rem 1rem;
+        padding: 1rem 1rem;
+
+        &__inner {
+        }
+        .btn--wrapper {
+          button {
+            margin: 0;
+          }
+        }
       }
     }
   }
@@ -165,19 +230,70 @@ const GetStarted = () => {
           <div className="started__wrapper__form">
             <div className="started__wrapper__form__inner">
               <h3>Get started with UCtel</h3>
-              <p>Find out how much value you could add to your business....</p>
-              <form action="">
-                <input type="text" name="" id="" />
+              <form name="get-started-form" method="POST" data-netlify="true">
+                <div className="form--section">
+                  <section>
+                    <label htmlFor="First Name">
+                      First name<span>*</span>
+                    </label>
+                    <input type="text" name="firstName" id="firstName" />
+                  </section>
+                  <section>
+                    <label htmlFor="Last Name">Last name</label>
+                    <input type="text" name="lastName" id="lastName" />
+                  </section>
+                </div>
+                <label htmlFor="Email">
+                  Email<span>*</span>
+                </label>
+                <input type="email" name="email" id="email" />
+                <label htmlFor="PhoneNumber">
+                  Mobile number<span>*</span>
+                </label>
+                <input
+                  type="tel"
+                  name="telephone"
+                  id="telephone"
+                  pattern="[0-9]{5}-[0-9]{7}"
+                />
+                <div className="form--section">
+                  <section>
+                    <label htmlFor="Companyname">
+                      Company name<span>*</span>
+                    </label>
+                    <input type="text" name="companyName" id="companyName" />
+                  </section>
+                  <section>
+                    <label htmlFor="jobTitle">Job title</label>
+                    <input type="text" name="jobTitle" id="jobTitle" />
+                  </section>
+                </div>
+                <label htmlFor="floorPlans">Upload floor plans (PDF)</label>
+                <input
+                  type="file"
+                  id="floorPlans"
+                  name="floorPlans"
+                  accept="application/pdf"
+                />
+                <label htmlFor="message">
+                  Messages <span>*</span>
+                </label>
+                <textarea name="message" id="message" />
+                <div className="btn--wrapper">
+                  <button className="btn btn--main" type="submit">
+                    <span>Submit</span>
+                  </button>
+                </div>
               </form>
             </div>
           </div>
+          <button type="button" className="back">
+            <Link to="/">
+              <div />
+              <div />
+            </Link>
+          </button>
         </div>
-        <button type="button" className="back">
-          <Link to="/">
-            <div />
-            <div />
-          </Link>
-        </button>
       </main>
       {isDesktop ? (
         <AnimateHeaderBackground points="10" distance="20" spacing="15" />

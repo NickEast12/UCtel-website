@@ -1,3 +1,4 @@
+import { Link } from 'gatsby';
 import React from 'react';
 import styled from 'styled-components';
 
@@ -53,9 +54,11 @@ const CommunicationCTA = () => (
         communications allow businesses to make the fastest possible decisions
         and transactions with flexibility and mobility.
       </h5>
-      <button className="btn btn--slate" type="button">
-        <span>Talk to an expert today</span>
-      </button>
+      <Link to="/get-started">
+        <button className="btn btn--slate" type="button">
+          <span>Talk to an expert today</span>
+        </button>
+      </Link>
     </div>
   </FindOutStyles>
 );

@@ -270,7 +270,7 @@ const CaseStudyBody = ({ data }) => {
         </aside>
         <div className="csbody__main">
           <div className="csbody__main__box">
-            <h3>The Challenge</h3>
+            <h3>The challenge</h3>
             <p>{data.challenge}</p>
           </div>
           <div className="csbody__main__box quote">
@@ -282,11 +282,11 @@ const CaseStudyBody = ({ data }) => {
             <h6>{data.clientposition}</h6>
           </div>
           <div className="csbody__main__box">
-            <h3>The Solution</h3>
+            <h3>The solution</h3>
             <p>{data.solution}</p>
           </div>
           <div className="csbody__main__box">
-            <h3>The Result</h3>
+            <h3>The result</h3>
             <p>{data.result}</p>
           </div>
         </div>
