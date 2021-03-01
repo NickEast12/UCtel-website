@@ -109,7 +109,7 @@ const AboutPageIntro = () => (
           <Image filename="template.jpeg" alt="Change this later" />
         </div>
         <div className="ap--right--img grid-c">
-          <Image filename="template.jpeg" alt="Change this later" />
+          <Image filename="about3.png" alt="UCtel team" />
         </div>
         <div className="ap--right--img grid-d">
           <Image filename="template.jpeg" alt="Change this later" />

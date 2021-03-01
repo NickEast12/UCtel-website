@@ -234,16 +234,41 @@ const GetStarted = () => {
           <div className="started__wrapper__form">
             <div className="started__wrapper__form__inner">
               <h3>Get started with UCtel</h3>
-              <form name="getstartedform" method="post" data-netlify="true">
-                {/* <input type="hidden" name="Get-Started" value="Contact" />
+              <form name="contact" method="POST" data-netlify="true">
+                <p>
+                  <label>
+                    Your Name: <input type="text" name="name" />
+                  </label>
+                </p>
+                <p>
+                  <label>
+                    Your Email: <input type="email" name="email" />
+                  </label>
+                </p>
+                <p>
+                  <label>
+                    Message: <textarea name="message" />
+                  </label>
+                </p>
+                <p>
+                  <button
+                    type="submit"
+                    className="btn"
+                    style={{ background: 'black', width: '100%' }}
+                  >
+                    <span>Send</span>
+                  </button>
+                </p>
+              </form>
+              {/* <form name="getstartedform" method="post" data-netlify="true">
+                <input type="hidden" name="Get-Started" value="Contact" />
                 <p className="hidden" style={{ display: 'none' }}>
                   <p>
                     Don’t fill this out if you're human:{' '}
                     <input name="bot-field" />
                   </p>
-                </p> */}
-                <input type="text" name="name" id="name" />
-                {/* <div className="form--section">
+                </p>
+                <div className="form--section">
                   <section>
                     <p htmlFor="First Name">
                       First name<span>*</span>
@@ -295,13 +320,13 @@ const GetStarted = () => {
                 <p htmlFor="message">
                   Messages <span>*</span>
                 </p>
-                <textarea name="message" id="message" required /> */}
+                <textarea name="message" id="message" required />
                 <div className="btn--wrapper">
                   <button className="btn btn--main" type="submit">
                     <span>Submit</span>
                   </button>
                 </div>
-              </form>
+              </form> */}
             </div>
           </div>
           <button type="button" className="back">
