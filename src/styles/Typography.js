@@ -43,11 +43,7 @@ const Typography = createGlobalStyle`
       font-size: 16px;
 
     }
-    @media only screen and (min-width: 375px) {
-      html {
-        font-size: 16.5px;
-      }
-    }
+   
     @media only screen and (min-width: 375px) {
       html {
         font-size: 16.5px;
@@ -88,7 +84,7 @@ const Typography = createGlobalStyle`
     span,button {
       font-family: Gellix-Medium, -apple-system,BlinkMacSystemFont,"Helvetica Neue",Helvetica,Arial,sans-serif;;
     }
-    p , a, li, input, address, label {
+    p , a, li, input, address, label, textarea {
       font-family: Gellix-Regular, -apple-system,BlinkMacSystemFont,"Helvetica Neue",Helvetica,Arial,sans-serif;;
       font-feature-settings: "kern" 1;
       font-kerning: normal;

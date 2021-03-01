@@ -122,7 +122,7 @@ const GetStartedStyles = styled.div`
             border-radius: 5px;
             padding: 0.5rem;
             background-color: none;
-
+            font-size: 1.1;
             border: solid 1px rgba(0, 0, 0, 0.25);
           }
           input[type='file'] {
@@ -133,6 +133,7 @@ const GetStartedStyles = styled.div`
             border-radius: 5px;
             padding: 0.5rem;
             height: 10rem;
+            font-size: 1.1;
             resize: vertical;
             background-color: none;
             border: solid 1px rgba(0, 0, 0, 0.25);
@@ -168,6 +169,9 @@ const GetStartedStyles = styled.div`
       padding-bottom: 0;
       &__content {
         padding-top: 3rem;
+        .gatsby-image-wrapper {
+          width: 250px;
+        }
       }
       &__form {
         padding: 1rem 1rem;
@@ -230,13 +234,24 @@ const GetStarted = () => {
           <div className="started__wrapper__form">
             <div className="started__wrapper__form__inner">
               <h3>Get started with UCtel</h3>
-              <form name="get-started-form" method="POST" data-netlify="true">
+              <form
+                name="get-started-form"
+                method="POST"
+                data-netlify="true"
+                netlify-honeypot="bot-field"
+                aciton="/message-sent"
+              >
                 <div className="form--section">
                   <section>
                     <label htmlFor="First Name">
                       First name<span>*</span>
                     </label>
-                    <input type="text" name="firstName" id="firstName" />
+                    <input
+                      type="text"
+                      name="firstName"
+                      id="firstName"
+                      required
+                    />
                   </section>
                   <section>
                     <label htmlFor="Last Name">Last name</label>
@@ -246,22 +261,22 @@ const GetStarted = () => {
                 <label htmlFor="Email">
                   Email<span>*</span>
                 </label>
-                <input type="email" name="email" id="email" />
+                <input type="email" name="email" id="email" required />
                 <label htmlFor="PhoneNumber">
                   Mobile number<span>*</span>
                 </label>
-                <input
-                  type="tel"
-                  name="telephone"
-                  id="telephone"
-                  pattern="[0-9]{5}-[0-9]{7}"
-                />
+                <input type="tel" name="telephone" id="telephone" required />
                 <div className="form--section">
                   <section>
                     <label htmlFor="Companyname">
                       Company name<span>*</span>
                     </label>
-                    <input type="text" name="companyName" id="companyName" />
+                    <input
+                      type="text"
+                      name="companyName"
+                      id="companyName"
+                      required
+                    />
                   </section>
                   <section>
                     <label htmlFor="jobTitle">Job title</label>
@@ -278,7 +293,7 @@ const GetStarted = () => {
                 <label htmlFor="message">
                   Messages <span>*</span>
                 </label>
-                <textarea name="message" id="message" />
+                <textarea name="message" id="message" required />
                 <div className="btn--wrapper">
                   <button className="btn btn--main" type="submit">
                     <span>Submit</span>
