@@ -234,7 +234,13 @@ const GetStarted = () => {
           <div className="started__wrapper__form">
             <div className="started__wrapper__form__inner">
               <h3>Get started with UCtel</h3>
-              <form name="contact" netlify>
+              <form
+                name="contact"
+                method="post"
+                data-netlify="true"
+                data-netlify-honeypot="bot-field"
+                action="/"
+              >
                 <p>
                   <label>
                     Your Name: <input type="text" name="name" />

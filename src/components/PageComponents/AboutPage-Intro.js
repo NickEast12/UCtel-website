@@ -106,7 +106,7 @@ const AboutPageIntro = () => (
           <Image filename="about1.png" alt="Mobile connection" />
         </div>
         <div className="ap--right--img grid-b">
-          <Image filename="about5.png" alt="Change this later" />
+          <Image filename="about6.jpg" alt="Change this later" />
         </div>
         <div className="ap--right--img grid-c">
           <Image filename="about3.png" alt="UCtel team" />
