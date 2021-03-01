@@ -418,6 +418,7 @@ const EmailSignUp = () => {
             method="post"
             data-netlify="true"
             data-netlify-honeypot="bot-field"
+            action="/message-sent"
           >
             <input type="text" placeholder="Full name" />
             <input type="email" placeholder="Email Address" />

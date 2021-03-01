@@ -59,6 +59,7 @@ const BuildingSubStyles = styled.section`
       }
       &--left {
         grid-area: b;
+        padding-top: 1.5rem;
       }
     }
   }
