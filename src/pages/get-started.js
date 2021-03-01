@@ -235,7 +235,7 @@ const GetStarted = () => {
             <div className="started__wrapper__form__inner">
               <h3>Get started with UCtel</h3>
               <form
-                name="Get-Started"
+                name="GetStarted"
                 method="post"
                 data-netlify="true"
                 data-netlify-honeypot="bot-field"
@@ -248,8 +248,7 @@ const GetStarted = () => {
                     <input name="bot-field" />
                   </label>
                 </p>
-                <input type="text" name="name" />
-                {/* <div className="form--section">
+                <div className="form--section">
                   <section>
                     <label htmlFor="First Name">
                       First name<span>*</span>
@@ -301,7 +300,7 @@ const GetStarted = () => {
                 <label htmlFor="message">
                   Messages <span>*</span>
                 </label>
-                <textarea name="message" id="message" required /> */}
+                <textarea name="message" id="message" required />
                 <div className="btn--wrapper">
                   <button className="btn btn--main" type="submit">
                     <span>Submit</span>
