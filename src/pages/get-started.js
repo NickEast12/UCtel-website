@@ -248,7 +248,8 @@ const GetStarted = () => {
                     <input name="bot-field" />
                   </p>
                 </p>
-                <div className="form--section">
+                <input type="text" name="" id="" />
+                {/* <div className="form--section">
                   <section>
                     <p htmlFor="First Name">
                       First name<span>*</span>
@@ -300,7 +301,7 @@ const GetStarted = () => {
                 <p htmlFor="message">
                   Messages <span>*</span>
                 </p>
-                <textarea name="message" id="message" required />
+                <textarea name="message" id="message" required /> */}
                 <div className="btn--wrapper">
                   <button className="btn btn--main" type="submit">
                     <span>Submit</span>

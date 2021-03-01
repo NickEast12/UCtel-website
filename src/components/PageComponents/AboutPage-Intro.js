@@ -40,7 +40,7 @@ const AboutPageIntroStyles = styled.section`
         .gatsby-image-wrapper {
           width: 100%;
           height: 100%;
-          object-fit: streach !important;
+          object-fit: fill !important;
         }
       }
       .grid-a {
