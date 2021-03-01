@@ -233,23 +233,15 @@ const GetStarted = () => {
           <div className="started__wrapper__form">
             <div className="started__wrapper__form__inner">
               <h3>Get started with UCtel</h3>
-
               <form
                 name="contact"
                 method="post"
                 data-netlify="true"
                 data-netlify-honeypot="bot-field"
               >
-                <input type="hidden" name="Get-Started" value="Contact" />
-                <p className="hidden" style={{ display: 'none' }}>
-                  <p>
-                    Don’t fill this out if you're human:{' '}
-                    <input name="bot-field" />
-                  </p>
-                </p>
                 <div className="form--section">
                   <section>
-                    <p htmlFor="First Name">
+                    <p htmlFor="firstName">
                       First name<span>*</span>
                     </p>
                     <input
@@ -260,15 +252,15 @@ const GetStarted = () => {
                     />
                   </section>
                   <section>
-                    <p htmlFor="Last Name">Last name</p>
+                    <p htmlFor="lastName">Last name</p>
                     <input type="text" name="lastName" id="lastName" />
                   </section>
                 </div>
-                <p htmlFor="Email">
+                <p htmlFor="email">
                   Email<span>*</span>
                 </p>
                 <input type="email" name="email" id="email" required />
-                <p htmlFor="PhoneNumber">
+                <p htmlFor="telephone">
                   Mobile number<span>*</span>
                 </p>
                 <input type="tel" name="telephone" id="telephone" required />
@@ -279,8 +271,8 @@ const GetStarted = () => {
                     </p>
                     <input
                       type="text"
-                      name="companyName"
-                      id="companyName"
+                      name="Companyname"
+                      id="Companyname"
                       required
                     />
                   </section>
@@ -301,7 +293,7 @@ const GetStarted = () => {
                 </p>
                 <textarea name="message" id="message" required />
                 <div className="btn--wrapper">
-                  <button className="btn btn--main" type="submit">
+                  <button type="submit" className="btn btn--main">
                     <span>Submit</span>
                   </button>
                 </div>
