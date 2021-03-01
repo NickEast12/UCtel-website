@@ -133,7 +133,7 @@ const GetStartedStyles = styled.div`
             border-radius: 5px;
             padding: 0.5rem;
             height: 10rem;
-            font-size: 1.1;
+            font-size: 1.1rem;
             resize: vertical;
             background-color: none;
             border: solid 1px rgba(0, 0, 0, 0.25);
@@ -241,7 +241,8 @@ const GetStarted = () => {
                 netlify-honeypot="bot-field"
                 aciton="/message-sent"
               >
-                <div className="form--section">
+                <input type="text" name="name" id="name" />
+                {/* <div className="form--section">
                   <section>
                     <label htmlFor="First Name">
                       First name<span>*</span>
@@ -293,7 +294,7 @@ const GetStarted = () => {
                 <label htmlFor="message">
                   Messages <span>*</span>
                 </label>
-                <textarea name="message" id="message" required />
+                <textarea name="message" id="message" required /> */}
                 <div className="btn--wrapper">
                   <button className="btn btn--main" type="submit">
                     <span>Submit</span>
