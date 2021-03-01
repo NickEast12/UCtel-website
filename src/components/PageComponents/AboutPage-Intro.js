@@ -103,7 +103,7 @@ const AboutPageIntro = () => (
       </Fade>
       <div className="ap--right">
         <div className="ap--right--img grid-a">
-          <Image filename="about1.png" alt="Change this later" />
+          <Image filename="about1.png" alt="Mobile connection" />
         </div>
         <div className="ap--right--img grid-b">
           <Image filename="template.jpeg" alt="Change this later" />

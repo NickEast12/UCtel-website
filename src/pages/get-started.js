@@ -234,21 +234,15 @@ const GetStarted = () => {
           <div className="started__wrapper__form">
             <div className="started__wrapper__form__inner">
               <h3>Get started with UCtel</h3>
-              <form
-                name="getstartedform"
-                method="post"
-                data-netlify="true"
-                data-netlify-honeypot="bot-field"
-                action="/message-sent"
-              >
-                <input type="hidden" name="Get-Started" value="Contact" />
+              <form name="getstartedform" method="post" data-netlify="true">
+                {/* <input type="hidden" name="Get-Started" value="Contact" />
                 <p className="hidden" style={{ display: 'none' }}>
                   <p>
                     Don’t fill this out if you're human:{' '}
                     <input name="bot-field" />
                   </p>
-                </p>
-                <input type="text" name="" id="" />
+                </p> */}
+                <input type="text" name="name" id="name" />
                 {/* <div className="form--section">
                   <section>
                     <p htmlFor="First Name">
