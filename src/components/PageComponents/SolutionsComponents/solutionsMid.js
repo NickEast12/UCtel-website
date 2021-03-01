@@ -72,7 +72,7 @@ const SolutionsMid = () => (
       <div className="sm--right">
         <Fade delay={350}>
           <h6 className="subtitle">How it works</h6>
-          <h3>Bringing new capabilities </h3>
+          <h3>Bringing new capabilities</h3>
           <p>
             Using cellular technology, private 5G networks offer businesses the
             coverage, security and capabilities they need for more advanced
@@ -89,7 +89,12 @@ const SolutionsMid = () => (
       </div>
       <div className="sm--left">
         <div className="sm--left__img img-decoration">
-          <Image filename="template.jpeg" alt="fil this in later" />
+          <Image
+            filename="5g-network.jpeg"
+            alt=" Using cellular technology, private 5G networks offer businesses the
+            coverage, security and capabilities they need for more advanced
+            wireless data and IoT applications"
+          />
         </div>
       </div>
     </div>

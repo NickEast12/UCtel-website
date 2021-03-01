@@ -146,7 +146,7 @@ const SolutionsIntro = () => (
       </div>
       <div className="si--right">
         <div className="si--right--img img-decoration">
-          <Image filename="template.jpeg" alt="fill this in" />
+          <Image filename="wireless.jpeg" alt="Private 5G" />
         </div>
       </div>
     </div>
