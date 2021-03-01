@@ -102,7 +102,10 @@ const BuildingSub = () => (
         </Fade>
       </div>
       <div className="bulsub--right img-decoration">
-        <Image filename="template.jpeg" alt="fill this in" />
+        <Image
+          filename="mobile-signal-bootesr.png"
+          alt="Mobile Signal Booster"
+        />
       </div>
     </div>
   </BuildingSubStyles>
