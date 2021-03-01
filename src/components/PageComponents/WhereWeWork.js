@@ -72,8 +72,8 @@ const WhereWeWork = () => (
   <WhereWeWorkStyles>
     <div className="work">
       <div className="work__content">
-        <h6 className="subtitle">Where we work</h6>
-        <h3>Title to introduce section</h3>
+        <h6 className="subtitle">What we do</h6>
+        <h3>For businesses of the future</h3>
         <p>
           We pride ourselves on offering cutting-edge technology that enables
           faster communication, better collaborations and improved operations.{' '}

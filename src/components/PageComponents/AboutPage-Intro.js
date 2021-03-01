@@ -90,7 +90,7 @@ const AboutPageIntro = () => (
       <Fade delay={500}>
         <div className="ap--left">
           <h6 className="subtitle">Our Story</h6>
-          <h2>Caption that introduces our story!</h2>
+          <h2>World-class service and state-of-the-art technology</h2>
           <p>
             UCtel has been providing unrivalled unified communications solutions
             to thousands of businesses across the UK since 2010. Delivering

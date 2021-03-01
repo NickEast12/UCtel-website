@@ -301,7 +301,7 @@ const MobileNav = ({ alt }) => {
             <li>
               <Link to="/get-started">
                 <button className="btn btn--main" type="button">
-                  <span>Get Started</span>
+                  <span>Get started</span>
                 </button>
               </Link>
             </li>
@@ -481,7 +481,7 @@ const DesktopNav = ({ alt }) => {
                       <Link to="/solutions/in-building-mobile-connectivity">
                         <div className="desktop--submenu__wrapper--box">
                           <InBuildingIcon />
-                          <p>In-building Mobile</p>
+                          <p>In-building mobile</p>
                         </div>
                       </Link>
                     </li>
@@ -497,7 +497,7 @@ const DesktopNav = ({ alt }) => {
                       <Link to="/solutions/unified-communications-and-contact-centre">
                         <div className="desktop--submenu__wrapper--box no-border">
                           <CommunicationsIcon />
-                          <p>Unified Communication</p>
+                          <p>Unified communication</p>
                         </div>
                       </Link>
                     </li>

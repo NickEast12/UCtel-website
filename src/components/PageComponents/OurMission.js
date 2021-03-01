@@ -92,9 +92,10 @@ const OurMission = () => (
         </Fade>
         <Fade delay={450}>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias,
-            omnis assumenda? Temporibus consequuntur odio dolorum cum,
-            accusantium non autem ullam totam, aperiam, voluptates tempore modi.
+            UCtel is your unified communications partner. Committed to
+            connecting people, networks, clouds and applications with
+            next-generation technology – designed to accelerate your digital
+            transformation and improve your connectivity and communications.
           </p>
         </Fade>
       </div>
