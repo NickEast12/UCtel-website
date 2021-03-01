@@ -235,11 +235,11 @@ const GetStarted = () => {
             <div className="started__wrapper__form__inner">
               <h3>Get started with UCtel</h3>
               <form
-                name="get-started-form"
+                name="GetStarted"
                 method="post"
-                netlify
-                netlify-honeypot="bot-field"
-                aciton="/message-sent"
+                data-netlify="true"
+                data-netlify-honeypot="bot-field"
+                action="/thank-you"
               >
                 <input type="text" name="name" id="name" />
                 {/* <div className="form--section">
