@@ -236,7 +236,7 @@ const GetStarted = () => {
               <h3>Get started with UCtel</h3>
               <form
                 name="get-started-form"
-                method="POST"
+                method="post"
                 data-netlify="true"
                 netlify-honeypot="bot-field"
                 aciton="/message-sent"
