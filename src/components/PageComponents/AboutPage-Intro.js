@@ -36,9 +36,11 @@ const AboutPageIntroStyles = styled.section`
       .ap--right--img {
         width: 100%;
         height: 100%;
+        object-fit: fill !important;
         .gatsby-image-wrapper {
           width: 100%;
           height: 100%;
+          object-fit: streach !important;
         }
       }
       .grid-a {
@@ -101,7 +103,7 @@ const AboutPageIntro = () => (
       </Fade>
       <div className="ap--right">
         <div className="ap--right--img grid-a">
-          <Image filename="template.jpeg" alt="Change this later" />
+          <Image filename="about1.png" alt="Change this later" />
         </div>
         <div className="ap--right--img grid-b">
           <Image filename="template.jpeg" alt="Change this later" />

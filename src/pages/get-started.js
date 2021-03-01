@@ -99,7 +99,7 @@ const GetStartedStyles = styled.div`
         }
         form {
           margin-top: 1rem;
-          label {
+          p {
             color: var(--slate);
             margin: 10px 0 5px 0;
             display: block;
@@ -235,7 +235,7 @@ const GetStarted = () => {
             <div className="started__wrapper__form__inner">
               <h3>Get started with UCtel</h3>
               <form
-                name="GetStarted"
+                name="getstartedform"
                 method="post"
                 data-netlify="true"
                 data-netlify-honeypot="bot-field"
@@ -243,16 +243,16 @@ const GetStarted = () => {
               >
                 <input type="hidden" name="Get-Started" value="Contact" />
                 <p className="hidden" style={{ display: 'none' }}>
-                  <label>
+                  <p>
                     Don’t fill this out if you're human:{' '}
                     <input name="bot-field" />
-                  </label>
+                  </p>
                 </p>
                 <div className="form--section">
                   <section>
-                    <label htmlFor="First Name">
+                    <p htmlFor="First Name">
                       First name<span>*</span>
-                    </label>
+                    </p>
                     <input
                       type="text"
                       name="firstName"
@@ -261,23 +261,23 @@ const GetStarted = () => {
                     />
                   </section>
                   <section>
-                    <label htmlFor="Last Name">Last name</label>
+                    <p htmlFor="Last Name">Last name</p>
                     <input type="text" name="lastName" id="lastName" />
                   </section>
                 </div>
-                <label htmlFor="Email">
+                <p htmlFor="Email">
                   Email<span>*</span>
-                </label>
+                </p>
                 <input type="email" name="email" id="email" required />
-                <label htmlFor="PhoneNumber">
+                <p htmlFor="PhoneNumber">
                   Mobile number<span>*</span>
-                </label>
+                </p>
                 <input type="tel" name="telephone" id="telephone" required />
                 <div className="form--section">
                   <section>
-                    <label htmlFor="Companyname">
+                    <p htmlFor="Companyname">
                       Company name<span>*</span>
-                    </label>
+                    </p>
                     <input
                       type="text"
                       name="companyName"
@@ -286,20 +286,20 @@ const GetStarted = () => {
                     />
                   </section>
                   <section>
-                    <label htmlFor="jobTitle">Job title</label>
+                    <p htmlFor="jobTitle">Job title</p>
                     <input type="text" name="jobTitle" id="jobTitle" />
                   </section>
                 </div>
-                <label htmlFor="floorPlans">Upload floor plans (PDF)</label>
+                <p htmlFor="floorPlans">Upload floor plans (PDF)</p>
                 <input
                   type="file"
                   id="floorPlans"
                   name="floorPlans"
                   accept="application/pdf"
                 />
-                <label htmlFor="message">
+                <p htmlFor="message">
                   Messages <span>*</span>
-                </label>
+                </p>
                 <textarea name="message" id="message" required />
                 <div className="btn--wrapper">
                   <button className="btn btn--main" type="submit">
