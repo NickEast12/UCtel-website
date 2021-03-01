@@ -234,7 +234,7 @@ const GetStarted = () => {
           <div className="started__wrapper__form">
             <div className="started__wrapper__form__inner">
               <h3>Get started with UCtel</h3>
-              <form name="contact" method="POST" data-netlify="true">
+              <form name="contact" netlify>
                 <p>
                   <label>
                     Your Name: <input type="text" name="name" />

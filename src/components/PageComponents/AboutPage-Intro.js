@@ -106,13 +106,13 @@ const AboutPageIntro = () => (
           <Image filename="about1.png" alt="Mobile connection" />
         </div>
         <div className="ap--right--img grid-b">
-          <Image filename="template.jpeg" alt="Change this later" />
+          <Image filename="about5.png" alt="Change this later" />
         </div>
         <div className="ap--right--img grid-c">
           <Image filename="about3.png" alt="UCtel team" />
         </div>
         <div className="ap--right--img grid-d">
-          <Image filename="template.jpeg" alt="Change this later" />
+          <Image filename="about4.png" alt="Change this later" />
         </div>
       </div>
     </div>
