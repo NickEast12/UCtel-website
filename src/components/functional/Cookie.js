@@ -7,6 +7,7 @@ import styled from 'styled-components';
 const CookieStyles = styled.div`
   width: 100%;
   position: fixed;
+  display: none;
   bottom: 11rem;
   width: 100%;
   height: 4rem;

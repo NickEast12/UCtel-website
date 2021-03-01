@@ -40,6 +40,9 @@ const SingleCaseStudyStyles = styled.div`
         padding-top: 1rem;
         width: 185px;
         margin: 0 auto;
+        .gatsby-image-wrapper {
+          object-fit: contain !important;
+        }
       }
       h3 {
         margin: 1rem 0;
@@ -50,6 +53,10 @@ const SingleCaseStudyStyles = styled.div`
       &--btn {
         width: 70%;
         margin: 0 auto;
+        text-align: center;
+        @media only screen and (min-width: 768px) {
+          text-align: left;
+        }
       }
     }
     &--card {
@@ -60,6 +67,7 @@ const SingleCaseStudyStyles = styled.div`
         height: 10rem;
         .gatsby-image-wrapper {
           height: 10rem;
+          object-fit: fill !important;
         }
       }
       &--content {
@@ -84,6 +92,7 @@ const SingleCaseStudyStyles = styled.div`
         }
         h6 {
           font-size: 1.1rem;
+          margin-top: 0.25rem;
           color: var(--slate);
         }
       }
@@ -194,6 +203,7 @@ export const query = graphql`
     allCaseStudies: allSanityCasestudies {
       nodes {
         _id
+        _createdAt
         mainTitle
         slug {
           current
@@ -221,3 +231,7 @@ export const query = graphql`
     }
   }
 `;
+
+// (
+//   sort: { fields: _createdAt, order: DESC }
+//   )

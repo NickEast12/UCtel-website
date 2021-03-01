@@ -82,13 +82,15 @@ const CaseStudyHeaderStyles = styled.header`
     }
   }
   @media only screen and (min-width: 1024px) {
+    /* margin-top: -3rem; */
     .landing__wrapper {
       width: 70%;
+      padding-top: 9.5rem;
       &__right {
-        height: 80%;
-        max-width: 400px;
+        height: 90%;
+        max-width: 450px;
         .gatsby-image-wrapper {
-          height: 80%;
+          height: 90%;
         }
       }
       &__left {
@@ -155,7 +157,7 @@ const CaseStudyBodyStyles = styled.main`
         margin: 1.5rem 0;
       }
       p {
-        font-size: 1.1rem;
+        font-size: 0.95rem;
       }
       button {
         width: 70%;
@@ -208,15 +210,17 @@ const CaseStudyBodyStyles = styled.main`
   @media only screen and (min-width: 768px) {
     .csbody {
       width: 80%;
+      display: flex;
       display: grid;
       grid-template-columns: 40% 1fr;
       &__card {
-        height: 40rem;
         position: sticky;
         top: 6rem;
+        height: 40rem;
       }
       &__main {
         padding-top: 0;
+        flex-grow: 2;
       }
     }
   }
@@ -274,6 +278,8 @@ const CaseStudyBody = ({ data }) => {
               <span>"</span>
             </div>
             <h3>{data.quote}</h3>
+            <h5>{data.clientname}</h5>
+            <h6>{data.clientposition}</h6>
           </div>
           <div className="csbody__main__box">
             <h3>The Solution</h3>

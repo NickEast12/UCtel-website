@@ -90,7 +90,7 @@ const OurMission = () => (
             experts.
           </h2>
         </Fade>
-        <Fade delay={850}>
+        <Fade delay={450}>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias,
             omnis assumenda? Temporibus consequuntur odio dolorum cum,

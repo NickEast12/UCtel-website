@@ -16,11 +16,11 @@ const SuccessStoriesIntroStyles = styled.section`
       color: var(--slate);
       .client--name {
         font-size: 1.1rem;
-        margin-top: 1rem;
+        margin-top: 2rem;
       }
       .client--business {
         color: var(--lightBlue);
-        margin-top: 1rem;
+        margin-top: 0.5rem;
         font-size: 1.1rem;
       }
     }
@@ -63,14 +63,12 @@ const SuccessStoriesIntro = () => (
         <Fade delay={300}>
           <h6 className="subtitle">Success Story</h6>
           <h3>
-            "Smooth conversion to a seamless communication was of vital
-            significance to us. UCtel understood our business and their delivery
-            was flawless"
+            Seamless transformation for the end-user was paramount to Wolseley.
+            UCtel understood our business and their delivery of our 600 sites
+            was excellent.
           </h3>
-          {/* <h5 className="client--name">Jon Snow</h5> */}
-          <h5 className="client--business">
-            Central London Community Healthcare NHS Trust
-          </h5>
+          <h5 className="client--name">Nathan Wright</h5>
+          <h5 className="client--business">Wolseley Project Manager</h5>
           <Link to="/case-studies">
             <div className="fom">
               <ArrowIcon />
@@ -80,7 +78,10 @@ const SuccessStoriesIntro = () => (
         </Fade>
       </div>
       <div className="success__img img-decoration">
-        <Image filename="template.jpeg" alt="fill this in later" />
+        <Image
+          filename="successstory.jpg"
+          alt="Central London Community Healthcare NHS Trust"
+        />
       </div>
     </div>
   </SuccessStoriesIntroStyles>
