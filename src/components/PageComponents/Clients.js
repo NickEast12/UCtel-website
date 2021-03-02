@@ -3,6 +3,10 @@ import styled from 'styled-components';
 import { window, document, exists } from 'browser-monads';
 import Fade from 'react-reveal/Fade';
 import CiscoLogo from '../../svgs/cisco-2.svg';
+import Image from '../functional/Image';
+
+// 527
+// 179
 
 const ClientStyles = styled.section`
   width: 100%;
@@ -58,12 +62,20 @@ const ClientLogoStyles = styled.div`
     display: grid;
     text-align: center;
     grid-template-columns: 1fr 1fr;
-    justify-content: space-between;
-    svg {
-      width: 80px;
-      text-align: center;
-      margin: 0 auto;
+    justify-content: space-evenly;
+    text-align: center;
+    .gatsby-image-wrapper {
       height: auto;
+      width: 100%;
+      img {
+        object-fit: fill !important;
+      }
+    }
+    svg {
+      width: auto;
+
+      height: 30px;
+      fill: var(--white) !important;
     }
   }
   .logoDesktop {
@@ -74,8 +86,8 @@ const ClientLogoStyles = styled.div`
 const MobileClients = () => (
   <ClientLogoStyles>
     <div className="flex--grid">
-      <CiscoLogo />
-      <CiscoLogo />
+      <Image filename="cisco-logo-transparent.png" />
+      <Image filename="cisco-meraki.png" />
     </div>
   </ClientLogoStyles>
 );

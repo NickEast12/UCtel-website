@@ -36,3 +36,78 @@ icon: `./src/static/icon.ico`,
 },
 
     box-shadow: 0 1.1111rem 1.1111rem 0.2778rem rgb(0 0 0 / 5%);
+
+
+
+    <form
+                name="contact"
+                method="post"
+                data-netlify="true"
+                data-netlify-honeypot="bot-field"
+                action="/"
+              >
+                <div className="form--section">
+                  <section>
+                    <p htmlFor="firstName">
+                      First name<span>*</span>
+                    </p>
+                    <input
+                      type="text"
+                      name="firstName"
+                      id="firstName"
+                      required
+                    />
+                  </section>
+                  <section>
+                    <p htmlFor="lastName">Last name</p>
+                    <input type="text" name="lastName" id="lastName" />
+                  </section>
+                </div>
+                <p htmlFor="email">
+                  Email<span>*</span>
+                </p>
+                <input type="email" name="email" id="email" required />
+                <p htmlFor="telephone">
+                  Mobile number<span>*</span>
+                </p>
+                <input type="tel" name="telephone" id="telephone" required />
+                <div className="form--section">
+                  <section>
+                    <p htmlFor="Companyname">
+                      Company name<span>*</span>
+                    </p>
+                    <input
+                      type="text"
+                      name="Companyname"
+                      id="Companyname"
+                      required
+                    />
+                  </section>
+                  <section>
+                    <p htmlFor="jobTitle">Job title</p>
+                    <input type="text" name="jobTitle" id="jobTitle" />
+                  </section>
+                </div>
+                <p htmlFor="floorPlans">Upload floor plans (PDF)</p>
+                <input
+                  type="file"
+                  id="floorPlans"
+                  name="floorPlans"
+                  accept="application/pdf"
+                />
+                <p htmlFor="message">
+                  Messages <span>*</span>
+                </p>
+                <textarea name="message" id="message" required />
+                <div className="btn--wrapper">
+                  <button type="submit" className="btn btn--main">
+                    <span>Submit</span>
+                  </button>
+                </div>
+              </form>
+
+[build]
+publish = "public"
+
+[[plugins]]
+package = "netlify-plugin-gatsby-cache"

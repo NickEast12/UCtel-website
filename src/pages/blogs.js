@@ -140,13 +140,7 @@ const EmailSignUp = () => {
         <div className="email">
           <h6>Get our latest blogs straight to your inbox</h6>
           <p>Sign up to our mailing list</p>
-          <form
-            name="signup"
-            method="post"
-            data-netlify="true"
-            data-netlify-honeypot="bot-field"
-            action="/message-sent"
-          >
+          <form>
             <input type="text" placeholder="Full name" />
             <input type="email" placeholder="Email Address" />
             <button className="btn btn--slate" type="submit">

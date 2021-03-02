@@ -110,7 +110,10 @@ const BuildingSub = () => (
         </Fade>
       </div>
       <div className="bulsub--right img-decoration">
-        <Image filename="template.jpeg" alt="fill this in" />
+        <Image
+          filename="contact-center.jpeg"
+          alt="Customer experience & Contact centres "
+        />
       </div>
     </div>
   </BuildingSubStyles>
