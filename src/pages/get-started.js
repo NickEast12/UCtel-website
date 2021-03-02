@@ -264,17 +264,22 @@ const GetStarted = () => {
                   id="title"
                   required
                 />
+                <input
+                  type="file"
+                  id="floorPlans"
+                  name="floorPlans"
+                  accept="application/pdf"
+                />
                 <textarea
                   placeholder="Message"
                   name="message"
                   id="message"
                   required
                 />
-                <div className="contact__wrapper__inner__form__btn">
-                  <button type="submit">
-                    <span>Submit</span>
-                  </button>
-                </div>
+
+                <button type="submit" className="btn btn--main">
+                  <span>Submit</span>
+                </button>
               </form>
             </div>
           </div>
