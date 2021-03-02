@@ -258,26 +258,42 @@ const GetStarted = () => {
                     <input type="text" name="lastName" id="lastName" />
                   </div>
                 </div>
-                <input
-                  type="text"
-                  placeholder="Subject"
-                  name="title"
-                  id="title"
-                  required
-                />
+                <p htmlFor="email">
+                  Email<span>*</span>
+                </p>
+                <input type="email" name="email" id="email" required />
+                <p htmlFor="telephone">
+                  Mobile number<span>*</span>
+                </p>
+                <input type="tel" name="telephone" id="telephone" required />
+                <div className="form--section">
+                  <div>
+                    <p htmlFor="Companyname">
+                      Company name<span>*</span>
+                    </p>
+                    <input
+                      type="text"
+                      name="Companyname"
+                      id="Companyname"
+                      required
+                    />
+                  </div>
+                  <div>
+                    <p htmlFor="jobTitle">Job title</p>
+                    <input type="text" name="jobTitle" id="jobTitle" />
+                  </div>
+                </div>
+                <p htmlFor="floorPlans">Upload floor plans (PDF)</p>
                 <input
                   type="file"
                   id="floorPlans"
                   name="floorPlans"
                   accept="application/pdf"
                 />
-                <textarea
-                  placeholder="Message"
-                  name="message"
-                  id="message"
-                  required
-                />
-
+                <p htmlFor="message">
+                  Messages <span>*</span>
+                </p>
+                <textarea name="message" id="message" required />
                 <button type="submit" className="btn btn--main">
                   <span>Submit</span>
                 </button>
