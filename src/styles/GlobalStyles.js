@@ -83,6 +83,41 @@ const GlobalStyles = createGlobalStyle`
             
         }
     }
+    .cookie__wrapper {
+        position: fixed;
+        background-color: var(--slate);
+        width: 85%;
+        left: calc(15% / 2);
+        z-index: 999;
+        border-radius: 5px;
+        padding: 1.5em;
+        color: var(--white);
+        @media only screen and (min-width: 768px)  {
+            width: 300px;
+        }
+        &__content {
+            p {
+                color: var(--white);
+                text-align: center;
+                span {
+                    text-decoration: underline white;
+                }
+            } 
+        }
+        
+                .btn-custom-class {
+                width: 100%;
+                background-color: var(--orange);
+                color: var(--white);
+                font-size: inherit;
+                border-radius: 5px;
+                border: none;
+                margin: 1rem 0 0 0 ;
+                padding: .5rem 0;
+            }
+
+            
+    }
     .btn {
         width: 100%;
         margin: 0.5rem auto;
