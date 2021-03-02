@@ -7,7 +7,6 @@ import styled from 'styled-components';
 const CookieStyles = styled.div`
   width: 100%;
   position: fixed;
-  display: none;
   bottom: 11rem;
   width: 100%;
   height: 4rem;
@@ -24,7 +23,7 @@ const CookieStyles = styled.div`
     button {
       margin-top: 15px;
       width: 70%;
-      color: white !important;
+      color: var(--black);
       background-color: var(--orange);
       border: none;
       border-radius: 4.5px;
@@ -34,8 +33,21 @@ const CookieStyles = styled.div`
     p {
       font-size: 0.95rem;
       color: var(--white);
+      span {
+        text-decoration: underline;
+      }
     }
-    &__content {
+    @media only screen and (min-width: 768px) {
+      width: 50%;
+    }
+  }
+  @media only screen and (min-width: 1280px) {
+    bottom: 11rem;
+
+    .cookie__wrapper {
+      margin: 0 auto 0 2rem;
+      width: 30%;
+      max-width: 500px;
     }
   }
 `;
@@ -53,8 +65,10 @@ const Cookie = () => (
       >
         <p>
           This website uses cookies. By using this website you consent to our
-          use of these cookies. For more information visit our
-          <Link to="/privacy-policy"> Privacy Policy</Link>
+          use of these cookies. For more information visit our{' '}
+          <Link to="/privacy-policy">
+            <span> Privacy Policy</span>
+          </Link>
         </p>
       </CookieConsent>
     </div>
