@@ -7,6 +7,7 @@ import GlobalStyles from '../styles/GlobalStyles';
 import Typography from '../styles/Typography.js';
 import Image from '../components/functional/Image';
 import CiscoLogo from '../svgs/cisco-2.svg';
+import SEO from '../components/functional/SEO';
 
 const GetStartedStyles = styled.div`
   width: 100%;
@@ -242,6 +243,7 @@ const GetStarted = () => {
     <GetStartedStyles>
       <GlobalStyles />
       <Typography />
+      <SEO />
       <main>
         <div className="started__wrapper">
           <div className="started__wrapper__content">

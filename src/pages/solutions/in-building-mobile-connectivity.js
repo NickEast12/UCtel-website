@@ -1,4 +1,5 @@
 import React from 'react';
+import SEO from '../../components/functional/SEO';
 import Layout from '../../components/Layout';
 import BlackHeader from '../../components/PageComponents/BlackHeader';
 import BuildingIntro from '../../components/PageComponents/SolutionsComponents/BuildingIntro';
@@ -10,6 +11,7 @@ import SuccessStoriesIntro from '../../components/PageComponents/SuccessStoriesI
 
 const InBuilding = ({ pageContext }) => (
   <Layout pageContext={pageContext}>
+    <SEO />
     <BlackHeader
       title="In-building mobile connectivity"
       description="Delivering better communications and faster data speeds to your business"

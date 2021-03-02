@@ -7,12 +7,14 @@ import Team from '../components/PageComponents/Team';
 import WhereWeWork from '../components/PageComponents/WhereWeWork';
 import PageBlogs from '../components/PageComponents/PageBlogs';
 import AboutusLower from '../components/AboutusLower';
+import SEO from '../components/functional/SEO';
 
 const AboutUs = ({ data, pageContext }) => {
   const leaders = data.leaders.nodes;
   const blogs = data.AllBlogs.nodes;
   return (
     <Layout pageContext={pageContext}>
+      <SEO />
       <BlackHeader
         title="About us"
         description="Short introduction into about us"

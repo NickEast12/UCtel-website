@@ -11,11 +11,13 @@ import LinkedInIcon from '../svgs/linkedin.svg';
 import MailIcon from '../svgs/mail.svg';
 import SocialIcon from '../svgs/social-network.svg';
 import TelephoneIcon from '../svgs/telephone.svg';
+import SEO from '../components/functional/SEO';
 
 const Contact = ({ pageContext }) => {
   const i = true;
   return (
     <Layout alt pageContext={pageContext}>
+      <SEO />
       <WhiteLandingPage
         title="Contact"
         description="Get in touch to find out more"

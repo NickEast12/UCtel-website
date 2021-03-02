@@ -6,6 +6,7 @@ import Img from 'gatsby-image';
 import Layout from '../components/Layout';
 import WhiteHeaderBackground from '../components/functional/WhiteAnimatedBackground';
 import PageBlogs from '../components/PageComponents/PageBlogs';
+import SEO from '../components/functional/SEO';
 
 const CaseStudy = ({ data, pageContext }) => {
   const Case = data.sanityCasestudies;
@@ -13,6 +14,7 @@ const CaseStudy = ({ data, pageContext }) => {
   console.log(Blogs);
   return (
     <Layout alt pageContext={pageContext}>
+      <SEO />
       <CaseStudyHeader data={Case} />
       <main>
         <CaseStudyBody data={Case} />

@@ -1,6 +1,7 @@
 import { Link } from 'gatsby';
 import React from 'react';
 import styled from 'styled-components';
+import SEO from '../components/functional/SEO';
 import Layout from '../components/Layout';
 
 const PolicyStyles = styled.main`
@@ -34,6 +35,7 @@ const PolicyStyles = styled.main`
 `;
 const PrivacyPolicy = ({ pageContext }) => (
   <Layout alt pageContext={pageContext}>
+    <SEO />
     <PolicyStyles>
       <div className="wrapper">
         <h1>Privacy Policy</h1>

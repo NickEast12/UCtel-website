@@ -1,4 +1,5 @@
 import React from 'react';
+import SEO from '../../components/functional/SEO';
 import Layout from '../../components/Layout';
 import BlackHeader from '../../components/PageComponents/BlackHeader';
 import NokiaDAC from '../../components/PageComponents/SolutionsComponents/NokiaDAC';
@@ -10,6 +11,7 @@ const PrivateFiveG = ({ pageContext }) => {
   const i = true;
   return (
     <Layout pageContext={pageContext}>
+      <SEO />
       <BlackHeader
         title="Private 5G"
         description="Driving Industry 4.0 with digital technology"

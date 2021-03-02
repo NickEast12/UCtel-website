@@ -8,9 +8,11 @@ import CommunicationCTA from '../../components/PageComponents/SolutionsComponent
 import Cisco from '../../components/PageComponents/SolutionsComponents/CiscoSection';
 import CommunicationMid from '../../components/PageComponents/SolutionsComponents/CommunicationMid';
 import CommunicationProjects from '../../components/PageComponents/SolutionsComponents/CommunicationsProjects';
+import SEO from '../../components/functional/SEO';
 
 const UnifiedCommunication = ({ pageContext }) => (
   <Layout pageContext={pageContext}>
+    <SEO />
     <BlackHeader
       title="Unified communications and contact centre"
       description="Creating digital experiences"

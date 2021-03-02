@@ -8,6 +8,7 @@ import WhiteLandingPage from '../components/PageComponents/WhiteHeader';
 import TwitterIcon from '../svgs/twitter.svg';
 import InstagramIcon from '../svgs/instagram.svg';
 import LinkedInIcon from '../svgs/linkedin.svg';
+import SEO from '../components/functional/SEO';
 
 const BlogGridStyles = styled.div`
   width: 100%;
@@ -54,6 +55,7 @@ const Blogs = ({ pageContext, data }) => {
   console.log(blogs);
   return (
     <Layout alt pageContext={pageContext}>
+      <SEO />
       <WhiteLandingPage
         title={`${pageContext.title || 'UCtel blogs'}`}
         description="Browse our industry insights to help you make the best decision for your business"

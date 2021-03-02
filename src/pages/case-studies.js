@@ -4,11 +4,13 @@ import styled from 'styled-components';
 import Img from 'gatsby-image';
 import Layout from '../components/Layout';
 import WhiteHeader from '../components/PageComponents/WhiteHeader';
+import SEO from '../components/functional/SEO';
 
 const CaseStudies = ({ data, pageContext }) => {
   const Casestudiesdata = data.allCaseStudies.nodes;
   return (
     <Layout alt pageContext={pageContext}>
+      <SEO />
       <WhiteHeader
         title="Case studies"
         description="Learn how UCtel drives growth and results for any business through these in-depth case studies and customer stories."
