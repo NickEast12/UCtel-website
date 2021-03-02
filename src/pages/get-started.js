@@ -283,7 +283,7 @@ const GetStarted = () => {
                     <input type="text" name="jobTitle" id="jobTitle" />
                   </div>
                 </div>
-                <p htmlFor="floorPlans">Upload floor plans (PDF)</p>
+                <p>Upload floor plans (PDF)</p>
                 <input
                   type="file"
                   id="floorPlans"
@@ -293,7 +293,13 @@ const GetStarted = () => {
                 <p htmlFor="message">
                   Messages <span>*</span>
                 </p>
-                <textarea name="message" id="message" required />
+                <textarea
+                  placeholder="Message"
+                  name="message"
+                  id="message"
+                  required
+                />
+
                 <button type="submit" className="btn btn--main">
                   <span>Submit</span>
                 </button>
