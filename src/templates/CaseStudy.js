@@ -14,7 +14,11 @@ const CaseStudy = ({ data, pageContext }) => {
   console.log(Blogs);
   return (
     <Layout alt pageContext={pageContext}>
-      <SEO />
+      <SEO
+        title={data.sanityCasestudies.title}
+        description={data.sanityCasestudies.mainTitle}
+        img={data.sanityCasestudies.mainImage.url}
+      />
       <CaseStudyHeader data={Case} />
       <main>
         <CaseStudyBody data={Case} />
@@ -371,6 +375,7 @@ export const query = graphql`
             fluid(maxWidth: 410) {
               ...GatsbySanityImageFluid
             }
+            url
           }
         }
       }
