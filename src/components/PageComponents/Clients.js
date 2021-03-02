@@ -1,10 +1,16 @@
 import React, { useState } from 'react';
+import { Link } from 'gatsby';
 import styled from 'styled-components';
 import { window, document, exists } from 'browser-monads';
 import Fade from 'react-reveal/Fade';
 import CiscoLogo from '../../svgs/cisco-2.svg';
 import Image from '../functional/Image';
-
+import RichcallSVG from '../../svgs/richcall.svg';
+import RingCentralSVG from '../../svgs/ringcentral-svg.svg';
+import CiscoSvg from '../../svgs/cisco-svg.svg';
+import Ciscomeraki from '../../svgs/ciscomeraki-svg.svg';
+import CelfiSvg from '../../svgs/celfi-svg.svg';
+import ArrowIcon from '../../svgs/right-arrow.svg';
 // 527
 // 179
 
@@ -20,6 +26,18 @@ const ClientStyles = styled.section`
       color: var(--white);
       text-align: center;
       font-size: 1.4rem;
+    }
+    section {
+      color: var(--white);
+      text-align: center;
+      span {
+        border-bottom: var(--white) 1px solid;
+        font-size: 1rem;
+      }
+      svg {
+        width: 12px;
+        fill: var(--white);
+      }
     }
     @media only screen and (min-width: 375px) {
       width: 85%;
@@ -49,6 +67,12 @@ const Clients = () => {
       <div className="clients">
         <h4>We're already working with some of the largest providers</h4>
         <Fade delay={200}>{size ? <DesktopClients /> : <MobileClients />}</Fade>
+        <Link to="/case-studies">
+          <section className="fom">
+            <ArrowIcon />
+            <span>Read our customer stories</span>
+          </section>
+        </Link>
       </div>
     </ClientStyles>
   );
@@ -59,45 +83,64 @@ const ClientLogoStyles = styled.div`
   .flex--grid {
     width: 90%;
     margin: 2rem auto;
-    display: grid;
+    display: flex;
     text-align: center;
-    grid-template-columns: 1fr 1fr;
-    justify-content: space-evenly;
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    justify-content: space-between;
     text-align: center;
+    grid-gap: 1rem;
     .gatsby-image-wrapper {
       height: auto;
       width: 100%;
-      img {
-        object-fit: fill !important;
-      }
     }
     svg {
-      width: auto;
-
-      height: 30px;
+      width: 70px;
+      height: 70px;
       fill: var(--white) !important;
     }
   }
-  .logoDesktop {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+
+  @media only screen and (min-width: 375px) {
+    .flex--grid {
+      svg {
+        width: 80px;
+      }
+    }
+  }
+  @media only screen and (min-width: 414px) {
+    .flex--grid {
+      svg {
+        width: 85px;
+      }
+    }
+  }
+  @media only screen and (min-width: 768px) {
+    .flex--grid {
+      justify-content: space-evenly;
+
+      svg {
+        width: 95px;
+      }
+    }
   }
 `;
 const MobileClients = () => (
   <ClientLogoStyles>
     <div className="flex--grid">
-      <Image filename="cisco-logo-transparent.png" />
-      <Image filename="cisco-meraki.png" />
+      <CiscoSvg />
+      <RichcallSVG />
+      <RingCentralSVG />
     </div>
   </ClientLogoStyles>
 );
 const DesktopClients = () => (
   <ClientLogoStyles>
     <div className="flex--grid logoDesktop">
-      <CiscoLogo />
-      <CiscoLogo />
-      <CiscoLogo />
-      <CiscoLogo />
+      <CiscoSvg />
+      <RichcallSVG />
+      <RingCentralSVG />
+      {/* <Ciscomeraki /> */}
+      <CelfiSvg />
     </div>
   </ClientLogoStyles>
 );
