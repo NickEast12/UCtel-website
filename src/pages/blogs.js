@@ -146,7 +146,7 @@ const EmailSignUp = () => {
             data-netlify="true"
             data-netlify-honeypot="bot-field"
           >
-            <input type="hidden" name="honeypotsignup" value="singup" />
+            <input type="hidden" name="form-name" value="signup" />
             <input
               type="text"
               placeholder="Name"

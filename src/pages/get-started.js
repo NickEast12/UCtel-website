@@ -241,21 +241,22 @@ const GetStarted = () => {
                 data-netlify-honeypot="bot-field"
               >
                 <input type="hidden" name="form-name" value="contact" />
-                <div className="contact__wrapper__inner__form__section">
-                  <input
-                    type="text"
-                    placeholder="Name"
-                    name="name"
-                    id="name"
-                    required
-                  />
-                  <input
-                    type="text"
-                    placeholder="Email"
-                    name="email"
-                    id="email"
-                    required
-                  />
+                <div className="form--section">
+                  <div>
+                    <p htmlFor="firstName">
+                      First name<span>*</span>
+                    </p>
+                    <input
+                      type="text"
+                      name="firstName"
+                      id="firstName"
+                      required
+                    />
+                  </div>
+                  <div>
+                    <p htmlFor="lastName">Last name</p>
+                    <input type="text" name="lastName" id="lastName" />
+                  </div>
                 </div>
                 <input
                   type="text"
