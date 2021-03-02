@@ -41,8 +41,11 @@ export default function SEO({ children, location, description, title, img }) {
   return (
     <Helmet>
       <html lang="en" />
-      <title>{title}</title>
-      <meta name="description" content={description} />
+      <title>{title || settings.openGraph.title}</title>
+      <meta
+        name="description"
+        content={title || settings.openGraph.description}
+      />
       <link rel="canonical" href={`${site.siteMetadata.siteUrl}${pathname}`} />
       <link rel="icon" href="/favicon.png" />
       <link rel="alternate icon" href="/favicon.ico" />
