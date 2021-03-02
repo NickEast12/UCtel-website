@@ -186,6 +186,32 @@ const GetStartedStyles = styled.div`
       }
     }
   }
+  @media only screen and (min-width: 1280px) {
+    .started__wrapper {
+      &__form {
+        margin: 0;
+        &__inner {
+          form {
+            margin: 0;
+            padding: 0;
+          }
+        }
+      }
+    }
+  }
+  @media only screen and (min-width: 1440px) {
+    .started__wrapper {
+      &__form {
+        margin-top: 2rem;
+        &__inner {
+          form {
+            margin: 0;
+            padding: 0;
+          }
+        }
+      }
+    }
+  }
 `;
 
 const GetStarted = () => {
