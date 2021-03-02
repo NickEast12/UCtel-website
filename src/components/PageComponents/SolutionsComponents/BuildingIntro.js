@@ -47,12 +47,19 @@ const SolutionsIntroStyles = styled.section`
     width: 80%;
     margin: 0 auto;
     padding-bottom: 4rem;
-    &__img {
+    &--img {
+      width: 100%;
+      height: 18.5rem;
       object-fit: fill !important;
       .gatsby-image-wrapper {
+        width: 100%;
+        height: 100%;
         img {
           object-fit: fill !important;
         }
+      }
+      @media only screen and (min-width: 414px) {
+        height: 20rem;
       }
     }
   }
@@ -75,9 +82,21 @@ const SolutionsIntroStyles = styled.section`
       margin-top: 1rem;
       padding: 0;
       margin: 0;
-      .gatsby-image-wrapper {
-        width: 100%;
-        height: 25rem;
+      &--img {
+        height: 100%;
+        .gatsby-image-wrapper {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
+  @media only screen and (min-width: 1280px) {
+    .si__wrapper {
+      .si--right {
+        &--img {
+          height: 27rem;
+        }
       }
     }
   }
