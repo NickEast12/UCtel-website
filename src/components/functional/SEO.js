@@ -44,8 +44,8 @@ export default function SEO({ children, location, description, title, img }) {
       <title>{title}</title>
       <meta name="description" content={description} />
       <link rel="canonical" href={`${site.siteMetadata.siteUrl}${pathname}`} />
-      <link rel="icon" href="./assets/images/UCtel-logo.png" />
-      <link rel="alternate icon" href="./assets/images/favicon.ico" />
+      <link rel="icon" href="/favicon.png" />
+      <link rel="alternate icon" href="/favicon.ico" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <meta charSet="utf-8" />
 
@@ -54,8 +54,11 @@ export default function SEO({ children, location, description, title, img }) {
         content={`${site.siteMetadata.siteUrl}${pathname}`}
       />
       <meta property="og:type" content="website" />
-      <meta property="og:title" content={title} />
-      <meta property="og:description" content={description} />
+      <meta property="og:title" content={title || settings.openGraph.title} />
+      <meta
+        property="og:description"
+        content={title || settings.openGraph.description}
+      />
       <meta
         property="og:image"
         content={img || settings.openGraph.image.asset.url}
@@ -68,8 +71,11 @@ export default function SEO({ children, location, description, title, img }) {
         content={`${site.siteMetadata.siteUrl}${pathname}`}
       />
       <meta name="twitter:creator" content={site.siteMetadata.twitter} />
-      <meta name="twitter:title" content={title} />
-      <meta name="twitter:description" content={description} />
+      <meta name="twitter:title" content={title || settings.openGraph.title} />
+      <meta
+        name="twitter:description"
+        content={title || settings.openGraph.description}
+      />
       <meta
         name="twitter:image"
         content={img || settings.openGraph.image.asset.url}

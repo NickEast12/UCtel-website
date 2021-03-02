@@ -14,7 +14,7 @@ const index = ({ data, pageContext }) => {
   const Blogs = data.AllBlogs.nodes;
   return (
     <Layout pageContext={pageContext}>
-      <SEO title="" description="" image="" />
+      <SEO description="" image="" />
       <LandingPage
         title="Mobile boosting | Private 5G | Unified Communications"
         description="Next-generation technology keeping you connected."

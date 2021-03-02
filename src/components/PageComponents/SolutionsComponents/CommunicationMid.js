@@ -46,6 +46,9 @@ const CiscoStyles = styled.section`
           .gatsby-image-wrapper {
             height: 100%;
             width: 100%;
+            img {
+              object-fit: fill !important;
+            }
           }
         }
       }
@@ -54,8 +57,12 @@ const CiscoStyles = styled.section`
   @media only screen and (min-width: 1280px) {
     .technology {
       &__wrapper {
+        grid-gap: 4rem;
         &--left {
           padding-top: 1.5rem;
+        }
+        &--right {
+          height: 22rem;
         }
       }
     }
@@ -86,7 +93,7 @@ const CommunicationMid = () => (
           </Fade>
         </div>
         <div className="technology__wrapper--right img-decoration">
-          <Image filename="template.jpeg" alt="fill this in" />
+          <Image filename="richcall-img.png" alt="Rich Call" />
         </div>
       </div>
     </div>
