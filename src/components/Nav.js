@@ -112,12 +112,13 @@ const MobileMenuStyles = styled.div`
     ul {
       list-style: none;
       color: var(--slate);
-
       > li {
         padding-bottom: 1.5rem;
         font-size: var(--headingTiny);
         button {
           padding: 0.75rem 0;
+          width: 100% !important;
+          max-width: 100% !important;
           span {
             font-size: 1.1rem;
             color: var(--white);

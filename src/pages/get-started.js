@@ -13,6 +13,7 @@ const GetStartedStyles = styled.div`
   height: 100%;
   position: relative;
   overflow: scroll;
+  background-color: var(--black);
   .back {
     position: absolute;
     z-index: 10;
@@ -159,6 +160,7 @@ const GetStartedStyles = styled.div`
   }
   @media only screen and (min-width: 768px) {
     height: 100vh;
+    padding-bottom: 3rem;
     .back {
     }
     .started__wrapper {
@@ -187,13 +189,17 @@ const GetStartedStyles = styled.div`
     }
   }
   @media only screen and (min-width: 1280px) {
+    height: 120vh;
     .started__wrapper {
       &__form {
-        margin: 0;
+        margin: 2rem 3rem;
         &__inner {
           form {
             margin: 0;
             padding: 0;
+            textarea {
+              height: 12rem;
+            }
           }
         }
       }
