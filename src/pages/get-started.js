@@ -7,7 +7,10 @@ import GlobalStyles from '../styles/GlobalStyles';
 import Typography from '../styles/Typography.js';
 import Image from '../components/functional/Image';
 import CiscoLogo from '../svgs/cisco-2.svg';
+import RingCentralSVG from '../svgs/ringcentral-svg.svg';
 import SEO from '../components/functional/SEO';
+import RichcallSVG from '../svgs/richcall.svg';
+import CelfiSvg from '../svgs/celfi-svg.svg';
 
 const GetStartedStyles = styled.div`
   width: 100%;
@@ -193,13 +196,13 @@ const GetStartedStyles = styled.div`
     height: 120vh;
     .started__wrapper {
       &__form {
-        margin: 2rem 3rem;
+        margin: 0.5rem 1.5rem;
         &__inner {
           form {
             margin: 0;
             padding: 0;
             textarea {
-              height: 12rem;
+              height: 5rem;
             }
           }
         }
@@ -254,7 +257,7 @@ const GetStarted = () => {
             </h1>
             <div className="started__wrapper__content__clients">
               <CiscoLogo />
-              <CiscoLogo />
+              <RichcallSVG />
             </div>
             <p>
               “Seamless transformation for the end-user was paramount to

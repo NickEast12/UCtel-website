@@ -47,6 +47,12 @@ const BlogGridStyles = styled.div`
         text-align: left;
       }
     }
+    @media only screen and (min-width: 768px) {
+      grid-gap: 2rem;
+      &--blogs {
+        grid-gap: 2rem;
+      }
+    }
   }
 `;
 
