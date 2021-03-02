@@ -57,7 +57,10 @@ const AboutUsIntro = () => (
   <AboutUsIntroStyles>
     <div className="aboutus">
       <div className="aboutus--image img-decoration">
-        <Image filename="template.jpeg" alt="This will change" />
+        <Image
+          filename="about-us.png"
+          alt="Bringing business into the digital age"
+        />
       </div>
       <div className="aboutus--content">
         <Fade delay={450}>

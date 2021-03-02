@@ -60,7 +60,7 @@ const SolutionsIntroStyles = styled.section`
       margin: 0 auto;
       width: 100%;
       display: grid;
-      grid-template-columns: 55% 1fr;
+      grid-template-columns: 45% 1fr;
       grid-gap: 1rem;
       padding: 4rem 0;
       max-width: 1100px;
