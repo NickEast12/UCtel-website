@@ -268,7 +268,7 @@ const GetStarted = () => {
                 <input type="tel" name="telephone" id="telephone" required />
                 <div className="form--section">
                   <div>
-                    <p htmlFor="Companyname">
+                    <p htmlFor="Company Name">
                       Company name<span>*</span>
                     </p>
                     <input
@@ -284,12 +284,7 @@ const GetStarted = () => {
                   </div>
                 </div>
                 <p>Upload floor plans (PDF)</p>
-                <input
-                  type="file"
-                  id="floorPlans"
-                  name="floorPlans"
-                  accept="application/pdf"
-                />
+                <input type="file" id="floorPlans" name="floorPlans" />
                 <p htmlFor="message">
                   Messages <span>*</span>
                 </p>

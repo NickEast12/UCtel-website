@@ -46,31 +46,9 @@ icon: `./src/static/icon.ico`,
                 data-netlify-honeypot="bot-field"
                 action="/"
               >
-                <div className="form--section">
-                  <section>
-                    <p htmlFor="firstName">
-                      First name<span>*</span>
-                    </p>
-                    <input
-                      type="text"
-                      name="firstName"
-                      id="firstName"
-                      required
-                    />
-                  </section>
-                  <section>
-                    <p htmlFor="lastName">Last name</p>
-                    <input type="text" name="lastName" id="lastName" />
-                  </section>
-                </div>
-                <p htmlFor="email">
-                  Email<span>*</span>
-                </p>
-                <input type="email" name="email" id="email" required />
-                <p htmlFor="telephone">
-                  Mobile number<span>*</span>
-                </p>
-                <input type="tel" name="telephone" id="telephone" required />
+
+
+
                 <div className="form--section">
                   <section>
                     <p htmlFor="Companyname">
