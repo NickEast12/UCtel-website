@@ -418,6 +418,7 @@ const EmailSignUp = () => {
             method="post"
             data-netlify="true"
             data-netlify-honeypot="bot-field"
+            action="/email-signup-sucess"
           >
             <input type="hidden" name="form-name" value="signup" />
             <input

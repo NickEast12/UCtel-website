@@ -284,7 +284,12 @@ const GetStarted = () => {
                   </div>
                 </div>
                 <p>Upload floor plans (PDF)</p>
-                <input type="file" id="floorPlans" name="floorPlans" />
+                <input
+                  type="file"
+                  id="floorPlans"
+                  name="floorPlans"
+                  accept=".pdf,.doc"
+                />
                 <p htmlFor="message">
                   Messages <span>*</span>
                 </p>
