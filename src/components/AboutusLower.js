@@ -4,13 +4,16 @@ import Fade from 'react-reveal/Fade';
 
 const AboutusLowerStyles = styled.section`
   width: 100%;
+  background-color: var(--lightBlue);
+
   .lower {
     width: 90%;
     margin: 0 auto;
-    padding: 2rem 0 3rem 0;
+    padding: 3.5rem 0;
     max-width: 1000px;
     &--left {
       h4 {
+        color: var(--white);
         font-size: 1.45rem;
         margin-bottom: 1rem;
         line-height: 1.85rem;
@@ -19,6 +22,7 @@ const AboutusLowerStyles = styled.section`
     &--right {
       p {
         margin-bottom: 1rem;
+        color: var(--white);
       }
     }
     @media only screen and (min-width: 375px) {
@@ -31,7 +35,7 @@ const AboutusLowerStyles = styled.section`
     }
     @media only screen and (min-width: 1280px) {
       width: 80%;
-      padding-bottom: 6rem;
+      padding-bottom: 4rem;
     }
   }
 `;

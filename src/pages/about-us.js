@@ -17,13 +17,13 @@ const AboutUs = ({ data, pageContext }) => {
       <SEO />
       <BlackHeader
         title="About us"
-        description="Short introduction into about us"
+        description="A leading player in unified communications"
       />
       <main>
         <AboutPageIntro />
         <WhereWeWork />
         <AboutusLower />
-        <Team data={leaders} />
+        {/* <Team data={leaders} /> */}
         <PageBlogs Blogs={blogs} />
       </main>
     </Layout>
