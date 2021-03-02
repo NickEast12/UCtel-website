@@ -47,7 +47,12 @@ const SolutionsIntroStyles = styled.section`
     width: 80%;
     margin: 0 auto;
     padding-bottom: 2rem;
-    &__img {
+    &--img {
+      .gatsby-image-wrapper {
+        img {
+          object-fit: fill !important;
+        }
+      }
     }
   }
   @media only screen and (min-width: 768px) {
@@ -132,7 +137,7 @@ const BuildingIntro = () => (
       </div>
       <div className="si--right">
         <div className="si--right--img img-decoration">
-          <Image filename="template.jpeg" alt="fill this in" />
+          <Image filename="collaborate.jpeg" alt="Unified communications" />
         </div>
       </div>
     </div>

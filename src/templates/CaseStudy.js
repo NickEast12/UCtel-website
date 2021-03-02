@@ -268,10 +268,12 @@ const CaseStudyBody = ({ data }) => {
           <h5>Industry</h5>
           <p>{data.industry}</p>
           <hr />
-          <aside href={data.link} target="_blank" rel="noopener noreferrer">
-            <button className="btn btn--main" type="button">
-              <span>Visit website</span>
-            </button>
+          <aside>
+            <a href={data.link} target="_blank" rel="noopener noreferrer">
+              <button className="btn btn--main" type="button">
+                <span>Visit website</span>
+              </button>
+            </a>
           </aside>
         </aside>
         <div className="csbody__main">
