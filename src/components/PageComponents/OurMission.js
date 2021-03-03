@@ -1,6 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
 import Fade from 'react-reveal/Fade';
+import MissionIcon from '../../svgs/antenna.svg';
+import FiveGIcon from '../../svgs/fiveg.svg';
+import CollaborationIcon from '../../svgs/connection.svg';
 
 const OurMissionStyles = styled.section`
   width: 100%;
@@ -12,13 +15,13 @@ const OurMissionStyles = styled.section`
     max-width: var(--maxWidth);
     &__left {
       h2 {
-        font-size: 2rem;
+        font-size: 1.25rem;
         font-family: Gellix-SemiBold;
-        text-align: center;
+        text-align: left;
       }
       p {
-        margin: 2rem auto 0 auto;
-        text-align: center;
+        margin: 1rem auto 0 auto;
+        text-align: left;
         width: 100%;
         @media only screen and (min-width: 1024px) {
           width: 70%;
@@ -30,6 +33,7 @@ const OurMissionStyles = styled.section`
       display: grid;
       grid-template-columns: 1fr 1fr;
       grid-gap: 1rem;
+      justify-self: center;
       &__box {
         svg {
           width: 45px;
@@ -45,37 +49,47 @@ const OurMissionStyles = styled.section`
           margin-top: 0.5rem;
         }
       }
+      .span-two {
+        grid-column: 1 / 3;
+        grid-row: 2 / 2;
+      }
     }
     @media only screen and (min-width: 375px) {
       width: 85%;
     }
-    @media only screen and (min-width: 700px) {
+    @media only screen and (min-width: 768px) {
       display: grid;
-      grid-template-columns: repeat(1, 1fr);
+      grid-template-columns: repeat(2, 1fr);
       grid-gap: 2rem;
       padding: 5rem 0;
       &__left {
         h2 {
-          font-size: 2.25rem;
+          font-size: 1.5rem;
         }
       }
       &__right {
         margin-top: 0;
         padding-top: 0;
         grid-gap: 1rem;
+        display: block;
+        &__box {
+          margin-bottom: 1.5rem;
+        }
       }
     }
     @media only screen and (min-width: 1024px) {
       max-width: 1000px;
       &__left {
         h2 {
-          font-size: 2.5rem;
+        }
+        p {
+          width: 100%;
         }
       }
     }
     @media only screen and (min-width: 1280px) {
+      grid-gap: 4rem;
       &__left {
-        padding-top: 2rem;
       }
     }
   }
@@ -85,54 +99,77 @@ const OurMission = () => (
     <div className="mission">
       <div className="mission__left">
         <Fade delay={300}>
-          <h2>
+          {/* <h2>
             Forward-thinking services. Powered by technology, delivered by
             experts.
+          </h2> */}
+          <h2>
+            UCtel is committed to connecting people, networks, clouds and
+            applications with next-generation technology – designed to
+            accelerate your digital transformation and improve your connectivity
+            and communications.
           </h2>
         </Fade>
         <Fade delay={450}>
           <p>
+            Business is constantly evolving, and in today’s digital-first world,
+            you need to be more agile than ever. With market-leading,
+            forward-thinking and cutting-edge technologies, we can transform
+            your communication infrastructure, drive your IoT initiatives and
+            keep you connected.{' '}
+          </p>
+
+          {/* <p>
             UCtel is your unified communications partner. Committed to
             connecting people, networks, clouds and applications with
             next-generation technology – designed to accelerate your digital
             transformation and improve your connectivity and communications.
+          </p> */}
+        </Fade>
+        <Fade delay={450}>
+          <p>
+            Simply by identifying your need, comparing the products and
+            transitioning to the best solution, we allow you and your business
+            to adopt digital technology, stay connected and join the future.
           </p>
         </Fade>
       </div>
-      {/* <div className="mission__right">
+      <div className="mission__right">
         <div className="mission__right__box">
-          <MissionIcon />
-          <h5>Mission 1</h5>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto unde
-            sapiente quo totam dolor? Aliquid.
-          </p>
+          <Fade delay={650}>
+            <MissionIcon />
+            <h5>Indoor mobile signal boosting</h5>
+            <p>
+              Award-winning, Ofcom-approved indoor mobile signal booster,
+              Cel-Fi, offers an exceptional coverage footprint, improving voice
+              quality and data speeds.
+            </p>
+          </Fade>
         </div>
         <div className="mission__right__box">
-          <MissionIcon />
-          <h5>Mission 2</h5>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto unde
-            sapiente quo totam dolor? Aliquid.
-          </p>
+          <Fade delay={850}>
+            <CollaborationIcon />
+            <h5>Seamless collaborations</h5>
+            <p>
+              Integrated services bring instant messaging, audio, web and video
+              conferencing, calling and more to your business, eliminating the
+              distance between employees and customer.
+            </p>
+          </Fade>
         </div>
-        <div className="mission__right__box">
-          <MissionIcon />
-          <h5>Mission 3</h5>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto unde
-            sapiente quo totam dolor? Aliquid.
-          </p>
+        <div className="mission__right__box span-two">
+          <Fade delay={950}>
+            <FiveGIcon />
+            <h5>Private 5G networks</h5>
+            <p>
+              Intrinsically secure, cost-effective, effortlessly mobile and
+              reliable, private 5G networks deliver a high-performing, robust
+              and scalable solution to support wireless data communications and
+              IoT applications.
+            </p>
+          </Fade>
         </div>
-        <div className="mission__right__box">
-          <MissionIcon />
-          <h5>Mission 4</h5>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto unde
-            sapiente quo totam dolor? Aliquid.
-          </p>
-        </div>
-      </div> */}
+      </div>
     </div>
   </OurMissionStyles>
 );

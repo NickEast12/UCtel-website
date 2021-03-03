@@ -92,9 +92,11 @@ const LandingPage = ({ darkTheme, title, description }) => {
         <div className="landing__wrapper__content">
           <Fade duration={1000} delay={500}>
             <h1>
-              <span className="title">Optimum mobile coverage.</span>
-              <span className="title">IoT cellular technology.</span>
-              <span className="title">Unified communications.</span>
+              <span className="title">Indoor mobile signal solutions.</span>
+              <span className="title">Private 5G networks.</span>
+              <span className="title">
+                Unified communications and contact centre.
+              </span>
             </h1>
           </Fade>
           <Fade duration={1000} delay={850}>

@@ -44,6 +44,21 @@ const BuildingSubStyles = styled.section`
       width: 85%;
     }
   }
+  .bulsub--lower {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    &--content {
+      width: 90%;
+      margin: 0 auto;
+      @media only screen and (min-width: 375px) {
+        width: 85%;
+      }
+      @media only screen and (min-width: 768px) {
+        width: 100%;
+      }
+    }
+  }
   @media only screen and (min-width: 768px) {
     width: 90%;
     margin: 0 auto;
@@ -61,6 +76,9 @@ const BuildingSubStyles = styled.section`
         .gatsby-image-wrapper {
           width: 100%;
           height: 100%;
+          img {
+            object-fit: cover !important;
+          }
         }
       }
       &--left {
@@ -114,6 +132,20 @@ const BuildingSub = () => (
           filename="contact-center.jpeg"
           alt="Customer experience & Contact centres "
         />
+      </div>
+    </div>
+    <div className="bulsub--lower">
+      <div className="bulsub--lower--content">
+        <Fade delay={550}>
+          <p>
+            Delivering solutions using Cisco UCCX, Cisco Webex Contact Centre,
+            Amazon Connect and RingCentral provides a rich selection of leading
+            platforms to ensure you have the right tools to engage with your
+            customers in the most efficient way, whilst delivering maximum value
+            to your business. Our experience of building and migrating customers
+            from one platform to another means that you are in safe hands.
+          </p>
+        </Fade>
       </div>
     </div>
   </BuildingSubStyles>

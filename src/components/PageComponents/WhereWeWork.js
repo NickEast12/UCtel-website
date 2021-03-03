@@ -75,8 +75,10 @@ const WhereWeWork = () => (
         <h6 className="subtitle">What we do</h6>
         <h3>For businesses of the future</h3>
         <p>
-          We pride ourselves on offering cutting-edge technology that enables
-          faster communication, better collaborations and improved operations.{' '}
+          Working in a variety of sectors from healthcare to agriculture,
+          construction, retail, and warehousing, we pride ourselves on offering
+          cutting-edge technology that enables faster communication, better
+          collaboration and improved operations.
         </p>
       </div>
       <div className="work__areas">
