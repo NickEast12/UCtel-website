@@ -8,6 +8,7 @@ const LandingIntroStyles = styled.section`
     margin: 0 auto;
     text-align: center;
     padding: 3rem 0;
+    max-width: 1100px;
     h2 {
       font-size: 1.95rem;
     }
@@ -19,6 +20,10 @@ const LandingIntroStyles = styled.section`
     }
     @media only screen and (min-width: 768px) {
       width: 75%;
+    }
+    @media only screen and (min-width: 1280px) {
+      width: 60%;
+      padding: 5rem 0;
     }
   }
 `;

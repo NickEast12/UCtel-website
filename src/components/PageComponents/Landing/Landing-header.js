@@ -98,8 +98,11 @@ const LandingPageStyles = styled.div`
     height: 100vh;
     .landing__wrapper {
       padding-top: 12.5rem;
+      width: 75%;
+      margin: 0 auto;
       &__content {
         width: 100%;
+        margin: 0 auto;
         h1 {
           letter-spacing: -0.01px;
           font-size: 2.5rem;
@@ -110,15 +113,45 @@ const LandingPageStyles = styled.div`
         }
         .btn__wrapper {
           display: grid;
-          grid-template-columns: 1fr 1fr;
+          grid-template-columns: 1fr;
           grid-gap: 1rem;
           width: 400px;
+        }
+      }
+      &--img {
+        width: 100%;
+        margin-top: 1.5rem;
+        display: block;
+        img {
+          width: 100%;
+          height: 100%;
         }
       }
     }
   }
   @media only screen and (min-width: 1280px) {
-    height: 49rem;
+    height: 45rem;
+    .landing__wrapper {
+      padding-top: 10.5rem;
+      width: 55%;
+      margin: 0 auto;
+      max-width: 800px;
+
+      &__content {
+        .logo {
+          width: 285px;
+        }
+        h1 {
+          margin: 1.25rem 0;
+        }
+      }
+      &--img {
+        padding: 3rem 0;
+      }
+    }
+  }
+  @media only screen and (min-width: 1440px) {
+    height: 50rem;
   }
 `;
 const LandingPage = ({ darkTheme, title, description }) => {
@@ -163,12 +196,12 @@ const LandingPage = ({ darkTheme, title, description }) => {
           </a>
         </div>
 
-        <div className="landing__wrapper--img">
+        {/* <div className="landing__wrapper--img">
           <img
             src={LandingNokia}
             alt="Nokia Digital Automation Cloud and UCtel"
           />
-        </div>
+        </div> */}
       </div>
       {isDesktop ? (
         <AnimateHeaderBackground points="10" distance="20" spacing="15" />

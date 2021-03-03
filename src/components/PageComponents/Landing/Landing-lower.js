@@ -37,6 +37,10 @@ const LandingLowerStyles = styled.section`
         margin-top: 2.5rem;
       }
     }
+    @media only screen and (min-width: 1280px) {
+      width: 60%;
+      padding: 5rem 0;
+    }
   }
 `;
 const LandingLower = () => (

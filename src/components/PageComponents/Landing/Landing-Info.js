@@ -19,6 +19,7 @@ const LandingInfoStyles = styled.section`
     margin: 0 auto;
     padding: 3rem 0;
     text-align: center;
+    max-width: 1100px;
     &--left {
       padding-bottom: 1rem;
       h3 {
@@ -49,6 +50,7 @@ const LandingInfoStyles = styled.section`
           p {
             margin-top: 0.5rem;
             display: block;
+            font-family: Gellix-SemiBold;
           }
         }
       }
@@ -62,6 +64,19 @@ const LandingInfoStyles = styled.section`
         ul {
           margin-top: 2rem;
           grid-template-columns: repeat(4, 1fr);
+        }
+      }
+    }
+    @media only screen and (min-width: 1280px) {
+      width: 60%;
+      padding: 5rem 0;
+      &--right {
+        ul {
+          li {
+            svg {
+              width: 50px;
+            }
+          }
         }
       }
     }
