@@ -94,19 +94,12 @@ const ClientLogoStyles = styled.div`
       width: 100%;
     }
     svg {
-      width: 70px;
-      height: 70px;
+      width: 80px;
+      height: 30px;
       fill: var(--white) !important;
     }
   }
 
-  @media only screen and (min-width: 375px) {
-    .flex--grid {
-      svg {
-        width: 80px;
-      }
-    }
-  }
   @media only screen and (min-width: 414px) {
     .flex--grid {
       svg {
@@ -119,7 +112,16 @@ const ClientLogoStyles = styled.div`
       justify-content: space-evenly;
 
       svg {
-        width: 95px;
+        width: 100px;
+        height: 70px;
+      }
+    }
+  }
+  @media only screen and (min-width: 1280px) {
+    .flex--grid {
+      svg {
+        width: 120px;
+        height: 70px;
       }
     }
   }
