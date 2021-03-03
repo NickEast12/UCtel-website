@@ -22,7 +22,14 @@ const InBuilding = ({ pageContext }) => (
       <WeWill />
       <HowItWorks />
       <FindOut />
-      <SuccessStoriesIntro />
+      <SuccessStoriesIntro
+        quote="Smooth conversion to a seamless communication was of vital significance to us. UCtel understood our business and their delivery was flawless."
+        name=""
+        position="Central London Community Healthcare NHS Trust"
+        img="nhs.jpeg"
+        alt="Central London Community Healthcare NHS Trust"
+        link="/case-studies/nhs-central-london-community-healthcare-nhs-trust"
+      />
     </main>
   </Layout>
 );

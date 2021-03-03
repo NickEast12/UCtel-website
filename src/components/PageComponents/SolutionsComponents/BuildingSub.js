@@ -109,6 +109,8 @@ const BuildingSub = () => (
         <Image
           filename="mobile-signal-booster.png"
           alt="Mobile Signal Booster"
+          author="https://www.signalboosters.co.uk/"
+          source="https://www.signalboosters.co.uk/"
         />
       </div>
     </div>

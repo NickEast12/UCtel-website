@@ -24,7 +24,18 @@ const index = ({ data, pageContext }) => {
         <OurMission />
         <AboutUsIntro />
         <SolutionsIntro />
-        <SuccessStoriesIntro />
+        <SuccessStoriesIntro
+          quote="Seamless transformation for the end-user was paramount to Wolseley.
+            UCtel understood our business and their delivery of our 600 sites
+            was excellent."
+          name="Nathan Wright"
+          position="Wolseley Project Manager"
+          img="successstory.jpg"
+          alt="Seamless transformation for the end-user was paramount to Wolseley.
+          UCtel understood our business and their delivery of our 600 sites
+          was excellent."
+          link="/case-studies/wolseley"
+        />
         <PageBlogs Blogs={Blogs} />
       </main>
     </Layout>

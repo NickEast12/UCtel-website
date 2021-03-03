@@ -63,26 +63,19 @@ const SuccessStoriesIntroStyles = styled.section`
   }
 `;
 
-const SuccessStoriesIntro = () => (
+const SuccessStoriesIntro = ({ quote, name, position, img, alt, link }) => (
   <SuccessStoriesIntroStyles>
     <div className="success">
       <div className="success__img img-decoration">
-        <Image
-          filename="successstory.jpg"
-          alt="Central London Community Healthcare NHS Trust"
-        />
+        <Image filename={img} alt={alt} />
       </div>
       <div className="success__content">
         <Fade delay={300}>
           <h6 className="subtitle">Success Story</h6>
-          <h3>
-            Seamless transformation for the end-user was paramount to Wolseley.
-            UCtel understood our business and their delivery of our 600 sites
-            was excellent.
-          </h3>
-          <h5 className="client--name">Nathan Wright</h5>
-          <h5 className="client--business">Wolseley Project Manager</h5>
-          <Link to="/case-studies">
+          <h3>{quote}</h3>
+          <h5 className="client--name">{name}</h5>
+          <h5 className="client--business">{position}</h5>
+          <Link to={link}>
             <div className="fom">
               <ArrowIcon />
               <span>Read more</span>
