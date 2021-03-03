@@ -1,5 +1,15 @@
 import React from 'react';
 import styled from 'styled-components';
+import ConnectivityIcon from '../../../svgs/connectivity.svg';
+import UserIcon from '../../../svgs/multi-user.svg';
+import CoverageIcon from '../../../svgs/coverage.svg';
+import ConnectionIcon from '../../../svgs/connection.svg';
+import NetworkIcon from '../../../svgs/network.svg';
+import PerformanceIcon from '../../../svgs/performance.svg';
+import SecurityIcon from '../../../svgs/security.svg';
+import BandwidthIcon from '../../../svgs/bandwidth.svg';
+import TransferIcon from '../../../svgs/transfer.svg';
+import CapacityIcon from '../../../svgs/capacity.svg';
 
 const LandingInfoStyles = styled.section`
   width: 100%;
@@ -8,21 +18,50 @@ const LandingInfoStyles = styled.section`
     width: 90%;
     margin: 0 auto;
     padding: 3rem 0;
+    text-align: center;
     &--left {
       padding-bottom: 1rem;
       h3 {
-        font-size: 1.2rem;
+        font-size: 1.4rem;
       }
     }
     &--right {
       ul {
         list-style: none;
         margin-top: 1rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 1rem;
         li {
+          align-items: center;
           padding: 0.25rem 0;
-          border-left: solid 3px var(--lightBlue);
-          padding-left: 5px;
+          text-align: center;
           margin-bottom: 0.85rem;
+          align-self: center;
+          align-items: baseline;
+          svg {
+            width: 40px;
+            margin: 0 auto;
+            display: block;
+            fill: var(--lightBlue);
+            display: flex;
+          }
+          p {
+            margin-top: 0.5rem;
+            display: block;
+          }
+        }
+      }
+    }
+    @media only screen and (min-width: 375px) {
+      width: 85%;
+    }
+    @media only screen and (min-width: 768px) {
+      width: 75%;
+      &--right {
+        ul {
+          margin-top: 2rem;
+          grid-template-columns: repeat(4, 1fr);
         }
       }
     }
@@ -40,15 +79,42 @@ const LandingInfo = () => (
       </div>
       <div className="landing__info--right">
         <ul>
-          <li>Unified connectivity </li>
-          <li>High multi-user capabilities</li>
-          <li>Specific coverage and capacity </li>
-          <li>One dedicated network</li>
-          <li>High, predictable performance</li>
-          <li>Improved security and mobility</li>
-          <li>Enhanced bandwidths </li>
-          <li>Faster transmission of greater amounts of data</li>
-          <li>Coverage precisely where needed (inside and outside)</li>
+          <li>
+            <ConnectivityIcon />
+            <p>Unified connectivity</p>
+          </li>
+          <li>
+            <UserIcon />
+            <p>High multi-user capabilities</p>
+          </li>
+          <li>
+            <CapacityIcon />
+            <p>Specific coverage and capacity</p>
+          </li>
+          <li>
+            <NetworkIcon />
+            <p>One dedicated network</p>
+          </li>
+          <li>
+            <PerformanceIcon />
+            <p>High, predictable performance</p>
+          </li>
+          <li>
+            <SecurityIcon />
+            <p>Improved security and mobility</p>
+          </li>
+          <li>
+            <BandwidthIcon />
+            <p>Enhanced bandwidths</p>
+          </li>
+          <li>
+            <TransferIcon />
+            <p>Faster transmission of greater amounts of data</p>
+          </li>
+          <li>
+            <CoverageIcon />
+            <p>Coverage precisely where needed (inside and outside)</p>
+          </li>
         </ul>
       </div>
     </div>

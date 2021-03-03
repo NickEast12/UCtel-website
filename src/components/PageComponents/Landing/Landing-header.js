@@ -2,10 +2,10 @@ import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
 import { window, document, exists } from 'browser-monads';
 import { Link } from 'gatsby';
-import Fade from 'react-reveal/Fade';
 import AnimateHeaderBackground from '../../functional/NetAnimatedBackground';
 import LandingNokia from '../../../assets/images/nokia.png';
 import UCtelLogo from '../../../assets/images/UCtel-logo.png';
+import ArrowIcon from '../../../svgs/right-arrow.svg';
 
 const LandingPageStyles = styled.div`
   width: 100%;
@@ -16,14 +16,15 @@ const LandingPageStyles = styled.div`
     position: relative;
     width: 90%;
     margin: 0 auto;
-    padding-top: 2.5rem;
+    padding-top: 4.5rem;
     max-width: 1100px;
     .logo {
-      width: 150px;
+      width: 175px;
     }
     &--img {
       width: 100%;
       margin-top: 1.5rem;
+      display: none;
       img {
         width: 100%;
         height: 10rem;
@@ -33,7 +34,7 @@ const LandingPageStyles = styled.div`
       width: 100%;
       margin: 0 auto;
       color: var(--white);
-      text-align: left;
+      text-align: center;
       h1 {
         color: var(--white);
         margin: 0.5rem 0;
@@ -46,32 +47,51 @@ const LandingPageStyles = styled.div`
       }
       h2 {
         color: var(--white);
-        font-size: 1.2rem;
+        font-size: 1.4rem;
         font-family: Gellix-Regular;
-        margin: 1em 0;
+        margin: 1em 0 0.5rem 0;
       }
       p {
         color: var(--white);
         padding: 0.5rem 0;
         width: 100%;
-        font-size: 0.85rem;
+        font-size: 0.95rem;
         margin: 0 auto;
       }
       .nokia--btn {
         width: 100%;
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        margin-top: 0.85rem;
         grid-gap: 1rem;
         button {
           width: 100%;
           span {
-            font-size: 0.85rem;
+            font-size: 0.95rem;
           }
+        }
+      }
+      .fom {
+        svg {
+          fill: var(--white);
+        }
+        span {
+          border-bottom: solid 1px var(--white);
         }
       }
     }
     @media only screen and (min-width: 375px) {
       padding-top: 8.5rem;
+    }
+  }
+  @media only screen and (min-width: 414px) {
+    .landing__wrapper {
+      width: 85%;
+      .logo {
+        width: 225px;
+      }
+      h1 {
+        font-size: 2.5rem;
+      }
     }
   }
   @media only screen and (min-width: 768px) {
@@ -117,20 +137,32 @@ const LandingPage = ({ darkTheme, title, description }) => {
         <div className="landing__wrapper__content">
           {/* <Fade duration={1000} delay={500}> */}
           <img className="logo" src={UCtelLogo} alt="UCtel Logo" />
-          <h1>Nokia Digital Automation Cloud and UCtel</h1>
+          <h1>Nokia Digital Automation Cloud</h1>
+          <h2>Accelerate your digital transformation.</h2>
           <p>
-            Accelerate your digital transformation with Nokia Digital Automation
-            Cloud – a high-performance, end-to-end, secure and simple private
-            wireless network platform.
+            To enable faster communication, better collaboration and improved
+            operations in your organisation.
           </p>
           <div className="nokia--btn">
             <Link to="/get-started">
               <button className="btn btn--main" type="button">
-                <span>Get started</span>
+                <span>Contact us</span>
               </button>
             </Link>
           </div>
+          <a
+            href="/static/UCTel_Private 5G whitepaper_Feb 21 v4.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            download
+          >
+            <div className="fom">
+              <ArrowIcon />
+              <span>Download our whitepaper</span>
+            </div>
+          </a>
         </div>
+
         <div className="landing__wrapper--img">
           <img
             src={LandingNokia}

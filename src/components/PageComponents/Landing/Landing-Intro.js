@@ -14,6 +14,12 @@ const LandingIntroStyles = styled.section`
     p {
       margin-top: 1rem;
     }
+    @media only screen and (min-width: 375px) {
+      width: 85%;
+    }
+    @media only screen and (min-width: 768px) {
+      width: 75%;
+    }
   }
 `;
 const LandingIntro = () => (

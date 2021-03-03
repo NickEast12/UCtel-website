@@ -227,7 +227,7 @@ const MainFooterStyles = styled.div`
   }
 `;
 
-const MainFooter = () => (
+export const MainFooter = () => (
   <MainFooterStyles>
     <div className="footer__main">
       <div className="footer__main__img">
