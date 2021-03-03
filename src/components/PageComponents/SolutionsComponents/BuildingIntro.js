@@ -77,7 +77,7 @@ const SolutionsIntroStyles = styled.section`
       padding: 0;
     }
     .si--right {
-      width: 85%;
+      width: 90%;
       height: 100%;
       margin-top: 1rem;
       padding: 0;
@@ -93,9 +93,14 @@ const SolutionsIntroStyles = styled.section`
   }
   @media only screen and (min-width: 1280px) {
     .si__wrapper {
-      .si--right {
+      padding-top: 5rem;
+      grid-gap: 4rem;
+      grid-template-columns: 45% 1fr;
+      .si--right,
+      .si--left {
+        width: 100%;
         &--img {
-          height: 27rem;
+          height: 95%;
         }
       }
     }

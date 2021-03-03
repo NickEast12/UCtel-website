@@ -80,6 +80,18 @@ const SolutionsIntroStyles = styled.section`
       }
     }
   }
+  @media only screen and (min-width: 1280px) {
+    .si__wrapper {
+      grid-gap: 3rem;
+      .si--right {
+        padding: 1rem;
+        width: 100%;
+      }
+      .si--left {
+        width: 100%;
+      }
+    }
+  }
 `;
 const BuildingIntro = () => (
   <SolutionsIntroStyles>
