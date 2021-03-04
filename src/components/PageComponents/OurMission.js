@@ -17,11 +17,11 @@ const OurMissionStyles = styled.section`
       h2 {
         font-size: 1.25rem;
         font-family: Gellix-SemiBold;
-        text-align: left;
+        text-align: center;
       }
       p {
         margin: 1rem auto 0 auto;
-        text-align: left;
+        text-align: center;
         width: 100%;
         @media only screen and (min-width: 1024px) {
           width: 70%;
@@ -31,7 +31,7 @@ const OurMissionStyles = styled.section`
     &__right {
       margin-top: 2rem;
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 1fr;
       grid-gap: 1rem;
       justify-self: center;
       &__box {
@@ -59,7 +59,7 @@ const OurMissionStyles = styled.section`
     }
     @media only screen and (min-width: 768px) {
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(1, 1fr);
       grid-gap: 2rem;
       padding: 5rem 0;
       &__left {
@@ -80,6 +80,8 @@ const OurMissionStyles = styled.section`
     @media only screen and (min-width: 1024px) {
       max-width: 1000px;
       &__left {
+        width: 80%;
+        margin: 0 auto;
         h2 {
         }
         p {
@@ -126,15 +128,8 @@ const OurMission = () => (
             transformation and improve your connectivity and communications.
           </p> */}
         </Fade>
-        <Fade delay={450}>
-          <p>
-            Simply by identifying your need, comparing the products and
-            transitioning to the best solution, we allow you and your business
-            to adopt digital technology, stay connected and join the future.
-          </p>
-        </Fade>
       </div>
-      <div className="mission__right">
+      {/* <div className="mission__right">
         <div className="mission__right__box">
           <Fade delay={650}>
             <MissionIcon />
@@ -169,7 +164,7 @@ const OurMission = () => (
             </p>
           </Fade>
         </div>
-      </div>
+      </div> */}
     </div>
   </OurMissionStyles>
 );

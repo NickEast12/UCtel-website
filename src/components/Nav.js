@@ -7,7 +7,7 @@ import UCtelLogo from '../assets/images/UCtel-logo.png';
 import DownArrow from '../svgs/down-arrow.svg';
 import FiveGIcon from '../svgs/fiveg.svg';
 import InBuildingIcon from '../svgs/smartphone.svg';
-import CommunicationsIcon from '../svgs/unified.svg';
+import CommunicationsIcon from '../svgs/connection.svg';
 
 const MainNavWrapper = styled.nav`
   width: 100%;

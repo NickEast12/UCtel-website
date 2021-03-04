@@ -5,7 +5,7 @@ import Fade from 'react-reveal/Fade';
 import ArrowIcon from '../../svgs/right-arrow.svg';
 import FiveGIcon from '../../svgs/fiveg.svg';
 import InBuildingIcon from '../../svgs/smartphone.svg';
-import CommunicationsIcon from '../../svgs/unified.svg';
+import CommunicationsIcon from '../../svgs/connection.svg';
 
 const SolutionsIntroStyles = styled.section`
   width: 100%;
@@ -88,11 +88,11 @@ const SolutionsIntro = () => (
           <Link to="/solutions/in-building-mobile-connectivity">
             <div className="solutions__grid__box">
               <InBuildingIcon />
-              <h4>In-building mobile</h4>
+              <h4>Indoor mobile signal boosting</h4>
               <p>
                 Award-winning, Ofcom-approved indoor mobile signal booster,
                 Cel-Fi, offers an exceptional coverage footprint, improving
-                voice quality and data speeds with one easy installation
+                voice quality and data speeds.
               </p>
               <div className="fom">
                 <ArrowIcon />
@@ -105,11 +105,12 @@ const SolutionsIntro = () => (
           <Link to="/solutions/private-5g">
             <div className="solutions__grid__box">
               <FiveGIcon />
-              <h4>Private 5G</h4>
+              <h4>Private 5G networks</h4>
               <p>
                 Intrinsically secure, cost-effective, effortlessly mobile and
                 reliable, private 5G networks deliver a high-performing, robust
-                and scalable solution to support IoT applications
+                and scalable solution to support wireless data communications
+                and IoT applications.
               </p>
               <div className="fom">
                 <ArrowIcon />
@@ -122,11 +123,11 @@ const SolutionsIntro = () => (
           <Link to="/solutions/unified-communications-and-contact-centre">
             <div className="solutions__grid__box">
               <CommunicationsIcon />
-              <h4>Unified communications</h4>
+              <h4>Seamless collaborations</h4>
               <p>
                 Integrated services bring instant messaging, audio, web and
                 video conferencing, calling and more to your business,
-                eliminating the distance between employees and customers
+                eliminating the distance between employees and customer.
               </p>
               <div className="fom">
                 <ArrowIcon />
