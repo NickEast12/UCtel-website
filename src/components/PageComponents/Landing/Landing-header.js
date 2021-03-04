@@ -73,8 +73,10 @@ const LandingPageStyles = styled.div`
       .fom {
         svg {
           fill: var(--white);
+          width: 12.5px;
         }
         span {
+          font-size: 1.1rem;
           border-bottom: solid 1px var(--white);
         }
       }
@@ -95,9 +97,44 @@ const LandingPageStyles = styled.div`
     }
   }
   @media only screen and (min-width: 768px) {
-    height: 100vh;
+    height: 35rem;
     .landing__wrapper {
-      padding-top: 12.5rem;
+      padding-top: 4.5rem;
+      width: 75%;
+      margin: 0 auto;
+      &__content {
+        width: 100%;
+        margin: 0 auto;
+        h1 {
+          letter-spacing: -0.01px;
+          font-size: 2.5rem;
+        }
+        p {
+          font-size: 1.1rem;
+          padding: 1rem 0;
+        }
+        .btn__wrapper {
+          display: grid;
+          grid-template-columns: 1fr;
+          grid-gap: 1rem;
+          width: 400px;
+        }
+      }
+      &--img {
+        width: 100%;
+        margin-top: 1.5rem;
+        display: block;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
+  @media only screen and (min-width: 1024px) {
+    height: 35rem;
+    .landing__wrapper {
+      padding-top: 6.5rem;
       width: 75%;
       margin: 0 auto;
       &__content {
@@ -130,9 +167,9 @@ const LandingPageStyles = styled.div`
     }
   }
   @media only screen and (min-width: 1280px) {
-    height: 45rem;
+    height: 30rem;
     .landing__wrapper {
-      padding-top: 10.5rem;
+      padding-top: 3.5rem;
       width: 55%;
       margin: 0 auto;
       max-width: 800px;
@@ -151,7 +188,7 @@ const LandingPageStyles = styled.div`
     }
   }
   @media only screen and (min-width: 1440px) {
-    height: 50rem;
+    /* height: 50rem; */
   }
 `;
 const LandingPage = ({ darkTheme, title, description }) => {

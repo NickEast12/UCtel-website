@@ -23,7 +23,7 @@ const LandingIntroStyles = styled.section`
     }
     @media only screen and (min-width: 1280px) {
       width: 60%;
-      padding: 5rem 0;
+      padding: 3.5rem 0;
     }
   }
 `;

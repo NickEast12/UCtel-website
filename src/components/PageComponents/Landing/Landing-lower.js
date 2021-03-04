@@ -22,6 +22,14 @@ const LandingLowerStyles = styled.section`
     &--right {
       text-align: center;
       margin-top: 2rem;
+      .fom {
+        svg {
+          width: 13px;
+        }
+        span {
+          font-size: 1.1rem;
+        }
+      }
     }
     @media only screen and (min-width: 375px) {
       width: 85%;
