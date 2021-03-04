@@ -169,7 +169,7 @@ const LandingPageStyles = styled.div`
   @media only screen and (min-width: 1280px) {
     height: 35rem;
     .landing__wrapper {
-      padding-top: 3.5rem;
+      padding-top: 4.5rem;
       width: 55%;
       margin: 0 auto;
       max-width: 800px;
@@ -188,7 +188,7 @@ const LandingPageStyles = styled.div`
     }
   }
   @media only screen and (min-width: 1440px) {
-    /* height: 50rem; */
+    height: 32rem;
   }
 `;
 const LandingPage = ({ darkTheme, title, description }) => {
