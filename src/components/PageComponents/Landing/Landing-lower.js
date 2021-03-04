@@ -77,10 +77,9 @@ const LandingLower = () => (
           </Link>
         </div>
         <a
-          href="/static/UCTel_Private 5G whitepaper_Feb 21 v4.pdf"
+          href="/uctel-private5g-whitepaper.pdf"
           target="_blank"
           rel="noopener noreferrer"
-          download
         >
           <div className="fom">
             <ArrowIcon />
