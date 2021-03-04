@@ -256,11 +256,11 @@ const MobileNav = ({ alt }) => {
               </div>
               <ul className="dropdown">
                 <li>
-                  <Link to="/solutions/in-building-mobile-connectivity">
+                  <Link to="/solutions/in-building-mobile-solutions">
                     <div className="dropdown--box">
                       <InBuildingIcon />
                       <div className="dropdown--box__text">
-                        <span>In-building mobile</span>
+                        <span>In-building mobile signal solutions</span>
                       </div>
                     </div>
                   </Link>
@@ -402,9 +402,9 @@ const DesktopNavStyles = styled.div`
                 border-bottom: 1px solid #eee;
                 padding: 1rem 0.85rem;
                 align-items: center;
-                grid-template-columns: 30% 1fr;
+                grid-template-columns: 1fr 1fr;
                 svg {
-                  width: 35px;
+                  width: 35px !important;
                   margin-right: 20px;
                 }
                 p {
@@ -479,17 +479,21 @@ const DesktopNav = ({ alt }) => {
                 <div className="desktop--submenu__wrapper">
                   <ul>
                     <li>
-                      <Link to="/solutions/in-building-mobile-connectivity">
+                      <Link to="/solutions/in-building-mobile-solutions">
                         <div className="desktop--submenu__wrapper--box">
-                          <InBuildingIcon />
-                          <p>In-building mobile</p>
+                          <section>
+                            <InBuildingIcon />
+                          </section>
+                          <p>In-building mobile signal solutions</p>
                         </div>
                       </Link>
                     </li>
                     <li>
                       <Link to="/solutions/private-5g">
                         <div className="desktop--submenu__wrapper--box">
-                          <FiveGIcon />
+                          <section>
+                            <FiveGIcon />
+                          </section>
                           <p>Private 5G</p>
                         </div>
                       </Link>
@@ -497,7 +501,9 @@ const DesktopNav = ({ alt }) => {
                     <li>
                       <Link to="/solutions/unified-communications-and-contact-centre">
                         <div className="desktop--submenu__wrapper--box no-border">
-                          <CommunicationsIcon />
+                          <section>
+                            <CommunicationsIcon />
+                          </section>
                           <p>Unified communication</p>
                         </div>
                       </Link>

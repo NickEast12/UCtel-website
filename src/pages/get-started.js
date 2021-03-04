@@ -255,17 +255,6 @@ const GetStarted = () => {
               Contact the team to discover how UCtel can improve your digital
               connectivity and communications.
             </h1>
-            <div className="started__wrapper__content__clients">
-              <CiscoLogo />
-              <RichcallSVG />
-            </div>
-            <p>
-              “Seamless transformation for the end-user was paramount to
-              Wolseley. UCtel understood our business and their delivery of our
-              600 sites was excellent.”
-            </p>
-            <h5 className="name">Nathan Wright</h5>
-            <h5 className="business">Wolseley Project Manager</h5>
           </div>
           <div className="started__wrapper__form">
             <div className="started__wrapper__form__inner">

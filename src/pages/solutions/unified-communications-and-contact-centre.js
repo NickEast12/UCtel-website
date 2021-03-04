@@ -24,7 +24,14 @@ const UnifiedCommunication = ({ pageContext }) => (
       <CommunicationProjects />
       {/* <Cisco /> */}
       <CommunicationMid />
-      {/* <SuccessStoriesIntro /> */}
+      <SuccessStoriesIntro
+        quote="A fully updated new infrastructure across multiple Dufry offices around the globe"
+        // name="Lee Reuben"
+        position="Dufry"
+        img="dufry-img.jpg"
+        alt="A fully updated new infrastructure across multiple Dufry offices around the globe"
+        link="/case-studies/dufry"
+      />
     </main>
   </Layout>
 );

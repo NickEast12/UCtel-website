@@ -85,10 +85,10 @@ const SolutionsIntro = () => (
       </div>
       <div className="solutions__grid">
         <Fade delay={200}>
-          <Link to="/solutions/in-building-mobile-connectivity">
+          <Link to="/solutions/in-building-mobile-signal-solutions">
             <div className="solutions__grid__box">
               <InBuildingIcon />
-              <h4>Indoor mobile signal boosting</h4>
+              <h4>In-building mobile signal solutions</h4>
               <p>
                 Award-winning, Ofcom-approved indoor mobile signal booster,
                 Cel-Fi, offers an exceptional coverage footprint, improving
@@ -123,7 +123,7 @@ const SolutionsIntro = () => (
           <Link to="/solutions/unified-communications-and-contact-centre">
             <div className="solutions__grid__box">
               <CommunicationsIcon />
-              <h4>Seamless collaborations</h4>
+              <h4>Unified Communications</h4>
               <p>
                 Integrated services bring instant messaging, audio, web and
                 video conferencing, calling and more to your business,

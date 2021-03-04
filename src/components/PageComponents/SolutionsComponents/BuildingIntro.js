@@ -111,7 +111,7 @@ const BuildingIntro = () => (
     <div className="si__wrapper">
       <div className="si--left">
         <Fade delay={350}>
-          <h6 className="subtitle">In-building Mobile Connectivity</h6>
+          <h6 className="subtitle">In-building mobile signal solutions</h6>
           <h2>Optimise cellular coverage</h2>
           <p>
             Many buildings to do not allow for the effective propagation of
@@ -152,7 +152,7 @@ const BuildingIntro = () => (
               <span>
                 <TickIcon />
               </span>
-              Reliable 4G
+              Reliable 3G + 4G
             </li>
           </ul>
         </Fade>

@@ -112,22 +112,6 @@ const OurMission = () => (
             and communications.
           </h2>
         </Fade>
-        <Fade delay={450}>
-          <p>
-            Business is constantly evolving, and in today’s digital-first world,
-            you need to be more agile than ever. With market-leading,
-            forward-thinking and cutting-edge technologies, we can transform
-            your communication infrastructure, drive your IoT initiatives and
-            keep you connected.{' '}
-          </p>
-
-          {/* <p>
-            UCtel is your unified communications partner. Committed to
-            connecting people, networks, clouds and applications with
-            next-generation technology – designed to accelerate your digital
-            transformation and improve your connectivity and communications.
-          </p> */}
-        </Fade>
       </div>
       {/* <div className="mission__right">
         <div className="mission__right__box">

@@ -71,7 +71,7 @@ const AboutUsIntro = () => (
             you need to be more agile than ever. With market-leading,
             forward-thinking and cutting-edge technologies, we can transform
             your communication infrastructure, drive your IoT initiatives and
-            keep you connected anywhere, any time and on any device.
+            keep you connected.
           </p>
           <Link to="/about-us">
             <div className="fom">

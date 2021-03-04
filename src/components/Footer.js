@@ -202,11 +202,23 @@ const MainFooterStyles = styled.div`
     }
     @media only screen and (min-width: 701px) {
       width: 90%;
-      .footer--grid {
-        display: flex;
-        justify-content: space-between;
-        margin-top: 2rem;
+      &__img {
+        width: 100%;
+        margin: 0 auto;
+        grid-area: b;
+        .gatsby-image-wrapper {
+          width: 80%;
+          margin: 0 auto;
+        }
       }
+      .footer--grid {
+        margin-top: 2rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 'a b';
+        grid-gap: 4rem;
+      }
+
       &__address {
         margin-top: 0;
         section {
@@ -215,14 +227,22 @@ const MainFooterStyles = styled.div`
       }
       &__links {
         display: flex;
+        justify-content: space-between;
+        width: 350px;
         margin: 0;
-        section {
-          padding-left: 25px;
-        }
       }
     }
     @media only screen and (min-width: 1280px) {
-      /* margin: 0; */
+      .footer--grid {
+        .footer__main__img {
+          width: 50%;
+          margin: 0 0 0 auto;
+          .gatsby-image-wrapper {
+            width: 100%;
+            margin: 0 auto;
+          }
+        }
+      }
     }
   }
 `;
@@ -230,11 +250,11 @@ const MainFooterStyles = styled.div`
 export const MainFooter = () => (
   <MainFooterStyles>
     <div className="footer__main">
-      <div className="footer__main__img">
-        <Image filename="UCtel-logo.png" alt="UCtel Logo" />
-      </div>
       <div className="footer--grid">
-        <div className="footer__main__address">
+        <div className="footer__main__img">
+          <Image filename="UCtel-logo.png" alt="UCtel Logo" />
+        </div>
+        {/* <div className="footer__main__address">
           <section>
             <h6>Our Office</h6>
             <p>
@@ -250,7 +270,7 @@ export const MainFooter = () => (
               </a>
             </p>
           </section>
-        </div>
+        </div> */}
         <div className="footer__main__links">
           <section>
             <h6>Solutions</h6>

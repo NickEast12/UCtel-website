@@ -43,7 +43,7 @@ const WhiteHeaderBackground = ({
       spacing: `${spacing || 25.0}`,
       scaleMobile: 1.0,
       color: 0x278a9c,
-      backgroundColor: 0xffffff,
+      backgroundColor: 0x000000,
       showDots: true,
     }).then;
     if (vantaEffect) {

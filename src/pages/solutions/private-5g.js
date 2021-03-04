@@ -21,12 +21,12 @@ const PrivateFiveG = ({ pageContext }) => {
         <SolutionsMid />
         <NokiaDAC />
         <SuccessStoriesIntro
-          quote="Research revealed the source of the problem that was causing the business issues."
-          name="Lee Reuben"
-          position="IT Infrastructure Delivery Manager"
-          img="ms-amlin.jpg"
-          alt="MS Amlin case study"
-          link="/case-studies/ms-amlin"
+          quote="Smooth conversion to a seamless communication was of vital significance to us. UCtel understood our business and their delivery was flawless."
+          name=""
+          position="Central London Community Healthcare NHS Trust"
+          img="nhs.jpeg"
+          alt="Central London Community Healthcare NHS Trust"
+          link="/case-studies/nhs-central-london-community-healthcare-nhs-trust"
         />
       </main>
     </Layout>

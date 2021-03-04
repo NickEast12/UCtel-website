@@ -94,10 +94,10 @@ const AboutPageIntro = () => (
           <h6 className="subtitle">Our Story</h6>
           <h2>World-class service and state-of-the-art technology</h2>
           <p>
-            UCtel has been providing unrivalled unified communications solutions
-            to thousands of businesses across the UK since 2010. Delivering
-            on-premise, cloud and hybrid solutions, we are passionate about
-            keeping businesses connected and ahead of the competition.
+            UCtel has been providing leading unified communications and contact
+            centre solutions to businesses across the world since 2011.
+            Delivering on-premise, cloud and hybrid solutions, we are passionate
+            about keeping businesses connected and ahead of the competition.
           </p>
         </div>
       </Fade>

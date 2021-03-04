@@ -60,7 +60,7 @@ const Blogs = ({ pageContext, data }) => {
   const blogs = data.AllBlogs.nodes;
   console.log(blogs);
   return (
-    <Layout alt pageContext={pageContext}>
+    <Layout pageContext={pageContext}>
       <SEO />
       <WhiteLandingPage
         title={`${pageContext.title || 'UCtel blogs'}`}

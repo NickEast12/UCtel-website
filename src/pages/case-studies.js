@@ -9,7 +9,7 @@ import SEO from '../components/functional/SEO';
 const CaseStudies = ({ data, pageContext }) => {
   const Casestudiesdata = data.allCaseStudies.nodes;
   return (
-    <Layout alt pageContext={pageContext}>
+    <Layout pageContext={pageContext}>
       <SEO />
       <WhiteHeader
         title="Case studies"

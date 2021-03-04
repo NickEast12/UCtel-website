@@ -17,7 +17,7 @@ const AboutUs = ({ data, pageContext }) => {
       <SEO />
       <BlackHeader
         title="About us"
-        description="A leading player in unified communications"
+        description=" Better communications for every workplace"
       />
       <main>
         <AboutPageIntro />

@@ -13,7 +13,7 @@ const InBuilding = ({ pageContext }) => (
   <Layout pageContext={pageContext}>
     <SEO />
     <BlackHeader
-      title="In-building mobile connectivity"
+      title="In-building mobile signal solutions"
       description="Delivering better communications and faster data speeds to your business"
     />
     <main>

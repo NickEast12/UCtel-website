@@ -18,9 +18,9 @@ const LandingPageStyles = styled.header`
       width: 100%;
       margin: 0 auto;
       text-align: center;
-      color: var(--slate);
+      color: var(--white);
       h1 {
-        color: var(--slate);
+        color: var(--white);
         margin-bottom: 0.5rem;
         font-size: 2.5rem;
         .title {
@@ -30,7 +30,7 @@ const LandingPageStyles = styled.header`
         }
       }
       p {
-        color: var(--slate);
+        color: var(--white);
         padding: 0.5rem 0;
         width: 90%;
         margin: 0 auto;
@@ -94,7 +94,7 @@ const WhiteLandingPage = ({ darkTheme, title, description }) => {
         </div>
       </div>
       {isDesktop ? (
-        <WhiteHeaderBackground points="15" distance="20" spacing="16" />
+        <WhiteHeaderBackground points="10" distance="20" spacing="15" />
       ) : (
         <WhiteHeaderBackground />
       )}

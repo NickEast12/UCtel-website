@@ -65,7 +65,7 @@ const Clients = () => {
   return (
     <ClientStyles>
       <div className="clients">
-        <h4>We're already working with some of the largest providers</h4>
+        <h4>Working with industry-leading vendors</h4>
         <Fade delay={200}>{size ? <DesktopClients /> : <MobileClients />}</Fade>
         <Link to="/case-studies">
           <section className="fom">

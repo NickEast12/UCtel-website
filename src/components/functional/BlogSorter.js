@@ -4,6 +4,7 @@ import styled from 'styled-components';
 
 const BlogSorterStyles = styled.div`
   width: 100%;
+  margin-top: 2rem;
   .bs {
     background-color: var(--lightBlue);
     width: 90%;
@@ -37,7 +38,7 @@ const BlogSorterStyles = styled.div`
   }
   @media only screen and (min-width: 375px) {
     width: 100%;
-    margin: 0 auto;
+    margin: 2rem auto 0 auto;
   }
   @media only screen and (min-width: 768px) {
     .bs {

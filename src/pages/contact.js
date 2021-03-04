@@ -16,7 +16,7 @@ import SEO from '../components/functional/SEO';
 const Contact = ({ pageContext }) => {
   const i = true;
   return (
-    <Layout alt pageContext={pageContext}>
+    <Layout pageContext={pageContext}>
       <SEO />
       <WhiteLandingPage
         title="Contact"
@@ -25,7 +25,6 @@ const Contact = ({ pageContext }) => {
 
       <main>
         <ContactBoxes />
-        <MapWrapper />
       </main>
     </Layout>
   );
@@ -136,73 +135,3 @@ const ContactBoxes = () => (
     </div>
   </ContactBoxesStyles>
 );
-
-const MapWrapperStyles = styled.div`
-  width: 100%;
-  padding: 2rem 0 0 0;
-  max-width: 1100px;
-  margin: 0 auto;
-  .contact {
-    text-align: center;
-    &__map {
-    }
-    &__content {
-      width: 90%;
-      margin: 0 auto;
-      padding: 2rem 0;
-      h3 {
-        font-size: 2rem;
-      }
-      address {
-        font-style: normal;
-        margin-top: 1rem;
-        color: var(--slate);
-        line-height: 1.5;
-      }
-    }
-  }
-  @media only screen and (min-width: 768px) {
-    .contact {
-      margin-top: 3rem;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-
-      &__content {
-        text-align: left;
-        width: 60%;
-        padding-top: 5rem;
-        max-width: 400px;
-      }
-    }
-  }
-  @media only screen and (min-width: 1100px) {
-    .contact {
-      padding-bottom: 5rem;
-    }
-  }
-`;
-const MapWrapper = () => {
-  console.log('map is active');
-  return (
-    <MapWrapperStyles>
-      <div className="contact">
-        <div className="contact__content">
-          <h6 className="subtitle">Our Office</h6>
-          <h3>UCtel HQ</h3>
-          <address>
-            <a
-              href="http://maps.google.com/?q=UCtel Ltd, Leatherhead"
-              target="__blank"
-            >
-              75 Cannon Grove, <br /> Fetcham, <br /> Leatherhead, <br />{' '}
-              Surrey, <br /> KT22 9LP
-            </a>
-          </address>
-        </div>
-        <div className="contact__map">
-          <Map />
-        </div>
-      </div>
-    </MapWrapperStyles>
-  );
-};

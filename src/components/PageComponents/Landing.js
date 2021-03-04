@@ -30,6 +30,9 @@ const LandingPageStyles = styled.div`
           display: block;
           margin-bottom: 5px;
         }
+        a {
+          font-family: inherit;
+        }
       }
       p {
         color: var(--white);
@@ -92,10 +95,18 @@ const LandingPage = ({ darkTheme, title, description }) => {
         <div className="landing__wrapper__content">
           <Fade duration={1000} delay={500}>
             <h1>
-              <span className="title">Indoor mobile signal solutions.</span>
-              <span className="title">Private 5G networks.</span>
               <span className="title">
-                Unified communications and contact centre.
+                <Link to="/solutions/in-building-mobile-signal-solutions">
+                  In-building mobile signal solutions
+                </Link>
+              </span>
+              <span className="title">
+                <Link to="/solutions/private-5g">Private 5G networks.</Link>
+              </span>
+              <span className="title">
+                <Link to="/solutions/unified-communications-and-contact-centre">
+                  Unified Communications and Contact Centre.
+                </Link>
               </span>
             </h1>
           </Fade>
