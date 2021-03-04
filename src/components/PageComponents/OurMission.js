@@ -83,6 +83,7 @@ const OurMissionStyles = styled.section`
         width: 80%;
         margin: 0 auto;
         h2 {
+          font-size: 1.85rem;
         }
         p {
           width: 100%;
