@@ -11,6 +11,7 @@ import CiscoSvg from '../../svgs/cisco-svg.svg';
 import Ciscomeraki from '../../svgs/ciscomeraki-svg.svg';
 import CelfiSvg from '../../svgs/celfi-svg.svg';
 import ArrowIcon from '../../svgs/right-arrow.svg';
+import NokiaIcons from '../../svgs/nokia.svg';
 // 527
 // 179
 
@@ -131,7 +132,8 @@ const MobileClients = () => (
     <div className="flex--grid">
       <CiscoSvg />
       <RichcallSVG />
-      <RingCentralSVG />
+      {/* <RingCentralSVG /> */}
+      <NokiaIcons />
     </div>
   </ClientLogoStyles>
 );
@@ -140,8 +142,9 @@ const DesktopClients = () => (
     <div className="flex--grid logoDesktop">
       <CiscoSvg />
       <RichcallSVG />
-      <RingCentralSVG />
+      {/* <RingCentralSVG /> */}
       {/* <Ciscomeraki /> */}
+      <NokiaIcons />
       <CelfiSvg />
     </div>
   </ClientLogoStyles>
