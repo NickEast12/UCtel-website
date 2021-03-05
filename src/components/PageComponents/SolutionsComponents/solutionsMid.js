@@ -90,7 +90,7 @@ const SolutionsMid = () => (
       <div className="sm--left">
         <div className="sm--left__img img-decoration">
           <Image
-            filename="5g-network.jpeg"
+            filename="5g-network.png"
             alt=" Using cellular technology, private 5G networks offer businesses the
             coverage, security and capabilities they need for more advanced
             wireless data and IoT applications"

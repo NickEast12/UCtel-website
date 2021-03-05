@@ -13,7 +13,7 @@ const CaseStudy = ({ data, pageContext }) => {
   const Blogs = data.AllBlogs.nodes;
   console.log(Blogs);
   return (
-    <Layout alt pageContext={pageContext}>
+    <Layout pageContext={pageContext}>
       <SEO
         title={data.sanityCasestudies.title}
         description={data.sanityCasestudies.mainTitle}
@@ -41,6 +41,7 @@ const CaseStudyHeaderStyles = styled.header`
     width: 90%;
     margin: 0 auto;
     padding-top: 3rem;
+    padding-bottom: 3rem;
     &__right {
       width: 90%;
       margin: 0 auto;
@@ -59,7 +60,7 @@ const CaseStudyHeaderStyles = styled.header`
       }
       h1 {
         font-size: 1.75rem;
-        color: var(--slate);
+        color: var(--white);
         margin: 1rem 0;
       }
     }
@@ -128,7 +129,7 @@ const CaseStudyHeader = ({ data }) => {
         </div>
       </div>
       {isDesktop ? (
-        <WhiteHeaderBackground points="20" distance="20" spacing="20" />
+        <WhiteHeaderBackground points="10" distance="20" spacing="15" />
       ) : (
         <WhiteHeaderBackground />
       )}
