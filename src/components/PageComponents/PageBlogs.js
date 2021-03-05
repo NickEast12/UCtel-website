@@ -23,6 +23,10 @@ const PageBlogsStyles = styled.section`
     &--btn {
       width: 70%;
       margin: 0 auto;
+      button {
+        width: 100% !important;
+        max-width: 100%;
+      }
     }
     @media only screen and (min-width: 375px) {
       width: 85%;
