@@ -256,7 +256,7 @@ const MobileNav = ({ alt }) => {
               </div>
               <ul className="dropdown">
                 <li>
-                  <Link to="/solutions/in-building-mobile-solutions">
+                  <Link to="/solutions/in-building-mobile-signal-solutions">
                     <div className="dropdown--box">
                       <InBuildingIcon />
                       <div className="dropdown--box__text">
@@ -479,7 +479,7 @@ const DesktopNav = ({ alt }) => {
                 <div className="desktop--submenu__wrapper">
                   <ul>
                     <li>
-                      <Link to="/solutions/in-building-mobile-solutions">
+                      <Link to="/solutions/in-building-mobile-signal-solutions">
                         <div className="desktop--submenu__wrapper--box">
                           <section>
                             <InBuildingIcon />
