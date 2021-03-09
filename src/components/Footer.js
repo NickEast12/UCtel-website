@@ -228,7 +228,7 @@ const MainFooterStyles = styled.div`
       &__links {
         display: flex;
         justify-content: space-between;
-        width: 350px;
+        width: 380px;
         margin: 0;
       }
     }
@@ -277,15 +277,17 @@ export const MainFooter = () => (
             <ul>
               <li>
                 <Link to="/solutions/in-building-mobile-connectivity">
-                  In-Building Mobile Connectivity
+                  In-Building mobile signal solutions
                 </Link>
               </li>
               <li>
-                <Link to="/solutions/private-5g">Private 5G</Link>
+                <Link to="/solutions/private-5g-networks">
+                  Private 5G networks
+                </Link>
               </li>
               <li>
                 <Link to="/solutions/unified-communications-and-contact-centre">
-                  Unified Communications
+                  Unified Communications and Contact Centre
                 </Link>
               </li>
             </ul>

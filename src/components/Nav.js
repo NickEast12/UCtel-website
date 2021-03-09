@@ -266,11 +266,11 @@ const MobileNav = ({ alt }) => {
                   </Link>
                 </li>
                 <li>
-                  <Link to="/solutions/private-5g">
+                  <Link to="/solutions/private-5g-networks">
                     <div className="dropdown--box">
                       <FiveGIcon />
                       <div className="dropdown--box__text">
-                        <span>Private 5G</span>
+                        <span>Private 5G networks</span>
                       </div>
                     </div>
                   </Link>
@@ -280,7 +280,7 @@ const MobileNav = ({ alt }) => {
                     <div className="dropdown--box">
                       <CommunicationsIcon />
                       <div className="dropdown--box__text">
-                        <span>Unified communications</span>
+                        <span>Unified Communications and Contact Centre</span>
                       </div>
                     </div>
                   </Link>
@@ -371,7 +371,7 @@ const DesktopNavStyles = styled.div`
               /* opacity: 0; */
               border-radius: 4.5px;
               background-color: var(--white);
-              width: 65%;
+              width: 85%;
               margin: 0 auto;
               box-shadow: 0 2.4rem 4.4rem 0 rgb(5 22 70 / 15%);
               .no-border {
@@ -385,7 +385,7 @@ const DesktopNavStyles = styled.div`
                   height: 50px;
                   position: absolute;
                   top: 0;
-                  left: 40%;
+                  left: 45%;
                   content: '';
                   z-index: -2;
                   background-color: var(--white);
@@ -489,12 +489,12 @@ const DesktopNav = ({ alt }) => {
                       </Link>
                     </li>
                     <li>
-                      <Link to="/solutions/private-5g">
+                      <Link to="/solutions/private-5g-networks">
                         <div className="desktop--submenu__wrapper--box">
                           <section>
                             <FiveGIcon />
                           </section>
-                          <p>Private 5G</p>
+                          <p>Private 5G networks</p>
                         </div>
                       </Link>
                     </li>
@@ -504,7 +504,7 @@ const DesktopNav = ({ alt }) => {
                           <section>
                             <CommunicationsIcon />
                           </section>
-                          <p>Unified communication</p>
+                          <p>Unified Communications and Contact Centre</p>
                         </div>
                       </Link>
                     </li>

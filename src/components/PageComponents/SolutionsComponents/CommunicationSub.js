@@ -92,7 +92,7 @@ const BuildingSub = () => (
     <div className="bulsub">
       <div className="bulsub--left">
         <Fade delay={350}>
-          <h6 className="subtitle">Contact centres</h6>
+          <h6 className="subtitle">Contact centre</h6>
           <h3>Customer experience</h3>
           <p>
             Contact centres are key to customer experience – customers want to

@@ -43,7 +43,9 @@ const SingleCaseStudyStyles = styled.div`
         width: 185px;
         margin: 0 auto;
         .gatsby-image-wrapper {
-          object-fit: contain !important;
+          img {
+            object-fit: contain !important;
+          }
         }
       }
       h3 {
@@ -202,10 +204,13 @@ const CaseStudiesStyles = styled.section`
 `;
 export const query = graphql`
   query CaseStudyPageQuery {
-    allCaseStudies: allSanityCasestudies {
+    allCaseStudies: allSanityCasestudies(
+      sort: { fields: _updatedAt, order: DESC }
+    ) {
       nodes {
         _id
         _createdAt
+        _updatedAt
         mainTitle
         slug {
           current
@@ -233,7 +238,3 @@ export const query = graphql`
     }
   }
 `;
-
-// (
-//   sort: { fields: _createdAt, order: DESC }
-//   )

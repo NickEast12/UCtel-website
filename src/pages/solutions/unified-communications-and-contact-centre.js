@@ -14,7 +14,7 @@ const UnifiedCommunication = ({ pageContext }) => (
   <Layout pageContext={pageContext}>
     <SEO />
     <BlackHeader
-      title="Unified communications and contact centre"
+      title="Unified Communications and Contact Centre"
       description="Creating digital experiences"
     />
     <main>

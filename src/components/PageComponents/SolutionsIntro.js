@@ -102,7 +102,7 @@ const SolutionsIntro = () => (
           </Link>
         </Fade>
         <Fade delay={350}>
-          <Link to="/solutions/private-5g">
+          <Link to="/solutions/private-5g-networks">
             <div className="solutions__grid__box">
               <FiveGIcon />
               <h4>Private 5G networks</h4>
@@ -123,7 +123,7 @@ const SolutionsIntro = () => (
           <Link to="/solutions/unified-communications-and-contact-centre">
             <div className="solutions__grid__box">
               <CommunicationsIcon />
-              <h4>Unified Communications</h4>
+              <h4>Unified communications and Contact Centers</h4>
               <p>
                 Integrated services bring instant messaging, audio, web and
                 video conferencing, calling and more to your business,

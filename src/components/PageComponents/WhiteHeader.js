@@ -69,7 +69,7 @@ const LandingPageStyles = styled.header`
       padding-top: 9.5rem;
       &__content {
         p {
-          width: 60%;
+          width: 40%;
         }
       }
     }

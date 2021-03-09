@@ -83,7 +83,7 @@ const SolutionsIntro = () => (
     <div className="si__wrapper">
       <div className="si--left">
         <Fade delay={350}>
-          <h6 className="subtitle">Private 5G</h6>
+          <h6 className="subtitle">Private 5G networks</h6>
           <h2>The future of wireless is here</h2>
           <p>
             Powering Industry 4.0, next-generation 5G technology is

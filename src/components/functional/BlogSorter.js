@@ -68,13 +68,14 @@ const BlogSorterStyles = styled.div`
 const BlogSorter = () => {
   const data = useStaticQuery(graphql`
     query {
-      catergory: allSanityCategory {
+      catergory: allSanityCategory(sort: { fields: _createdAt, order: DESC }) {
         nodes {
           title
           id
           slug {
             current
           }
+          _createdAt
         }
       }
     }

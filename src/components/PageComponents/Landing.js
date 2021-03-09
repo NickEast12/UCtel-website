@@ -97,7 +97,7 @@ const LandingPage = ({ darkTheme, title, description }) => {
             <h1>
               <span className="title">
                 <Link to="/solutions/in-building-mobile-signal-solutions">
-                  In-building mobile signal solutions
+                  In-building mobile signal solutions.
                 </Link>
               </span>
               <span className="title">

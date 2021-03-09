@@ -58,6 +58,7 @@ const CiscoStyles = styled.section`
     .technology {
       &__wrapper {
         grid-gap: 4rem;
+        grid-template-areas: 'b a';
         &--left {
           padding-top: 1.5rem;
         }
@@ -75,7 +76,7 @@ const CommunicationMid = () => (
         <div className="technology__wrapper--left">
           <Fade delay={350}>
             <h6 className="subtitle">Technology</h6>
-            <h3>Rich Call</h3>
+            <h3>Richcall</h3>
             <p>
               Partnering with Richcall, UCtel can bring a mobile and
               collaborative culture to your business with technology designed to

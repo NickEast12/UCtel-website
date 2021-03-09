@@ -131,9 +131,10 @@ const MobileClients = () => (
   <ClientLogoStyles>
     <div className="flex--grid">
       <CiscoSvg />
+      <NokiaIcons />
       <RichcallSVG />
       {/* <RingCentralSVG /> */}
-      <NokiaIcons />
+      {/* <Ciscomeraki /> */}
     </div>
   </ClientLogoStyles>
 );
@@ -141,11 +142,11 @@ const DesktopClients = () => (
   <ClientLogoStyles>
     <div className="flex--grid logoDesktop">
       <CiscoSvg />
+      <CelfiSvg />
+      <NokiaIcons />
       <RichcallSVG />
       {/* <RingCentralSVG /> */}
       {/* <Ciscomeraki /> */}
-      <NokiaIcons />
-      <CelfiSvg />
     </div>
   </ClientLogoStyles>
 );

@@ -23,16 +23,12 @@ const InBuilding = ({ pageContext }) => (
       <HowItWorks />
       <FindOut />
       <SuccessStoriesIntro
-        quote="Seamless transformation for the end-user was paramount to Wolseley.
-            UCtel understood our business and their delivery of our 600 sites
-            was excellent."
-        name="Nathan Wright"
-        position="Wolseley Project Manager"
-        img="successstory.jpg"
-        alt="Seamless transformation for the end-user was paramount to Wolseley.
-          UCtel understood our business and their delivery of our 600 sites
-          was excellent."
-        link="/case-studies/wolseley"
+        quote="Smooth conversion to a seamless communication was of vital significance to us. UCtel understood our business and their delivery was flawless."
+        name=""
+        position="Central London Community Healthcare NHS Trust"
+        img="nhs.jpeg"
+        alt="Central London Community Healthcare NHS Trust"
+        link="/case-studies/nhs-central-london-community-healthcare-nhs-trust"
       />
     </main>
   </Layout>

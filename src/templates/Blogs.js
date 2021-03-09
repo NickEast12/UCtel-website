@@ -131,6 +131,12 @@ const BlogPageStyles = styled.main`
         font-size: 1.25rem;
         line-height: 1.5;
       }
+      /* h3 {
+        font-size: 1.2rem;
+      } */
+      h4 {
+        font-size: 1.3rem;
+      }
       h1,
       h2,
       h3,
