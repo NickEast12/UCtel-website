@@ -35,7 +35,7 @@ module.exports = {
         background_color: `#2D3C41`,
         theme_color: `#278A9C`,
         display: `minimal-ui`,
-        icon: `/favicon.ico`,
+        icon: `src/assets/images/UCtel-icon.png`,
       },
     },
     {
