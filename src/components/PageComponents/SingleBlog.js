@@ -53,12 +53,14 @@ const SingleBlogStyles = styled.article`
     &--img {
       .gatsby-image-wrapper {
         border-radius: 50%;
-        width: 45px;
-        height: 45px;
+        width: 50px;
+        height: 50px;
       }
     }
     &--info {
       margin-left: 10px;
+      margin-top: 4px;
+
       p {
         color: var(--lightBlue);
         font-size: 1rem;
@@ -66,6 +68,17 @@ const SingleBlogStyles = styled.article`
       }
       span {
         font-size: 1rem;
+      }
+    }
+    @media only screen and (min-width: 768px) {
+      &--img {
+        .gatsby-image-wrapper {
+          width: 55px;
+          height: 55px;
+        }
+      }
+      &--info {
+        margin-top: 5px;
       }
     }
   }
@@ -76,7 +89,6 @@ const SingleBlogStyles = styled.article`
 const SingleBlog = ({ blog }) => {
   const cat = blog.categories;
   const { authors } = blog;
-  console.log(blog);
   return (
     <SingleBlogStyles>
       <Link to={`/blogs/${blog.slug.current}`}>
@@ -93,7 +105,7 @@ const SingleBlog = ({ blog }) => {
           <h4>{blog.title}</h4>
           <p>{blog.excerpt}</p>
           {authors.map((aut) => (
-            <div className="author" key={blog.title}>
+            <div className="author" key={aut.author.name}>
               <div className="author--img">
                 <Img
                   fluid={aut.author.image.asset.fluid}

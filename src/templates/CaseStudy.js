@@ -339,7 +339,10 @@ export const query = graphql`
       challenge
       solution
     }
-    AllBlogs: allSanityPost(limit: 3) {
+    AllBlogs: allSanityPost(
+      limit: 3
+      sort: { fields: _createdAt, order: DESC }
+    ) {
       nodes {
         title
         slug {

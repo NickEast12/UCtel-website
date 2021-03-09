@@ -78,6 +78,10 @@ const BlogPageStyles = styled.main`
           border-radius: 50%;
           width: 50px;
           height: 50px;
+          @media only screen and (min-width: 701px) {
+            width: 55px;
+            height: 55px;
+          }
         }
       }
       .info {
@@ -229,7 +233,7 @@ const BlogPageStyles = styled.main`
       width: 100%;
       margin-bottom: 2rem;
       .gatsby-image-wrapper {
-        height: 20rem;
+        height: 25rem;
       }
     }
     .bp--content {
