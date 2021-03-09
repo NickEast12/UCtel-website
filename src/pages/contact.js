@@ -17,7 +17,10 @@ const Contact = ({ pageContext }) => {
   const i = true;
   return (
     <Layout pageContext={pageContext}>
-      <SEO />
+      <SEO
+        title="Contact | Unified Communications Solutions | UCtel"
+        description="Get in touch with one of our dedicated specialists to find out how our unified communications solutions can help power your company's digital connectivity"
+      />
       <WhiteLandingPage
         title="Contact"
         description="Get in touch to find out more"
@@ -267,7 +270,7 @@ const MapWrapper = () => {
             <h6 className="subtitle">Talk to an expert</h6>
             <h3>Get in touch</h3>
             <p>
-              Interested in how UCtel can help power you company's digital
+              Interested in how UCtel can help power your company's digital
               connectivity and communications? Leave us a message and a
               dedicated specialist will be in touch.
             </p>

@@ -14,7 +14,10 @@ const AboutUs = ({ data, pageContext }) => {
   const blogs = data.AllBlogs.nodes;
   return (
     <Layout pageContext={pageContext}>
-      <SEO />
+      <SEO
+        title="About us | Unified Communications Solutions | UCtel"
+        description="Since 2011, UCtel has transformed business' digital infrastructures by delivering on-premise, cloud and hybrid unified communications solutions"
+      />
       <BlackHeader
         title="About us"
         description=" Better communications for every workplace"
@@ -53,7 +56,7 @@ export const query = graphql`
     }
     AllBlogs: allSanityPost(
       limit: 3
-      sort: { fields: _createdAt, order: DESC }
+      sort: { fields: publishedAt, order: DESC }
     ) {
       nodes {
         title

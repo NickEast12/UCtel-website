@@ -11,7 +11,10 @@ import SuccessStoriesIntro from '../../components/PageComponents/SuccessStoriesI
 
 const InBuilding = ({ pageContext }) => (
   <Layout pageContext={pageContext}>
-    <SEO />
+    <SEO
+      title="In-building mobile signal solutions | UC Solutions | UCtel"
+      description="Solve the problem of dropped calls, poor voice quality and slow browsing speeds with our in-building mobile signal solutions today"
+    />
     <BlackHeader
       title="In-building mobile signal solutions"
       description="Delivering better communications and faster data speeds to your business"

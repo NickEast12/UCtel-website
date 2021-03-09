@@ -12,7 +12,10 @@ import SEO from '../../components/functional/SEO';
 
 const UnifiedCommunication = ({ pageContext }) => (
   <Layout pageContext={pageContext}>
-    <SEO />
+    <SEO
+      title="Unified Communications and Contact Centre | UCtel"
+      description="Our unified communications solutions create a seamless user experience designed to help your business and customers work and communicate more effectively"
+    />
     <BlackHeader
       title="Unified Communications and Contact Centre"
       description="Creating digital experiences"

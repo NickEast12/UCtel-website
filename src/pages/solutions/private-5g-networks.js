@@ -11,7 +11,10 @@ const PrivateFiveG = ({ pageContext }) => {
   const i = true;
   return (
     <Layout pageContext={pageContext}>
-      <SEO />
+      <SEO
+        title="Private 5G Networks | Unified Communications Solutions | UCtel"
+        description="Private 5G creates a dedicated, private network with unified connectivity, offering full control of critical business applications and communications"
+      />
       <BlackHeader
         title="Private 5G networks"
         description="Driving Industry 4.0 with digital technology"

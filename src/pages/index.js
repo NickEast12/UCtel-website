@@ -48,7 +48,7 @@ export const query = graphql`
   query BlogQuery {
     AllBlogs: allSanityPost(
       limit: 3
-      sort: { fields: _createdAt, order: DESC }
+      sort: { fields: publishedAt, order: DESC }
     ) {
       nodes {
         title

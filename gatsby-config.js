@@ -24,7 +24,20 @@ module.exports = {
         path: path.join(__dirname, `src`, `assets`, 'images'),
       },
     },
-
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `Unified Communications Solutions | UCtel`,
+        short_name: `UCtel`,
+        description: `UCtel is a market-leading provider of unified communications and contact centre solutions to businesses across the world`,
+        start_url: `/`,
+        lang: `en`,
+        background_color: `#2D3C41`,
+        theme_color: `#278A9C`,
+        display: `minimal-ui`,
+        icon: `/favicon.ico`,
+      },
+    },
     {
       resolve: `gatsby-plugin-react-svg`,
       options: {
@@ -87,8 +100,8 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
-        host: 'https://www.nick-east.com',
-        sitemap: 'https://www.nick-east.com/sitemap.xml',
+        host: 'https://uctel.co.uk/',
+        sitemap: 'https://uctel.co.uk/sitemap.xml',
         policy: [{ userAgent: '*', allow: '/' }],
       },
     },

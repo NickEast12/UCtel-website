@@ -61,7 +61,10 @@ const Blogs = ({ pageContext, data }) => {
   console.log(blogs);
   return (
     <Layout pageContext={pageContext}>
-      <SEO />
+      <SEO
+        title="Blogs | Unified Communications Solutions | UCtel"
+        description="Browse our blogs and industry insights to find out more about our unified communications solutions and help you make the best decision for your business"
+      />
       <WhiteLandingPage
         title={`${pageContext.title || 'UCtel blogs'}`}
         description="Browse our industry insights to help you make the best decision for your business"
@@ -205,7 +208,7 @@ export const query = graphql`
       filter: {
         categories: { elemMatch: { title: { regex: $categoryRegex } } }
       }
-      sort: { fields: _createdAt, order: DESC }
+      sort: { fields: publishedAt, order: DESC }
     ) {
       nodes {
         title

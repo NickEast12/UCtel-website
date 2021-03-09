@@ -10,7 +10,10 @@ const CaseStudies = ({ data, pageContext }) => {
   const Casestudiesdata = data.allCaseStudies.nodes;
   return (
     <Layout pageContext={pageContext}>
-      <SEO />
+      <SEO
+        title="Case Studies | Unified Communications Solutions | UCtel"
+        description="Check out our case studies to find out how our unified communications solutions have helped multiple businesses drive productivity, growth and success"
+      />
       <WhiteHeader
         title="Case studies"
         description="Learn how UCtel drives growth and results for any business through these in-depth case studies and customer stories."

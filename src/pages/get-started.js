@@ -246,7 +246,10 @@ const GetStarted = () => {
     <GetStartedStyles>
       <GlobalStyles />
       <Typography />
-      <SEO />
+      <SEO
+        title="Get Started | Unified Communications Solutions | UCtel"
+        description="To improve your company's digital connectivity and get started with your unified communications solution, submit your floorplans and contact the team now"
+      />
       <main>
         <div className="started__wrapper">
           <div className="started__wrapper__content">
