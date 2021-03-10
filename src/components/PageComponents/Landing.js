@@ -101,7 +101,9 @@ const LandingPage = ({ darkTheme, title, description }) => {
                 </Link>
               </span>
               <span className="title">
-                <Link to="/solutions/private-5g">Private 5G networks.</Link>
+                <Link to="/solutions/private-5g-networks">
+                  Private 5G networks.
+                </Link>
               </span>
               <span className="title">
                 <Link to="/solutions/unified-communications-and-contact-centre">

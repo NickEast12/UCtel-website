@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
 import { window } from 'browser-monads';
 import { graphql } from 'gatsby';
+import PortableText from '@sanity/block-content-to-react';
 import Img from 'gatsby-image';
 import Layout from '../components/Layout';
 import WhiteHeaderBackground from '../components/functional/WhiteAnimatedBackground';

@@ -73,7 +73,7 @@ const AboutUsIntro = () => (
             your communication infrastructure, drive your IoT initiatives and
             keep you connected.
           </p>
-          <Link to="/about-us">
+          <Link to="/about-us" aria-label="Click here">
             <div className="fom">
               <ArrowIcon />
               <span>Find out more</span>

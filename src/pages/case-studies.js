@@ -5,9 +5,12 @@ import Img from 'gatsby-image';
 import Layout from '../components/Layout';
 import WhiteHeader from '../components/PageComponents/WhiteHeader';
 import SEO from '../components/functional/SEO';
+import Image from '../components/functional/Image';
+import NHSSvg from '../svgs/nhs.svg';
 
 const CaseStudies = ({ data, pageContext }) => {
   const Casestudiesdata = data.allCaseStudies.nodes;
+
   return (
     <Layout pageContext={pageContext}>
       <SEO
@@ -23,6 +26,25 @@ const CaseStudies = ({ data, pageContext }) => {
           {Casestudiesdata.map((casestudy) => (
             <SingleCaseStudy key={casestudy._id} data={casestudy} />
           ))}
+          <SingleCaseStudyNoCMS
+            mainTitle="Connecting NHS buildings with strong mobile network coverage"
+            slug="connecting-NHS-buildings-with-strong-mobile-network-coverage"
+            image="nhs.jpeg"
+            alt="Connecting NHS buildings with strong mobile network coverage"
+          >
+            <NHSSvg />
+          </SingleCaseStudyNoCMS>
+          <SingleCaseStudyNoCMS
+            mainTitle="London North West University Healthcare NHS Trust"
+            slug="london-north-west-university-healthcare-NHS-trust"
+            image="install3.png"
+            alt="London North West University Healthcare NHS Trust"
+          >
+            <Image
+              filename="lnwh.png"
+              alt="Connecting NHS buildings with strong mobile network coverage"
+            />
+          </SingleCaseStudyNoCMS>
         </CaseStudiesStyles>
       </main>
     </Layout>
@@ -33,6 +55,7 @@ export default CaseStudies;
 
 const SingleCaseStudyStyles = styled.div`
   width: 100%;
+
   .cs {
     width: 80%;
     margin: 0 auto;
@@ -111,6 +134,20 @@ const SingleCaseStudyStyles = styled.div`
       }
     }
   }
+  .static {
+    margin: 1rem auto;
+    .cs--card {
+      &--img {
+        height: 14rem;
+        @media only screen and (min-width: 768px) {
+          height: 16rem;
+        }
+        .gatsby-image-wrapper {
+          height: 100%;
+        }
+      }
+    }
+  }
 `;
 const SingleCaseStudy = ({ data, left }) => {
   const i = true;
@@ -142,6 +179,38 @@ const SingleCaseStudy = ({ data, left }) => {
             </p>
             <h5>{data.clientname}</h5>
             <h6>{data.clientposition}</h6>
+          </div>
+        </div>
+      </div>
+    </SingleCaseStudyStyles>
+  );
+};
+const SingleCaseStudyNoCMS = ({
+  left,
+  mainTitle,
+  slug,
+  image,
+  alt,
+  children,
+}) => {
+  const i = true;
+  return (
+    <SingleCaseStudyStyles id="caseFlex">
+      <div className={left ? 'cs cs-left static' : 'cs cs-right static'}>
+        <div className="cs--content">
+          <div className="cs--content--img">{children}</div>
+          <h3>{mainTitle}</h3>
+          <div className="cs--content--btn">
+            <Link to={`/case-studies/${slug}`}>
+              <button className="btn btn--main" type="button">
+                <span>Read more</span>
+              </button>
+            </Link>
+          </div>
+        </div>
+        <div className="cs--card img-decoration ">
+          <div className="cs--card--img">
+            <Image filename={image} alt={alt} />
           </div>
         </div>
       </div>
