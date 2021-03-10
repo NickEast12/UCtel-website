@@ -4,8 +4,6 @@ import Image from '../../components/functional/Image';
 import SEO from '../../components/functional/SEO';
 import WhiteHeaderBackground from '../../components/functional/WhiteAnimatedBackground';
 import Layout from '../../components/Layout';
-import CelFiSvg from '../../svgs/cel-fi-white.svg';
-import CelFiSvgBlack from '../../svgs/cel-fi.svg';
 
 const CelFi = ({ pageContext }) => {
   const i = true;
