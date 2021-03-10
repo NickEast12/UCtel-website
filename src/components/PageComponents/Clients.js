@@ -12,8 +12,6 @@ import Ciscomeraki from '../../svgs/ciscomeraki-svg.svg';
 import CelfiSvg from '../../svgs/celfi-svg.svg';
 import ArrowIcon from '../../svgs/right-arrow.svg';
 import NokiaIcons from '../../svgs/nokia.svg';
-// 527
-// 179
 
 const ClientStyles = styled.section`
   width: 100%;

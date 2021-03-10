@@ -102,10 +102,6 @@ const OurMission = () => (
     <div className="mission">
       <div className="mission__left">
         <Fade delay={300}>
-          {/* <h2>
-            Forward-thinking services. Powered by technology, delivered by
-            experts.
-          </h2> */}
           <h2>
             UCtel is committed to connecting people, networks, clouds and
             applications with next-generation technology – designed to
@@ -114,42 +110,6 @@ const OurMission = () => (
           </h2>
         </Fade>
       </div>
-      {/* <div className="mission__right">
-        <div className="mission__right__box">
-          <Fade delay={650}>
-            <MissionIcon />
-            <h5>Indoor mobile signal boosting</h5>
-            <p>
-              Award-winning, Ofcom-approved indoor mobile signal booster,
-              Cel-Fi, offers an exceptional coverage footprint, improving voice
-              quality and data speeds.
-            </p>
-          </Fade>
-        </div>
-        <div className="mission__right__box">
-          <Fade delay={850}>
-            <CollaborationIcon />
-            <h5>Seamless collaborations</h5>
-            <p>
-              Integrated services bring instant messaging, audio, web and video
-              conferencing, calling and more to your business, eliminating the
-              distance between employees and customer.
-            </p>
-          </Fade>
-        </div>
-        <div className="mission__right__box span-two">
-          <Fade delay={950}>
-            <FiveGIcon />
-            <h5>Private 5G networks</h5>
-            <p>
-              Intrinsically secure, cost-effective, effortlessly mobile and
-              reliable, private 5G networks deliver a high-performing, robust
-              and scalable solution to support wireless data communications and
-              IoT applications.
-            </p>
-          </Fade>
-        </div>
-      </div> */}
     </div>
   </OurMissionStyles>
 );

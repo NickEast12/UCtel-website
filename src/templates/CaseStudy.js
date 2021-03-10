@@ -11,7 +11,6 @@ import SEO from '../components/functional/SEO';
 const CaseStudy = ({ data, pageContext }) => {
   const Case = data.sanityCasestudies;
   const Blogs = data.AllBlogs.nodes;
-  console.log(Blogs);
   return (
     <Layout pageContext={pageContext}>
       <SEO

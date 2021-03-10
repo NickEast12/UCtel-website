@@ -260,85 +260,82 @@ const MapWrapperStyles = styled.div`
     }
   }
 `;
-const MapWrapper = () => {
-  console.log('map is active');
-  return (
-    <MapWrapperStyles>
-      <div className="contact">
-        <div className="contact__content">
-          <Fade delay={550}>
-            <h6 className="subtitle">Talk to an expert</h6>
-            <h3>Get in touch</h3>
-            <p>
-              Interested in how UCtel can help power your company's digital
-              connectivity and communications? Leave us a message and a
-              dedicated specialist will be in touch.
+const MapWrapper = () => (
+  <MapWrapperStyles>
+    <div className="contact">
+      <div className="contact__content">
+        <Fade delay={550}>
+          <h6 className="subtitle">Talk to an expert</h6>
+          <h3>Get in touch</h3>
+          <p>
+            Interested in how UCtel can help power your company's digital
+            connectivity and communications? Leave us a message and a dedicated
+            specialist will be in touch.
+          </p>
+        </Fade>
+      </div>
+      <div className="contact__form">
+        <div className="contact__form__wrapper">
+          <form
+            name="getincontact"
+            method="post"
+            data-netlify="true"
+            data-netlify-honeypot="bot-field"
+            action="/successful-submission"
+          >
+            <input type="hidden" name="form-name" value="getincontact" />
+            <div className="form--section">
+              <div>
+                <p htmlFor="firstName">
+                  First name<span>*</span>
+                </p>
+                <input type="text" name="firstName" id="firstName" required />
+              </div>
+              <div>
+                <p htmlFor="lastName">Last name</p>
+                <input type="text" name="lastName" id="lastName" />
+              </div>
+            </div>
+            <p htmlFor="email">
+              Email<span>*</span>
             </p>
-          </Fade>
-        </div>
-        <div className="contact__form">
-          <div className="contact__form__wrapper">
-            <form
-              name="getincontact"
-              method="post"
-              data-netlify="true"
-              data-netlify-honeypot="bot-field"
-              action="/successful-submission"
-            >
-              <input type="hidden" name="form-name" value="getincontact" />
-              <div className="form--section">
-                <div>
-                  <p htmlFor="firstName">
-                    First name<span>*</span>
-                  </p>
-                  <input type="text" name="firstName" id="firstName" required />
-                </div>
-                <div>
-                  <p htmlFor="lastName">Last name</p>
-                  <input type="text" name="lastName" id="lastName" />
-                </div>
+            <input type="email" name="email" id="email" required />
+            <p htmlFor="telephone">
+              Mobile number<span>*</span>
+            </p>
+            <input type="tel" name="telephone" id="telephone" required />
+            <div className="form--section">
+              <div>
+                <p htmlFor="Company Name">
+                  Company name<span>*</span>
+                </p>
+                <input
+                  type="text"
+                  name="Companyname"
+                  id="Companyname"
+                  required
+                />
               </div>
-              <p htmlFor="email">
-                Email<span>*</span>
-              </p>
-              <input type="email" name="email" id="email" required />
-              <p htmlFor="telephone">
-                Mobile number<span>*</span>
-              </p>
-              <input type="tel" name="telephone" id="telephone" required />
-              <div className="form--section">
-                <div>
-                  <p htmlFor="Company Name">
-                    Company name<span>*</span>
-                  </p>
-                  <input
-                    type="text"
-                    name="Companyname"
-                    id="Companyname"
-                    required
-                  />
-                </div>
-                <div>
-                  <p htmlFor="jobTitle">Job title</p>
-                  <input type="text" name="jobTitle" id="jobTitle" />
-                </div>
+              <div>
+                <p htmlFor="jobTitle">Job title</p>
+                <input type="text" name="jobTitle" id="jobTitle" />
               </div>
-              <p htmlFor="message">
-                Messages <span>*</span>
-              </p>
-              <textarea name="message" id="message" required />
+            </div>
+            <p htmlFor="message">
+              Messages <span>*</span>
+            </p>
+            <textarea name="message" id="message" required />
 
-              <button type="submit" className="btn btn--main">
-                <span>Send inquiry</span>
-              </button>
-              <i>
-                By contacting us your are agreeing to our{' '}
-                <Link to="/privacy-policy">Privacy Policy</Link>
-              </i>
-            </form>
-          </div>
+            <button type="submit" className="btn btn--main">
+              <span>Send inquiry</span>
+            </button>
+            <i>
+              By contacting us your are agreeing to our{' '}
+              <Link to="/privacy-policy">Privacy Policy</Link>
+            </i>
+          </form>
         </div>
       </div>
-    </MapWrapperStyles>
-  );
-};
+    </div>
+  </MapWrapperStyles>
+);

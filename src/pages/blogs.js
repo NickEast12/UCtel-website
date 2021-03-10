@@ -58,7 +58,6 @@ const BlogGridStyles = styled.div`
 
 const Blogs = ({ pageContext, data }) => {
   const blogs = data.AllBlogs.nodes;
-  console.log(blogs);
   return (
     <Layout pageContext={pageContext}>
       <SEO
@@ -144,7 +143,7 @@ const EmailSignUpStyles = styled.aside`
   }
 `;
 const EmailSignUp = () => {
-  console.log('tewst');
+  const i = true;
   return (
     <EmailSignUpStyles>
       <div className="sticky-signup">

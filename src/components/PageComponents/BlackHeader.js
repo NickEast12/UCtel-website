@@ -77,7 +77,6 @@ const BlackHeader = ({ title, description }) => {
     setDesktop(window.innerWidth > 1280);
   };
   useEffect(() => {
-    console.log('screen change');
     window.addEventListener('resize', updateScreenSize);
     return () => window.removeEventListener('resize', updateScreenSize);
   });

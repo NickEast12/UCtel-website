@@ -322,7 +322,6 @@ const Blogs = ({ pageContext, data }) => {
       },
     },
   };
-  console.log(content.mainImage.asset.url);
   return (
     <Layout alt pageContext={pageContext}>
       <SEO
@@ -415,64 +414,61 @@ const Blogs = ({ pageContext, data }) => {
 
 export default Blogs;
 
-const EmailSignUp = () => {
-  console.log('tewst');
-  return (
-    <EmailSignUpStyles>
-      <div className="sticky-signup">
-        <div className="email">
-          <h6>Get our latest blogs straight to your inbox</h6>
-          <p>Sign up to our mailing list</p>
-          <form
-            name="signup"
-            method="post"
-            data-netlify="true"
-            data-netlify-honeypot="bot-field"
-            action="/email-signup-sucess"
+const EmailSignUp = () => (
+  <EmailSignUpStyles>
+    <div className="sticky-signup">
+      <div className="email">
+        <h6>Get our latest blogs straight to your inbox</h6>
+        <p>Sign up to our mailing list</p>
+        <form
+          name="signup"
+          method="post"
+          data-netlify="true"
+          data-netlify-honeypot="bot-field"
+          action="/email-signup-sucess"
+        >
+          <input type="hidden" name="form-name" value="signup" />
+          <input
+            type="text"
+            placeholder="Name"
+            name="name"
+            id="name"
+            required
+          />
+          <input
+            type="text"
+            placeholder="Email Address"
+            name="email"
+            id="email"
+            required
+          />
+          <button className="btn btn--slate" type="submit">
+            <span>Submit</span>
+          </button>
+        </form>
+      </div>
+      <div className="social">
+        <p>Follow us so you never miss a post...</p>
+        <div className="social__wrapper">
+          <a
+            href="https://www.linkedin.com/company/uctel/"
+            target="_blank"
+            rel="noopener noreferrer"
           >
-            <input type="hidden" name="form-name" value="signup" />
-            <input
-              type="text"
-              placeholder="Name"
-              name="name"
-              id="name"
-              required
-            />
-            <input
-              type="text"
-              placeholder="Email Address"
-              name="email"
-              id="email"
-              required
-            />
-            <button className="btn btn--slate" type="submit">
-              <span>Submit</span>
-            </button>
-          </form>
-        </div>
-        <div className="social">
-          <p>Follow us so you never miss a post...</p>
-          <div className="social__wrapper">
-            <a
-              href="https://www.linkedin.com/company/uctel/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <LinkedInIcon />
-            </a>
-            <a
-              href="https://twitter.com/UCtel_Ltd "
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <TwitterIcon />
-            </a>
-          </div>
+            <LinkedInIcon />
+          </a>
+          <a
+            href="https://twitter.com/UCtel_Ltd "
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <TwitterIcon />
+          </a>
         </div>
       </div>
-    </EmailSignUpStyles>
-  );
-};
+    </div>
+  </EmailSignUpStyles>
+);
 
 export const query = graphql`
   query SingleBlogQuery($slug: String!, $category: String!) {

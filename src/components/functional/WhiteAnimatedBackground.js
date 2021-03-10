@@ -55,15 +55,3 @@ const WhiteHeaderBackground = ({
 };
 
 export default WhiteHeaderBackground;
-
-// mouseControls: false,
-// touchControls: false,
-// gyroControls: false,
-// scale: 0.0,
-// points: 15.0,
-// maxDistance: 20.0,
-// spacing: 15.0,
-// scaleMobile: 0.0,
-// color: 0x278a9c,
-// backgroundColor: 0x1a2536,
-// showDots: true,

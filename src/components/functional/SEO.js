@@ -35,8 +35,6 @@ export default function SEO({ children, location, description, title, img }) {
     }
   `);
   const settings = data.nodes[0];
-  console.log(settings);
-  // const image = imageUrlFor(buildImageObj(settings.openGraph.image)).width(200);
 
   return (
     <Helmet>

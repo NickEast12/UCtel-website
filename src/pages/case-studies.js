@@ -113,7 +113,7 @@ const SingleCaseStudyStyles = styled.div`
   }
 `;
 const SingleCaseStudy = ({ data, left }) => {
-  console.log(data);
+  const i = true;
   return (
     <SingleCaseStudyStyles id="caseFlex">
       <div className={left ? 'cs cs-left' : 'cs cs-right'}>
