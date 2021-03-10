@@ -238,7 +238,7 @@ const MainFooterStyles = styled.div`
       &__links {
         display: flex;
         justify-content: space-between;
-        width: 380px;
+        width: 450px;
         margin: 0;
       }
     }

@@ -8,6 +8,7 @@ const LandingPageStyles = styled.header`
   width: 100%;
   height: 24rem;
   position: relative;
+  background-color: var(--black);
   .landing__wrapper {
     z-index: 2;
     position: relative;
