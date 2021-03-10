@@ -11,8 +11,10 @@ const CelFi = ({ pageContext }) => {
   return (
     <Layout pageContext={pageContext}>
       <SEO
-        title="Connecting NHS buildings with strong mobile network coverage| UCtel"
-        description="As healthcare in the UK moves to ‘mobile first’, reliable mobile data and calling is essential to hospitals. Here’s how Cel-Fi and UCtel provided a transformative solution. "
+        title="London North West University Healthcare NHS Trust| UCtel"
+        description="Mobile communication became of particular importance during the
+        COVID-19 outbreak, with Northwick Park Hospital being particularly
+        hard-hit"
       />
       <CaseStudyHeader />
       <main>
