@@ -9,6 +9,7 @@ const SingleBlogStyles = styled.article`
   /* border: solid 1px #d8d8d8; */
   box-shadow: 0 1.7778rem 1.6667rem rgb(10 10 10 / 10%);
   border-radius: 4.5px;
+  transition: all 0.4s ease;
   .sb--img {
     /* object-fit: fill !important; */
     .gatsby-image-wrapper {
@@ -42,7 +43,7 @@ const SingleBlogStyles = styled.article`
   }
   h4 {
     text-align: left;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     padding-bottom: 0.85rem;
   }
   p {
@@ -84,6 +85,9 @@ const SingleBlogStyles = styled.article`
   }
   @media only screen and (min-width: 768px) {
     margin-bottom: 0.5rem;
+    &:hover {
+      transform: translateY(-15px);
+    }
   }
 `;
 const SingleBlog = ({ blog }) => {

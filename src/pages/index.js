@@ -14,7 +14,10 @@ const index = ({ data, pageContext }) => {
   const Blogs = data.AllBlogs.nodes;
   return (
     <Layout pageContext={pageContext}>
-      <SEO title="Unified Communications Solutions | UCtel" />
+      <SEO
+        title="Unified Communications Solutions | UCtel"
+        description="UCtel is a market-leading provider of unified communications and contact centre solutions to businesses across the world"
+      />
       <LandingPage
         title="Mobile boosting | Private 5G | Unified Communications"
         description="Next-generation technology keeping you connected."

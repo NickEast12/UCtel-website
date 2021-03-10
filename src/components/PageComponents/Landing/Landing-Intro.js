@@ -30,7 +30,7 @@ const LandingIntroStyles = styled.section`
 const LandingIntro = () => (
   <LandingIntroStyles>
     <div className="landing__intro">
-      <h2>Industrial internet everywhere.</h2>
+      <h2>Dedicated Industrial Network.</h2>
       <p>
         Industry 4.0 is revolutionising businesses across the globe – allowing
         for adoption of digital technologies such as AI, IoT and big data.

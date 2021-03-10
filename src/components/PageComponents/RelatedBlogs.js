@@ -26,6 +26,7 @@ const RelatedBlogsStyles = styled.section`
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         padding: 2rem 0;
+        grid-gap: 1.5rem;
       }
     }
   }

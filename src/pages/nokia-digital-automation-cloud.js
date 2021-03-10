@@ -12,7 +12,11 @@ import SEO from '../components/functional/SEO';
 
 const NokiaLandingPage = ({ pageContext }) => (
   <main>
-    <SEO />
+    <SEO
+      title="Nokia Digital Automation Cloud | Unified Communications Solutions | UCtel"
+      description="Addressing the need for critical wireless communication, private 5G is
+        predicted to grow by £4.2bn in 2024"
+    />
     <GlobalStyles />
     <Typography />
     <LandingHeader />
