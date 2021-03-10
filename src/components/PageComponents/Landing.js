@@ -9,6 +9,7 @@ const LandingPageStyles = styled.div`
   width: 100%;
   height: 100vh;
   position: relative;
+  background-color: #000000;
   .landing__wrapper {
     z-index: 2;
     position: relative;
