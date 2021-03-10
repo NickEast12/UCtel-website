@@ -152,6 +152,9 @@ const MainFooterStyles = styled.div`
           padding-top: 0.5rem;
           color: rgba(255, 255, 255, 0.5);
           font-size: 0.85rem;
+          &:hover {
+            color: var(--lightBlue);
+          }
         }
       }
     }
@@ -174,6 +177,10 @@ const MainFooterStyles = styled.div`
             margin-top: 6px;
             font-family: Gellix-Regular;
             font-size: 0.85rem;
+            transition: color 0.25s ease;
+            &:hover {
+              color: var(--white);
+            }
           }
         }
       }
@@ -185,6 +192,9 @@ const MainFooterStyles = styled.div`
           fill: var(--white);
           width: 20px;
           margin-right: 10px;
+          &:hover {
+            fill: var(--lightBlue);
+          }
         }
       }
       .legal {
