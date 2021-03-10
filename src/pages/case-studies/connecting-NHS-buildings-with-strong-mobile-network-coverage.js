@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { window, document, exists } from 'browser-monads';
 import Img from 'gatsby-image';
 import styled from 'styled-components';
 import SEO from '../../components/functional/SEO';

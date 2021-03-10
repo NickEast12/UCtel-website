@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
+import { window, document, exists } from 'browser-monads';
 import Image from '../../components/functional/Image';
 import SEO from '../../components/functional/SEO';
 import WhiteHeaderBackground from '../../components/functional/WhiteAnimatedBackground';
