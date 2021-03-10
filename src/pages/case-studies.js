@@ -16,7 +16,7 @@ const CaseStudies = ({ data, pageContext }) => {
       />
       <WhiteHeader
         title="Case studies"
-        description="Learn how UCtel drives growth and results for any business through these in-depth case studies and customer stories."
+        description="Learn how UCtel drives growth and results for any business through these in-depth case studies and customer stories"
       />
       <main>
         <CaseStudiesStyles>
