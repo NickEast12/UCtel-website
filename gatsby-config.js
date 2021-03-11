@@ -73,7 +73,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: 'UA-138434630-1',
+        trackingId: 'UA-36305332-1',
         head: true,
       },
     },
@@ -81,7 +81,7 @@ module.exports = {
       resolve: `gatsby-plugin-gdpr-cookies`,
       options: {
         googleAnalytics: {
-          trackingId: 'UA-138434630-1',
+          trackingId: 'UA-36305332-1',
           cookieName: 'gatsby-gdpr-google-analytics',
           anonymize: true,
         },

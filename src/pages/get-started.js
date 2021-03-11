@@ -318,7 +318,7 @@ const GetStarted = () => {
                   type="file"
                   id="floorPlans"
                   name="floorPlans"
-                  accept=".pdf,.doc"
+                  accept="application/pdf"
                 />
                 <p htmlFor="message">
                   Messages <span>*</span>
