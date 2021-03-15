@@ -286,7 +286,7 @@ export const MainFooter = () => (
             <h6>Solutions</h6>
             <ul>
               <li>
-                <Link to="/solutions/in-building-mobile-connectivity">
+                <Link to="/solutions/in-building-mobile-signal-solutions">
                   In-Building mobile signal solutions
                 </Link>
               </li>
