@@ -34,11 +34,10 @@ const SingleBlogStyles = styled.article`
     padding: 0.5rem 0;
     h5 {
       color: var(--lightBlue);
-      font-size: 0.9rem;
+      font-size: 0.85rem;
     }
     p {
-      text-transform: uppercase;
-      font-size: 0.9rem;
+      font-size: 0.85rem;
     }
   }
   h4 {

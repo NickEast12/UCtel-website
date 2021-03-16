@@ -90,7 +90,7 @@ const SolutionsIntro = () => (
               <InBuildingIcon />
               <h4>In-building mobile signal solutions</h4>
               <p>
-                Award-winning, Ofcom-approved indoor mobile signal booster,
+                Award-winning, Ofcom-compliant indoor mobile signal booster,
                 Cel-Fi, offers an exceptional coverage footprint, improving
                 voice quality and data speeds.
               </p>
