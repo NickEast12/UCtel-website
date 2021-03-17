@@ -162,6 +162,9 @@ const BlogPageStyles = styled.main`
       ul {
         list-style: inside;
       }
+      ol {
+        list-style-position: inside;
+      }
       li {
         margin: 0.5rem 0;
         line-height: 1.45;
