@@ -32,7 +32,8 @@ const BlogPageStyles = styled.main`
     .gatsby-image-wrapper {
       border-radius: 4.5px;
       width: 100%;
-      height: 15rem;
+      /* height: 15rem; */
+      height: auto;
       img {
         object-fit: fill !important;
       }
@@ -189,7 +190,7 @@ const BlogPageStyles = styled.main`
     .bp--header {
       width: 85%;
       .gatsby-image-wrapper {
-        height: 18rem;
+        height: auto;
       }
     }
     .bp--content {
@@ -199,7 +200,12 @@ const BlogPageStyles = styled.main`
   @media only screen and (min-width: 701px) {
     .bp--header {
       width: 85%;
-      padding-top: 8rem;
+      padding-top: 7rem;
+      /* padding: 8rem; */
+      .gatsby-image-wrapper {
+        height: auto;
+        height: auto;
+      }
     }
     .bp__wrapper {
       display: grid;
@@ -233,10 +239,27 @@ const BlogPageStyles = styled.main`
   }
   @media only screen and (min-width: 1280px) {
     .bp--header {
-      width: 100%;
+      /* width: 100%; */
       margin-bottom: 2rem;
+
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      max-width: 100%;
+      &--inner {
+        background-color: rgba(144, 196, 204, 0.25);
+        border-radius: 4.5px;
+        /* padding: 4rem 0; */
+        margin: 0 auto;
+        /* padding: 5rem; */
+        max-width: 1100px;
+      }
       .gatsby-image-wrapper {
-        height: 25rem;
+        /* height: 25rem; */
+        /* width: 66%; */
+        height: 100%;
+        margin-left: auto;
+        height: 448px;
       }
     }
     .bp--content {
@@ -334,10 +357,12 @@ const Blogs = ({ pageContext, data }) => {
       />
       <BlogPageStyles>
         <div className="bp--header">
-          <Img
-            fluid={content.mainImage.asset.fluid}
-            alt={content.mainImage.alt}
-          />
+          <div className="bp--header--inner">
+            <Img
+              fluid={content.mainImage.asset.fluid}
+              alt={content.mainImage.alt}
+            />
+          </div>
         </div>
         <div className="bp__wrapper">
           <div className="bp--content">
