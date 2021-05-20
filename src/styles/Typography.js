@@ -40,20 +40,24 @@ const Typography = createGlobalStyle`
      
 
     html {
-      font-size: 16px;
-
+      font-size: 160px;
     }
    
-    @media only screen and (min-width: 375px) {
+    /* @media only screen and (min-width: 375px) {
       html {
         font-size: 16.5px;
+      }
+    }
+    @media only screen and (min-width: 414px) {
+      html {
+        font-size: 107px!important;
       }
     }
     @media only screen and (min-width: 1280px) {
       html {
         font-size: 18px;
       }
-    }
+    } */
     body {
       line-height: 1.2;
     }
