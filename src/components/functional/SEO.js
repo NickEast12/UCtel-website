@@ -84,14 +84,6 @@ export default function SEO({ children, location, description, title, img }) {
         name="twitter:image"
         content={img || settings.openGraph.image.asset.url}
       />
-      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-36305332-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-36305332-1');
-</script>
     </Helmet>
   );
 }
