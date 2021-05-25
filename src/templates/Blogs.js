@@ -15,6 +15,7 @@ import {
 } from 'react-share';
 import Layout from '../components/Layout';
 import RelatedBlogs from '../components/PageComponents/RelatedBlogs';
+import Image from '../components/functional/Image';
 import EmailIcon from '../svgs/email.svg';
 import TwitterIcon from '../svgs/twitter.svg';
 import FacebookIcon from '../svgs/facebook.svg';
