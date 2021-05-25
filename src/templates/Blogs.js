@@ -335,11 +335,12 @@ const Blogs = ({ pageContext, data }) => {
   const content = data.Blog;
   const { categories, authors } = content;
   const relatedBlogsData = data.Category;
+  const ext = '?w=1388&h=926&fit=crop&auto=format';
   const serializers = {
     types: {
       mainImage: (props) => (
         <div className="image">
-          <img src={urlFor(props.node.asset)} alt="Blog Photos" />
+          <img src={`${urlFor(props.node.asset)}${ext}`} alt="Blog Photos" />
         </div>
       ),
       videoEmbed: ({ node }) => {
