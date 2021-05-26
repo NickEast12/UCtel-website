@@ -1,5 +1,7 @@
 import React from 'react';
 import { graphql } from 'gatsby';
+import { GatsbyImage } from 'gatsby-plugin-image';
+import { getGatsbyImageData } from 'gatsby-source-sanity';
 import Img from 'gatsby-image';
 import styled from 'styled-components';
 import PortableText from '@sanity/block-content-to-react';
@@ -340,7 +342,14 @@ const Blogs = ({ pageContext, data }) => {
     types: {
       mainImage: (props) => (
         <div className="image">
-          <img src={`${urlFor(props.node.asset)}${ext}`} alt="Blog Photos" />
+          <img
+            src={`${urlFor(props.node.asset)
+              .width(1388)
+              .height(926)
+              .fit('crop')
+              .auto('format')}`}
+            alt="Blog Photos"
+          />
         </div>
       ),
       videoEmbed: ({ node }) => {
