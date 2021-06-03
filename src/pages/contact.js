@@ -285,7 +285,6 @@ const MapWrapper = () => (
             method="post"
             data-netlify="true"
             data-netlify-honeypot="bot-field"
-            data-netlify-recaptcha="true"
             action="/successful-submission"
           >
             <input type="hidden" name="form-name" value="getincontact" />
@@ -343,7 +342,6 @@ const MapWrapper = () => (
               Messages <span>*</span>
             </p>
             <textarea name="message" id="message" required />
-            <div data-netlify-recaptcha="true" />
             <button type="submit" className="btn btn--main">
               <span>Send inquiry</span>
             </button>
