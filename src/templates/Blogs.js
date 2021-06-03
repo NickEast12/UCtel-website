@@ -1,7 +1,5 @@
 import React from 'react';
 import { graphql } from 'gatsby';
-import { GatsbyImage } from 'gatsby-plugin-image';
-import { getGatsbyImageData } from 'gatsby-source-sanity';
 import Img from 'gatsby-image';
 import styled from 'styled-components';
 import PortableText from '@sanity/block-content-to-react';
