@@ -18,6 +18,9 @@ const GetStartedStyles = styled.div`
   position: relative;
   overflow: scroll;
   background-color: var(--black);
+  .hidden {
+    display: none !important;
+  }
   .back {
     position: absolute;
     z-index: 10;
@@ -122,7 +125,8 @@ const GetStartedStyles = styled.div`
               grid-gap: 1rem;
             }
           }
-          input {
+          input,
+          select {
             width: 100%;
             border-radius: 5px;
             padding: 0.5rem;
@@ -271,6 +275,12 @@ const GetStarted = () => {
                 action="/successful-submission"
               >
                 <input type="hidden" name="form-name" value="contact" />
+                <p className="hidden">
+                  <label htmlFor="bot">
+                    Don’t fill this out if you’re human:{' '}
+                    <input name="bot-field" />
+                  </label>
+                </p>
                 <div className="form--section">
                   <div>
                     <p htmlFor="firstName">
@@ -315,6 +325,13 @@ const GetStarted = () => {
                 </div>
                 <p>Upload floor plans (PDF)</p>
                 <input type="file" id="floorPlans" name="floorPlans" />
+                <p>How did you hear about us?</p>
+                <select name="howdidyouhear[]">
+                  <option value="social_media">Social media</option>
+                  <option value="marketing_outreach">Marketing outreach</option>
+                  <option value="google">Google</option>
+                  <option value="Wordofmouth">Word of mouth</option>
+                </select>
                 <p htmlFor="message">
                   Messages <span>*</span>
                 </p>
