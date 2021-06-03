@@ -40,6 +40,9 @@ const GlobalStyles = createGlobalStyle`
     button {
         font-size: 0;
     }
+    .hidden {
+        display: none;
+    }
     .noSelect {
     -webkit-touch-callout: none;
     -webkit-user-select: none;

@@ -191,7 +191,8 @@ const MapWrapperStyles = styled.div`
               padding-left: 3px;
             }
           }
-          input {
+          input,
+          select {
             width: 90%;
             border-radius: 5px;
             padding: 0.5rem;
@@ -199,6 +200,8 @@ const MapWrapperStyles = styled.div`
             font-size: 1.1;
             border: solid 1px rgba(0, 0, 0, 0.25);
             margin-bottom: 7.5px;
+            font-family: Gellix-Medium, -apple-system, BlinkMacSystemFont,
+              'Helvetica Neue', Helvetica, Arial, sans-serif;
           }
           textarea {
             width: 90%;
@@ -237,6 +240,7 @@ const MapWrapperStyles = styled.div`
           form {
             p,
             input,
+            select,
             textarea {
               width: 100%;
             }
@@ -281,9 +285,15 @@ const MapWrapper = () => (
             method="post"
             data-netlify="true"
             data-netlify-honeypot="bot-field"
+            data-netlify-recaptcha="true"
             action="/successful-submission"
           >
             <input type="hidden" name="form-name" value="getincontact" />
+            <p className="hidden">
+              <label htmlFor="bot">
+                Don’t fill this out if you’re human: <input name="bot-field" />
+              </label>
+            </p>
             <div className="form--section">
               <div>
                 <p htmlFor="firstName">
@@ -321,11 +331,19 @@ const MapWrapper = () => (
                 <input type="text" name="jobTitle" id="jobTitle" />
               </div>
             </div>
+            <p>How did you hear about us?</p>
+            <select name="howdidyouhear[]">
+              <option value="social_media">Social media</option>
+              <option value="marketing_outreach">Marketing outreach</option>
+              <option value="google">Google</option>
+              <option value="Wordofmouth">Word of mouth</option>
+            </select>
+
             <p htmlFor="message">
               Messages <span>*</span>
             </p>
             <textarea name="message" id="message" required />
-
+            <div data-netlify-recaptcha="true" />
             <button type="submit" className="btn btn--main">
               <span>Send inquiry</span>
             </button>
