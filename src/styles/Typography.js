@@ -88,7 +88,7 @@ const Typography = createGlobalStyle`
     span,button {
       font-family: Gellix-Medium, -apple-system,BlinkMacSystemFont,"Helvetica Neue",Helvetica,Arial,sans-serif;;
     }
-    p , a, li, input, address, label,input, textarea, select  {
+    p , a, li, input, address, label,input, textarea, select, i  {
       font-family: Gellix-Regular, -apple-system,BlinkMacSystemFont,"Helvetica Neue",Helvetica,Arial,sans-serif;;
       font-feature-settings: "kern" 1;
       font-kerning: normal;
