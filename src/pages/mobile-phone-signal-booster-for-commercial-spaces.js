@@ -83,28 +83,34 @@ const LandingPageHeaderStyles = styled.section`
         display: flex;
         flex-direction: column;
         @media only screen and (min-width: 768px) {
-          flex-direction: row;
+          width: 50%;
+          section {
+            display: flex;
+            gap: 0.5rem;
+          }
         }
         input,
         button {
           padding: 0.85rem;
+          margin-bottom: 0.75rem;
           border: none;
           font-size: 1.1rem;
           color: #000;
           font-weight: 700;
+          @media only screen and (min-width: 768px) {
+            margin-bottom: 0.5rem;
+            width: 100%;
+          }
         }
         input {
           width: 100%;
-          border-radius: 4.5px 4.5px 0 0;
+          border-radius: 4.5px;
           &::placeholder {
             text-align: center;
           }
-          @media only screen and (min-width: 1024px) {
-            border-radius: 4.5px 0 0 4.5px;
-          }
         }
         button {
-          border-radius: 0 0 4.5px 4.5px;
+          border-radius: 4.5px;
           background-color: var(--lightBlue);
           width: 100%;
           span {
@@ -112,8 +118,6 @@ const LandingPageHeaderStyles = styled.section`
             font-size: 1rem;
           }
           @media only screen and (min-width: 768px) {
-            width: 40%;
-            border-radius: 0 4.5px 4.5px 0;
           }
         }
       }
@@ -218,12 +222,33 @@ const LandingPageHeader = () => (
           data-netlify-honeypot="bot-field"
           action="/successful-submission"
         >
-          <input type="hidden" name="form-name" value="landingPageSignUp" />
+          <input
+            type="hidden"
+            name="form-name"
+            value="landingPageSignUp"
+            required
+          />
           <p className="hidden">
             <label htmlFor="bot">
               Don’t fill this out if you’re human: <input name="bot-field" />
             </label>
           </p>
+          <section>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Name"
+              required
+            />
+            <input
+              type="text"
+              name="company"
+              id="company"
+              placeholder="Company"
+              required
+            />
+          </section>
           <input
             type="email"
             name="email"
