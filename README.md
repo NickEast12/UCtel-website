@@ -11,7 +11,6 @@
   </a>
 </p>
 
-[![Netlify Status]
 
 ## 🛠 Installation & Set Up
 
