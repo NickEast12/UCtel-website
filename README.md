@@ -1,97 +1,47 @@
-# Nick Starter Gatsby
+<h1 align="center">
+ UCtel website
+</h1>
+<p align="center">
+  The second iteration of <a href="https://www.uctel.co.uk/" target="_blank">uctel.co.uk</a> built with <a href="https://www.gatsbyjs.org/" target="_blank">Gatsby</a> and hosted with <a href="https://www.netlify.com/" target="_blank">Netlify</a>
+</p>
 
-This is a starter for Gatsby with the file structure and plugins already added
-
-## Installation
-
-Use npm install to download the node_modules
-
-```bash
-
-npm i
-
-```
-
-## Contributing
-
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
-
-## License
-
-[MIT]
-
-{
-resolve: `gatsby-plugin-manifest`,
-options: {
-name: `UCtel`,
-short_name: `UCtel`,
-description: `UCtel`,
-start_url: `/`,
-lang: `en`,
-background_color: `#162129`,
-theme_color: `#1bbc9b`,
-display: `minimal-ui`,
-icon: `./src/static/icon.ico`,
-},
-},
-
-    box-shadow: 0 1.1111rem 1.1111rem 0.2778rem rgb(0 0 0 / 5%);
+<p align="center">
+  <a href="https://app.netlify.com/sites/uctel/deploys" target="_blank">
+    <img src="https://api.netlify.com/api/v1/badges/a7956989-6c17-40ed-94fe-79e5ab341a4c/deploy-status" alt="Netlify Status" />
+  </a>
+</p>
 
 
+## 🛠 Installation & Set Up
 
-    <form
-                name="contact"
-                method="post"
-                data-netlify="true"
-                data-netlify-honeypot="bot-field"
-                action="/"
-              >
+1. Install the Gatsby CLI
 
+   ```sh
+   npm install -g gatsby-cli
+   ```
 
+2. Install and use the correct version of Node using [NVM](https://github.com/nvm-sh/nvm)
 
-                <div className="form--section">
-                  <section>
-                    <p htmlFor="Companyname">
-                      Company name<span>*</span>
-                    </p>
-                    <input
-                      type="text"
-                      name="Companyname"
-                      id="Companyname"
-                      required
-                    />
-                  </section>
-                  <section>
-                    <p htmlFor="jobTitle">Job title</p>
-                    <input type="text" name="jobTitle" id="jobTitle" />
-                  </section>
-                </div>
-                <p htmlFor="floorPlans">Upload floor plans (PDF)</p>
-                <input
-                  type="file"
-                  id="floorPlans"
-                  name="floorPlans"
-                  accept="application/pdf"
-                />
-                <p htmlFor="message">
-                  Messages <span>*</span>
-                </p>
-                <textarea name="message" id="message" required />
-                <div className="btn--wrapper">
-                  <button type="submit" className="btn btn--main">
-                    <span>Submit</span>
-                  </button>
-                </div>
-              </form>
+   ```sh
+   nvm install
+   ```
 
-[build]
-publish = "public"
+3. Install dependencies
 
-[[plugins]]
-package = "netlify-plugin-gatsby-cache"
+   ```sh
+   npm install
+   ```
 
+4. Start the development server
 
+   ```sh
+   npm run dev
+   ```
 
-<meta property="og:image:width" content="1200"/>
+## 🚀 Building and Running for Production
 
-<meta property="og:image:height" content="630"/>
+1. Generate a full static production build
+
+   ```sh
+   npm run build
+   ```
