@@ -58,7 +58,7 @@ const AboutUsIntro = () => (
     <div className="aboutus">
       <div className="aboutus--image img-decoration">
         <Image
-          filename="about-us.png"
+          filename="uctel-graphic.png"
           alt="Bringing business into the digital age"
         />
       </div>

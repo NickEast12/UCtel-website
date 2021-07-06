@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Fade from 'react-reveal/Fade';
+import Image from './functional/Image';
 
 const AboutusLowerStyles = styled.section`
   width: 100%;
@@ -67,6 +68,9 @@ const AboutusLower = () => (
           </p>
         </Fade>
       </div>
+    </div>
+    <div className="l-ab">
+      <Image filename="uctel-graphic.png" alt="Uctel Infrographic" />
     </div>
   </AboutusLowerStyles>
 );
