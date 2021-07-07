@@ -10,7 +10,7 @@ const AboutusLowerStyles = styled.section`
   .lower {
     width: 90%;
     margin: 0 auto;
-    padding: 3.5rem 0;
+    padding: 3.5rem 0 1.5rem;
     max-width: 1000px;
     &--left {
       h4 {
@@ -36,7 +36,15 @@ const AboutusLowerStyles = styled.section`
     }
     @media only screen and (min-width: 1280px) {
       width: 80%;
-      padding-bottom: 4rem;
+    }
+  }
+  .l-ab {
+    @media only screen and (min-width: 768px) {
+      padding: 1rem 1rem 3rem 1rem;
+    }
+    .gatsby-image-wrapper {
+      max-width: 850px;
+      margin: 0 auto;
     }
   }
 `;
