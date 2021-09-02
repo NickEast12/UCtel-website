@@ -13,7 +13,7 @@ import StarIcon from '../svgs/star.svg';
 const LandingPage = () => {
   const i = true;
   return (
-    <main>
+    <>
       <SEO
         title="Mobile Phone Signal Booster for Commercial Spaces | UCtel"
         description="Get a mobile phone signal booster for your commercial premises and enhance your call and data quality"
@@ -21,10 +21,10 @@ const LandingPage = () => {
       <GlobalStyles />
       <Typography />
       <Cookie />
-      <main>
+      <div>
         <LandingPageHeader />
-      </main>
-    </main>
+      </div>
+    </>
   );
 };
 
@@ -193,7 +193,10 @@ const LandingPageHeaderStyles = styled.section`
       height: 100%;
     }
     @media only screen and (min-width: 500px) {
-      height: 110vh;
+      height: 100vh;
+    }
+    @media only screen and (min-width: 1280px) {
+      height: 100%;
     }
   }
 `;
@@ -254,6 +257,12 @@ const LandingPageHeader = () => (
             name="email"
             id="email"
             placeholder="Email address"
+          />
+          <input
+            type="tel"
+            name="number"
+            id="number"
+            placeholder="Phone number"
           />
           <button type="submit">
             <span>Get in touch</span>
