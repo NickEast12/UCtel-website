@@ -24,13 +24,13 @@ module.exports = {
         path: path.join(__dirname, `src`, `assets`, 'images'),
       },
     },
-    // {
-    //   resolve: 'gatsby-plugin-google-tagmanager',
-    //   options: {
-    //     id: 'GTM-NJ46CT5',
-    //     includeInDevelopment: false,
-    //   },
-    // },
+    {
+      resolve: 'gatsby-plugin-google-tagmanager',
+      options: {
+        id: 'GTM-NJ46CT5',
+        includeInDevelopment: false,
+      },
+    },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
