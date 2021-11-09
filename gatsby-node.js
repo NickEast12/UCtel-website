@@ -1,4 +1,4 @@
-import path from 'path';
+const path = require('path');
 
 export async function turnBlogCategoriesIntoPage({ graphql, actions }) {
   const template = path.resolve('./src/pages/blogs.js');

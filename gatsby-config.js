@@ -24,13 +24,13 @@ module.exports = {
         path: path.join(__dirname, `src`, `assets`, 'images'),
       },
     },
-    {
-      resolve: 'gatsby-plugin-google-tagmanager',
-      options: {
-        id: 'GTM-NJ46CT5',
-        includeInDevelopment: false,
-      },
-    },
+    // {
+    //   resolve: 'gatsby-plugin-google-tagmanager',
+    //   options: {
+    //     id: 'GTM-NJ46CT5',
+    //     includeInDevelopment: false,
+    //   },
+    // },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -77,33 +77,39 @@ module.exports = {
         showSpinner: true,
       },
     },
+    // {
+    //   resolve: `gatsby-plugin-google-analytics`,
+    //   options: {
+    //     trackingId: 'UA-36305332-1',
+    //     head: true,
+    //   },
+    // },
     {
-      resolve: `gatsby-plugin-google-analytics`,
+      resolve: `gatsby-plugin-canonical-urls`,
       options: {
-        trackingId: 'UA-36305332-1',
-        head: true,
+        siteUrl: `https://uctel.co.uk/`,
       },
     },
-    {
-      resolve: `gatsby-plugin-gdpr-cookies`,
-      options: {
-        googleAnalytics: {
-          trackingId: 'UA-36305332-1',
-          cookieName: 'gatsby-gdpr-google-analytics',
-          anonymize: true,
-        },
-        googleTagManager: {
-          trackingId: '',
-          cookieName: 'gatsby-gdpr-google-tagmanager',
-          dataLayerName: 'dataLayer',
-        },
-        facebookPixel: {
-          pixelId: '',
-          cookieName: 'gatsby-gdpr-facebook-pixel',
-        },
-        environments: ['production', 'development'],
-      },
-    },
+    // {
+    //   resolve: `gatsby-plugin-gdpr-cookies`,
+    //   options: {
+    //     googleAnalytics: {
+    //       trackingId: 'UA-36305332-1',
+    //       cookieName: 'gatsby-gdpr-google-analytics',
+    //       anonymize: true,
+    //     },
+    //     googleTagManager: {
+    //       trackingId: 'GTM-NJ46CT5',
+    //       cookieName: 'gatsby-gdpr-google-tagmanager',
+    //       dataLayerName: 'dataLayer',
+    //     },
+    //     facebookPixel: {
+    //       pixelId: '',
+    //       cookieName: 'gatsby-gdpr-facebook-pixel',
+    //     },
+    //     environments: ['production', 'development'],
+    //   },
+    // },
     {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
